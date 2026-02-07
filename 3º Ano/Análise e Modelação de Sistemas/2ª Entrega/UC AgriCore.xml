@@ -1,0 +1,1036 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1714"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" name="UC" visibility="public">
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_7A10E0CA_4523_4974_89A4_079876098531" body="Sistema externo que recebe dados &amp;#224;s 20:00 e responde com planos. Modelado como ator secund&amp;#225;rio por ser invocado pelo AgriCore (UoD 6.3).">
+				<annotatedElement xmi:idref="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378"/>
+			</ownedComment>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_B919EB7E_12C1_4f45_A0D4_BB16888CA364" body="Retalhista e Produtor s&amp;#227;o modelados como atores prim&amp;#225;rios por iniciarem intera&amp;#231;&amp;#245;es com o sistema (UoD 4 e 5)."/>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_2D6056A5_81C8_40df_8C4D_061C702289AB" body="Diagrama de casos de uso do sistema AgriCore, identificando o comportamento do sistema em rela&amp;#231;&amp;#227;o aos seus atores externos."/>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_310C7E2A_BB3F_4173_8467_6032FCFA740C" body="Casos de uso relacionados com pagamentos, cobran&amp;#231;as e gest&amp;#227;o de membros est&amp;#227;o fora do &amp;#226;mbito (UoD 12.3.1, 12.3.6, 12.2)."/>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD" body="Ator externo que fornece atualiza&amp;#231;&amp;#245;es de tipos de produtos e certifica&amp;#231;&amp;#245;es em tempo real (UoD 6.2).">
+				<annotatedElement xmi:idref="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E"/>
+			</ownedComment>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_16B97A3D_BED4_41c0_A234_054B7E0E228B" name="AgriCore" visibility="public"/>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B" name="Equipa de Resgate" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstBDB4E4_441B_47a0_864D_4F1171749BC9" visibility="public" association="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_66297EF0_EE59_43c3_88AF_68261F619720"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" visibility="public">
+				<memberEnd xmi:idref="EAID_dstBDB4E4_441B_47a0_864D_4F1171749BC9"/>
+				<memberEnd xmi:idref="EAID_srcBDB4E4_441B_47a0_864D_4F1171749BC9"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcBDB4E4_441B_47a0_864D_4F1171749BC9" visibility="public" association="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945" name="Membro AgriRetail" visibility="public"/>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E" name="Ministério da Agricultura" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstFB95B9_5C68_4ef6_A96F_A5F0C73488DA" visibility="public" association="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" visibility="public">
+				<memberEnd xmi:idref="EAID_dstFB95B9_5C68_4ef6_A96F_A5F0C73488DA"/>
+				<memberEnd xmi:idref="EAID_srcFB95B9_5C68_4ef6_A96F_A5F0C73488DA"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcFB95B9_5C68_4ef6_A96F_A5F0C73488DA" visibility="public" association="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378" name="Planner" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstF39270_362C_4686_9051_927E7C65C71B" visibility="public" association="EAID_67F39270_362C_4686_9051_927E7C65C71B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_67F39270_362C_4686_9051_927E7C65C71B" visibility="public">
+				<memberEnd xmi:idref="EAID_dstF39270_362C_4686_9051_927E7C65C71B"/>
+				<memberEnd xmi:idref="EAID_srcF39270_362C_4686_9051_927E7C65C71B"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcF39270_362C_4686_9051_927E7C65C71B" visibility="public" association="EAID_67F39270_362C_4686_9051_927E7C65C71B" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" name="Produtor" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstE5726C_F301_4ea7_9639_B33E65A42B93" visibility="public" association="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst4954A0_CED9_4113_851A_F297F53C5315" visibility="public" association="EAID_C24954A0_CED9_4113_851A_F297F53C5315" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_90916B15_07D5_44f2_9019_321850D0AC08"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_DE10A119_8F9D_49c4_B84A_450916912BC0" general="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" visibility="public">
+				<memberEnd xmi:idref="EAID_dstE5726C_F301_4ea7_9639_B33E65A42B93"/>
+				<memberEnd xmi:idref="EAID_srcE5726C_F301_4ea7_9639_B33E65A42B93"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcE5726C_F301_4ea7_9639_B33E65A42B93" visibility="public" association="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C24954A0_CED9_4113_851A_F297F53C5315" visibility="public">
+				<memberEnd xmi:idref="EAID_dst4954A0_CED9_4113_851A_F297F53C5315"/>
+				<memberEnd xmi:idref="EAID_src4954A0_CED9_4113_851A_F297F53C5315"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src4954A0_CED9_4113_851A_F297F53C5315" visibility="public" association="EAID_C24954A0_CED9_4113_851A_F297F53C5315" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" name="Retalhista" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst56E1BF_B307_4c72_A698_01C1DDBE355C" visibility="public" association="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" visibility="public" association="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_ACCFE328_49CE_48d0_8AC8_4E8C3AAB87B2" general="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945" isSubstitutable="true"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst84B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" visibility="public" association="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" visibility="public">
+				<memberEnd xmi:idref="EAID_dst56E1BF_B307_4c72_A698_01C1DDBE355C"/>
+				<memberEnd xmi:idref="EAID_src56E1BF_B307_4c72_A698_01C1DDBE355C"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src56E1BF_B307_4c72_A698_01C1DDBE355C" visibility="public" association="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" visibility="public">
+				<memberEnd xmi:idref="EAID_dstE1EA59_883B_4ed1_9E55_8F7C5E78AF5C"/>
+				<memberEnd xmi:idref="EAID_srcE1EA59_883B_4ed1_9E55_8F7C5E78AF5C"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" visibility="public" association="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" visibility="public">
+				<memberEnd xmi:idref="EAID_dst84B17D_5DE8_47d2_B09E_2CAFE9C6F3C2"/>
+				<memberEnd xmi:idref="EAID_src84B17D_5DE8_47d2_B09E_2CAFE9C6F3C2"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src84B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" visibility="public" association="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Actor" xmi:id="EAID_47FFAD56_514A_4b23_B260_632648ECC54B" name="TruckMng" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstC1493A_A18C_467d_952F_95DC70980E11" visibility="public" association="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" visibility="public">
+				<memberEnd xmi:idref="EAID_dstC1493A_A18C_467d_952F_95DC70980E11"/>
+				<memberEnd xmi:idref="EAID_srcC1493A_A18C_467d_952F_95DC70980E11"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcC1493A_A18C_467d_952F_95DC70980E11" visibility="public" association="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_47FFAD56_514A_4b23_B260_632648ECC54B"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052" name="Atribuir Rota a Unidade de Transporte" visibility="public">
+				<include xmi:type="uml:Include" xmi:id="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5" visibility="public" addition="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699" name="Atualizar Listas de Certificações e de Produtos" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D" name="Consultar Estado de Encomenda" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C" name="Gerar Plano Diário" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_66297EF0_EE59_43c3_88AF_68261F619720" name="Gerir Incidente de Transporte" visibility="public">
+				<extend xmi:type="uml:Extend" xmi:id="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD" visibility="public" extendedCase="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C" name="Registar Encomenda" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5" name="Registar Previsão de Encomenda" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_90916B15_07D5_44f2_9019_321850D0AC08" name="Registar Previsão de Produção" visibility="public"/>
+			<packagedElement xmi:type="uml:UseCase" xmi:id="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA" name="Registar Produção" visibility="public"/>
+		</packagedElement>
+		<thecustomprofile:include base_Include="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5"/>
+		<thecustomprofile:extend base_Extend="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD"/>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" xmi:type="uml:Package" name="UC" scope="public">
+				<model package2="EAID_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" package="EAPK_F6CF9E91_5052_4a87_8BA5_A999D7A2D692" tpos="0" ea_localid="21" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:56:52" modified="2026-01-02 18:56:52" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Model"/>
+				<packageproperties version="1.0" tpos="0"/>
+				<paths/>
+				<times created="2026-01-02 18:56:52" modified="2026-01-02 19:30:41" lastloaddate="2026-01-02 19:26:29" lastsavedate="2026-01-02 19:26:29"/>
+				<flags iscontrolled="0" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0" packageFlags="isModel=1;VICON=3;"/>
+			</element>
+			<element xmi:idref="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="529" ea_eleType="element"/>
+				<properties documentation="Ator externo que fornece atualiza&amp;#231;&amp;#245;es de tipos de produtos e certifica&amp;#231;&amp;#245;es em tempo real (UoD 6.2)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:13:51" modified="2026-01-08 16:13:53" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<NoteLink xmi:id="EAID_06AA2DBB_C419_4f5b_BE2B_A60B6515900D" start="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD" end="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_310C7E2A_BB3F_4173_8467_6032FCFA740C" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="530" ea_eleType="element"/>
+				<properties documentation="Casos de uso relacionados com pagamentos, cobran&amp;#231;as e gest&amp;#227;o de membros est&amp;#227;o fora do &amp;#226;mbito (UoD 12.3.1, 12.3.6, 12.2)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:14:41" modified="2026-01-08 16:14:44" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+			</element>
+			<element xmi:idref="EAID_2D6056A5_81C8_40df_8C4D_061C702289AB" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="526" ea_eleType="element"/>
+				<properties documentation="Diagrama de casos de uso do sistema AgriCore, identificando o comportamento do sistema em rela&amp;#231;&amp;#227;o aos seus atores externos." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:11:49" modified="2026-01-08 16:11:52" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+			</element>
+			<element xmi:idref="EAID_B919EB7E_12C1_4f45_A0D4_BB16888CA364" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="527" ea_eleType="element"/>
+				<properties documentation="Retalhista e Produtor s&amp;#227;o modelados como atores prim&amp;#225;rios por iniciarem intera&amp;#231;&amp;#245;es com o sistema (UoD 4 e 5)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:12:19" modified="2026-01-08 16:12:23" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+			</element>
+			<element xmi:idref="EAID_7A10E0CA_4523_4974_89A4_079876098531" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="528" ea_eleType="element"/>
+				<properties documentation="Sistema externo que recebe dados &amp;#224;s 20:00 e responde com planos. Modelado como ator secund&amp;#225;rio por ser invocado pelo AgriCore (UoD 6.3)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:13:21" modified="2026-01-08 16:13:23" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<NoteLink xmi:id="EAID_959589B0_1EFC_499d_80AD_FD305D9C5590" start="EAID_7A10E0CA_4523_4974_89A4_079876098531" end="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_16B97A3D_BED4_41c0_A234_054B7E0E228B" xmi:type="uml:Boundary" name="AgriCore" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="325" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Boundary" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:58:32" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=3;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+			</element>
+			<element xmi:idref="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B" xmi:type="uml:Actor" name="Equipa de Resgate" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="326" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:04:52" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" start="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B" end="EAID_66297EF0_EE59_43c3_88AF_68261F619720"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945" xmi:type="uml:Actor" name="Membro AgriRetail" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="327" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:57:11" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<Generalization xmi:id="EAID_ACCFE328_49CE_48d0_8AC8_4E8C3AAB87B2" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945"/>
+					<Generalization xmi:id="EAID_DE10A119_8F9D_49c4_B84A_450916912BC0" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E" xmi:type="uml:Actor" name="Ministério da Agricultura" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="328" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:58:17" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" start="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E" end="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699"/>
+					<NoteLink xmi:id="EAID_06AA2DBB_C419_4f5b_BE2B_A60B6515900D" start="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD" end="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378" xmi:type="uml:Actor" name="Planner" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="329" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:04:18" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_67F39270_362C_4686_9051_927E7C65C71B" start="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378" end="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+					<NoteLink xmi:id="EAID_959589B0_1EFC_499d_80AD_FD305D9C5590" start="EAID_7A10E0CA_4523_4974_89A4_079876098531" end="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" xmi:type="uml:Actor" name="Produtor" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="330" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:57:28" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA"/>
+					<UseCase xmi:id="EAID_C24954A0_CED9_4113_851A_F297F53C5315" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_90916B15_07D5_44f2_9019_321850D0AC08"/>
+					<Generalization xmi:id="EAID_DE10A119_8F9D_49c4_B84A_450916912BC0" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" xmi:type="uml:Actor" name="Retalhista" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="331" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:57:29" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5"/>
+					<UseCase xmi:id="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D"/>
+					<Generalization xmi:id="EAID_ACCFE328_49CE_48d0_8AC8_4E8C3AAB87B2" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945"/>
+					<UseCase xmi:id="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_47FFAD56_514A_4b23_B260_632648ECC54B" xmi:type="uml:Actor" name="TruckMng" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="332" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Actor" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:04:34" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" start="EAID_47FFAD56_514A_4b23_B260_632648ECC54B" end="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052" xmi:type="uml:UseCase" name="Atribuir Rota a Unidade de Transporte" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="333" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:05:31" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5" start="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052" end="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+					<UseCase xmi:id="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" start="EAID_47FFAD56_514A_4b23_B260_632648ECC54B" end="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+					<UseCase xmi:id="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD" start="EAID_66297EF0_EE59_43c3_88AF_68261F619720" end="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699" xmi:type="uml:UseCase" name="Atualizar Listas de Certificações e de Produtos" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="334" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:02:39" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" start="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E" end="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D" xmi:type="uml:UseCase" name="Consultar Estado de Encomenda" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="335" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:02:02" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C" xmi:type="uml:UseCase" name="Gerar Plano Diário" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="336" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:05:05" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_67F39270_362C_4686_9051_927E7C65C71B" start="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378" end="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+					<UseCase xmi:id="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5" start="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052" end="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_66297EF0_EE59_43c3_88AF_68261F619720" xmi:type="uml:UseCase" name="Gerir Incidente de Transporte" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="337" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:06:10" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD" start="EAID_66297EF0_EE59_43c3_88AF_68261F619720" end="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052"/>
+					<UseCase xmi:id="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" start="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B" end="EAID_66297EF0_EE59_43c3_88AF_68261F619720"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C" xmi:type="uml:UseCase" name="Registar Encomenda" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="338" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:01:01" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5" xmi:type="uml:UseCase" name="Registar Previsão de Encomenda" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="339" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:00:07" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" start="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" end="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_90916B15_07D5_44f2_9019_321850D0AC08" xmi:type="uml:UseCase" name="Registar Previsão de Produção" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="340" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 19:01:24" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_C24954A0_CED9_4113_851A_F297F53C5315" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_90916B15_07D5_44f2_9019_321850D0AC08"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA" xmi:type="uml:UseCase" name="Registar Produção" scope="public">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" tpos="0" ea_localid="341" ea_eleType="element"/>
+				<properties isSpecification="false" sType="UseCase" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-02 18:58:46" modified="2026-01-02 19:30:41" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UC"/>
+				<links>
+					<UseCase xmi:id="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" start="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" end="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA"/>
+				</links>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_06AA2DBB_C419_4f5b_BE2B_A60B6515900D">
+				<source xmi:idref="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD">
+					<model ea_localid="529" type="Note"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E">
+					<model ea_localid="328" type="Actor" name="Ministério da Agricultura"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="426"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_959589B0_1EFC_499d_80AD_FD305D9C5590">
+				<source xmi:idref="EAID_7A10E0CA_4523_4974_89A4_079876098531">
+					<model ea_localid="528" type="Note"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378">
+					<model ea_localid="329" type="Actor" name="Planner"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="425"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9">
+				<source xmi:idref="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B">
+					<model ea_localid="326" type="Actor" name="Equipa de Resgate"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_66297EF0_EE59_43c3_88AF_68261F619720">
+					<model ea_localid="337" type="UseCase" name="Gerir Incidente de Transporte"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="303"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_ACCFE328_49CE_48d0_8AC8_4E8C3AAB87B2">
+				<source xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0">
+					<model ea_localid="331" type="Actor" name="Retalhista"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945">
+					<model ea_localid="327" type="Actor" name="Membro AgriRetail"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="297"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_DE10A119_8F9D_49c4_B84A_450916912BC0">
+				<source xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B">
+					<model ea_localid="330" type="Actor" name="Produtor"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945">
+					<model ea_localid="327" type="Actor" name="Membro AgriRetail"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="300"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA">
+				<source xmi:idref="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E">
+					<model ea_localid="328" type="Actor" name="Ministério da Agricultura"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699">
+					<model ea_localid="334" type="UseCase" name="Atualizar Listas de Certificações e de Produtos"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="302"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_67F39270_362C_4686_9051_927E7C65C71B">
+				<source xmi:idref="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378">
+					<model ea_localid="329" type="Actor" name="Planner"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C">
+					<model ea_localid="336" type="UseCase" name="Gerar Plano Diário"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="301"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93">
+				<source xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B">
+					<model ea_localid="330" type="Actor" name="Produtor"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA">
+					<model ea_localid="341" type="UseCase" name="Registar Produção"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="299"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_C24954A0_CED9_4113_851A_F297F53C5315">
+				<source xmi:idref="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B">
+					<model ea_localid="330" type="Actor" name="Produtor"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_90916B15_07D5_44f2_9019_321850D0AC08">
+					<model ea_localid="340" type="UseCase" name="Registar Previsão de Produção"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="298"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C">
+				<source xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0">
+					<model ea_localid="331" type="Actor" name="Retalhista"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5">
+					<model ea_localid="339" type="UseCase" name="Registar Previsão de Encomenda"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="296"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C">
+				<source xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0">
+					<model ea_localid="331" type="Actor" name="Retalhista"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D">
+					<model ea_localid="335" type="UseCase" name="Consultar Estado de Encomenda"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="295"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2">
+				<source xmi:idref="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0">
+					<model ea_localid="331" type="Actor" name="Retalhista"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C">
+					<model ea_localid="338" type="UseCase" name="Registar Encomenda"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="294"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D7C1493A_A18C_467d_952F_95DC70980E11">
+				<source xmi:idref="EAID_47FFAD56_514A_4b23_B260_632648ECC54B">
+					<model ea_localid="332" type="Actor" name="TruckMng"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052">
+					<model ea_localid="333" type="UseCase" name="Atribuir Rota a Unidade de Transporte"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="293"/>
+				<properties ea_type="UseCase" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5">
+				<source xmi:idref="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052">
+					<model ea_localid="333" type="UseCase" name="Atribuir Rota a Unidade de Transporte"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C">
+					<model ea_localid="336" type="UseCase" name="Gerar Plano Diário"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="292"/>
+				<properties ea_type="UseCase" subtype="Includes" stereotype="include" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb="«include»"/>
+				<extendedProperties conditional="«include»" virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={ACE04873-4D00-4cc3-92B3-403E10955A26}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=include;GUID={AA78832C-ADC5-4179-8E5A-4FB64CE74A47};@ENDSTEREO;$DES;$CLT={D60DA3EB-A137-4b57-8EB3-6BAE16CE66E5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD">
+				<source xmi:idref="EAID_66297EF0_EE59_43c3_88AF_68261F619720">
+					<model ea_localid="337" type="UseCase" name="Gerir Incidente de Transporte"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052">
+					<model ea_localid="333" type="UseCase" name="Atribuir Rota a Unidade de Transporte"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="291"/>
+				<properties ea_type="UseCase" subtype="Extends" stereotype="extend" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb="«extend»"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={1BF43B1E-E75F-423f-B66D-EFCCB5130B95}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=extend;GUID={04C3F318-9E03-45a4-AE2D-EDB1A2D05197};@ENDSTEREO;$DES;$CLT={DF1D98B7-4BC2-4bf1-B414-1822435446DD}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={8823F5B5-F8CC-4e92-938E-88EF53450C58}$XID;$NAM=MOFProps$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$BEH=extensionLocation$BEH;$PAR=0$PAR;$DES=-1;0;0$DES;$CLT={DF1D98B7-4BC2-4bf1-B414-1822435446DD}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
+					<body> Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="extend" name="extend">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extend-base_Extend" name="base_Extend" association="Extend_extend">
+						<type href="http://schema.omg.org/spec/UML/2.1/Extend"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Extend_extend" name="A_Extend_extend" memberEnd="extension_extend extend-base_Extend">
+					<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="extension_extend" name="extension_extend" type="extend" isComposite="true" lower="0" upper="1" memberEnd="extension_extend extend-base_Extend"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="include" name="include">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="include-base_Include" name="base_Include" association="Include_include">
+						<type href="http://schema.omg.org/spec/UML/2.1/Include"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Include_include" name="A_Include_include" memberEnd="extension_include include-base_Include">
+					<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="extension_include" name="extension_include" type="include" isComposite="true" lower="0" upper="1" memberEnd="extension_include include-base_Include"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_9E41D3DD_202B_4b5d_94B4_6F9D4DE6C542">
+				<model package="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982" localID="10" owner="EAPK_06FFB1D9_C6A9_49a4_8310_42E6A88C5982"/>
+				<properties name="UC" type="Use Case"/>
+				<project author="joaop" version="1.0" created="2026-01-02 18:56:59" modified="2026-01-08 16:15:00"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=93033910;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=466;Top=699;Right=753;Bottom=757;" subject="EAID_310C7E2A_BB3F_4173_8467_6032FCFA740C" seqno="1" style="DUID=AFCD613D;"/>
+					<element geometry="Left=51;Top=412;Right=211;Bottom=470;" subject="EAID_F5596D71_3650_4c74_AF9D_FED640032AAD" seqno="2" style="DUID=73663810;"/>
+					<element geometry="Left=1016;Top=129;Right=1208;Bottom=204;" subject="EAID_7A10E0CA_4523_4974_89A4_079876098531" seqno="3" style="DUID=9CFEE20E;"/>
+					<element geometry="Left=117;Top=192;Right=232;Bottom=276;" subject="EAID_B919EB7E_12C1_4f45_A0D4_BB16888CA364" seqno="4" style="DUID=94FC85A9;"/>
+					<element geometry="Left=857;Top=21;Right=1094;Bottom=79;" subject="EAID_2D6056A5_81C8_40df_8C4D_061C702289AB" seqno="5" style="DUID=58D16E8E;"/>
+					<element geometry="Left=670;Top=545;Right=775;Bottom=615;" subject="EAID_66297EF0_EE59_43c3_88AF_68261F619720" seqno="6" style="DUID=BEB6F4CB;"/>
+					<element geometry="Left=670;Top=357;Right=775;Bottom=427;" subject="EAID_2DEF20E3_9F53_45c5_B5B3_4643A7D9B052" seqno="7" style="DUID=D37CA882;"/>
+					<element geometry="Left=627;Top=131;Right=732;Bottom=201;" subject="EAID_6B27DF52_1F97_457e_A87F_3A1B2F99261C" seqno="8" style="DUID=82C402EE;"/>
+					<element geometry="Left=929;Top=533;Right=974;Bottom=623;" subject="EAID_A20CAB53_70B0_46f1_AB78_374C7895361B" seqno="9" style="DUID=E865523D;"/>
+					<element geometry="Left=928;Top=303;Right=973;Bottom=393;" subject="EAID_47FFAD56_514A_4b23_B260_632648ECC54B" seqno="10" style="DUID=912D5CD8;"/>
+					<element geometry="Left=912;Top=111;Right=957;Bottom=201;" subject="EAID_FEA4DFDE_AD14_49b6_B9E8_FC51002F0378" seqno="11" style="DUID=141D7A07;"/>
+					<element geometry="Left=410;Top=594;Right=515;Bottom=664;" subject="EAID_C4A97592_7846_4c8a_86E0_4834C5C21699" seqno="12" style="DUID=F901B822;"/>
+					<element geometry="Left=411;Top=296;Right=516;Bottom=366;" subject="EAID_1DEB171E_8742_4623_91BA_1D1C0969A85D" seqno="13" style="DUID=3E701EAA;"/>
+					<element geometry="Left=410;Top=501;Right=515;Bottom=571;" subject="EAID_90916B15_07D5_44f2_9019_321850D0AC08" seqno="14" style="DUID=59DD4415;"/>
+					<element geometry="Left=411;Top=206;Right=516;Bottom=276;" subject="EAID_CA6FA4E2_578A_4bfe_9DE2_7156F0F8841C" seqno="15" style="DUID=39974242;"/>
+					<element geometry="Left=411;Top=107;Right=516;Bottom=177;" subject="EAID_0EC4AEE2_26DB_40ab_A81F_725B831551D5" seqno="16" style="DUID=0E29EE90;"/>
+					<element geometry="Left=411;Top=386;Right=516;Bottom=456;" subject="EAID_83AD973E_7D06_4a49_9EDA_B00410673DDA" seqno="17" style="DUID=830DDBEF;"/>
+					<element geometry="Left=149;Top=491;Right=194;Bottom=581;" subject="EAID_2C1640A8_C883_4b17_BB04_740DF2284F7E" seqno="18" style="DUID=3B31915F;"/>
+					<element geometry="Left=245;Top=206;Right=290;Bottom=296;" subject="EAID_910C55B5_1350_44a1_A9CB_1E68FE83BAB0" seqno="19" style="DUID=83EE376E;"/>
+					<element geometry="Left=36;Top=206;Right=81;Bottom=296;" subject="EAID_A09E0101_FE26_47a1_9411_5203CE7C899B" seqno="20" style="DUID=10532ABD;"/>
+					<element geometry="Left=158;Top=33;Right=203;Bottom=123;" subject="EAID_E4D3DAE4_B258_43d1_923D_96ADB3EC7945" seqno="21" style="DUID=8EA661DE;"/>
+					<element geometry="Left=369;Top=88;Right=821;Bottom=681;" subject="EAID_16B97A3D_BED4_41c0_A234_054B7E0E228B" seqno="22" style="DUID=02724B9D;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=38:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DF1D98B7_4BC2_4bf1_B414_1822435446DD" style="Mode=3;EOID=D37CA882;SOID=BEB6F4CB;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=39:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D60DA3EB_A137_4b57_8EB3_6BAE16CE66E5" style="Mode=3;EOID=82C402EE;SOID=D37CA882;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A4BDB4E4_441B_47a0_864D_4F1171749BC9" style="Mode=3;EOID=BEB6F4CB;SOID=E865523D;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D7C1493A_A18C_467d_952F_95DC70980E11" style="Mode=3;EOID=D37CA882;SOID=912D5CD8;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_67F39270_362C_4686_9051_927E7C65C71B" style="Mode=3;EOID=82C402EE;SOID=141D7A07;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A9FB95B9_5C68_4ef6_A96F_A5F0C73488DA" style="Mode=3;EOID=F901B822;SOID=3B31915F;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F484B17D_5DE8_47d2_B09E_2CAFE9C6F3C2" style="Mode=3;EOID=39974242;SOID=83EE376E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_7CE1EA59_883B_4ed1_9E55_8F7C5E78AF5C" style="Mode=3;EOID=3E701EAA;SOID=83EE376E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_6656E1BF_B307_4c72_A698_01C1DDBE355C" style="Mode=3;EOID=0E29EE90;SOID=83EE376E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_ACCFE328_49CE_48d0_8AC8_4E8C3AAB87B2" style="Mode=3;EOID=8EA661DE;SOID=83EE376E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C24954A0_CED9_4113_851A_F297F53C5315" style="Mode=3;EOID=59DD4415;SOID=10532ABD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_06E5726C_F301_4ea7_9639_B33E65A42B93" style="Mode=3;EOID=830DDBEF;SOID=10532ABD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;SCME=0;SCTR=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DE10A119_8F9D_49c4_B84A_450916912BC0" style="Mode=3;EOID=8EA661DE;SOID=10532ABD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_959589B0_1EFC_499d_80AD_FD305D9C5590" style="Mode=3;EOID=141D7A07;SOID=9CFEE20E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_06AA2DBB_C419_4f5b_BE2B_A60B6515900D" style="Mode=3;EOID=3B31915F;SOID=73663810;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+</xmi:XMI>

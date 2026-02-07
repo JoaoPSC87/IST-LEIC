@@ -1,0 +1,199 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1714"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" name="Views" visibility="public">
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_97915D17_CC71_4f71_B24A_0A1FFA20A34A" body="Vista de alto n&amp;#237;vel da arquitetura AgriRetail segundo o Layered Viewpoint ArchiMate 3.0, com o objetivo de apresentar todas as entidades referidas no UoD classificadas nas camadas Business, Application e Technology."/>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_E4FBE6E5_E485_4e35_B45B_1ACD656F58C7" body="Servi&amp;#231;o externo para c&amp;#225;lculo de rotas. Integrado via TruckMng (UoD 3).">
+				<annotatedElement xmi:idref="EAID_06521E28_DD0F_4219_B9A1_1E2DB15535C3"/>
+			</ownedComment>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_8F42C240_3133_432d_96B7_088172FE0162" body="GesPark e GesStore s&amp;#227;o representados como sistemas centralizados conforme UoD 3, sem detalhar a sua estrutura interna por estar fora do &amp;#226;mbito."/>
+		</packagedElement>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" xmi:type="uml:Package" name="Views" scope="public">
+				<model package2="EAID_F6FCB865_8D30_4be2_B6AE_588A01F498B1" package="EAPK_79B54C89_AF3C_44a7_89C7_139469459808" tpos="0" ea_localid="7" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-01 11:26:07" modified="2026-01-01 11:26:07" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="AgriRetail"/>
+				<packageproperties version="1.0" tpos="5"/>
+				<paths/>
+				<times created="2026-01-01 11:26:07" modified="2026-01-01 11:26:07"/>
+				<flags iscontrolled="0" isprotected="0" usedtd="0" logxml="0"/>
+			</element>
+			<element xmi:idref="EAID_8F42C240_3133_432d_96B7_088172FE0162" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" tpos="0" ea_localid="518" ea_eleType="element"/>
+				<properties documentation="GesPark e GesStore s&amp;#227;o representados como sistemas centralizados conforme UoD 3, sem detalhar a sua estrutura interna por estar fora do &amp;#226;mbito." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 15:55:38" modified="2026-01-08 15:55:40" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Views"/>
+			</element>
+			<element xmi:idref="EAID_E4FBE6E5_E485_4e35_B45B_1ACD656F58C7" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" tpos="0" ea_localid="517" ea_eleType="element"/>
+				<properties documentation="Servi&amp;#231;o externo para c&amp;#225;lculo de rotas. Integrado via TruckMng (UoD 3)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 15:54:04" modified="2026-01-08 15:54:21" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Views"/>
+				<links>
+					<NoteLink xmi:id="EAID_9EECFAE5_1BE4_47ad_B639_6EE5CD1DDD4E" start="EAID_E4FBE6E5_E485_4e35_B45B_1ACD656F58C7" end="EAID_06521E28_DD0F_4219_B9A1_1E2DB15535C3"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_97915D17_CC71_4f71_B24A_0A1FFA20A34A" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" tpos="0" ea_localid="516" ea_eleType="element"/>
+				<properties documentation="Vista de alto n&amp;#237;vel da arquitetura AgriRetail segundo o Layered Viewpoint ArchiMate 3.0, com o objetivo de apresentar todas as entidades referidas no UoD classificadas nas camadas Business, Application e Technology." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 15:52:34" modified="2026-01-08 15:52:37" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Views"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_9EECFAE5_1BE4_47ad_B639_6EE5CD1DDD4E">
+				<source xmi:idref="EAID_E4FBE6E5_E485_4e35_B45B_1ACD656F58C7">
+					<model ea_localid="517" type="Note"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_06521E28_DD0F_4219_B9A1_1E2DB15535C3">
+					<model ea_localid="23" type="Activity" name="Google Maps"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="417"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles/>
+		<diagrams>
+			<diagram xmi:id="EAID_6F140817_F395_4a70_8E19_C1DB734A6654">
+				<model package="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" localID="1" owner="EAPK_F6FCB865_8D30_4be2_B6AE_588A01F498B1" tpos="1"/>
+				<properties name="Default View" type="Logical"/>
+				<project author="joaop" version="1.0" created="2026-01-01 11:26:07" modified="2026-01-08 15:58:47"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=ArchiMate3::Business;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=26C6B48A;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=541;Top=885;Right=725;Bottom=956;" subject="EAID_8F42C240_3133_432d_96B7_088172FE0162" seqno="1" style="DUID=0B88F95D;"/>
+					<element geometry="Left=1255;Top=614;Right=1370;Bottom=672;" subject="EAID_E4FBE6E5_E485_4e35_B45B_1ACD656F58C7" seqno="2" style="DUID=535D1011;"/>
+					<element geometry="Left=88;Top=76;Right=347;Bottom=154;" subject="EAID_97915D17_CC71_4f71_B24A_0A1FFA20A34A" seqno="3" style="DUID=B17B76B2;"/>
+					<element geometry="Left=1007;Top=240;Right=1127;Bottom=295;" subject="EAID_336D62A5_A5E3_4974_9A10_EFF517FA36E3" seqno="4" style="DUID=0581D012;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=407;Top=720;Right=527;Bottom=775;" subject="EAID_11701E1F_0CE9_41fb_97F1_67C5F45EE2BA" seqno="5" style="DUID=013C58ED;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=839;Top=198;Right=959;Bottom=253;" subject="EAID_7D0C3871_AE3A_4e98_ABE6_DC7F16D48AE5" seqno="6" style="DUID=34AB662B;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=456;Top=204;Right=576;Bottom=259;" subject="EAID_4922D6F7_7AEF_4fa7_8A00_7C022A5024EE" seqno="7" style="DUID=8066608A;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=588;Top=120;Right=766;Bottom=154;" subject="EAID_2E6A9869_89DB_4ced_9306_E8C4B9CF4807" seqno="8" style="DUID=BB80B439;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=108;Top=440;Right=252;Bottom=504;" subject="EAID_97D0C0AE_80BA_4011_8780_EEC9612C23DD" seqno="9" style="DUID=302D3B9E;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=933;Top=76;Right=1110;Bottom=125;" subject="EAID_99BA14B8_D890_4350_84F0_D2EBA9319917" seqno="10" style="DUID=42621952;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=1234;Top=692;Right=1390;Bottom=756;" subject="EAID_E8998621_9EBC_4b9c_95D0_6688DE0FF04F" seqno="11" style="DUID=B7AFE4AA;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=996;Top=907;Right=1152;Bottom=956;" subject="EAID_42539FA0_B4E2_4a18_A0C3_D845719ED0E6" seqno="12" style="DUID=93161401;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=88;Top=576;Right=240;Bottom=700;" subject="EAID_C77F8576_C0E9_47d0_AA23_4B39DA5842E8" seqno="13" style="DUID=BA749D39;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=725;Top=552;Right=854;Bottom=616;" subject="EAID_A4B64C60_CC1E_4525_8DE3_2EAE8B7CF273" seqno="14" style="DUID=5E8905F7;BCol=16777215;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;"/>
+					<element geometry="Left=288;Top=504;Right=420;Bottom=589;" subject="EAID_00A98588_9BEC_4380_8692_2E80FD6B2E43" seqno="15" style="DUID=9CC8C34A;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=540;Top=432;Right=660;Bottom=487;" subject="EAID_81E64B95_D553_4084_A04E_EAD080B20DCA" seqno="16" style="DUID=A903AC30;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=671;Top=486;Right=791;Bottom=541;" subject="EAID_DF8B804C_E242_4824_A86D_36C10E4C8676" seqno="17" style="DUID=C3A300A4;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=433;Top=600;Right=553;Bottom=655;" subject="EAID_C5A3EC04_E68E_4188_B573_AE66AC2871B9" seqno="18" style="DUID=2E00DB3C;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=827;Top=1003;Right=947;Bottom=1058;" subject="EAID_F674EA55_59D2_41dc_A158_FC9F5343907B" seqno="19" style="DUID=1F7A4D8C;BCol=12052425;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=648;Top=1003;Right=768;Bottom=1058;" subject="EAID_0C8141D8_3630_4f40_8EBA_F31157F03E0D" seqno="20" style="DUID=D3F9AA1C;BCol=12052425;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=468;Top=1003;Right=588;Bottom=1058;" subject="EAID_A22C87E8_782B_48f3_9F4D_71537E5A5899" seqno="21" style="DUID=F82B26AB;BCol=12052425;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=888;Top=132;Right=1008;Bottom=187;" subject="EAID_FAA3A4B8_D95E_4afc_8698_1F932AEB4A41" seqno="22" style="DUID=7AC4EC87;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=288;Top=414;Right=408;Bottom=469;" subject="EAID_23B23795_D064_4fbe_9B59_060AB3D4566D" seqno="23" style="DUID=6A7D1D95;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=853;Top=468;Right=985;Bottom=529;" subject="EAID_E9A221CD_FA0C_4a7d_9400_79B596C2AC04" seqno="24" style="DUID=59D63C00;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=336;Top=336;Right=469;Bottom=397;" subject="EAID_DBFA2A52_AA45_4a22_A118_90434A22E3DF" seqno="25" style="DUID=F00427F1;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=648;Top=806;Right=768;Bottom=861;" subject="EAID_151C968F_D687_4eee_BEC0_C7D38D3AA3EE" seqno="26" style="DUID=B6598139;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=492;Top=806;Right=612;Bottom=861;" subject="EAID_4EA9009D_365A_49b9_9AB8_82700C2D6C4D" seqno="27" style="DUID=AA872394;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=1049;Top=701;Right=1169;Bottom=756;" subject="EAID_C459036F_0034_48b1_9D94_23C3CDDA6307" seqno="28" style="DUID=88C9E7B5;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=1056;Top=616;Right=1176;Bottom=671;" subject="EAID_06521E28_DD0F_4219_B9A1_1E2DB15535C3" seqno="29" style="DUID=4B7823CF;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=839;Top=678;Right=959;Bottom=733;" subject="EAID_2F65672D_9057_4771_97AE_6F16D77E8D2D" seqno="30" style="DUID=7D88F364;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=288;Top=600;Right=408;Bottom=655;" subject="EAID_5F1B4AAE_46F2_40f9_A0B5_FAE4181CE1B9" seqno="31" style="DUID=3BC59268;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=552;Top=336;Right=672;Bottom=391;" subject="EAID_504F5332_1EBF_44c2_9436_F27082C64888" seqno="32" style="DUID=B1EF4237;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=564;Top=660;Right=768;Bottom=757;" subject="EAID_9E5FF41C_59DD_42b0_8321_0CC682A0CA91" seqno="33" style="DUID=160B7160;BCol=16777141;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=720;Top=360;Right=840;Bottom=415;" subject="EAID_61F7013A_539E_43bc_A042_20F17F3EA772" seqno="34" style="DUID=5933A214;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;"/>
+					<element geometry="Left=648;Top=198;Right=768;Bottom=253;" subject="EAID_23FB25CF_04F4_4494_AA7B_1F999586ECFE" seqno="35" style="DUID=BC61CD54;BCol=11927551;LCol=6052956;font=Segoe UI;fontsz=90;BFol=-1;UCRect=1;bold=0;LBL=CX=120:CY=15:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=708:-168$;" subject="EAID_114AC3C1_96FB_4b0b_B60C_24B5C178B8F6" style="Mode=3;EOID=7AC4EC87;SOID=BC61CD54;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=666:-180$;" subject="EAID_F0E33199_66B4_424c_96A1_2BB1EA6C591F" style="Mode=3;EOID=BB80B439;SOID=BC61CD54;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=867:-397$;" subject="EAID_4F3C68AD_7DD7_4dec_B769_A2EC402D9329" style="Mode=3;EOID=59D63C00;SOID=5933A214;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C2B20F50_B4B7_436e_BD9F_DC3A885AAE02" style="Mode=3;EOID=C3A300A4;SOID=5933A214;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=610:-600$608:-541$450:-542$;" subject="EAID_B3366D7A_1AF7_4368_ADA7_916FF520D866" style="Mode=3;EOID=F00427F1;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=746:-625$880:-626$;" subject="EAID_892233CC_7F33_40cb_B6EC_0F6AD13BC4E3" style="Mode=3;EOID=59D63C00;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=636:-576$;" subject="EAID_1E24D811_0170_465e_87BF_7D8ED24A0CAD" style="Mode=3;EOID=A903AC30;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=695:-621$;" subject="EAID_10EB4B05_4E5E_4b59_ACFE_A946E5CFEA65" style="Mode=3;EOID=C3A300A4;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0AA84EAD_2CFE_4c4c_A057_EDD25C5CBFBE" style="Mode=3;EOID=013C58ED;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=708:-636$708:-588$;" subject="EAID_2B7DA586_7F6A_4fb5_8C18_FC8DC7B4A053" style="Mode=3;EOID=5E8905F7;SOID=160B7160;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A97015D8_13B8_4499_BB6A_0C11D1792AB4" style="Mode=3;EOID=F00427F1;SOID=B1EF4237;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E67F7F34_C62C_4b2a_8F35_B50D5A8C55E9" style="Mode=3;EOID=A903AC30;SOID=B1EF4237;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=312:-732$;" subject="EAID_8CAF64A7_506E_4979_BB30_F1200372C595" style="Mode=3;EOID=013C58ED;SOID=3BC59268;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=14;EX=0;EY=14;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F843CA57_C436_4958_9141_79C8F21107CE" style="Mode=3;EOID=BA749D39;SOID=3BC59268;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;SX=35;SY=0;EX=47;EY=0;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B338CCA3_BAD3_4380_9F65_C655C787CB5D" style="Mode=3;EOID=1F7A4D8C;SOID=7D88F364;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4C761AFD_30D3_4866_871B_99272C26CE0C" style="Mode=3;EOID=59D63C00;SOID=7D88F364;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=864:-780$72:-780$72:-372$204:-372$;" subject="EAID_69F81CDB_8EC0_45af_9D26_FCC3E45E42CC" style="Mode=3;EOID=F00427F1;SOID=7D88F364;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=0;EX=39;EY=0;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=938:-643$;" subject="EAID_6FC2D732_0FA3_4453_8637_1F5F3E6B3D98" style="Mode=3;EOID=7D88F364;SOID=4B7823CF;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=11;EX=0;EY=-11;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4EBB9B5F_7172_4e7f_8344_7DB5E7AC7906" style="Mode=3;EOID=7D88F364;SOID=88C9E7B5;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2D136019_D73D_4a36_BBE4_8D94D37EA816" style="Mode=3;EOID=B7AFE4AA;SOID=88C9E7B5;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=22:-816$21:-589$24:-288$360:-288$;" subject="EAID_6B044963_B05B_4f44_ACFA_7E4A709B8F6F" style="Mode=3;EOID=F00427F1;SOID=AA872394;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=588:-792$1404:-792$1404:-492$;" subject="EAID_26C5064B_BB3F_47cd_B9C2_04C345BE3E40" style="Mode=3;EOID=59D63C00;SOID=AA872394;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4EAB1263_B4F9_4d8a_9305_AE77B2A8D0B8" style="Mode=3;EOID=F82B26AB;SOID=AA872394;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=706:-876$36:-876$36:-348$192:-348$;" subject="EAID_ADD1F8DC_32B9_422c_9ECF_56A3EB879C5D" style="Mode=3;EOID=F00427F1;SOID=B6598139;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=1428:-840$1428:-672$1428:-480$;" subject="EAID_1832399E_DB21_4b6f_8DD7_DE48D36F1B1B" style="Mode=3;EOID=59D63C00;SOID=B6598139;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;SX=24;SY=0;EX=24;EY=0;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A232D8FA_E5E4_4b80_AF13_A3B16B523E49" style="Mode=3;EOID=D3F9AA1C;SOID=B6598139;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=414:-194$415:-49$1161:-49$1162:-264$;" subject="EAID_71B82E4E_A5E2_40a7_8945_08AF94B087BA" style="Mode=3;EOID=0581D012;SOID=F00427F1;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=964:-434$1058:-433$;" subject="EAID_C532AE45_086E_4c5a_943C_DA4451444937" style="Mode=3;EOID=0581D012;SOID=59D63C00;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8EF5D9A9_C870_443e_83FC_12FDE530378B" style="Mode=3;EOID=9CC8C34A;SOID=6A7D1D95;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=1109:-180$;" subject="EAID_13F1724F_7F6E_4c74_A844_4457EADA4F70" style="Mode=3;EOID=0581D012;SOID=7AC4EC87;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_248C3FEE_DD39_4a94_A386_A64DED54C659" style="Mode=3;EOID=42621952;SOID=7AC4EC87;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;SX=12;SY=0;EX=-23;EY=0;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=-150:OY=2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=540:-1075$864:-1075$;" subject="EAID_783CA9A6_6845_4fd9_A284_FDF104D1F541" style="Mode=3;EOID=1F7A4D8C;SOID=F82B26AB;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;SX=0;SY=-4;EX=0;EY=-7;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=1221:-1034$1221:-505$;" subject="EAID_01F8818F_728E_44ef_8C9B_01D45F4D020D" style="Mode=3;EOID=59D63C00;SOID=1F7A4D8C;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;SX=11;SY=0;EX=0;EY=-18;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=-317:OY=-295:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=898:-1097$259:-1097$259:-384$;" subject="EAID_54407D94_632D_4702_A5FF_1AA2D1848AC2" style="Mode=3;EOID=F00427F1;SOID=1F7A4D8C;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=0;SY=0;EX=0;EY=-9;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=887:-940$;" subject="EAID_BC893122_6D5A_4f78_B03D_E1412D75693B" style="Mode=3;EOID=93161401;SOID=1F7A4D8C;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_3410029B_F348_4e42_8D0C_6FF966B7065A" style="Mode=3;EOID=013C58ED;SOID=2E00DB3C;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=588:-564$;" subject="EAID_674B43A9_2F6A_4bd9_B84F_769DC5C30C26" style="Mode=3;EOID=160B7160;SOID=9CC8C34A;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D17C1A6D_5BAE_4510_898F_C22B8045B844" style="Mode=3;EOID=6A7D1D95;SOID=302D3B9E;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=536:-336$;" subject="EAID_650F559B_A6F6_48f5_A9CB_8E57E50BD107" style="Mode=3;EOID=B1EF4237;SOID=8066608A;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D1D06411_6D04_4022_87D4_9BB0FAE91560" style="Mode=3;EOID=BC61CD54;SOID=8066608A;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=888:-324$804:-324$;" subject="EAID_E20DAE66_D2D7_47ea_9035_E3EC9BD244F2" style="Mode=3;EOID=5933A214;SOID=34AB662B;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AE529EA0_AD38_4df2_B5BB_A0EE0A6B8197" style="Mode=3;EOID=BC61CD54;SOID=34AB662B;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=CX=102:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=864:-300$648:-300$;" subject="EAID_51ABD723_F49D_4029_9D40_CC9F9440155E" style="Mode=3;EOID=B1EF4237;SOID=34AB662B;Color=-1;LWidth=0;TREE=OR;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_9EECFAE5_1BE4_47ad_B639_6EE5CD1DDD4E" style="Mode=3;EOID=4B7823CF;SOID=535D1011;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+</xmi:XMI>

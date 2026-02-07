@@ -1,0 +1,704 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1714"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_IBD_VISUAL" name="UnidadeTransporte_IBD_Pkg" visibility="public">
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_75C980A6_0787_4396_B65B_9C6438491CE7" body="Porto de rece&amp;#231;&amp;#227;o de sinal GPS para dupla confirma&amp;#231;&amp;#227;o de localiza&amp;#231;&amp;#227;o (UoD 3).">
+				<annotatedElement xmi:idref="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920"/>
+			</ownedComment>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66" body="Porto de comunica&amp;#231;&amp;#227;o com o sistema central para envio de leituras de sensores e rece&amp;#231;&amp;#227;o de comandos (UoD 9.4).">
+				<annotatedElement xmi:idref="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+			</ownedComment>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_2EEB18CF_9520_4d5b_935F_FBEA51B7DD33" body="O conector 'Dados Sensores' representa o fluxo de informa&amp;#231;&amp;#227;o dos sensores do Semi-Reboque para o Atrelado (UoD 9.3).">
+				<annotatedElement xmi:idref="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704"/>
+			</ownedComment>
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_DAC610D5_B8E2_4d03_BD11_7A9DBB9CD2AB" body="Diagrama interno de blocos SysML representando a estrutura interna e fluxos de comunica&amp;#231;&amp;#227;o da Unidade de Transporte, alinhado com o BDD"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7" name="Atrelado" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_26A9457C_9DC7_4580_A358_81B579576D71" name="pSensores" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_9DC7_4580_A358_81B579576D71" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002_9DC7_4580_A358_81B579576D71" value="1"/>
+				</ownedAttribute>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_728600D1_CB74_4164_8935_E1C30FCBD103" name="pConexao" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_8777A716_D98F_4342_9C28_36B634E15556" name="pConexao" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_26A9457C_9DC7_4580_A358_81B579576D71" name="pSensores" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+				<ownedConnector xmi:type="uml:Connector" xmi:id="EAID_F581F9CB_1999_44ca_9E3A_5ECB7D9091FC" name="Fluxo Sensores" visibility="public">
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_SC000000_1999_44ca_9E3A_5ECB7D9091FC" role="EAID_26A9457C_9DC7_4580_A358_81B579576D71"/>
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_DS000000_1999_44ca_9E3A_5ECB7D9091FC" role="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC"/>
+				</ownedConnector>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" name="SemiReboque" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" name="pComms" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003_13F7_43e0_91AC_74F9E9D221A4" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000004_13F7_43e0_91AC_74F9E9D221A4" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC" name="pDados" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005_B270_48f5_A998_FD55167A05EC" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000006_B270_48f5_A998_FD55167A05EC" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A" name="pGPS_In" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007_DC6F_4112_9365_273BD8B1831A" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000008_DC6F_4112_9365_273BD8B1831A" value="1"/>
+				</ownedAttribute>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" name="pComms" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+				<ownedConnector xmi:type="uml:Connector" xmi:id="EAID_7BE8FFDD_9A52_4164_B752_EF0D2D769ED7" name="Comandos" visibility="public">
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_SC000000_9A52_4164_B752_EF0D2D769ED7" role="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4"/>
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_DS000000_9A52_4164_B752_EF0D2D769ED7" role="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+				</ownedConnector>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC" name="pDados" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_E092B921_9904_4897_B103_30064968C187" name="pEngate" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_0DC6717F_1CAC_485d_8F66_7986845FF2CF" name="pEngate" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A" name="pGPS_In" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" name="UnidadeTransporte" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_C8478363_0F80_418d_83C2_F20B11858C27" name="AgriCore_IO" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009_0F80_418d_83C2_F20B11858C27" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000010_0F80_418d_83C2_F20B11858C27" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" name="Galileu_In" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_E6F9_4163_B06F_2E98AA973920" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000012_E6F9_4163_B06F_2E98AA973920" value="1"/>
+				</ownedAttribute>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_C8478363_0F80_418d_83C2_F20B11858C27" name="AgriCore_IO" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+				<ownedPort xmi:type="uml:Port" xmi:id="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" name="Galileu_In" visibility="public" aggregation="composite" isService="false" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false"/>
+				<ownedConnector xmi:type="uml:Connector" xmi:id="EAID_6A742269_6F8A_4863_BA5B_8A9FCBE56FA5" name="Sinal GPS" visibility="public">
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_SC000000_6F8A_4863_BA5B_8A9FCBE56FA5" role="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920"/>
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_DS000000_6F8A_4863_BA5B_8A9FCBE56FA5" role="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A"/>
+				</ownedConnector>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A083B816_77C2_411d_A6C4_304DF0F3AB50" visibility="public" aggregation="composite" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7"/>
+					<qualifier xmi:type="uml:Port" xmi:id="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB" name="pConexao" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_4F0C0E36_316A_42bc_9EF4_0A5FB142349C" visibility="public" aggregation="composite" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482"/>
+					<qualifier xmi:type="uml:Port" xmi:id="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B" name="pEngate" visibility="public" aggregation="composite" isService="true" isUnique="true" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isDerivedUnion="false"/>
+				</ownedAttribute>
+				<ownedConnector xmi:type="uml:Connector" xmi:id="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704" name="Dados Sensores" visibility="public">
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_SC000000_03A9_433b_81FA_F95F4974E704" role="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B"/>
+					<end xmi:type="uml:ConnectorEnd" xmi:id="EAID_DS000000_03A9_433b_81FA_F95F4974E704" role="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB"/>
+				</ownedConnector>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_2460F5CF_158B_4579_B9C6_0964D8CDBFB3" name="atrelado" visibility="private" aggregation="composite" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<type xmi:idref="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_9729DACA_69C6_4474_A7B8_12CFD7D8F3C1" name="semiReboque" visibility="private" aggregation="composite" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="false" isDerivedUnion="false">
+					<type xmi:idref="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482"/>
+				</ownedAttribute>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_IBD_VISUAL" xmi:type="uml:Package" name="UnidadeTransporte_IBD_Pkg" scope="public">
+				<model package2="EAID_IBD_VISUAL" package="EAPK_F6CF9E91_5052_4a87_8BA5_A999D7A2D692" tpos="0" ea_localid="32" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Model"/>
+				<packageproperties version="1.0"/>
+				<paths/>
+				<times created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38"/>
+				<flags iscontrolled="0" isprotected="0" usedtd="0" logxml="0"/>
+			</element>
+			<element xmi:idref="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7" xmi:type="uml:Class" name="Atrelado" scope="public">
+				<model package="EAPK_IBD_VISUAL" tpos="0" ea_localid="492" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<attributes>
+					<attribute xmi:idref="EAID_26A9457C_9DC7_4580_A358_81B579576D71" name="pSensores" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="62" ea_guid="{26A9457C-9DC7-4580-A358-81B579576D71}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+			</element>
+			<element xmi:idref="EAID_728600D1_CB74_4164_8935_E1C30FCBD103" xmi:type="uml:Port" name="pConexao" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7" tpos="0" ea_localid="509" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:52:27" modified="2026-01-07 16:52:43" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+			</element>
+			<element xmi:idref="EAID_8777A716_D98F_4342_9C28_36B634E15556" xmi:type="uml:Port" name="pConexao" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7" tpos="0" ea_localid="515" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:58:28" modified="2026-01-07 16:58:45" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+			</element>
+			<element xmi:idref="EAID_26A9457C_9DC7_4580_A358_81B579576D71" xmi:type="uml:Port" name="pSensores" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_AC1DD4D5_91B1_4403_B83D_0267907807B7" tpos="0" ea_localid="493" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={64DF558B-0562-4bda-B8D1-684553E1E89D}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={26A9457C-9DC7-4580-A358-81B579576D71}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_F581F9CB_1999_44ca_9E3A_5ECB7D9091FC" start="EAID_26A9457C_9DC7_4580_A358_81B579576D71" end="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" xmi:type="uml:Class" name="SemiReboque" scope="public">
+				<model package="EAPK_IBD_VISUAL" tpos="0" ea_localid="494" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<attributes>
+					<attribute xmi:idref="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" name="pComms" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="65" ea_guid="{0461D9EC-13F7-43e0-91AC-74F9E9D221A4}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC" name="pDados" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="63" ea_guid="{84A1DA87-B270-48f5-A998-FD55167A05EC}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A" name="pGPS_In" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="64" ea_guid="{FBBCFC62-DC6F-4112-9365-273BD8B1831A}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+			</element>
+			<element xmi:idref="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" xmi:type="uml:Port" name="pComms" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" tpos="0" ea_localid="497" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={ED84216F-B836-4172-B4D4-C57D9997694F}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0461D9EC-13F7-43e0-91AC-74F9E9D221A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_7BE8FFDD_9A52_4164_B752_EF0D2D769ED7" start="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" end="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC" xmi:type="uml:Port" name="pDados" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" tpos="0" ea_localid="495" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={A6697F02-882C-428c-8EEE-4DC8DC22DDA2}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={84A1DA87-B270-48f5-A998-FD55167A05EC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_F581F9CB_1999_44ca_9E3A_5ECB7D9091FC" start="EAID_26A9457C_9DC7_4580_A358_81B579576D71" end="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_E092B921_9904_4897_B103_30064968C187" xmi:type="uml:Port" name="pEngate" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" tpos="0" ea_localid="507" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:52:07" modified="2026-01-07 16:52:21" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+			</element>
+			<element xmi:idref="EAID_0DC6717F_1CAC_485d_8F66_7986845FF2CF" xmi:type="uml:Port" name="pEngate" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" tpos="0" ea_localid="513" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:58:09" modified="2026-01-07 16:58:24" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+			</element>
+			<element xmi:idref="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A" xmi:type="uml:Port" name="pGPS_In" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_112BC35F_FD59_42c2_82F1_C40D2C647482" tpos="0" ea_localid="496" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={7F54ED0F-BE38-4c51-ADD4-DD7F6C179F3A}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FBBCFC62-DC6F-4112-9365-273BD8B1831A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_6A742269_6F8A_4863_BA5B_8A9FCBE56FA5" start="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" end="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" xmi:type="uml:Class" name="UnidadeTransporte" scope="public">
+				<model package="EAPK_IBD_VISUAL" tpos="0" ea_localid="498" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="8" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:56:50" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;" styleex="ConstructID=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={2DF6425F-ED69-4ad2-B218-E3CF6D61910A}$XID;$NAM=DefaultDiagram$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$CLT={A57DF9A2-5FF8-48fc-AEB2-C6669AC45BAA}$CLT;$SUP={AE587D34-4248-4eab-8978-1E7F2DEB9F63}$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" diagram="EAID_AE587D34_4248_4eab_8978_1E7F2DEB9F63"/>
+				<attributes>
+					<attribute xmi:idref="EAID_C8478363_0F80_418d_83C2_F20B11858C27" name="AgriCore_IO" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="67" ea_guid="{C8478363-0F80-418d-83C2-F20B11858C27}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" name="Galileu_In" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="66" ea_guid="{0BC6A7F7-E6F9-4163-B06F-2E98AA973920}"/>
+						<properties derived="0" collection="false" static="0" duplicates="1" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+			</element>
+			<element xmi:idref="EAID_DAC610D5_B8E2_4d03_BD11_7A9DBB9CD2AB" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="559" ea_eleType="element"/>
+				<properties documentation="Diagrama interno de blocos SysML representando a estrutura interna e fluxos de comunica&amp;#231;&amp;#227;o da Unidade de Transporte, alinhado com o BDD" isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:50:24" modified="2026-01-08 16:50:27" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+			</element>
+			<element xmi:idref="EAID_2EEB18CF_9520_4d5b_935F_FBEA51B7DD33" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="562" ea_eleType="element"/>
+				<properties documentation="O conector 'Dados Sensores' representa o fluxo de informa&amp;#231;&amp;#227;o dos sensores do Semi-Reboque para o Atrelado (UoD 9.3)." isSpecification="false" sType="Note" nType="1" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:54:14" modified="2026-01-08 16:55:00" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" relatedlinks="idref1=EAID_4D3B5733_03A9_433b_81FA_F95F4974E704;"/>
+			</element>
+			<element xmi:idref="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="560" ea_eleType="element"/>
+				<properties documentation="Porto de comunica&amp;#231;&amp;#227;o com o sistema central para envio de leituras de sensores e rece&amp;#231;&amp;#227;o de comandos (UoD 9.4)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:50:52" modified="2026-01-08 16:51:02" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<NoteLink xmi:id="EAID_A18B57CF_A1A6_4c64_BF92_122A6E9F8B1E" start="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66" end="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_75C980A6_0787_4396_B65B_9C6438491CE7" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="561" ea_eleType="element"/>
+				<properties documentation="Porto de rece&amp;#231;&amp;#227;o de sinal GPS para dupla confirma&amp;#231;&amp;#227;o de localiza&amp;#231;&amp;#227;o (UoD 3)." isSpecification="false" sType="Note" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-08 16:51:33" modified="2026-01-08 16:51:35" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<NoteLink xmi:id="EAID_4367BD0E_D493_4ff2_A717_645259653FD0" start="EAID_75C980A6_0787_4396_B65B_9C6438491CE7" end="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_C8478363_0F80_418d_83C2_F20B11858C27" xmi:type="uml:Port" name="AgriCore_IO" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="500" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={0B02C379-41D9-4c43-AFE6-5A684F38C1A0}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={C8478363-0F80-418d-83C2-F20B11858C27}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_7BE8FFDD_9A52_4164_B752_EF0D2D769ED7" start="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4" end="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+					<NoteLink xmi:id="EAID_A18B57CF_A1A6_4c64_BF92_122A6E9F8B1E" start="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66" end="EAID_C8478363_0F80_418d_83C2_F20B11858C27"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" xmi:type="uml:Port" name="Galileu_In" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="499" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={7FDF4135-6CB9-4450-9CFC-A213D1DC1B92}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isService@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0BC6A7F7-E6F9-4163-B06F-2E98AA973920}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg"/>
+				<links>
+					<Connector xmi:id="EAID_6A742269_6F8A_4863_BA5B_8A9FCBE56FA5" start="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" end="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A"/>
+					<NoteLink xmi:id="EAID_4367BD0E_D493_4ff2_A717_645259653FD0" start="EAID_75C980A6_0787_4396_B65B_9C6438491CE7" end="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_A083B816_77C2_411d_A6C4_304DF0F3AB50" xmi:type="uml:Part" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="510" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Part" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:57:34" modified="2026-01-07 16:57:42" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" propertyType="{AC1DD4D5-91B1-4403-B83D-0267907807B7}"/>
+			</element>
+			<element xmi:idref="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB" xmi:type="uml:Port" name="pConexao" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A083B816_77C2_411d_A6C4_304DF0F3AB50" tpos="0" ea_localid="514" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:58:28" modified="2026-01-07 17:00:14" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" reusesProperty="{8777A716-D98F-4342-9C28-36B634E15556}"/>
+				<links>
+					<Connector xmi:id="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704" start="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B" end="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_4F0C0E36_316A_42bc_9EF4_0A5FB142349C" xmi:type="uml:Part" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="511" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Part" nType="0" scope="public"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:57:49" modified="2026-01-07 16:57:54" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" propertyType="{112BC35F-FD59-42c2-82F1-C40D2C647482}"/>
+			</element>
+			<element xmi:idref="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B" xmi:type="uml:Port" name="pEngate" scope="public">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_4F0C0E36_316A_42bc_9EF4_0A5FB142349C" tpos="0" ea_localid="512" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Port" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:58:09" modified="2026-01-07 16:58:28" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" reusesProperty="{0DC6717F-1CAC-485d-8F66-7986845FF2CF}"/>
+				<links>
+					<Connector xmi:id="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704" start="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B" end="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_2460F5CF_158B_4579_B9C6_0964D8CDBFB3" xmi:type="uml:Part" name="atrelado" scope="private">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="502" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Part" nType="0" scope="private"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={C572DA13-572A-4be7-B528-9C5DA7F76441}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={2460F5CF-158B-4579-B9C6-0964D8CDBFB3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" propertyType="{AC1DD4D5-91B1-4403-B83D-0267907807B7}"/>
+			</element>
+			<element xmi:idref="EAID_9729DACA_69C6_4474_A7B8_12CFD7D8F3C1" xmi:type="uml:Part" name="semiReboque" scope="private">
+				<model package="EAPK_IBD_VISUAL" owner="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" tpos="0" ea_localid="501" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Part" nType="0" scope="private"/>
+				<project author="joaop" version="1.0" phase="1.0" created="2026-01-07 16:47:38" modified="2026-01-07 16:47:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={72817B3E-3DC0-4c9a-B5D9-D3B8E00F488E}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isUnique@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={9729DACA-69C6-4474-A7B8-12CFD7D8F3C1}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="UnidadeTransporte_IBD_Pkg" propertyType="{112BC35F-FD59-42c2-82F1-C40D2C647482}"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_F581F9CB_1999_44ca_9E3A_5ECB7D9091FC" name="Fluxo Sensores">
+				<source xmi:idref="EAID_26A9457C_9DC7_4580_A358_81B579576D71">
+					<model ea_localid="493" type="Port" name="pSensores"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_84A1DA87_B270_48f5_A998_FD55167A05EC">
+					<model ea_localid="495" type="Port" name="pDados"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="414"/>
+				<properties ea_type="Connector" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mt="Fluxo Sensores"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_7BE8FFDD_9A52_4164_B752_EF0D2D769ED7" name="Comandos">
+				<source xmi:idref="EAID_0461D9EC_13F7_43e0_91AC_74F9E9D221A4">
+					<model ea_localid="497" type="Port" name="pComms"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C8478363_0F80_418d_83C2_F20B11858C27">
+					<model ea_localid="500" type="Port" name="AgriCore_IO"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="412"/>
+				<properties ea_type="Connector" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mt="Comandos"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6A742269_6F8A_4863_BA5B_8A9FCBE56FA5" name="Sinal GPS">
+				<source xmi:idref="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920">
+					<model ea_localid="499" type="Port" name="Galileu_In"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FBBCFC62_DC6F_4112_9365_273BD8B1831A">
+					<model ea_localid="496" type="Port" name="pGPS_In"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style value="Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="413"/>
+				<properties ea_type="Connector" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mt="Sinal GPS"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A18B57CF_A1A6_4c64_BF92_122A6E9F8B1E">
+				<source xmi:idref="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66">
+					<model ea_localid="560" type="Note"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C8478363_0F80_418d_83C2_F20B11858C27">
+					<model ea_localid="500" type="Port" name="AgriCore_IO"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="444"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4367BD0E_D493_4ff2_A717_645259653FD0">
+				<source xmi:idref="EAID_75C980A6_0787_4396_B65B_9C6438491CE7">
+					<model ea_localid="561" type="Note"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920">
+					<model ea_localid="499" type="Port" name="Galileu_In"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="445"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704" name="Dados Sensores">
+				<source xmi:idref="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B">
+					<model ea_localid="512" type="Port" name="pEngate"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB">
+					<model ea_localid="514" type="Port" name="pConexao"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="416"/>
+				<properties ea_type="Connector" direction="Unspecified"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mt="Dados Sensores"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles/>
+		<diagrams>
+			<diagram xmi:id="EAID_AE587D34_4248_4eab_8978_1E7F2DEB9F63">
+				<model package="EAPK_IBD_VISUAL" localID="20" owner="EAPK_IBD_VISUAL" parent="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA"/>
+				<properties name="UnidadeTransporte" type="CompositeStructure" documentation="Porto de comunica&amp;#231;&amp;#227;o com o sistema central para envio de leituras de sensores e rece&amp;#231;&amp;#227;o de comandos (UoD 9.4)."/>
+				<project author="joaop" version="1.0" created="2026-01-07 16:56:50" modified="2026-01-08 16:55:20"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=SysML1.4::InternalBlock;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SF=1;Theme=:119;SaveTag=683E9EB9;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-13,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=75;Top=161;Right=258;Bottom=219;" subject="EAID_2EEB18CF_9520_4d5b_935F_FBEA51B7DD33" seqno="1" style="DUID=02BCC6F4;"/>
+					<element geometry="Left=600;Top=57;Right=740;Bottom=115;" subject="EAID_75C980A6_0787_4396_B65B_9C6438491CE7" seqno="2" style="DUID=4D6B22CB;"/>
+					<element geometry="Left=580;Top=142;Right=720;Bottom=213;" subject="EAID_094852FC_4FF5_445e_A6DB_764A84FE1F66" seqno="3" style="DUID=31BF0D98;"/>
+					<element geometry="Left=297;Top=155;Right=540;Bottom=213;" subject="EAID_DAC610D5_B8E2_4d03_BD11_7A9DBB9CD2AB" seqno="4" style="DUID=1E09D795;"/>
+					<element geometry="Left=163;Top=95;Right=178;Bottom=110;" subject="EAID_C3D2FA43_B95A_4851_86FB_69601BDBA83B" seqno="5" style="DUID=287A9180;LBL=CX=34:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=66;Top=73;Right=170;Bottom=129;" subject="EAID_4F0C0E36_316A_42bc_9EF4_0A5FB142349C" seqno="6" style="DUID=5834846F;"/>
+					<element geometry="Left=270;Top=94;Right=285;Bottom=109;" subject="EAID_E1491A3E_61E8_4030_87D2_BB5C0D64FECB" seqno="7" style="DUID=666AAD15;LBL=CX=40:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=277;Top=73;Right=362;Bottom=129;" subject="EAID_A083B816_77C2_411d_A6C4_304DF0F3AB50" seqno="8" style="DUID=393660DB;"/>
+					<element geometry="Left=770;Top=94;Right=785;Bottom=109;" subject="EAID_C8478363_0F80_418d_83C2_F20B11858C27" seqno="9" style="DUID=106D6B9B;NSL=0;LBL=CX=50:CY=14:OX=22:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=770;Top=42;Right=785;Bottom=57;" subject="EAID_0BC6A7F7_E6F9_4163_B06F_2E98AA973920" seqno="10" style="DUID=15EEF4E2;NSL=0;LBL=CX=41:CY=14:OX=21:OY=2:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:ALT=0:ROT=0;"/>
+					<element geometry="Left=20;Top=20;Right=777;Bottom=256;" subject="EAID_A57DF9A2_5FF8_48fc_AEB2_C6669AC45BAA" seqno="11" style="DUID=3D528BAC;NSL=1;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=CX=64:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4D3B5733_03A9_433b_81FA_F95F4974E704" style="Mode=3;EOID=666AAD15;SOID=287A9180;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A18B57CF_A1A6_4c64_BF92_122A6E9F8B1E" style="Mode=3;EOID=106D6B9B;SOID=31BF0D98;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4367BD0E_D493_4ff2_A717_645259653FD0" style="Mode=3;EOID=15EEF4E2;SOID=4D6B22CB;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+</xmi:XMI>
