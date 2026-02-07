@@ -1,0 +1,11 @@
+LIS,Humberto Delgado,Lisbon,Portugal
+OPO,Francisco Sá Carneiro,Porto,Portugal
+CDG,Charles de Gaulle,Paris,France
+ORY,Orly,Paris,France
+FRA,Flughafen Frankfurt am Main,Frankfurt,Germany
+MUC,Franz Josef Strauss,Munich,Germany
+MAD,Adolfo Suárez,Madrid,Spain
+BCN,Josep Tarradellas,Barcelona,Spain
+AMS,Schiphol,Amsterdam,Netherlands
+BRU,Zaventem,Brussels,Belgium
+FCO,Leonardo da Vinci,Rome,Italy
