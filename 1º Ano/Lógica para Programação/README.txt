@@ -1,4 +1,4 @@
-Projeto Lógica para Programação - Horários e Ocupação de Mesa (2022/2023)
+Projeto Lógica para Programação (2022/2023)
 
 Este repositório contém o código do projeto da cadeira de Lógica para Programação (LP) do ano letivo 2022/2023. O objetivo foi desenvolver um sistema de gestão de horários do IST-Tagus e um motor de resolução de restrições para um problema de etiqueta de mesa.
 
