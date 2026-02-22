@@ -360,63 +360,21 @@ pessoa(A,[[_,_,_],[_,_],[A,_,_]]).
 pessoa(A,[[_,_,_],[_,_],[_,A,_]]).
 pessoa(A,[[_,_,_],[_,_],[_,_,A]]).
 
-lado(A,B,[[A,B,_],[_,_],[_,_,_]]).
-lado(A,B,[[_,A,B],[_,_],[_,_,_]]).
-lado(A,B,[[_,_,_],[_,_],[A,B,_]]).
-lado(A,B,[[_,_,_],[_,_],[_,A,B]]).
-lado(A,B,[[B,A,_],[_,_],[_,_,_]]).
-lado(A,B,[[_,B,A],[_,_],[_,_,_]]).
-lado(A,B,[[_,_,_],[_,_],[B,A,_]]).
-lado(A,B,[[_,_,_],[_,_],[_,B,A]]).
+% Define todas as posições onde duas pessoas (A e B) ESTÃO lado a lado.
+lado(A, B, Mesa) :- adjacente(A, B, Mesa).
+lado(A, B, Mesa) :- adjacente(B, A, Mesa).
 
-naoLado(A,B,[[A,_,B],[_,_],[_,_,_]]).
-naoLado(A,B,[[A,_,_],[B,_],[_,_,_]]).
-naoLado(A,B,[[A,_,_],[_,B],[_,_,_]]).
-naoLado(A,B,[[A,_,_],[_,_],[B,_,_]]).
-naoLado(A,B,[[A,_,_],[_,_],[_,B,_]]).
-naoLado(A,B,[[A,_,_],[_,_],[_,_,B]]).
-naoLado(A,B,[[_,A,_],[B,_],[_,_,_]]).
-naoLado(A,B,[[_,A,_],[_,B],[_,_,_]]).
-naoLado(A,B,[[_,A,_],[_,_],[B,_,_]]).
-naoLado(A,B,[[_,A,_],[_,_],[_,B,_]]).
-naoLado(A,B,[[_,A,_],[_,_],[_,_,B]]).
-naoLado(A,B,[[B,_,A],[_,_],[_,_,_]]).
-naoLado(A,B,[[_,_,A],[B,_],[_,_,_]]).
-naoLado(A,B,[[_,_,A],[_,B],[_,_,_]]).
-naoLado(A,B,[[_,_,A],[_,_],[B,_,_]]).
-naoLado(A,B,[[_,_,A],[_,_],[_,B,_]]).
-naoLado(A,B,[[_,_,A],[_,_],[_,_,B]]).
-naoLado(A,B,[[B,_,_],[A,_],[_,_,_]]).
-naoLado(A,B,[[_,B,_],[A,_],[_,_,_]]).
-naoLado(A,B,[[_,_,B],[A,_],[_,_,_]]).
-naoLado(A,B,[[_,_,_],[A,B],[_,_,_]]).
-naoLado(A,B,[[_,_,_],[A,_],[B,_,_]]).
-naoLado(A,B,[[_,_,_],[A,_],[_,B,_]]).
-naoLado(A,B,[[_,_,_],[A,_],[_,_,B]]).
-naoLado(A,B,[[B,_,_],[_,A],[_,_,_]]).
-naoLado(A,B,[[_,B,_],[_,A],[_,_,_]]).
-naoLado(A,B,[[_,_,B],[_,A],[_,_,_]]).
-naoLado(A,B,[[_,_,_],[B,A],[_,_,_]]).
-naoLado(A,B,[[_,_,_],[_,A],[B,_,_]]).
-naoLado(A,B,[[_,_,_],[_,A],[_,B,_]]).
-naoLado(A,B,[[_,_,_],[_,A],[_,_,B]]).
-naoLado(A,B,[[B,_,_],[_,_],[A,_,_]]).
-naoLado(A,B,[[_,B,_],[_,_],[A,_,_]]).
-naoLado(A,B,[[_,_,B],[_,_],[A,_,_]]).
-naoLado(A,B,[[_,_,_],[B,_],[A,_,_]]).
-naoLado(A,B,[[_,_,_],[_,B],[A,_,_]]).
-naoLado(A,B,[[_,_,_],[_,_],[A,_,B]]).
-naoLado(A,B,[[B,_,_],[_,_],[_,A,_]]).
-naoLado(A,B,[[_,B,_],[_,_],[_,A,_]]).
-naoLado(A,B,[[_,_,B],[_,_],[_,A,_]]).
-naoLado(A,B,[[_,_,_],[B,_],[_,A,_]]).
-naoLado(A,B,[[_,_,_],[_,B],[_,A,_]]).
-naoLado(A,B,[[B,_,_],[_,_],[_,_,A]]).
-naoLado(A,B,[[_,B,_],[_,_],[_,_,A]]).
-naoLado(A,B,[[_,_,B],[_,_],[_,_,A]]).
-naoLado(A,B,[[_,_,_],[B,_],[_,_,A]]).
-naoLado(A,B,[[_,_,_],[_,B],[_,_,A]]).
-naoLado(A,B,[[_,_,_],[_,_],[B,_,A]]).
+% 1. Ao lado um do outro no Lado 1 (Fila de cima)
+adjacente(A, B, [[A, B, _], _, _]).
+adjacente(A, B, [[_, A, B], _, _]).
+
+% 2. Ao lado um do outro no Lado 2 (Fila de baixo)
+adjacente(A, B, [_, _, [A, B, _]]).
+adjacente(A, B, [_, _, [_, A, B]]).
+
+% Negação por falha: A e B não estão ao lado se falharem as regras acima
+naoLado(A, B, Mesa) :-
+    \+ lado(A, B, Mesa).
 
 cab1(A,[[_,_,_],[A,_],[_,_,_]]).
 
@@ -425,63 +383,26 @@ cab2(A,[[_,_,_],[_,A],[_,_,_]]).
 honra(A,B,[[_,_,B],[_,A],[_,_,_]]).
 honra(A,B,[[_,_,_],[A,_],[B,_,_]]).
 
-frente(A,B,[[A,_,_],[_,_],[B,_,_]]).
-frente(A,B,[[_,A,_],[_,_],[_,B,_]]).
-frente(A,B,[[_,_,A],[_,_],[_,_,B]]).
-frente(A,B,[[B,_,_],[_,_],[A,_,_]]).
-frente(A,B,[[_,B,_],[_,_],[_,A,_]]).
-frente(A,B,[[_,_,B],[_,_],[_,_,A]]).
+% Define todas as posições onde duas pessoas (A e B) ESTÃO frente a frente.
+% 1. Frente a frente nas pontas esquerdas dos lados longos
+frente(A, B, [[A, _, _], _, [B, _, _]]).
+frente(A, B, [[B, _, _], _, [A, _, _]]).
 
-naoFrente(A,B,[[A,B,_],[_,_],[_,_,_]]).
-naoFrente(A,B,[[A,_,B],[_,_],[_,_,_]]).
-naoFrente(A,B,[[A,_,_],[B,_],[_,_,_]]).
-naoFrente(A,B,[[A,_,_],[_,B],[_,_,_]]).
-naoFrente(A,B,[[A,_,_],[_,_],[_,B,_]]).
-naoFrente(A,B,[[A,_,_],[_,_],[_,_,B]]).
-naoFrente(A,B,[[B,A,_],[_,_],[_,_,_]]).
-naoFrente(A,B,[[_,A,B],[_,_],[_,_,_]]).
-naoFrente(A,B,[[_,A,_],[B,_],[_,_,_]]).
-naoFrente(A,B,[[_,A,_],[_,B],[_,_,_]]).
-naoFrente(A,B,[[_,A,_],[_,_],[B,_,_]]).
-naoFrente(A,B,[[_,A,_],[_,_],[_,_,B]]).
-naoFrente(A,B,[[B,_,A],[_,_],[_,_,_]]).
-naoFrente(A,B,[[_,B,A],[_,_],[_,_,_]]).
-naoFrente(A,B,[[_,_,A],[B,_],[_,_,_]]).
-naoFrente(A,B,[[_,_,A],[_,B],[_,_,_]]).
-naoFrente(A,B,[[_,_,A],[_,_],[B,_,_]]).
-naoFrente(A,B,[[_,_,A],[_,_],[_,B,_]]).
-naoFrente(A,B,[[B,_,_],[A,_],[_,_,_]]).
-naoFrente(A,B,[[_,B,_],[A,_],[_,_,_]]).
-naoFrente(A,B,[[_,_,B],[A,_],[_,_,_]]).
-naoFrente(A,B,[[_,_,_],[A,B],[_,_,_]]).
-naoFrente(A,B,[[_,_,_],[A,_],[B,_,_]]).
-naoFrente(A,B,[[_,_,_],[A,_],[_,B,_]]).
-naoFrente(A,B,[[_,_,_],[A,_],[_,_,B]]).
-naoFrente(A,B,[[B,_,_],[_,A],[_,_,_]]).
-naoFrente(A,B,[[_,B,_],[_,A],[_,_,_]]).
-naoFrente(A,B,[[_,_,B],[_,A],[_,_,_]]).
-naoFrente(A,B,[[_,_,_],[B,A],[_,_,_]]).
-naoFrente(A,B,[[_,_,_],[_,A],[B,_,_]]).
-naoFrente(A,B,[[_,_,_],[_,A],[_,B,_]]).
-naoFrente(A,B,[[_,_,_],[_,A],[_,_,B]]).
-naoFrente(A,B,[[_,B,_],[_,_],[A,_,_]]).
-naoFrente(A,B,[[_,_,B],[_,_],[A,_,_]]).
-naoFrente(A,B,[[_,_,_],[B,_],[A,_,_]]).
-naoFrente(A,B,[[_,_,_],[_,B],[A,_,_]]).
-naoFrente(A,B,[[_,_,_],[_,_],[A,B,_]]).
-naoFrente(A,B,[[_,_,_],[_,_],[A,_,B]]).
-naoFrente(A,B,[[B,_,_],[_,_],[_,A,_]]).
-naoFrente(A,B,[[_,_,B],[_,_],[_,A,_]]).
-naoFrente(A,B,[[_,_,_],[B,_],[_,A,_]]).
-naoFrente(A,B,[[_,_,_],[_,B],[_,A,_]]).
-naoFrente(A,B,[[_,_,_],[_,_],[B,A,_]]).
-naoFrente(A,B,[[_,_,_],[_,_],[_,A,B]]).
-naoFrente(A,B,[[B,_,_],[_,_],[_,_,A]]).
-naoFrente(A,B,[[_,B,_],[_,_],[_,_,A]]).
-naoFrente(A,B,[[_,_,_],[B,_],[_,_,A]]).
-naoFrente(A,B,[[_,_,_],[_,B],[_,_,A]]).
-naoFrente(A,B,[[_,_,_],[_,_],[B,_,A]]).
-naoFrente(A,B,[[_,_,_],[_,_],[_,B,A]]).
+% 2. Frente a frente no meio dos lados longos
+frente(A, B, [[_, A, _], _, [_, B, _]]).
+frente(A, B, [[_, B, _], _, [_, A, _]]).
+
+% 3. Frente a frente nas pontas direitas dos lados longos
+frente(A, B, [[_, _, A], _, [_, _, B]]).
+frente(A, B, [[_, _, B], _, [_, _, A]]).
+
+% 4. Frente a frente nas cabeceiras
+frente(A, B, [_, [A, B], _]).
+frente(A, B, [_, [B, A], _]).
+
+% Negação por falha: A e B não estão em frente se for impossível provar frente(A, B).
+naoFrente(A, B, Mesa) :-
+    \+ frente(A, B, Mesa).
 
 
 chamaPessoas([],_):-!.
