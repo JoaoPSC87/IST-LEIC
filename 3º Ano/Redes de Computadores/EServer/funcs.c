@@ -421,7 +421,7 @@ void get_user_reservations(char *UID, char *response) {
                                 if (fscanf(f, "%s %d %s %s", r_uid, &seats, date, time_str) == 4) {
                                     char entry[60];
                                     // Formato RMR: EID date time value
-                                    sprintf(entry, "%s %s %s %d ", dir->d_name, date, time_str, seats);
+                                    snprintf(entry, sizeof(entry), "%s %s %s %d ", dir->d_name, date, time_str, seats);
                                     strcat(response, entry);
                                 }
                                 fclose(f);
@@ -462,7 +462,7 @@ void get_all_events(char *response) {
                 
                 int state = get_event_state(dir->d_name);
                 char entry[60];
-                sprintf(entry, "%s %s %d %s %s ", dir->d_name, name, state, date, time_str);
+                snprintf(entry, sizeof(entry), "%s %s %d %s %s ", dir->d_name, name, state, date, time_str);
                 strcat(response, entry);
             }
         }
@@ -480,7 +480,7 @@ void get_user_events(char *UID, char *response) {
             if (user_owns_event(UID, dir->d_name)) {
                 int state = get_event_state(dir->d_name);
                 char entry[20];
-                sprintf(entry, "%s %d ", dir->d_name, state);
+                snprintf(entry, sizeof(entry), "%s %d ", dir->d_name, state);
                 strcat(response, entry);
             }
         }

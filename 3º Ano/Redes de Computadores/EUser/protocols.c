@@ -221,12 +221,17 @@ int tcp_pedido(char *request, char *filename, int filesize) {
         }
         
         // Enviar ficheiro usando sendfile (mais eficiente)
-        ssize_t sent = sendfile(sockfd, file_fd, NULL, filesize);
-        if (sent == -1) {
-            perror("Error sending file");
-            close(file_fd);
-            close(sockfd);
-            return -1;
+        off_t offset = 0;
+        ssize_t remaining = filesize;
+        while (remaining > 0) {
+            ssize_t sent = sendfile(sockfd, file_fd, &offset, remaining);
+            if (sent <= 0) {
+                perror("Error sending file");
+                close(file_fd);
+                close(sockfd);
+                return -1;
+            }
+            remaining -= sent;
         }
         
         close(file_fd);
@@ -241,16 +246,37 @@ int tcp_pedido(char *request, char *filename, int filesize) {
     
     // ========== RECEBER RESPOSTA ==========
     
-    // Ler tudo de uma vez (resposta + possível ficheiro)
+    // Ler de forma robusta (o read pode devolver menos que o esperado):
+    //  - respostas de texto terminam em '\n';
+    //  - a resposta do SHOW (RSE OK) tem cabeçalho de texto + ficheiro binário,
+    //    por isso lê-se o cabeçalho até ao 10º espaço (a seguir vêm os dados do ficheiro).
     char response[MAX_BUFFER_SIZE];
-    ssize_t n = read(sockfd, response, MAX_BUFFER_SIZE - 1);
-    
-    if (n <= 0) {
-        close(sockfd);
-        return -1;
+    ssize_t n = 0;
+    int header_done = 0;
+
+    while (!header_done && n < MAX_BUFFER_SIZE - 1) {
+        ssize_t r = read(sockfd, response + n, MAX_BUFFER_SIZE - 1 - n);
+        if (r <= 0) {
+            close(sockfd);
+            return -1;
+        }
+        n += r;
+        response[n] = '\0';
+
+        char cmd[8] = "", st[8] = "";
+        sscanf(response, "%7s %7s", cmd, st);
+        if (strcmp(cmd, "RSE") == 0 && strcmp(st, "OK") == 0) {
+            // Cabeçalho: RSE OK uid name date time attendance reserved fname fsize <esp>
+            int spaces = 0;
+            for (ssize_t i = 0; i < n; i++) {
+                if (response[i] == ' ' && ++spaces == 10) { header_done = 1; break; }
+            }
+        } else if (memchr(response, '\n', n) != NULL) {
+            header_done = 1;  // resposta de texto completa
+        } 
     }
     
-    response[n] = '\0';
+
     
     // ===== DEBUG: Mostrar mensagem recebida =====
     if (DEBUG) {

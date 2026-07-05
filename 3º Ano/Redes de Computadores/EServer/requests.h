@@ -5,13 +5,21 @@
 #include "funcs.h"
 #include "mensagens.h"
 
-typedef int (*CommandFunction)();
+// UDP handlers: (int fd, struct sockaddr_in addr, char *buffer)
+typedef int (*UdpCommandFunction)(int, struct sockaddr_in, char *);
+// TCP handlers: (int fd, char *buffer)
+typedef int (*TcpCommandFunction)(int, char *);
 
-// Command table entry
+// Uma struct de tabela por tipo de handler
 typedef struct {
     const char *command;
-    CommandFunction function;
-} CommandEntry;
+    UdpCommandFunction function;
+} UdpCommandEntry;
+
+typedef struct {
+    const char *command;
+    TcpCommandFunction function;
+} TcpCommandEntry;
 
 // Main handlers
 void handle_udp_request(int socket, struct sockaddr_in client_addr, 

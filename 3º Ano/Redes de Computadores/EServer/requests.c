@@ -9,8 +9,15 @@ void send_udp_reply(int fd, struct sockaddr_in addr, const char *reply) {
 
 // Helper function to send TCP replies
 void send_tcp_reply(int fd, const char *reply) {
-    if (write(fd, reply, strlen(reply)) == -1) {
-        perror("Error sending TCP reply");
+    size_t total = strlen(reply);
+    size_t sent = 0;
+    while (sent < total) {
+        ssize_t n = write(fd, reply + sent, total - sent);
+        if (n <= 0){
+            perror("Error sending TCP reply");
+            return;
+        }
+        sent += n;
     }
 }
 
@@ -371,7 +378,7 @@ int changepass_handler(int fd, char *buffer) {
 // ==================== MAIN REQUEST DISPATCHERS ====================
 
 // UDP command table
-CommandEntry udp_commandTable[] = {
+UdpCommandEntry udp_commandTable[] = {
     {"LIN", login_handler},
     {"LOU", logout_handler},
     {"UNR", unregister_handler},
@@ -381,7 +388,7 @@ CommandEntry udp_commandTable[] = {
 };
 
 // TCP command table
-CommandEntry tcp_commandTable[] = {
+TcpCommandEntry tcp_commandTable[] = {
     {"CRE", create_handler},
     {"CLS", close_handler},
     {"LST", list_handler},

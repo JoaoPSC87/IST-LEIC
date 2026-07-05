@@ -231,3 +231,36 @@ O sistema valida e trata:
 ## Autores
 
 Este projeto foi desenvolvido no âmbito da cadeira de Redes de Computadores (RC) do 3º ano de LEIC, IST, 2025/2026.
+
+---
+
+## Correções 2026
+
+**Nota Histórica:** A componente de projeto rondou os **9 valores** (a nota final da cadeira, 13, foi salva pela componente de fichas feitas em aula). A funcionalidade base estava lá, mas havia um bug que só se manifestava no **servidor de avaliação do IST**, não localmente: faltava o caráter `\n` no fim das mensagens do socket. Como a especificação diz que *"cada mensagem termina em `\n`"*, o recetor estrito ficava à espera desse terminador e a comunicação falhava. Só foi descoberto na discussão, já sem hipótese de subir a nota.
+
+Esta revisão (2026) corrige esse bug e vários outros encontrados ao **recompilar e testar** o projeto em ambiente moderno (GCC 14 / Ubuntu 24.04).
+
+### 🐛 Bug principal (o que baixou a nota)
+
+**Faltava o `\n` no fim das mensagens.**
+- *Problema:* localmente o `recv` calhava ler a mensagem inteira de uma vez, disfarçando a falta do terminador; no servidor do IST a mensagem chegava sem `\n` e o recetor bloqueava à espera.
+- *Correção:* o cliente envia o `\n` explicitamente (a seguir ao ficheiro, no `create`), e a leitura no servidor foi reescrita para tratar o cabeçalho corretamente (com um caso especial para o `CRE`, cujo header termina em espaço porque a seguir vêm os dados do ficheiro).
+
+### 🔧 Robustez de sockets (o enunciado avisava: `read`/`write` podem transferir menos bytes)
+
+1. **Escrita parcial no servidor (`send_tcp_reply`)** — fazia um único `write` → respostas grandes (ex.: `list`) podiam truncar. **Correção:** loop de escrita até enviar tudo.
+2. **Envio de ficheiro (`sendfile`)** — uma só chamada pode enviar menos que `filesize` → ficheiros até 10 MB incompletos. **Correção:** loop com `offset` até enviar o ficheiro inteiro.
+3. **Leitura da resposta no cliente** — um só `read` assumia que chegava tudo de uma vez → respostas grandes/fragmentadas truncavam. **Correção:** leitura em loop até a resposta estar completa (até `\n` no texto; até ao cabeçalho + `fsize` bytes no caso do `show`).
+
+### 🛡️ Compilação, segurança e portabilidade
+
+4. **Erro de compilação em GCC moderno** — a tabela de comandos usava um ponteiro para função genérico (`int (*)()`) para handlers com assinaturas diferentes (UDP com 3 args, TCP com 2). O GCC antigo aceitava com aviso; o GCC 14 rejeita com erro. **Correção:** tipos e structs de tabela separados para UDP e TCP.
+5. **Condição de sucesso invertida** — um teste usava `== 1` quando o sucesso era `== 0`. **Correção:** corrigido para `== 0`.
+6. **Fugas de memória nas mensagens** — construídas com `malloc` + `sprintf` e nunca libertadas. **Correção:** buffer estático + `snprintf`.
+7. **`sprintf` com risco de overflow** — três `sprintf` para buffers fixos com `%s` ilimitado. **Correção:** trocados por `snprintf` com o tamanho do buffer.
+8. **Header guard inconsistente (`mensagens.h`)** — `#ifndef`/`#define` com nomes diferentes. **Correção:** nomes iguais.
+
+### ✅ Estado após as correções
+
+O projeto **compila em GCC moderno** (restam apenas avisos `-Wformat-truncation` benignos — o `snprintf` trunca em vez de rebentar) e foi **testado ponta-a-ponta**: `login`, `list` e `show` (incluindo o download do ficheiro de descrição) a funcionar corretamente.
+

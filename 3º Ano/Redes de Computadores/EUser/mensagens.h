@@ -1,5 +1,5 @@
 #ifndef _MENSAGENS_H_
-#define _MENSAGENS_H
+#define _MENSAGENS_H_
 
 #include <stdio.h>
 #include <stdlib.h>
