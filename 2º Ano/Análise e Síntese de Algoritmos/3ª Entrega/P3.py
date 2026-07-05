@@ -28,6 +28,7 @@ for _ in range(m):
 # Inicialização das estruturas de dados
 criancas_por_pais = {p: [] for p in paises}
 criancas = {}
+crianca_pais = {}
 pares_validos = []
 fabricas_por_pais = {p: set() for p in paises}
 
@@ -43,6 +44,7 @@ for _ in range(t):
     
     if pedidos_validos:
         criancas[cid] = pedidos_validos
+        crianca_pais[cid] = pais
         criancas_por_pais[pais].append(cid)
         pares_validos.extend((cid, f) for f in pedidos_validos)
 
@@ -61,8 +63,14 @@ prob += lpSum(x[c,f] for (c,f) in pares_validos)
 
 # Dicionário para cache de restrições frequentes
 pares_por_crianca = {}
+pares_por_fabrica = {}
+export_por_pais = {p: [] for p in paises}
 for c, f in pares_validos:
     pares_por_crianca.setdefault(c, []).append(f)
+    pares_por_fabrica.setdefault(f, []).append(c)
+    pf = pais_fabrica[f]
+    if crianca_pais[c] != pf:
+        export_por_pais[pf].append((c,f))
 
 #Restrições
 
@@ -71,23 +79,19 @@ for c, fabricas in pares_por_crianca.items():
     prob += lpSum(x[c,f] for f in fabricas) <= 1
 
 # 2ª Restrição: As fabricas têm um stock máximo
-for f in fabricas_com_stock:
-    prob += lpSum(x[c,f] for (c, f_) in pares_validos if f_ == f) <= fabricas_com_stock[f]
+for f, criancas_f in pares_por_fabrica.items():
+    prob += lpSum(x[c,f] for c in criancas_f) <= fabricas_com_stock[f]
 
 # 3ª Restrição: Cada país tem que receber um número minimo de presentes
 for pais in paises:
     prob += lpSum(x[c,f] 
                  for c in criancas_por_pais[pais] 
-                 for f in criancas[c] if (c,f) in x) >= min_presentes[pais]
+                 for f in criancas[c]) >= min_presentes[pais]
 
 # 4ª Restrição: Cada país tem um máximo de exportações
-for pais in paises:
-    fabricas_pais = fabricas_por_pais[pais]
-    prob += lpSum(x[c,f]
-                 for c, f in pares_validos
-                 if f in fabricas_pais and c in criancas 
-                 and c not in criancas_por_pais[pais]) <= paises[pais]
-
+for pais, exportacoes in export_por_pais.items():
+    prob += lpSum(x[c, f] for c, f in exportacoes) <= paises[pais]
+    
 #Resolução do problema
 prob.solve(GLPK(msg=0))
 
