@@ -49,6 +49,11 @@ class Action:
         self.piece_name = piece_name
         self.piece_mask = piece_mask
         self.affected_regions = affected_regions  # Para least-constraining value
+        
+        # Células preenchidas, pré-calculadas uma vez (piece_mask é tuplo de tuplos)
+        self.cells = frozenset((row + i, col + j)
+                               for i, mrow in enumerate(piece_mask)
+                               for j, v in enumerate(mrow) if v == 1)
 
     def __iter__(self):
         return iter((self.region_num, self.row, self.col, self.piece_name, self.piece_mask))
@@ -266,37 +271,6 @@ class Board:
                             action = Action(region_num, row, col, piece_name, mask_tuple, len(affected))
                             valid_placements.append(action)
         return valid_placements
-    
-    def is_local_valid(self, action, placed_pieces):
-        occupied, _ = self.get_occupied_cells(placed_pieces)
-        piece_mask = np.array(action.piece_mask)
-        piece_cells = set()
-        for i in range(piece_mask.shape[0]):
-            for j in range(piece_mask.shape[1]):
-                if piece_mask[i, j] == 1:
-                    piece_cells.add((action.row + i, action.col + j))
-
-        # Verifica quadrado 2x2 só nas redondezas da peça
-        for (r, c) in piece_cells:
-            for dr in (0, -1):
-                for dc in (0, -1):
-                    square = {(r+dr, c+dc), (r+dr+1, c+dc), (r+dr, c+dc+1), (r+dr+1, c+dc+1)}
-                    if all(cell in occupied or cell in piece_cells for cell in square):
-                        return False
-
-        # Verifica se toca em peça igual
-        for (r, c) in piece_cells:
-            for di, dj in [(-1,0),(1,0),(0,-1),(0,1)]:
-                adj = (r+di, c+dj)
-                if adj in occupied:
-                    for p in placed_pieces:
-                        _, prow, pcol, pname, pmask = p
-                        pmask = np.array(pmask)
-                        for i in range(pmask.shape[0]):
-                            for j in range(pmask.shape[1]):
-                                if pmask[i, j] == 1 and (prow+i, pcol+j) == adj and pname == action.piece_name:
-                                    return False
-        return True
 
     def is_complete(self, placed_pieces): # i.e. all regions have pieces
         placed_regions = {p.region_num for p in placed_pieces}
@@ -340,76 +314,94 @@ class Board:
 class Nuruomino(Problem):
     def __init__(self, board: Board):
         self.board = board
-        self.initial = NuruominoState(
-            placed_pieces=frozenset(),
-            region_domains={r: set(actions) for r, actions in board.region_domains.items()}
-        )
-        
-        for r, actions in self.initial.region_domains.items():
-            if len(actions) == 1:
-                a = next(iter(actions))
-                self.initial = self.result(self.initial, a)
+        # Estado inicial: nada colocado. A propagação de forçadas passou para
+        # dentro de actions()
+        self.initial = NuruominoState(placed_pieces=frozenset(), region_domains=None)
                 
-
     def actions(self, state: NuruominoState):
-        placed_regions = {p.region_num for p in state.placed_pieces}
-        unassigned_regions = [r for r in range(1, self.board.num_regions + 1) if r not in placed_regions]
+        placed = state.placed_pieces
+        placed_regions = {p.region_num for p in placed}
+        unassigned_regions = [r for r in range(1, self.board.num_regions + 1)
+                                if r not in placed_regions]
         if not unassigned_regions:
             return []
+        # Ocupadas + mapa célula->nome da peça, construídos uma vez com as
+        # células pré-calculadas
+        occupied = set()
+        cell_name = {}
+        for a in placed:
+            for c in a.cells:
+                occupied.add(c)
+                cell_name[c] = a.piece_name
+        dirs = self.board.directions
 
-        region_constraints = []
+        def local_ok(a):
+            cells = a.cells
+            # sem quadrados 2x2 preenchidos (só à volta desta peça)
+            for (r, c) in cells:
+                for dr in (0, -1):
+                    for dc in (0, -1):
+                        sq = ((r+dr, c+dc), (r+dr+1, c+dc),
+                              (r+dr, c+dc+1), (r+dr+1, c+dc+1))
+                        if all((x in occupied or x in cells) for x in sq):
+                            return False
+            # Não toca em peça igual
+            for(r, c) in cells:
+                for dr, dc in dirs:
+                    nb = (r+dr, c+dc)
+                    if nb in occupied and cell_name[nb] == a.piece_name:
+                        return False
+            return True
+        # Forward-check: cada região por atribuir tem de manter >=1 colocação válida
+        region_valid = {}
         for r in unassigned_regions:
-            valid_placements = []
-            for action in self.board.region_domains[r]:
-                if self.board.is_local_valid(action, state.placed_pieces):
-                    valid_placements.append(action)
-            if not valid_placements:
+            valid = [a for a in self.board.region_domains[r] if local_ok(a)]
+            if not valid:
                 return []
-            region_constraints.append((len(valid_placements), r, valid_placements))
+            region_valid[r] = valid
 
-        region_constraints.sort()
-        return sorted(region_constraints[0][2], key=lambda a: a.affected_regions)
+        # Unit propagation: região com uma única colocação válida é forçada
+        # (está em qualquer solução) -> coloca-se já, sem ramificar, mesmo que
+        # ainda não toque no bloco. Colapsa regiões pequenas (ex.: tamanho 4)
+        for r in unassigned_regions:
+            if len(region_valid[r]) == 1:
+                return region_valid[r]
+        
+        # Primeira peça: semear a partir da região mais constrangida (MRV)
+        if not occupied:
+            r = min(unassigned_regions, key=lambda r: len(region_valid[r]))
+            return sorted(region_valid[r], key=lambda a: a.affected_regions)
+        
+        # Peças seguintes: só colocações que tocam no bloco já montado
+        # (mantém o preenchido ligado por construção). Consideram-se as de
+        # todas as regiões adjacentes -- restringir a uma só perderia completude
+        def touches(a):
+            for (r, c) in a.cells:
+                for dr, dc in dirs:
+                    if (r+dr, c+dc) in occupied:
+                        return True
+            return False
+        
+        touching = [a for r in unassigned_regions for a in region_valid[r] if touches(a)]
+        if not touching:
+            return []           # bloco nao cresce mas faltam regiões
+
+        # Ordena por região mais constrangida primeiro, depois menos-restritiva
+        return sorted(touching, key=lambda a: (len(region_valid[a.region_num]), a.affected_regions))
+
+
 
     def result(self, state: NuruominoState, action):
-        new_placed = state.placed_pieces | {action}
-        # Copia os domínios
-        new_domains = {r: set(actions) for r, actions in state.region_domains.items()}
-        # Remove ações inválidas das regiões vizinhas
-        for neighbor in self.board.region_adjacencies[action.region_num]:
-            new_domains[neighbor] = {a for a in new_domains[neighbor] if not self._action_conflicts(a, action)}
-        # Remove domínio da região já preenchida
-        new_domains[action.region_num] = set()
-        return NuruominoState(new_placed, new_domains)
+        # actions() valida tudo contra board.region_domains, por isso o estado
+        # só precisa do conjunto de peças colocadas (sem cópia de domínios por nó)
+        return NuruominoState(state.placed_pieces | {action}, None)
 
     def goal_test(self, state: NuruominoState):
         """Check if state is a goal state."""
         return (self.board.is_complete(state.placed_pieces) and
                 not self.board.has_squares(state.placed_pieces) and
                 self.board.check_piece_contiguity(state.placed_pieces))
-    
-    def h(self, node):
-        state = node.state
-        remaining = self.board.num_regions - len(state.placed_pieces)
-        # Penaliza se algum domínio está vazio
-        if any(len(actions) == 0 for actions in state.region_domains.values()):
-            return 10000
-        return remaining
-    
-    def _action_conflicts(self, a1, a2):
-        """Retorna True se as ações a1 e a2 ocupam células sobrepostas."""
-        mask1 = np.array(a1.piece_mask)
-        mask2 = np.array(a2.piece_mask)
-        cells1 = {(a1.row + i, a1.col + j)
-                  for i in range(mask1.shape[0])
-                  for j in range(mask1.shape[1])
-                  if mask1[i, j] == 1}
-        cells2 = {(a2.row + i, a2.col + j)
-                  for i in range(mask2.shape[0])
-                  for j in range(mask2.shape[1])
-                  if mask2[i, j] == 1}
-        return not cells1.isdisjoint(cells2)
-
-    
+       
 if __name__ == "__main__":
     board = Board.parse_instance()
     prob = Nuruomino(board)
