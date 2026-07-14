@@ -19,7 +19,7 @@ public class Veterinarian extends Employee {
         super(id, name);
     }
 
-    public void addResponsibility(Species s) {
+    void addResponsibility(Species s) {
         if (!_assignedSpecies.containsKey(s.getID())) {
             _assignedSpecies.put(s.getID(), s);
             s.incrementAvailableVets();

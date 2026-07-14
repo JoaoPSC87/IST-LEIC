@@ -63,7 +63,7 @@ public class Vaccine implements Serializable {
         return Collections.unmodifiableCollection(_appropriateSpecies.values());
     }
 
-    public void addAppropriateSpecies(Species s) {
+    void addAppropriateSpecies(Species s) {
         if (!_appropriateSpecies.containsKey(s.getID())) {
             _appropriateSpecies.put(s.getID(), s);
         }

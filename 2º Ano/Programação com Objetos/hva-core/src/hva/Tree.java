@@ -17,8 +17,8 @@ public abstract class Tree implements Serializable {
         _maintenanceDifficulty = maintenanceDifficulty;
     }
 
-    public abstract void updateBioCycleStage(Season season);
-    public abstract void updateSeasonalMaintenanceDifficulty(Season season);
+    abstract void updateBioCycleStage(Season season);
+    abstract void updateSeasonalMaintenanceDifficulty(Season season);
 
     public void age() {
         _age = _age + 0.25; 
@@ -48,11 +48,11 @@ public abstract class Tree implements Serializable {
         return _seasonalMaintenanceDifficulty;
     }
 
-    public void setBioCycleStage(String bioCycleStage) {
+    void setBioCycleStage(String bioCycleStage) {
         _bioCycleStage = bioCycleStage;
     }
 
-    public void setSeasonalMaintenanceDifficulty(int seasonalMaintenanceDifficulty) {
+    void setSeasonalMaintenanceDifficulty(int seasonalMaintenanceDifficulty) {
         _seasonalMaintenanceDifficulty = seasonalMaintenanceDifficulty;
     }
 }

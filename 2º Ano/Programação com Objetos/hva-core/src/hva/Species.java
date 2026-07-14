@@ -16,7 +16,7 @@ public class Species implements Serializable {
         _name = name;
     }
 
-    public void addAnimal(Animal a){
+    void addAnimal(Animal a){
         _animals.put(a.getID(), a);
     }
 
@@ -24,11 +24,11 @@ public class Species implements Serializable {
         return _animals.size();
     }
 
-    public void incrementAvailableVets(){
+    void incrementAvailableVets(){
         _availableVets = _availableVets + 1;
     }
 
-    public void decrementAvailableVets() {
+    void decrementAvailableVets() {
         _availableVets = _availableVets - 1;
     }
 

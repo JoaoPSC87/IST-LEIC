@@ -6,11 +6,11 @@ public class ConiferousTree extends Tree {
         super(id, name, age, maintenanceDifficulty);
     }
 
-    public void updateBioCycleStage(Season season) {
+    void updateBioCycleStage(Season season) {
         setBioCycleStage(season.biologicalCycle(this));
     }
 
-    public void updateSeasonalMaintenanceDifficulty(Season season) {
+    void updateSeasonalMaintenanceDifficulty(Season season) {
         setSeasonalMaintenanceDifficulty(season.seasonalMaintenanceDifficulty(this));
     }
 

@@ -15,7 +15,7 @@ public class Caretaker extends Employee {
         super(id, name);
     }
 
-    public void addResponsibility(Habitat h) {
+    void addResponsibility(Habitat h) {
         if (!_habitats.containsKey(h.getID())) {
             _habitats.put(h.getID(), h);
             h.incrementAvailableCaretakers();

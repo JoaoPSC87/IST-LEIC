@@ -40,7 +40,7 @@ public class Animal implements Serializable {
         return Collections.unmodifiableCollection(_vaccinationRecords);
     }
 
-    public void changeHabitat(Habitat h) {
+    void changeHabitat(Habitat h) {
         _habitat.removeAnimal(this);
         _habitat = h;
         h.addAnimal(this);
@@ -57,7 +57,7 @@ public class Animal implements Serializable {
                 + adequacy;
     }
 
-    public void updateVaccinationRecord(VaccinationRecord v) {
+    void updateVaccinationRecord(VaccinationRecord v) {
         _vaccinationRecords.add(v);
     }
 

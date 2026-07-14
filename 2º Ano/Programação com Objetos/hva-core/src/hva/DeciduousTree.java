@@ -6,11 +6,11 @@ public class DeciduousTree extends Tree {
         super(id, name, age, maintenanceDifficulty);
     }
 
-    public void updateBioCycleStage(Season s) {
+    void updateBioCycleStage(Season s) {
         setBioCycleStage(s.biologicalCycle(this));
     }
 
-    public void updateSeasonalMaintenanceDifficulty(Season season) {
+    void updateSeasonalMaintenanceDifficulty(Season season) {
         setSeasonalMaintenanceDifficulty(season.seasonalMaintenanceDifficulty(this));
     }
 

@@ -34,7 +34,7 @@ public class Habitat implements Serializable {
         return _area;
     }
 
-    public void changeArea(int area) {
+    void changeArea(int area) {
         _area = area;
     }
 
@@ -69,19 +69,19 @@ public class Habitat implements Serializable {
         return _influenceOverSpecies.get(speciesId);
     }
 
-    public void addTree(Tree t){
+    void addTree(Tree t){
         _trees.put(t.getID(), t);
     }
 
-    public void addAnimal(Animal a){
+    void addAnimal(Animal a){
         _animals.put(a.getID(), a);
     }
 
-    public void removeAnimal(Animal a){
+    void removeAnimal(Animal a){
         _animals.remove(a.getID());
     }
     
-    public void changeInfluenceOverSpecies(String speciesId, HabitatInfluence influence) {
+    void changeInfluenceOverSpecies(String speciesId, HabitatInfluence influence) {
         _influenceOverSpecies.put(speciesId, influence);
     } 
 
@@ -89,11 +89,11 @@ public class Habitat implements Serializable {
         return _availableCaretakers;
     }
 
-    public void incrementAvailableCaretakers() {
+    void incrementAvailableCaretakers() {
         _availableCaretakers++;
     }
 
-    public void decrementAvailableCaretakers() {
+    void decrementAvailableCaretakers() {
         _availableCaretakers--;
     }
 
