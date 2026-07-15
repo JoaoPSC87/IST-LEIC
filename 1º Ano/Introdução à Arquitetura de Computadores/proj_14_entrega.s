@@ -4,7 +4,7 @@
 # Campus: Alameda
 #
 # Autores:
-# 57175, Jo�o Carvalho
+# 57175, João Carvalho
 # 106893, Miguel Blanco
 # 107032, Rodrigo Santos
 #
@@ -59,9 +59,9 @@ colors:      .word 0xff0000, 0x00ff00, 0x0000ff  # Cores dos pontos do cluster 0
 # Abaixo devem ser declarados o vetor clusters (2a parte) e outras estruturas de dados
 # que o grupo considere necessarias para a solucao:
 .equ         max_distance 64
-# OPTIMIZATION: nada precisa de ser guardado na mem�ria de in�cio, uma vez que tudo pode ou ser guardado na stack,
-#               ou pode advir de um retorno de uma fun��o. Isto n�o prejudica a performance, uma vez que todos os
-#               stack pushes/pops acontecem uma vez para cada centroid, introduzindo pouca complexidade algor�tmica
+# OPTIMIZATION: nada precisa de ser guardado na memória de início, uma vez que tudo pode ou ser guardado na stack,
+#               ou pode advir de um retorno de uma função. Isto não prejudica a performance, uma vez que todos os
+#               stack pushes/pops acontecem uma vez para cada centroid, introduzindo pouca complexidade algorítmica
 
 # Codigo
 .text
@@ -100,7 +100,7 @@ printPoint:
     
 
 ### cleanScreen
-# Limpa todos os pontos do ecr�
+# Limpa todos os pontos do ecrã
 # Argumentos: nenhum
 # Retorno: nenhum
 
@@ -116,12 +116,12 @@ cleanScreen:
     li s2, LED_MATRIX_0_WIDTH
     li s3, white
     
-    mul t0, s1, s2 # n�mero de LEDs
-    li t1, 0 # contador p/ n�mero de LEDs
+    mul t0, s1, s2 # número de LEDs
+    li t1, 0 # contador p/ número de LEDs
     
     loop_leds:
         sw s3, 0(s0) # cor do LED passa a branco
-        addi s0, s0, 4 # passo para o pr�ximo LED
+        addi s0, s0, 4 # passo para o próximo LED
         addi t1, t1, 1
         blt t1, t0, loop_leds
     
@@ -169,13 +169,13 @@ printClusters:
         addi sp, sp, 12
         
         slli a2, a2, 2 # indice * 4 = no. de bytes a deslocar o pointer
-        add a2, s1, a2 # t3 = endere�o da cor
+        add a2, s1, a2 # t3 = endereço da cor
         
         lw a2, 0(a2) # cor do ponto, i.e. cor do cluster a que o ponto pertence
         
         jal ra, printPoint
         
-        addi s0, s0, 8 # passo para o pr�ximo ponto
+        addi s0, s0, 8 # passo para o próximo ponto
                 
         addi t0, t0, 1
         blt t0, s2, loop_points # if (contador < no. de pontos)
@@ -205,7 +205,7 @@ printCentroids:
     lw s1, k
     li a2, black
     
-    li t0, 0 # contador p/ n�mero de centroides
+    li t0, 0 # contador p/ número de centroides
     
     loop_print_centroids:
         lw a0, 0(s0) # coord. x do centroide
@@ -213,7 +213,7 @@ printCentroids:
         
         jal ra, printPoint
         
-        addi s0, s0, 8 # pr�ximo ponto
+        addi s0, s0, 8 # próximo ponto
         addi t0, t0, 1
         
         blt t0, s1, loop_print_centroids # if (contador < no. centroids)
@@ -228,7 +228,7 @@ printCentroids:
 
 ### calculateCentroids
 # Calcula os k centroides a partir da distribuicao atual de pontos.
-# OTIMIZACAO: passagem UNICA sobre os pontos. Em vez de, para cada cluster,
+# OTIMIZAÇÃO: passagem UNICA sobre os pontos. Em vez de, para cada cluster,
 # reprocessar todos os pontos (k*n_points chamadas a nearestCluster -> O(n*k^2)),
 # percorre-se os pontos uma so vez (n_points chamadas -> O(n*k)) e acumula-se
 # soma_x/soma_y/contagem por cluster. Os acumuladores ficam na STACK (nada estatico).
@@ -377,7 +377,7 @@ initializeCentroids:
     
     li t0, 0 # contador para n0. de pontos a obter
     
-    li a7, 30 # ecall obt�m um n�mero pseudo-aleat�rio com base no epoch time do UNIX, que ser� a seed
+    li a7, 30 # ecall obtém um número pseudo-aleatório com base no epoch time do UNIX, que será a seed
     ecall
     
     mv t2, a0 # t2 tem a seed/o ultimo numero gerado
@@ -391,14 +391,14 @@ initializeCentroids:
         remu t2, t2, s2 # t2 = t2 = (a * x_n-1 + b) mod n_points
         
         li t3, 2
-        remu t3, t2, t3 # calcula mod do no. gerado por 2 p/ ver se � par
+        remu t3, t2, t3 # calcula mod do no. gerado por 2 p/ ver se é par
         
         mv t5, t2
         beqz t3, save_rng_centroid
-        addi t5, t5, -1 # se t2 � �mpar, h� que subtrair 1 para alinhar com coord. x na leitura do ponto
+        addi t5, t5, -1 # se t2 é ímpar, há que subtrair 1 para alinhar com coord. x na leitura do ponto
     
         save_rng_centroid:
-            beqz t0, skip_duplicate_check # o primeiro n�mero gerado n�o �, obviamente, duplicado
+            beqz t0, skip_duplicate_check # o primeiro número gerado não é, obviamente, duplicado
             li t6, 0
             check_duplicate:
                 lw t3, 0(sp)
@@ -542,17 +542,17 @@ mainKMeans:
     
     jal ra, initializeCentroids # escolhe 3 pontos diferentes para serem centroids
     
-    li t0, 0 # contador de itera��es do algoritmo
+    li t0, 0 # contador de iterações do algoritmo
     algorithm_procedure:        
         addi sp, sp, -4
         sw t0, 0(sp)
         
         jal ra, cleanScreen
-        jal ra, printClusters # print clusters e centroids da itera��o
+        jal ra, printClusters # print clusters e centroids da iteração
         jal ra, printCentroids
         
         li t1, 0
-        mv t2, s3 # copia do endere�o de centroids[0]
+        mv t2, s3 # copia do endereço de centroids[0]
         save_prev_centroids:
             lw t4, 0(t2) # carrego e guardo coord x
             addi sp, sp, -4
@@ -567,14 +567,14 @@ mainKMeans:
             addi t1, t1, 1
             blt t1, s0, save_prev_centroids
         
-        jal ra, calculateCentroids # calculo centroids para a pr�xima itera��o
+        jal ra, calculateCentroids # calculo centroids para a próxima iteração
     
         addi t2, s0, -1 # t2 = k - 1
         slli t2, t2, 3
-        add t2, s3, t2 # copia do endere�o de centroids[k - 1]
+        add t2, s3, t2 # copia do endereço de centroids[k - 1]
         
         li t1, 0 # contador para verificar centroids
-        li t6, 0 # indica se s�o todos iguais ou n�o    
+        li t6, 0 # indica se são todos iguais ou não    
         find_diff_in_centroids:
             lw t4, 0(sp)  # coord y do centroid anterior
             addi sp, sp, 4
