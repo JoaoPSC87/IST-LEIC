@@ -4,7 +4,7 @@
 # Campus: Alameda
 #
 # Autores:
-# 51775, João Carvalho
+# 57175, Jo�o Carvalho
 # 106893, Miguel Blanco
 # 107032, Rodrigo Santos
 #
@@ -59,9 +59,9 @@ colors:      .word 0xff0000, 0x00ff00, 0x0000ff  # Cores dos pontos do cluster 0
 # Abaixo devem ser declarados o vetor clusters (2a parte) e outras estruturas de dados
 # que o grupo considere necessarias para a solucao:
 .equ         max_distance 64
-# OPTIMIZATION: nada precisa de ser guardado na memória de início, uma vez que tudo pode ou ser guardado na stack,
-#               ou pode advir de um retorno de uma função. Isto não prejudica a performance, uma vez que todos os
-#               stack pushes/pops acontecem uma vez para cada centroid, introduzindo pouca complexidade algorítmica
+# OPTIMIZATION: nada precisa de ser guardado na mem�ria de in�cio, uma vez que tudo pode ou ser guardado na stack,
+#               ou pode advir de um retorno de uma fun��o. Isto n�o prejudica a performance, uma vez que todos os
+#               stack pushes/pops acontecem uma vez para cada centroid, introduzindo pouca complexidade algor�tmica
 
 # Codigo
 .text
@@ -100,7 +100,7 @@ printPoint:
     
 
 ### cleanScreen
-# Limpa todos os pontos do ecrã
+# Limpa todos os pontos do ecr�
 # Argumentos: nenhum
 # Retorno: nenhum
 
@@ -116,12 +116,12 @@ cleanScreen:
     li s2, LED_MATRIX_0_WIDTH
     li s3, white
     
-    mul t0, s1, s2 # número de LEDs
-    li t1, 0 # contador p/ número de LEDs
+    mul t0, s1, s2 # n�mero de LEDs
+    li t1, 0 # contador p/ n�mero de LEDs
     
     loop_leds:
         sw s3, 0(s0) # cor do LED passa a branco
-        addi s0, s0, 4 # passo para o próximo LED
+        addi s0, s0, 4 # passo para o pr�ximo LED
         addi t1, t1, 1
         blt t1, t0, loop_leds
     
@@ -169,13 +169,13 @@ printClusters:
         addi sp, sp, 12
         
         slli a2, a2, 2 # indice * 4 = no. de bytes a deslocar o pointer
-        add a2, s1, a2 # t3 = endereço da cor
+        add a2, s1, a2 # t3 = endere�o da cor
         
         lw a2, 0(a2) # cor do ponto, i.e. cor do cluster a que o ponto pertence
         
         jal ra, printPoint
         
-        addi s0, s0, 8 # passo para o próximo ponto
+        addi s0, s0, 8 # passo para o pr�ximo ponto
                 
         addi t0, t0, 1
         blt t0, s2, loop_points # if (contador < no. de pontos)
@@ -205,7 +205,7 @@ printCentroids:
     lw s1, k
     li a2, black
     
-    li t0, 0 # contador p/ número de centroides
+    li t0, 0 # contador p/ n�mero de centroides
     
     loop_print_centroids:
         lw a0, 0(s0) # coord. x do centroide
@@ -213,7 +213,7 @@ printCentroids:
         
         jal ra, printPoint
         
-        addi s0, s0, 8 # próximo ponto
+        addi s0, s0, 8 # pr�ximo ponto
         addi t0, t0, 1
         
         blt t0, s1, loop_print_centroids # if (contador < no. centroids)
@@ -227,111 +227,101 @@ printCentroids:
     
 
 ### calculateCentroids
-# Calcula os k centroides, a partir da distribuicao atual de pontos associados a cada agrupamento (cluster)
-# Argumentos: nenhum
-# Retorno: nenhum
+# Calcula os k centroides a partir da distribuicao atual de pontos.
+# OTIMIZACAO: passagem UNICA sobre os pontos. Em vez de, para cada cluster,
+# reprocessar todos os pontos (k*n_points chamadas a nearestCluster -> O(n*k^2)),
+# percorre-se os pontos uma so vez (n_points chamadas -> O(n*k)) e acumula-se
+# soma_x/soma_y/contagem por cluster. Os acumuladores ficam na STACK (nada estatico).
+# Argumentos: nenhum // Retorno: nenhum
 
-calculateCentroids: 
-    addi sp, sp, -16
+calculateCentroids:
+    addi sp, sp, -24
     sw s0, 0(sp)
     sw s1, 4(sp)
     sw s2, 8(sp)
     sw s3, 12(sp)
+    sw s4, 16(sp)
+    sw ra, 20(sp)
 
-    lw s1, n_points
-    la s2, centroids # vetor de centroids
-    lw s3, k
-    
-    li t0, 0 # contador para o no. de clusters
-    cluster_centroid:
-        li t1, 0 # contador para no. de pontos
-        
-        li t2, 0 # somatorio das coord x dos pontos que pertencem ao cluster 0
-        li t3, 0 # somatorio das coord y dos pontos que pertencem ao cluster 0 
-        li t4, 0 # no. de pontos que pertencem ao cluster 0
-        
-        la s0, points # vetor de pontos
-        
-        sum_coords:
-            lw a0, 0(s0) # coord x do ponto
-            lw a1, 4(s0) # coord y do ponto
-            
-            addi sp, sp, -32 # guardo t's e a's 
-            sw a0, 0(sp)
-            sw a1, 4(sp)
-            sw t0, 8(sp)
-            sw t1, 12(sp)
-            sw t2, 16(sp)
-            sw t3, 20(sp)
-            sw t4, 24(sp)
-            sw ra, 28(sp)
-            
-            jal ra, nearestCluster
-            
-            mv t5, a0 # cluster a que pertence o ponto (x, y)
-            
-            lw a0, 0(sp)
-            lw a1, 4(sp)
-            lw t0, 8(sp)
-            lw t1, 12(sp)
-            lw t2, 16(sp)
-            lw t3, 20(sp)
-            lw t4, 24(sp)
-            lw ra, 28(sp)
-            addi sp, sp, 32
-            
-            bne t5, t0, skip_sum # se o ponto não pertence ao cluster, não somo
-            
-            add t2, t2, a0 # somo x a sum_x, se x pertence ao cluster
-            add t3, t3, a1 # faço o mesmo para y
-            addi t4, t4, 1 # incremento o no. de pontos que pertence ao cluster
-            
-            skip_sum:
-            addi s0, s0, 8 # avanço para o proximo ponto
-            addi t1, t1, 1
-            
-            blt t1, s1, sum_coords
-            
-        beqz t4, skip_div # se não foi encontrado nenhum ponto que pertença ao centroid...
-                          # ...salta-se a divisão, p/ não dividir por zero
-        
-        div t2, t2, t4 # média dos x
-        div t3, t3, t4 # média dos y
-        
-        skip_div:
-        # guardar os pontos diretamente na memória iria aniquilar centroids antigos, que ainda...
-        # ...têm de ser usados em nearestCluster    
-        addi sp, sp, -8
-        sw t2, 0(sp)
-        sw t3, 4(sp)
-        
-        addi t0, t0, 1
-        
-        blt t0, s3, cluster_centroid
-        
-    li t0, 0
-    addi t1, s3, -1
-    slli t1, t1, 3 # deslocamento em memória para centroids[k - 1] = (k - 1) * 4 * 2
-    add s2, s2, t1 # endereço de centroids[k - 1]
-    load_results:
-        lw t2, 0(sp) # carrego as coords dos centroids e transfiro-os para a memória
-        lw t3, 4(sp)
-        addi sp, sp, 8
-        
-        sw t2, 0(s2) # save da coord x
-        sw t3, 4(s2) # save da coord y
-        
-        addi s2, s2, -8
-        addi t0, t0, 1
-        
-        blt t0, s3, load_results
-        
+    lw s0, k          # s0 = k
+    lw s1, n_points   # s1 = n_points
+
+    # aloca 12*k bytes na stack: por cluster -> [soma_x, soma_y, contagem]
+    li t0, 12
+    mul t0, t0, s0
+    sub sp, sp, t0
+    mv s2, sp         # s2 = base dos acumuladores
+
+    # zera os acumuladores
+    li t1, 0
+    cc_zero:
+        add t2, s2, t1
+        sw x0, 0(t2)
+        addi t1, t1, 4
+        blt t1, t0, cc_zero
+
+    # --- passagem UNICA sobre os pontos ---
+    la s3, points     # s3 = ponteiro para os pontos
+    li s4, 0          # s4 = contador de pontos
+    cc_pass:
+        lw a0, 0(s3)  # x
+        lw a1, 4(s3)  # y
+        jal ra, nearestCluster   # a0 = indice do cluster do ponto
+
+        li t0, 12
+        mul t0, a0, t0
+        add t0, s2, t0   # t0 = &acumulador[cluster]
+
+        lw a2, 0(s3)     # recarrega x (a0 foi sobrescrito)
+        lw a3, 4(s3)     # recarrega y
+
+        lw t1, 0(t0)     # soma_x += x
+        add t1, t1, a2
+        sw t1, 0(t0)
+        lw t1, 4(t0)     # soma_y += y
+        add t1, t1, a3
+        sw t1, 4(t0)
+        lw t1, 8(t0)     # contagem += 1
+        addi t1, t1, 1
+        sw t1, 8(t0)
+
+        addi s3, s3, 8   # proximo ponto
+        addi s4, s4, 1
+        blt s4, s1, cc_pass
+
+    # --- divide e escreve os centroides (SO agora, depois de todos os nearestCluster) ---
+    la s3, centroids
+    li s4, 0          # contador de clusters
+    cc_write:
+        li t0, 12
+        mul t0, s4, t0
+        add t0, s2, t0
+        lw t1, 0(t0)     # soma_x
+        lw t2, 4(t0)     # soma_y
+        lw t3, 8(t0)     # contagem
+        beqz t3, cc_skip_div   # cluster vazio -> nao divide (fica (0,0), como no original)
+        div t1, t1, t3
+        div t2, t2, t3
+        cc_skip_div:
+        sw t1, 0(s3)     # centroids[cluster].x
+        sw t2, 4(s3)     # centroids[cluster].y
+        addi s3, s3, 8
+        addi s4, s4, 1
+        blt s4, s0, cc_write
+
+    # desaloca acumuladores
+    li t0, 12
+    mul t0, t0, s0
+    add sp, sp, t0
+
     lw s0, 0(sp)
     lw s1, 4(sp)
     lw s2, 8(sp)
     lw s3, 12(sp)
-    addi sp, sp, 16
-            
+    lw s4, 16(sp)
+    lw ra, 20(sp)
+    addi sp, sp, 24
+
     jr ra
 
 
@@ -387,7 +377,7 @@ initializeCentroids:
     
     li t0, 0 # contador para n0. de pontos a obter
     
-    li a7, 30 # ecall obtém um número pseudo-aleatório com base no epoch time do UNIX, que será a seed
+    li a7, 30 # ecall obt�m um n�mero pseudo-aleat�rio com base no epoch time do UNIX, que ser� a seed
     ecall
     
     mv t2, a0 # t2 tem a seed/o ultimo numero gerado
@@ -401,14 +391,14 @@ initializeCentroids:
         remu t2, t2, s2 # t2 = t2 = (a * x_n-1 + b) mod n_points
         
         li t3, 2
-        remu t3, t2, t3 # calcula mod do no. gerado por 2 p/ ver se é par
+        remu t3, t2, t3 # calcula mod do no. gerado por 2 p/ ver se � par
         
         mv t5, t2
         beqz t3, save_rng_centroid
-        addi t5, t5, -1 # se t2 é ímpar, há que subtrair 1 para alinhar com coord. x na leitura do ponto
+        addi t5, t5, -1 # se t2 � �mpar, h� que subtrair 1 para alinhar com coord. x na leitura do ponto
     
         save_rng_centroid:
-            beqz t0, skip_duplicate_check # o primeiro número gerado não é, obviamente, duplicado
+            beqz t0, skip_duplicate_check # o primeiro n�mero gerado n�o �, obviamente, duplicado
             li t6, 0
             check_duplicate:
                 lw t3, 0(sp)
@@ -552,17 +542,17 @@ mainKMeans:
     
     jal ra, initializeCentroids # escolhe 3 pontos diferentes para serem centroids
     
-    li t0, 0 # contador de iterações do algoritmo
+    li t0, 0 # contador de itera��es do algoritmo
     algorithm_procedure:        
         addi sp, sp, -4
         sw t0, 0(sp)
         
         jal ra, cleanScreen
-        jal ra, printClusters # print clusters e centroids da iteração
+        jal ra, printClusters # print clusters e centroids da itera��o
         jal ra, printCentroids
         
         li t1, 0
-        mv t2, s3 # copia do endereço de centroids[0]
+        mv t2, s3 # copia do endere�o de centroids[0]
         save_prev_centroids:
             lw t4, 0(t2) # carrego e guardo coord x
             addi sp, sp, -4
@@ -577,14 +567,14 @@ mainKMeans:
             addi t1, t1, 1
             blt t1, s0, save_prev_centroids
         
-        jal ra, calculateCentroids # calculo centroids para a próxima iteração
+        jal ra, calculateCentroids # calculo centroids para a pr�xima itera��o
     
         addi t2, s0, -1 # t2 = k - 1
         slli t2, t2, 3
-        add t2, s3, t2 # copia do endereço de centroids[k - 1]
+        add t2, s3, t2 # copia do endere�o de centroids[k - 1]
         
         li t1, 0 # contador para verificar centroids
-        li t6, 0 # indica se são todos iguais ou não    
+        li t6, 0 # indica se s�o todos iguais ou n�o    
         find_diff_in_centroids:
             lw t4, 0(sp)  # coord y do centroid anterior
             addi sp, sp, 4
@@ -628,3 +618,4 @@ mainKMeans:
     addi sp, sp, 4
     
     jr ra
+
