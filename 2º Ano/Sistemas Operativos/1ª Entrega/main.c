@@ -19,16 +19,9 @@
 #include "parser.h"
 #include "operations.h"
 
-#include "aux_functions.h"
 #include "main.h"
 
 #define ERROR -1
-
-//file descriptor para o qual o que tiver no buffer vai ser imprimido
-int fdToPrint;
-
-//buffer do que vai ser imprimido
-char bufferToPrint[2000];
 
 //maximo de backups a serem efectuados ao mesmo tempo.
 int maxBackups;
@@ -36,8 +29,11 @@ int maxBackups;
 //maximo de threads a processar os ficheiros ao mesmo tempo.
 int maxThreads;
 
-
-pthread_rwlock_t rwlock;
+//fila de trabalho: caminhos dos ficheiros .job por processar
+char **jobFiles = NULL;
+int numJobs = 0;
+int nextJob = 0;
+pthread_mutex_t jobMutex = PTHREAD_MUTEX_INITIALIZER;
 
 //função que recebe uma string e um file descriptor
 //e imprime nesse ficheiro o conteudo da string
@@ -59,25 +55,30 @@ int writeToDotOut(char *b, int fd) {
     return 0;
 }
 
-//funçao que recebe o caminho do ficheiro a ser processado
-//e executa os comandos escritos nesse ficheiro. 
-//é executada pelas threads criadas.
-void * processEachFile (void* _inputFilePath) {
+//verifica se o nome do ficheiro termina mesmo em ".job"
+static int hasJobExtension(const char *name) {
+  size_t len = strlen(name);
+  return len > 4 && strcmp(name + len - 4, ".job") == 0;
+}
+
+//processa todos os comandos de um ficheiro .job,
+//escrevendo os resultados no ficheiro .out correspondente
+//(chamada pelos workers do pool)
+void processEachFile (char *inputFilePath) {
 
   //counter para o numero de backups efectuados por cada ficheiro
   int backupCounter = 0;
 
-
+  //buffer e fd de output LOCAIS - cada thread/ficheiro tem os seus
+  char bufferToPrint[2000];
+  int fdToPrint;
 
   char outputFilePath[MAX_JOB_FILE_NAME_SIZE];
   
-  char *inputFilePath = (char*)_inputFilePath;
-
-
   int fdJobs = open(inputFilePath, O_RDONLY);
     if (fdJobs == ERROR){
     perror("Input file inválido");
-    close(fdJobs);
+    return;
     }
 
   //constroi o caminho do ficheiro que vai ser imprimido
@@ -94,7 +95,7 @@ void * processEachFile (void* _inputFilePath) {
   if (fdToPrint == ERROR){
     perror("Output file inválido");
     close(fdJobs);
-    close(fdToPrint);
+    return;
 
   }
   //ciclo que processa cada comando contido no ficheiro a ser processado
@@ -105,22 +106,16 @@ void * processEachFile (void* _inputFilePath) {
     unsigned int delay;
     size_t num_pairs;
 
-    
-    fflush(stdout);
-
     switch (get_next(fdJobs)) {
       case CMD_WRITE:
         num_pairs = parse_write(fdJobs, keys, values, MAX_WRITE_SIZE, MAX_STRING_SIZE);
         if (num_pairs == 0) {
-          //snprintf(bufferToPrint, 2000, "Invalid command. See HELP for usage\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
-          printf("Invalid command. See HELP for usage\n" );
+          fprintf(stderr, "Invalid command. See HELP for usage\n" );
           continue;
         }
 
-        if (kvs_write(num_pairs, keys, values, bufferToPrint, fdToPrint, rwlock)) {
-          snprintf(bufferToPrint, 2000, "Failed to write pair\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+        if (kvs_write(num_pairs, keys, values)) {
+          fprintf(stderr, "Failed to write pair\n" );
         }
 
         break;
@@ -129,14 +124,12 @@ void * processEachFile (void* _inputFilePath) {
         num_pairs = parse_read_delete(fdJobs, keys, MAX_WRITE_SIZE, MAX_STRING_SIZE);
 
         if (num_pairs == 0) {
-          snprintf(bufferToPrint, 2000, "Invalid command. See HELP for usage\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+          fprintf(stderr, "Invalid command. See HELP for usage\n" );
           continue;
         }
 
-        if (kvs_read(num_pairs, keys, bufferToPrint, fdToPrint, rwlock)) {
-          snprintf(bufferToPrint, 2000, "Failed to write pair\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+        if (kvs_read(num_pairs, keys, bufferToPrint, fdToPrint)) {
+         fprintf(stderr, "Failed to read pair\n" );
         }
         break;
 
@@ -144,32 +137,28 @@ void * processEachFile (void* _inputFilePath) {
         num_pairs = parse_read_delete(fdJobs, keys, MAX_WRITE_SIZE, MAX_STRING_SIZE);
 
         if (num_pairs == 0) {
-          snprintf(bufferToPrint, 2000, "Invalid command. See HELP for usage\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+          fprintf(stderr, "Invalid command. See HELP for usage\n" );
           continue;
         }
 
-        if (kvs_delete(num_pairs, keys, bufferToPrint, fdToPrint, rwlock)) {
-          snprintf(bufferToPrint, 2000, "Failed to delete pair\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+        if (kvs_delete(num_pairs, keys, bufferToPrint, fdToPrint)) {
+          fprintf(stderr, "Failed to delete pair\n" );
         }
         break;
 
       case CMD_SHOW:
 
-        kvs_show(bufferToPrint, fdToPrint, rwlock);
+        kvs_show(bufferToPrint, fdToPrint);
         break;
 
       case CMD_WAIT:
         if (parse_wait(fdJobs, &delay, NULL) == -1) {
-          snprintf(bufferToPrint, 2000, "Invalid command. See HELP for usage\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+          fprintf(stderr, "Invalid command. See HELP for usage\n" );
           continue;
         }
 
         if (delay > 0) {
-          snprintf(bufferToPrint, 2000, "Waiting...\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+          printf("Waiting...\n");
           kvs_wait(delay);
         }
         break;
@@ -177,23 +166,17 @@ void * processEachFile (void* _inputFilePath) {
       case CMD_BACKUP:
 
         backupCounter++;
-        if (kvs_backup(inputFilePath, bufferToPrint, fdToPrint, backupCounter, maxBackups, rwlock)) {
-          snprintf(bufferToPrint, 2000, "Failed to perform backup.\n" );
-          writeToDotOut(bufferToPrint, fdToPrint);
+        if (kvs_backup(inputFilePath, bufferToPrint, fdToPrint, backupCounter, maxBackups)) {
+          fprintf(stderr, "Failed to perform backup.\n" );
         }
         break;
 
       case CMD_INVALID:
-        snprintf(bufferToPrint, 2000, "Invalid command. See HELP for usage\n" );  
-        writeToDotOut(bufferToPrint, fdToPrint);
+        fprintf(stderr, "Invalid command. See HELP for usage\n" );
         break;
 
       case CMD_HELP:
-        
-        snprintf(bufferToPrint, 2000, "Available commands:\nWRITE [(key,value)(key2,value2),...]\nREAD [key,key2,...]\nDELETE [key,key2,...]\nSHOW\nWAIT <delay_ms>\nBACKUP\nHELP\n" );
-        writeToDotOut(bufferToPrint, fdToPrint); 
-
-
+        printf("Available commands:\nWRITE [(key,value)(key2,value2),...]\nREAD [key,key2,...]\nDELETE [key,key2,...]\nSHOW\nWAIT <delay_ms>\nBACKUP\nHELP\n" );
         break;
         
       case CMD_EMPTY:
@@ -204,147 +187,100 @@ void * processEachFile (void* _inputFilePath) {
         finish = 1;
         break;
     }
-
-    
   }
 
-  
-
   close(fdJobs);
-
-  memset(bufferToPrint, 0, 2000);
-
-  free(_inputFilePath); 
-
-  pthread_exit(0);
-
-  return NULL;
-
-
 }
 
+// cada worker puxa o próximo ficheiro da fila até ela esvaziar
+void *workerThread(void *arg) {
+  (void)arg;
+  while (1) {
+    pthread_mutex_lock(&jobMutex);
+    if (nextJob >= numJobs) {
+      pthread_mutex_unlock(&jobMutex);
+      break;
+    }
+    char *inputFilePath = jobFiles[nextJob];
+    nextJob++;
+    pthread_mutex_unlock(&jobMutex);
+
+    processEachFile(inputFilePath);
+    free(inputFilePath);
+  }
+  return NULL;
+}
 
 int main(int argc, char *argv[]) {
 
   DIR *dir;
   struct dirent *entry;
 
-  pthread_rwlock_init(&rwlock, NULL);
-
-  if (kvs_init(bufferToPrint,fdToPrint)) {
+  if (kvs_init()) {
     fprintf(stderr, "Failed to initialize KVS\n");
     return 1;
   }
 
   //verifica o numero de argumentos na linha de comandos
-  if (argc != 4) {
+  if (argc != 4){
     fprintf(stderr, "Invalid arguments. See HELP for usage\n");
     return 1;
   }
 
-  maxBackups = atoi (argv[2]);
-  maxThreads = atoi (argv[3]);
+  maxBackups = atoi(argv[2]);
+  maxThreads = atoi(argv[3]);
+  if (maxBackups < 1) maxBackups = 1;
+  if (maxThreads < 1) maxThreads = 1;
 
-  //vector de threads disponiveis para processar os ficheiros
-  pthread_t threads[maxThreads];
-
-  //vector que verifica se as threads estao ocupadas
-  //0:não ocupada,1:ocupada
-  int vectorThreadsOcupadas[maxThreads];
-  for (int i = 0; i < maxThreads; i++)
-  {
-    vectorThreadsOcupadas[i]= 0;
-  }
-  
-
-
-  if((dir = opendir(argv[1])) == NULL){
+  if ((dir = opendir(argv[1])) == NULL) {
     perror("Invalid directory");
     return ERROR;
   }
 
-  //ciclo que processa cada ficheiro da directoria
-   while ((entry = readdir(dir)) != NULL)
-  {
-    
+  //1ª fase: recolhe os caminhos de todos os ficheiros .job da diretoria
+  while ((entry = readdir(dir)) != NULL) {
+    if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
+      continue;
+    if (!hasJobExtension(entry->d_name))
+      continue;
 
-    char * inputFilePath = malloc(sizeof(char)*MAX_JOB_FILE_NAME_SIZE);
-
-    //salta as directorias "." e ".."
-    if(strcmp(entry->d_name, ".")  == 0 || strcmp(entry->d_name, "..") == 0){
+    char *inputFilePath = malloc(sizeof(char) * MAX_JOB_FILE_NAME_SIZE);
+    int written = snprintf(inputFilePath, MAX_JOB_FILE_NAME_SIZE, "%s/%s", argv[1], entry->d_name);
+    if (written < 0 || written >= MAX_JOB_FILE_NAME_SIZE) {
+      fprintf(stderr, "Caminho demasiado longo, ignorado: %s/%s\n", argv[1], entry->d_name);
       free(inputFilePath);
       continue;
     }
-      
-    
-    //verifica se o ficheiro a ser analisado tem ou não extensão .job
-    else if (strstr(entry->d_name,".job") != NULL){
 
-
-      strcpy(inputFilePath,argv[1]);  
-      strcat(inputFilePath,"/" );
-      strcat(inputFilePath, entry->d_name);
-
-
-      //ciclo que verifica que threads estão ocupadas ou vazias
-      //e cria a thread necessaria para processar o ficheiro
-      for (int i = 0; i < maxThreads; i++)
-      {
-        if (vectorThreadsOcupadas[i] == 0)
-        {
-          pthread_create(&threads[i], NULL, &processEachFile , inputFilePath);
-          vectorThreadsOcupadas[i] = 1;
-          break;
-          
-        }
-        else if ((vectorThreadsOcupadas[i] == 1) && (i == maxThreads - 1) ){
-
-          //int indexToWait = rand() % (maxThreads);
-          
-          pthread_join(threads[0], NULL);
-          vectorThreadsOcupadas[0] = 0;
-
-          pthread_create(&threads[0], NULL, &processEachFile , inputFilePath);
-          vectorThreadsOcupadas[0] = 1;
-
-          break;
-          
-
-        }
-      
-      }
-
-    }
-    else{
+    char **tmp = realloc(jobFiles, (size_t)(numJobs + 1) * sizeof(char *));
+    if (tmp == NULL) {
       free(inputFilePath);
+      break;
     }
+    jobFiles = tmp;
+    jobFiles[numJobs] = inputFilePath;
+    numJobs++;
   }
-  
-
-  //faz join a TODAS as threads activas
-  for (int i = 0; i < maxThreads; i++)
-  {
-    if (vectorThreadsOcupadas[i] == 1)
-    {
-      pthread_join(threads[i], NULL);
-      vectorThreadsOcupadas[i] = 0;
-    }  
-  
-  }
-
-  
-
-  // espera que acabem TODOS os processos filhos do sistema
-  while (wait (NULL) != -1 || errno != ECHILD)
-  {
-  }
-
   closedir(dir);
 
-  pthread_rwlock_destroy(&rwlock);
+  //2ª fase: lança o pool de workers e espera que a fila esvazie
+  int numWorkers = (maxThreads < numJobs) ? maxThreads : numJobs;
+  if (numWorkers > 0) {
+    pthread_t workers[numWorkers];
+    for (int i = 0; i < numWorkers; i++) {
+      pthread_create(&workers[i], NULL, workerThread, NULL);
+    }
+    for (int i = 0; i < numWorkers; i++) {
+      pthread_join(workers[i], NULL);
+    }
+  }
+  free(jobFiles);
 
-  kvs_terminate(bufferToPrint,fdToPrint);
+  //espera que acabem TODOS os processos filhos (backups)
+  while (wait(NULL) != -1 || errno != ECHILD) {}
+
+  kvs_terminate();
 
   return 0;
-
 }
+

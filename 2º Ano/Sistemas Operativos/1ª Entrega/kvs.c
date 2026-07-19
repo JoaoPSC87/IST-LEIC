@@ -24,12 +24,14 @@ struct HashTable* create_hash_table() {
   if (!ht) return NULL;
   for (int i = 0; i < TABLE_SIZE; i++) {
       ht->table[i] = NULL;
+      pthread_rwlock_init(&ht->bucketLocks[i], NULL);
   }
   return ht;
 }
 
 int write_pair(HashTable *ht, const char *key, const char *value) {
     int index = hash(key);
+    if (index < 0) return 1;
     KeyNode *keyNode = ht->table[index];
 
     // Search for the key node
@@ -46,13 +48,19 @@ int write_pair(HashTable *ht, const char *key, const char *value) {
     keyNode = malloc(sizeof(KeyNode));
     keyNode->key = strdup(key); // Allocate memory for the key
     keyNode->value = strdup(value); // Allocate memory for the value
-    keyNode->next = ht->table[index]; // Link to existing nodes
-    ht->table[index] = keyNode; // Place new key node at the start of the list
+
+    KeyNode **link = &ht->table[index];
+    while(*link != NULL && strcmp((*link)->key, key) < 0) {
+        link = &(*link)->next;
+    }
+    keyNode->next = *link;
+    *link = keyNode;
     return 0;
 }
 
 char* read_pair(HashTable *ht, const char *key) {
     int index = hash(key);
+    if (index < 0) return NULL;
     KeyNode *keyNode = ht->table[index];
     char* value;
 
@@ -68,6 +76,7 @@ char* read_pair(HashTable *ht, const char *key) {
 
 int delete_pair(HashTable *ht, const char *key) {
     int index = hash(key);
+    if (index < 0) return 1;
     KeyNode *keyNode = ht->table[index];
     KeyNode *prevNode = NULL;
 
@@ -105,6 +114,7 @@ void free_table(HashTable *ht) {
             free(temp->value);
             free(temp);
         }
+        pthread_rwlock_destroy(&ht->bucketLocks[i]);
     }
     free(ht);
 }
