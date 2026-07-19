@@ -14,39 +14,30 @@
 #include "src/client/api.h"
 #include "src/common/constants.h"
 #include "src/common/io.h"
+#include "src/common/protocol.h"
 
+// 1 quando é o cliente a iniciar o disconnect: permite à thread de notificações
+// distinguir um disconnect normal de um fecho forçado pelo servidor (SIGUSR1)
+static volatile int client_disconnecting = 0;
 
-void * handle_notifications () {
-
-
-  
-
+void *handle_notifications () {
   int fdNotif = getFdNotif();
 
-  while (1)
-  {
-    char notificacaoRecebida1 [41];
-    char notificacaoRecebida2 [41];
+  while (1) {
+    char key[KEY_SIZE]; 
+    char value[VALUE_SIZE];
 
-    read(fdNotif, notificacaoRecebida1, sizeof(notificacaoRecebida1));
-    read(fdNotif, notificacaoRecebida2, sizeof(notificacaoRecebida2));
+    //lê a notificação: [key(41)][value(41)]
+    if (read_all(fdNotif, key, KEY_SIZE, NULL) != 1) break;
+    if (read_all(fdNotif, value, VALUE_SIZE, NULL) != 1) break;
 
-    if (strlen(notificacaoRecebida1)>0)
-    {
-      printf("(%s,%s)\n", notificacaoRecebida1, notificacaoRecebida2);
-    }
-    
-    
-
+    printf("(%s,%s)\n", key, value);
+    fflush(stdout);
   }
-  
-  return NULL;
-  
+  // o servidor fechou o pipe de notificações
+  if (client_disconnecting) return NULL; // disconnect normal - > deixa o main terminar
+  exit(0); // fecho forçado (SIGUSR1) -> termina já
 }
-
-
-
-
 
 
 int main(int argc, char *argv[]) {
@@ -74,23 +65,7 @@ int main(int argc, char *argv[]) {
   strncat(req_pipe_path, argv[1], strlen(argv[1]) * sizeof(char));
   strncat(resp_pipe_path, argv[1], strlen(argv[1]) * sizeof(char));
   strncat(notif_pipe_path, argv[1], strlen(argv[1]) * sizeof(char));
-
-  while (strlen(req_pipe_path) < 40)
-  {
-    strcat(req_pipe_path, " ");
-  }
-
-  while (strlen(resp_pipe_path) < 40)
-  {
-    strcat(resp_pipe_path, " ");
-  }
-
-  while (strlen(notif_pipe_path) < 40)
-  {
-    strcat(notif_pipe_path, " ");
-  }
   
-
   kvs_connect(req_pipe_path, resp_pipe_path, fifoRegistoPath, notif_pipe_path);
 
   pthread_t threadToProcessNotifications;
@@ -101,6 +76,7 @@ int main(int argc, char *argv[]) {
   while (1) {
     switch (get_next(STDIN_FILENO)) {
     case CMD_DISCONNECT:
+    client_disconnecting = 1;
       if (kvs_disconnect() != 0) {
         fprintf(stderr, "Failed to disconnect to the server\n");
         return 1;
@@ -155,8 +131,10 @@ int main(int argc, char *argv[]) {
       break;
 
     case EOC:
-      // input should end in a disconnect, or it will loop here forever
-      break;
+      // fim do input sem DISCONNECT explícito: desliga e termina
+      client_disconnecting = 1;
+      kvs_disconnect();
+      return 0;
     }
   }
 }

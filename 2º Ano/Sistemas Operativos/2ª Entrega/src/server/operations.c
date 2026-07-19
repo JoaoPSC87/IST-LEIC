@@ -5,119 +5,109 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <dirent.h>
 #include <fcntl.h>
-#include <sys/stat.h> 
+#include <sys/stat.h>
+#include <sys/types.h> 
 #include <sys/wait.h>
 
 #include <pthread.h>
-
 
 #include "kvs.h"
 #include "constants.h"
 #include "main.h"
 
-
-
 #define ERROR -1
 
-static struct HashTable* kvs_table = NULL;
+static struct HashTable *kvs_table = NULL;
 
-int backupsInExecution;
+//rwlock global que protege a hashtable
+static pthread_rwlock_t kvs_lock;
 
-/// Calculates a timespec from a delay in milliseconds.
-/// @param delay_ms Delay in milliseconds.
-/// @return Timespec with the given delay.
+//controlo dos backups concorrentes
+static int backupsInExecution = 0;
+static pthread_mutex_t backupMutex = PTHREAD_MUTEX_INITIALIZER;
+
 static struct timespec delay_to_timespec(unsigned int delay_ms) {
   return (struct timespec){delay_ms / 1000, (delay_ms % 1000) * 1000000};
 }
 
-int kvs_init(char *bufferToPrint, int fdToPrint) {
-  if (kvs_table != NULL) {
-    
-    snprintf(bufferToPrint, 2000, "KVS state has already been initialized\n" );
-    writeToDotOut(bufferToPrint, fdToPrint);
-    return 1;
-  }
-
-  kvs_table = create_hash_table();
-  return kvs_table == NULL;
+//comparador para qsort de chaves (READ/DELETE saem ordenados)
+static int compareKeys(const void *a, const void *b) {
+  return strcmp((const char *)a, (const char *)b);
 }
 
-int kvs_terminate(char *bufferToPrint, int fdToPrint) {
-  if (kvs_table == NULL) {
-    snprintf(bufferToPrint, 2000, "KVS state has already been initialized\n" );
-    writeToDotOut(bufferToPrint, fdToPrint);
+int kvs_init(void) {
+  if (kvs_table != NULL) {
+    fprintf(stderr, "KVS state has already been initialized\n");
     return 1;
   }
-
-  free_table(kvs_table);
+  kvs_table = create_hash_table();
+  if (kvs_table == NULL) return 1;
+  pthread_rwlock_init(&kvs_lock, NULL);
   return 0;
 }
 
-int kvs_write(size_t num_pairs, char keys[][MAX_STRING_SIZE], char values[][MAX_STRING_SIZE],char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock) {
+int kvs_terminate(void) {
   if (kvs_table == NULL) {
-    snprintf(bufferToPrint, 2000, "KVS state must be initialized\n");
-    writeToDotOut(bufferToPrint, fdToPrint);
+    fprintf(stderr, "KVS state must be initialized\n");
     return 1;
   }
+  free_table(kvs_table);
+  kvs_table = NULL;
+  pthread_rwlock_destroy(&kvs_lock);
+  return 0;
+}
 
-  pthread_rwlock_wrlock(&rwlock);
-
+int kvs_write(size_t num_pairs, char keys[][MAX_STRING_SIZE], char values[][MAX_STRING_SIZE]) {
+  if (kvs_table == NULL) {
+    fprintf(stderr, "KVS state must be initialized\n");
+    return 1;
+  }
+  pthread_rwlock_wrlock(&kvs_lock);
   for (size_t i = 0; i < num_pairs; i++) {
     if (write_pair(kvs_table, keys[i], values[i]) != 0) {
-      snprintf(bufferToPrint, 2000, "Failed to write keypair (%s,%s)\n", keys[i], values[i]);
-      writeToDotOut(bufferToPrint, fdToPrint);
-
+      fprintf(stderr, "Failed to write keypair (%s,%s)\n", keys[i], values[i]);
     }
   }
-
-  pthread_rwlock_unlock(&rwlock);
-
+  pthread_rwlock_unlock(&kvs_lock);
   return 0;
 }
 
-int kvs_read(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock) {
+int kvs_read(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint) {
   if (kvs_table == NULL) {
-    snprintf(bufferToPrint, 2000, "KVS state must be initialized\n");
-    writeToDotOut(bufferToPrint, fdToPrint);
+    fprintf(stderr, "KVS state must be initialized\n");
     return 1;
   }
-
-  pthread_rwlock_rdlock(&rwlock);
-
+  qsort(keys, num_pairs, MAX_STRING_SIZE, compareKeys);
+  
+  pthread_rwlock_rdlock(&kvs_lock);
   snprintf(bufferToPrint, 2000, "[");
   writeToDotOut(bufferToPrint, fdToPrint);
-
   for (size_t i = 0; i < num_pairs; i++) {
-    char* result = read_pair(kvs_table, keys[i]);
+    char *result = read_pair(kvs_table, keys[i]);
     if (result == NULL) {
-      snprintf(bufferToPrint, 2000, "(%s,KVSERROR)", keys[i]);
-      writeToDotOut(bufferToPrint, fdToPrint);
+      snprintf(bufferToPrint, 2000, "(%s, KVSERROR)", keys[i]);
     } else {
       snprintf(bufferToPrint, 2000, "(%s,%s)", keys[i], result);
-      writeToDotOut(bufferToPrint, fdToPrint);
     }
+    writeToDotOut(bufferToPrint, fdToPrint);
     free(result);
   }
   snprintf(bufferToPrint, 2000, "]\n");
   writeToDotOut(bufferToPrint, fdToPrint);
-
-  pthread_rwlock_unlock(&rwlock);
+  pthread_rwlock_unlock(&kvs_lock);
   return 0;
 }
 
-int kvs_delete(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock) {
+int kvs_delete(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint) {
   if (kvs_table == NULL) {
-    snprintf(bufferToPrint, 2000, "KVS state must be initialized\n");
-    writeToDotOut(bufferToPrint, fdToPrint);
+    fprintf(stderr, "KVS state must be initialized\n");
     return 1;
   }
+  qsort(keys, num_pairs, MAX_STRING_SIZE, compareKeys);
 
-  pthread_rwlock_wrlock(&rwlock);
-
+  pthread_rwlock_wrlock(&kvs_lock);
   int aux = 0;
-
   for (size_t i = 0; i < num_pairs; i++) {
     if (delete_pair(kvs_table, keys[i]) != 0) {
       if (!aux) {
@@ -133,101 +123,71 @@ int kvs_delete(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPri
     snprintf(bufferToPrint, 2000, "]\n");
     writeToDotOut(bufferToPrint, fdToPrint);
   }
-
-  pthread_rwlock_unlock(&rwlock);
-
+  pthread_rwlock_unlock(&kvs_lock);
   return 0;
 }
 
-void kvs_show(char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock) {
-  
-  pthread_rwlock_rdlock(&rwlock);
-  
+void kvs_show(char *bufferToPrint, int fdToPrint) {
+  pthread_rwlock_rdlock(&kvs_lock);
   for (int i = 0; i < TABLE_SIZE; i++) {
     KeyNode *keyNode = kvs_table->table[i];
     while (keyNode != NULL) {
-
       snprintf(bufferToPrint, 2000, "(%s, %s)\n", keyNode->key, keyNode->value);
       writeToDotOut(bufferToPrint, fdToPrint);
       keyNode = keyNode->next;
     }
   }
-
-  pthread_rwlock_unlock(&rwlock);
-
+  pthread_rwlock_unlock(&kvs_lock);
 }
 
-int kvs_backup(char * inputFilePath, char* bufferToPrint, int fdToPrint, int backupCounter, int maxBackups, pthread_rwlock_t rwlock) {
-
-
-  pthread_rwlock_rdlock(&rwlock);
-  
-  //se já estiver no maximo de backups simultaneos espera que um acabe
-  if (maxBackups == backupsInExecution)
-  {
+int kvs_backup(char *inputFilePath, char *bufferToPrint, int fdToPrint, int backupCounter, int maxBackups) {
+  //garante uma vaga ANTES de trancar a tabela
+  pthread_mutex_lock(&backupMutex);
+  if (backupsInExecution == maxBackups) {
     wait(NULL);
     backupsInExecution--;
   }
-
-  pid_t pid;
-
   backupsInExecution++;
+  pthread_mutex_unlock(&backupMutex);
 
-  pid = fork();
-  
-  if(pid < 0)
-  {
+  //rdlock durante o fork: o snapshot herdado pelo filho é consistente
+  pthread_rwlock_rdlock(&kvs_lock);
+
+  pid_t pid = fork();
+
+  if (pid == 0) {
+    char outputFilePath[MAX_JOB_FILE_NAME_SIZE];
+    strcpy(outputFilePath, inputFilePath);
+    char *dot = strrchr(outputFilePath, '.');
+    char temp[256];
+    snprintf(temp, sizeof(temp), "-%d.bck", backupCounter);
+    if (dot != NULL) strcpy(dot, temp);
+    else strcat(outputFilePath, temp);
+
+    fdToPrint = open(outputFilePath, O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR);
+    if (fdToPrint == ERROR) {
+      perror("Output file inválido");
+      _exit(1);
+    }
+    for (int i = 0; i < TABLE_SIZE; i++) {
+      KeyNode *keyNode = kvs_table->table[i];
+      while (keyNode != NULL) {
+        snprintf(bufferToPrint, 2000, "(%s, %s)\n", keyNode->key, keyNode->value);
+        writeToDotOut(bufferToPrint, fdToPrint);
+        keyNode = keyNode->next;
+      }
+    }
+    close(fdToPrint);
+    _exit(0);
+  }
+  pthread_rwlock_unlock(&kvs_lock);
+
+  if (pid < 0) {
+    pthread_mutex_lock(&backupMutex);
+    backupsInExecution--;
+    pthread_mutex_unlock(&backupMutex);
     return -1;
   }
-  
-  else if ( pid == 0) {
-
-
-  char outputFilePath[MAX_JOB_FILE_NAME_SIZE];
-
-  strcpy(outputFilePath, inputFilePath);
-
-  char *dot = strrchr(outputFilePath, '.');
-  
-  if (dot != NULL) {
-      char temp[256]; 
-      snprintf(temp, sizeof(temp), "-%d.bck", backupCounter);
-      strcpy(dot, temp);
-  } else {
-      char temp[256];
-      snprintf(temp, sizeof(temp), "-%d.bck", backupCounter);
-      strcat(outputFilePath, temp);
-  }
-
- 
-  fdToPrint = open(outputFilePath, O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR);
-  if (fdToPrint == ERROR){
-    perror("Output file inválido");
-    close(fdToPrint);
-    return ERROR;
-  }
-
-  //percorre a hashtable e faz show ao conteúdo
-  for (int i = 0; i < TABLE_SIZE; i++) {
-    KeyNode *keyNode = kvs_table->table[i];
-    while (keyNode != NULL) {
-
-      snprintf(bufferToPrint, 2000, "(%s, %s)\n", keyNode->key, keyNode->value);
-
-      writeToDotOut(bufferToPrint, fdToPrint);
-      
-      keyNode = keyNode->next;
-    }
-  }
-
-  close(fdToPrint);
-
-  exit(0);
-
-  }
-
-  pthread_rwlock_unlock(&rwlock);
-
   return 0;
 }
 
@@ -236,40 +196,30 @@ void kvs_wait(unsigned int delay_ms) {
   nanosleep(&delay, NULL);
 }
 
+// ---- subscrições (chamadas pela tarefa gestora de cada cliente) ----
 
-int keyExists (char*key, pthread_rwlock_t rwlock){
-
-
-  pthread_rwlock_rdlock(&rwlock);
-  char* result = read_pair(kvs_table, key);
-
-
-  pthread_rwlock_unlock(&rwlock);
-
-  if (result ==  NULL)
-  {
-    return 0;
-  }
-  else {
-    return 1;
-  }
-
-  
-
+int kvs_subscribe(const char *key, int notif_fd) {
+  pthread_rwlock_wrlock(&kvs_lock);
+  int existed = subscribe_key(kvs_table, key, notif_fd);
+  pthread_rwlock_unlock(&kvs_lock);
+  return existed;
 }
 
-void subscribeKey (char * key, char * clientID, pthread_rwlock_t rwlock) {
-
-
-  addClient(key, clientID, kvs_table, rwlock);
+int kvs_unsubscribe(const char *key, int notif_fd) {
+  pthread_rwlock_wrlock(&kvs_lock);
+  int removed = unsubscribe_key(kvs_table, key, notif_fd);
+  pthread_rwlock_unlock(&kvs_lock);
+  return removed;
 }
 
-void unsubscribeKey (char * key,pthread_rwlock_t rwlock) {
-
-  removeClient(key, kvs_table, rwlock);
+void kvs_remove_client(int notif_fd) {
+  pthread_rwlock_wrlock(&kvs_lock);
+  remove_client(kvs_table, notif_fd);
+  pthread_rwlock_unlock(&kvs_lock);
 }
 
-void removeAllSubscriptions(pthread_rwlock_t rwlock){
-  
-  deleteSubscriptions(rwlock, kvs_table); 
+void kvs_delete_all_subscriptions(void) {
+  pthread_rwlock_wrlock(&kvs_lock);
+  clear_all_subscriptions(kvs_table);
+  pthread_rwlock_unlock(&kvs_lock);
 }

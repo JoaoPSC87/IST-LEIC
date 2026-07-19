@@ -3,55 +3,24 @@
 
 #include <stddef.h>
 
-/// Initializes the KVS state.
-/// @return 0 if the KVS state was initialized successfully, 1 otherwise.
-int kvs_init(char *bufferToPrint, int fdToPrint);
+#include "constants.h"
 
-/// Destroys the KVS state.
-/// @return 0 if the KVS state was terminated successfully, 1 otherwise.
-int kvs_terminate(char *bufferToPrint, int fdToPrint);
+///Inicializa/destrói o estado do KVS (0 em sucesso, 1 em erro)
+int kvs_init(void);
+int kvs_terminate(void);
 
-/// Writes a key value pair to the KVS. If key already exists it is updated.
-/// @param num_pairs Number of pairs being written.
-/// @param keys Array of keys' strings.
-/// @param values Array of values' strings.
-/// @return 0 if the pairs were written successfully, 1 otherwise.
-int kvs_write(size_t num_pairs, char keys[][MAX_STRING_SIZE], char values[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock);
-
-/// Reads values from the KVS.
-/// @param num_pairs Number of pairs to read.
-/// @param keys Array of keys' strings.
-/// @param fd File descriptor to write the (successful) output.
-/// @return 0 if the key reading, 1 otherwise.
-int kvs_read(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock);
-
-/// Deletes key value pairs from the KVS.
-/// @param num_pairs Number of pairs to read.
-/// @param keys Array of keys' strings.
-/// @return 0 if the pairs were deleted successfully, 1 otherwise.
-int kvs_delete(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock);
-
-/// Writes the state of the KVS.
-/// @param fd File descriptor to write the output.
-void kvs_show(char *bufferToPrint, int fdToPrint, pthread_rwlock_t rwlock);
-
-/// Creates a backup of the KVS state and stores it in the correspondent
-/// backup file
-/// @return 0 if the backup was successful, 1 otherwise.
-int kvs_backup(char * inputFilePath, char* bufferToPrint, int fdToPrint, int backupCounter, int maxBackups, pthread_rwlock_t rwlock);
-
-/// Waits for the last backup to be called.
-void kvs_wait_backup();
-
-/// Waits for a given amount of time.
-/// @param delay_us Delay in milliseconds.
+///Operações de ficheiros .job (o output vai para o .out via bufferToPrint/fd)
+int kvs_write(size_t num_pairs, char keys[][MAX_STRING_SIZE], char values[][MAX_STRING_SIZE]);
+int kvs_read(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint);
+int kvs_delete(size_t num_pairs, char keys[][MAX_STRING_SIZE], char *bufferToPrint, int fdToPrint);
+void kvs_show(char *bufferToPrint, int fdToPrint);
+int kvs_backup(char *inputFilePath, char *bufferToPrint, int fdToPrint, int backupCounter, int maxBackups);
 void kvs_wait(unsigned int delay_ms);
 
-void subscribeKey (char * key, char * clientID, pthread_rwlock_t rwlock);
+///Subscrições (chamadas pela tarefa gestora de cada cliente)
+int kvs_subscribe(const char *key, int notif_fd); //1 se a chave existia, 0 caso contrário
+int kvs_unsubscribe(const char *key, int notif_fd); //0 se removida, 1 caso contrário
+void kvs_remove_client(int notif_fd); //remove todas as subscrições do cliente
+void kvs_delete_all_subscriptions(void);
 
-int unsubscribeKey (char * key, pthread_rwlock_t rwlock);
-
-void removeAllSubscriptions(pthread_rwlock_t rwlock);
-
-int keyExists (char*key, pthread_rwlock_t rwlock);
 #endif  // KVS_OPERATIONS_H

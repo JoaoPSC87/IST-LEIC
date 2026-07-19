@@ -5,62 +5,53 @@
 
 #include <stddef.h>
 
-#include <pthread.h>
-
-
-/*typedef struct ClientNode {
-    char *clientID;
-    struct ClientNode *next;
-} ClientNode;*/
+// um subscritor de uma chave: o fd do seu FIFO de notificações
+typedef struct SubNode {
+    int notif_fd;
+    struct SubNode *next;
+} SubNode;
 
 typedef struct KeyNode {
     char *key;
     char *value;
-    //struct ClientNode * clientList;
-    char clientID [32];
+    SubNode *subscribers; //lista de subscritores desta chave
     struct KeyNode *next;
-    
 } KeyNode;
 
 typedef struct HashTable {
     KeyNode *table[TABLE_SIZE];
 } HashTable;
 
-/// Creates a new event hash table.
-/// @return Newly created hash table, NULL on failure
+/// Índice da hashtable para uma chave (-1 se inválida)
+int hash(const char *key);
+
+/// Cria uma nova hashtable, NULL em falha
 struct HashTable *create_hash_table();
 
-/// Appends a new key value pair to the hash table.
-/// @param ht Hash table to be modified.
-/// @param key Key of the pair to be written.
-/// @param value Value of the pair to be written.
-/// @return 0 if the node was appended successfully, 1 otherwise.
+/// Escreve/atualiza um par. Se a chave tiver subscritores, notifica-os
 int write_pair(HashTable *ht, const char *key, const char *value);
 
-/// Deletes the value of given key.
-/// @param ht Hash table to delete from.
-/// @param key Key of the pair to be deleted.
-/// @return 0 if the node was deleted successfully, 1 otherwise.
-char* read_pair(HashTable *ht, const char *key);
+/// Devolve uma cópia do valor da chave (NULL se não existe)
+char *read_pair(HashTable *ht, const char *key);
 
-/// Appends a new node to the list.
-/// @param list Event list to be modified.
-/// @param key Key of the pair to read.
-/// @return 0 if the node was appended successfully, 1 otherwise.
+/// Remove um par. Notifica os subscritores com "DELETED"
 int delete_pair(HashTable *ht, const char *key);
 
+/// Subscreve um cliente (pelo fd de notificações) a uma chave
+/// @return 1 se a chave existia (subscrição feita), 0 caso contrário
+int subscribe_key(HashTable *ht, const char *key, int notif_fd);
 
-void addClient(char * key, char * clientID, HashTable *ht , pthread_rwlock_t rwlock );
+/// Remove a subscrição de um cliente a uma chave
+/// @return 0 se a subscrição existia e foi removida, 1 caso contrário
+int unsubscribe_key(HashTable *ht, const char *key, int notif_fd);
 
-void removeClient(char * key, HashTable *ht , pthread_rwlock_t rwlock ) ;
+/// Remove todas as subscrições de um cliente (em todas as chaves)
+void remove_client(HashTable *ht, int notif_fd);
 
-void deleteSubscriptions( pthread_rwlock_t rwlock ,  HashTable *ht );
+/// Remove todas as subscrições de todas as chaves (usado no SIGSUR1)
+void clear_all_subscriptions(HashTable *ht);
 
-
-/// Frees the hashtable.
-/// @param ht Hash table to be deleted.
+/// Liberta a hashtable (e as listas de subscritores)
 void free_table(HashTable *ht);
-
-
 
 #endif  // KVS_H

@@ -1,151 +1,187 @@
 #include "kvs.h"
-#include "string.h"
-#include <stdio.h>
 
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 
-#include <unistd.h>
+#include "src/common/protocol.h"
+#include "src/common/io.h"
 
-#include <pthread.h>
-
-#include <fcntl.h>
-#include <sys/stat.h> 
-#include <sys/types.h>
-
-// Hash function based on key initial.
-// @param key Lowercase alphabetical string.
-// @return hash.
-// NOTE: This is not an ideal hash function, but is useful for test purposes of the project
+// Hash function based on key initial
 int hash(const char *key) {
-    int firstLetter = tolower(key[0]);
+    int firstLetter = tolower((unsigned char)key[0]);
     if (firstLetter >= 'a' && firstLetter <= 'z') {
         return firstLetter - 'a';
     } else if (firstLetter >= '0' && firstLetter <= '9') {
         return firstLetter - '0';
     }
-    return -1; // Invalid index for non-alphabetic or number strings
+    return -1; // chave que não começa por letra/dígito
 }
 
+struct HashTable *create_hash_table() {
+    HashTable *ht = malloc(sizeof(HashTable));
+    if (!ht) return NULL;
+    for (int i = 0; i < TABLE_SIZE; i++)
+        ht->table[i] = NULL;
+    return ht;
+}
 
-struct HashTable* create_hash_table() {
-  HashTable *ht = malloc(sizeof(HashTable));
-  if (!ht) return NULL;
-  for (int i = 0; i < TABLE_SIZE; i++) {
-      ht->table[i] = NULL;
-  }
-  return ht;
+// envia [key(41)][value(41)] a todos os subscritores da chave
+// para um DELETE, passar value = "DELETED"
+static void notify_subscribers(KeyNode *node, const char *value) {
+    char msg[NOTIFICATION_SIZE];
+    memset(msg, 0, sizeof(msg));
+    memcpy(msg, node->key, strnlen(node->key, KEY_SIZE - 1));
+    memcpy(msg + KEY_SIZE, value, strnlen(value, VALUE_SIZE - 1));
+    for (SubNode *s = node->subscribers; s != NULL; s = s->next) {
+        write_all(s->notif_fd, msg, NOTIFICATION_SIZE);
+    }
+}
+
+// liberta a lista de subscritores de um nó
+static void free_subscribers(KeyNode *node) {
+    SubNode *s = node->subscribers;
+    while (s != NULL) {
+        SubNode *tmp = s;
+        s = s->next;
+        free(tmp);
+    }
+    node->subscribers = NULL;
 }
 
 int write_pair(HashTable *ht, const char *key, const char *value) {
     int index = hash(key);
+    if (index < 0) return 1;
     KeyNode *keyNode = ht->table[index];
 
-    // Search for the key node
     while (keyNode != NULL) {
         if (strcmp(keyNode->key, key) == 0) {
             free(keyNode->value);
             keyNode->value = strdup(value);
-
-            if (strcmp(keyNode->clientID,"no client")!= 0)
-            {
-                int fdNotif;
-                char notif_pipe_path[40] = "/tmp/notif";
-                strncat(notif_pipe_path, keyNode->clientID, strlen(keyNode->clientID) * sizeof(char));
-
-                fdNotif = open(notif_pipe_path, O_WRONLY);  
-
-                char mensagemEnviar [sizeof(key)+sizeof(key)+3];
-
-                strcat(mensagemEnviar, "(");
-                strcat(mensagemEnviar, key);
-                strcat(mensagemEnviar, ",");
-                strcat(mensagemEnviar, value);
-                strcat(mensagemEnviar, ")");
-
-                write(fdNotif, mensagemEnviar, sizeof(key)+sizeof(key)+3);
-
-                close(fdNotif);
-            }
-            
-
+            notify_subscribers(keyNode, value); //avisa os subscritores
             return 0;
         }
-        keyNode = keyNode->next; // Move to the next node
+        keyNode = keyNode->next;
     }
 
-    // Key not found, create a new key node
+    // chave nova (ainda sem subscritores)
     keyNode = malloc(sizeof(KeyNode));
-    keyNode->key = strdup(key); // Allocate memory for the key
-    keyNode->value = strdup(value); // Allocate memory for the value
-    keyNode->next = ht->table[index]; // Link to existing nodes
-    ht->table[index] = keyNode; // Place new key node at the start of the list
+    keyNode->key = strdup(key);
+    keyNode->value = strdup(value);
+    keyNode->subscribers = NULL;
+    keyNode->next = ht->table[index];
+    ht->table[index] = keyNode;
     return 0;
 }
 
-char* read_pair(HashTable *ht, const char *key) {
+char *read_pair(HashTable *ht, const char *key) {
     int index = hash(key);
+    if (index < 0) return NULL;
     KeyNode *keyNode = ht->table[index];
-    char* value;
-
     while (keyNode != NULL) {
-        if (strcmp(keyNode->key, key) == 0) {
-            value = strdup(keyNode->value);
-            return value; // Return copy of the value if found
-        }
-        keyNode = keyNode->next; // Move to the next node
+        if (strcmp(keyNode->key, key) == 0)
+            return strdup(keyNode->value);
+        keyNode = keyNode->next;
     }
-    return NULL; // Key not found
+    return NULL;
 }
 
 int delete_pair(HashTable *ht, const char *key) {
     int index = hash(key);
+    if (index < 0) return 1;
     KeyNode *keyNode = ht->table[index];
     KeyNode *prevNode = NULL;
 
-    // Search for the key node
     while (keyNode != NULL) {
         if (strcmp(keyNode->key, key) == 0) {
-            // Key found; delete this node
-            if (prevNode == NULL) {
-                // Node to delete is the first node in the list
-                ht->table[index] = keyNode->next; // Update the table to point to the next node
-            } else {
-                // Node to delete is not the first; bypass it
-                prevNode->next = keyNode->next; // Link the previous node to the next node
-            }
-            if (strcmp(keyNode->clientID,"no client")!= 0)
-            {
-                int fdNotif;
-                char notif_pipe_path[40] = "/tmp/notif";
-                strncat(notif_pipe_path, keyNode->clientID, strlen(keyNode->clientID) * sizeof(char));
-
-                fdNotif = open(notif_pipe_path, O_WRONLY);  
-
-                char mensagemEnviar [sizeof(key)+sizeof(key)+3];
-
-                strcat(mensagemEnviar, "(");
-                strcat(mensagemEnviar, key);
-                strcat(mensagemEnviar, ",");
-                strcat(mensagemEnviar, "DELETED");
-                strcat(mensagemEnviar, ")");
-
-                write(fdNotif, mensagemEnviar, sizeof(key)+sizeof(key)+3);
-                
-                close(fdNotif);
-                
-            }
-            // Free the memory allocated for the key and value
+            notify_subscribers(keyNode, "DELETED"); //avisa antes de remover
+            free_subscribers(keyNode);
+            if (prevNode == NULL)
+                ht->table[index] = keyNode->next;
+            else
+                prevNode->next = keyNode->next;
             free(keyNode->key);
             free(keyNode->value);
-            free(keyNode); // Free the key node itself
-            return 0; // Exit the function
+            free(keyNode);
+            return 0;
         }
-        prevNode = keyNode; // Move prevNode to current node
-        keyNode = keyNode->next; // Move to the next node
+        prevNode = keyNode;
+        keyNode = keyNode->next;
     }
-    
     return 1;
+}
+
+int subscribe_key(HashTable *ht, const char *key, int notif_fd) {
+    int index = hash(key);
+    if (index < 0) return 0;
+    KeyNode *keyNode = ht->table[index];
+    while (keyNode != NULL) {
+        if (strcmp(keyNode->key, key) == 0) {
+            // não duplica a subscrição do mesmo cliente
+            for (SubNode *s = keyNode->subscribers; s != NULL; s = s->next)
+                if (s->notif_fd == notif_fd) return 1;
+            SubNode *sub = malloc(sizeof(SubNode));
+            sub->notif_fd = notif_fd;
+            sub->next = keyNode->subscribers;
+            keyNode->subscribers = sub;
+            return 1; //a chave existia
+        }
+        keyNode = keyNode->next;
+    }
+    return 0; //a chave não existia
+}
+
+int unsubscribe_key(HashTable *ht, const char *key, int notif_fd) {
+    int index = hash(key);
+    if (index < 0) return 1;
+    KeyNode *keyNode = ht->table[index];
+    while (keyNode != NULL) {
+        if (strcmp(keyNode->key, key) == 0) {
+            SubNode *s = keyNode->subscribers, *prev = NULL;
+            while (s != NULL) {
+                if (s->notif_fd == notif_fd) {
+                    if (prev == NULL) keyNode->subscribers = s->next;
+                    else prev->next = s->next;
+                    free(s);
+                    return 0; // existia e foi removida
+                }
+                prev = s;
+                s = s->next;
+            }
+            return 1; // chave existe mas não estava subscrita
+        }
+        keyNode = keyNode->next;
+    } 
+    return 1;
+}
+
+void remove_client(HashTable *ht, int notif_fd) {
+    for (int i = 0; i < TABLE_SIZE; i++) {
+        for (KeyNode *keyNode = ht->table[i]; keyNode != NULL; keyNode = keyNode->next) {
+            SubNode *s = keyNode->subscribers, *prev = NULL;
+            while (s != NULL) {
+                if (s->notif_fd == notif_fd) {
+                    SubNode *tmp = s;
+                    if (prev == NULL) keyNode->subscribers = s->next;
+                    else prev->next = s->next;
+                    s = s->next;
+                    free(tmp);
+                } else {
+                    prev = s;
+                    s = s->next;
+                }
+            }
+        }
+    }
+}
+
+void clear_all_subscriptions(HashTable *ht) {
+    for (int i = 0; i < TABLE_SIZE; i++) {
+        for (KeyNode *k = ht->table[i]; k != NULL; k = k->next){
+            free_subscribers(k);
+        }
+    }
 }
 
 void free_table(HashTable *ht) {
@@ -154,6 +190,7 @@ void free_table(HashTable *ht) {
         while (keyNode != NULL) {
             KeyNode *temp = keyNode;
             keyNode = keyNode->next;
+            free_subscribers(temp);
             free(temp->key);
             free(temp->value);
             free(temp);
@@ -161,68 +198,3 @@ void free_table(HashTable *ht) {
     }
     free(ht);
 }
-
-
-
-void addClient(char * key, char * clientID, HashTable *ht , pthread_rwlock_t rwlock ) {
-
-    int index = hash(key);
-    KeyNode *keyNode = ht->table[index];
-
-    pthread_rwlock_rdlock(&rwlock);
-
-
-    while (keyNode->next != NULL) {
-        if (strcmp(keyNode->key, key) == 0) {
-            
-            strcpy(keyNode->clientID,clientID);
-
-        }
-        keyNode = keyNode->next; // Move to the next node
-    }
-
-    pthread_rwlock_unlock(&rwlock);
-}
-
-void removeClient(char * key, HashTable *ht , pthread_rwlock_t rwlock ) {
-
-
-    int index = hash(key);
-    KeyNode *keyNode = ht->table[index];
-
-    pthread_rwlock_rdlock(&rwlock);
-
-    while (keyNode->next != NULL) {
-        if (strcmp(keyNode->key, key) == 0) {
-            
-            strcpy(keyNode->clientID,"no client");
-
-        }
-        keyNode = keyNode->next; // Move to the next node
-    }
-
-    pthread_rwlock_unlock(&rwlock);
-
-}
-
-
-void deleteSubscriptions( pthread_rwlock_t rwlock ,  HashTable *ht ){
-
-
-    int index = 0;
-    KeyNode *keyNode = ht->table[index];
-
-    pthread_rwlock_rdlock(&rwlock);
-
-    while (keyNode->next != NULL) {
-        
-        strcpy(keyNode->clientID,"no client");
-
-        keyNode = keyNode->next; // Move to the next node
-    }
-
-    pthread_rwlock_unlock(&rwlock);
-
-}
-
-
