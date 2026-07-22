@@ -38,42 +38,42 @@ void destroyVacinas(Vacinas **lista_vacinas);
 /**
  * @brief Apaga a lista de registos de inoculações
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @return void (a função não retorna valores)
  */
-void destroyInoculacoes(Inoculacoes **lista_inoculacoes);
+void destroyInoculacoes(Registo *registo);
 
 /**
  * @brief Apaga todos os registos de inoculação de um utente num determinado dia
  * com um determinado lote
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @param[in] data data a qual se pretende apagar registos
  * @param[in] lote lote ao qual se pretende apagar registos
  * @return Número de registos apagados
  */
-int apagaInoculacoesUtenteLote(Inoculacoes **lista_inoculacoes,
+int apagaInoculacoesUtenteLote(Registo *registo,
      char nome_utente[], Data *data, char lote[]);
 
 /**
  * @brief Apaga todos os registos de inoculação de um utente num determinado dia
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @param[in] data data a qual se pretende apagar registos
  * @return Número de registos apagados
  */
-int apagaInoculacoesUtenteData(Inoculacoes **lista_inoculacoes,
+int apagaInoculacoesUtenteData(Registo *registo,
      char nome_utente[], Data *data);
 
 /**
  * @brief Apaga todos os registos de inoculação de um utente
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @return Número de registos apagados
  */     
-int apagaInoculacoesUtente(Inoculacoes **lista_inoculacoes, char nome_utente[]);
+int apagaInoculacoesUtente(Registo *registo, char nome_utente[]);
 
 #endif

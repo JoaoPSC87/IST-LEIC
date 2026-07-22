@@ -42,12 +42,12 @@ void listaVacinas(Vacinas **lista_vacinas, char lingua[]);
  * @brief Aplica uma vacina a um utente
  * 
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */
-void aplicaVacina(Vacinas **lista_vacinas, Inoculacoes **lista_inoculacoes,
+void aplicaVacina(Vacinas **lista_vacinas, Registo *registo,
     Data *data_sistema, char lingua[]);
 
 /**
@@ -63,23 +63,23 @@ int retiraLote(Vacinas **lista_vacinas, char lingua[], int num_vacinas);
 /**
  * @brief Apaga registos de inoculações de um utente
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */
-void apagaRegisto(Inoculacoes **lista_inoculacoes, Vacinas ** lista_vacinas,
+void apagaRegisto(Registo *registo, Vacinas ** lista_vacinas,
     Data *data_sistema, char lingua[]);
 
 /**
  * @brief Faz a listagem dos registos de inoculações
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */   
-void listaInoculacoes(Inoculacoes **lista_inoculacoes, char lingua[]);
+void listaInoculacoes(Registo *registo, char lingua[]);
 
 /**
  * @brief Avança a data da simulação

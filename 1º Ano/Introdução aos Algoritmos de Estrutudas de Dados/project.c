@@ -38,7 +38,7 @@
   * @see listaInoculacoes
   * @see avancarTempo
   * @param lista_vacinas Ponteiro para a lista de vacinas
-  * @param lista_inoculacoes Ponteiro para a lista de inoculações
+  * @param registo Ponteiro para o registo de inoculações
   * @param data_sistema Ponteiro para a data atual do sistema
   * @param num_vacinas Número atual de vacinas registadas
   * @param comando Comando a executar
@@ -46,7 +46,7 @@
   * @return Número atualizado de vacinas após a execução do comando
   */
  
- int comandos(Vacinas **lista_vacinas, Inoculacoes **lista_inoculacoes,
+ int comandos(Vacinas **lista_vacinas, Registo *registo,
              Data *data_sistema, int num_vacinas,char comando, char lingua[]) {
      switch (comando) {
          // introduz novo lote
@@ -57,18 +57,18 @@
          case 'l': listaVacinas(lista_vacinas, lingua);
              break;
          // aplica vacina a utente
-         case 'a': aplicaVacina(lista_vacinas, lista_inoculacoes, data_sistema,
+         case 'a': aplicaVacina(lista_vacinas, registo, data_sistema,
                      lingua);
              break;
          // retira lote
          case 'r': num_vacinas = retiraLote(lista_vacinas, lingua, num_vacinas);
              break;
          // apaga registo de vacina
-         case 'd': apagaRegisto(lista_inoculacoes, lista_vacinas, data_sistema,
+         case 'd': apagaRegisto(registo, lista_vacinas, data_sistema,
                      lingua);
              break;
          // lista aplicações de utente
-         case 'u': listaInoculacoes(lista_inoculacoes, lingua);
+         case 'u': listaInoculacoes(registo, lingua);
              break;
          // avança tempo
          case 't': Data *nova_data = avancarTempo(data_sistema, lingua);
@@ -98,7 +98,8 @@
  int main(int argc, char *argv[]) {
      int num_vacinas = 0;
      char comando, *lingua = "en";
-     Inoculacoes *lista_inoculacoes = NULL;
+     Registo registo;
+     iniciaRegisto(&registo);
      Vacinas *lista_vacinas = NULL;
      Data *data_sistema = malloc(sizeof(Data));
  
@@ -123,12 +124,12 @@
  
          // chamada da função que executa os comandos
          while ((comando = getchar()) != EOF && comando != 'q') {
-             num_vacinas = comandos(&lista_vacinas, &lista_inoculacoes,
+             num_vacinas = comandos(&lista_vacinas, &registo,
                              data_sistema, num_vacinas, comando, lingua);
          }
          // Libertação da memória alocada
          destroyVacinas(&lista_vacinas);
-         destroyInoculacoes(&lista_inoculacoes);
+         destroyInoculacoes(&registo);
          free(data_sistema);
          return 0;
      }

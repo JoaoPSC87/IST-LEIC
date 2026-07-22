@@ -38,19 +38,19 @@ void listaVacinasNome(Vacinas**lista_vacinas, char nome[], char lingua[]);
 /**
  * @brief Imprime todos os registos de utentes na lista de inoculações
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @return void (a função não retorna valores)
  */
-void listaTodosUtentes(Inoculacoes**lista_inoculacoes);
+void listaTodosUtentes(Registo *registo);
 
 /**
  * @brief Imprime todos os registos de um utente na lista de inoculações
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome nome do utente que se pretende listar os registos
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */
-void listaUtenteNome(Inoculacoes**lista_inoculacoes, char nome[],char lingua[]);
+void listaUtenteNome(Registo *registo, char nome[],char lingua[]);
 
 #endif

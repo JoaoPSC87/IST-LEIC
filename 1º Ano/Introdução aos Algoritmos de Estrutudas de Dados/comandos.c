@@ -121,12 +121,12 @@ void listaVacinas(Vacinas **lista_vacinas, char lingua[]) {
  * @see leNomeUtente
  * @see processaAplicacaoVacina 
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */
-void aplicaVacina(Vacinas **lista_vacinas, Inoculacoes **lista_inoculacoes,
+void aplicaVacina(Vacinas **lista_vacinas, Registo *registo,
     Data *data_sistema, char lingua[]) {
 
     // Variáveis para armazenar os dados da vacina e do utente
@@ -151,7 +151,7 @@ void aplicaVacina(Vacinas **lista_vacinas, Inoculacoes **lista_inoculacoes,
         exit(1);
     }
     // Verificação e validação da vacina e do utente
-    sucesso = processaAplicacaoVacina(lista_vacinas, lista_inoculacoes,
+    sucesso = processaAplicacaoVacina(lista_vacinas, registo,
             data_sistema, lingua, nome_utente, aplicacao);
     // Liberta memória com base no resultado
     free(nome_utente);
@@ -232,13 +232,13 @@ int retiraLote(Vacinas **lista_vacinas, char lingua[], int num_vacinas){
  * @see dataMaisAntiga
  * @see apagaInoculacoesUtenteData
  * @see apagaInoculacoesUtente
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */
-void apagaRegisto(Inoculacoes **lista_inoculacoes, Vacinas **lista_vacinas,
+void apagaRegisto(Registo *registo, Vacinas **lista_vacinas,
     Data *data_sistema, char lingua[]){
     // Variáveis para armazenar os dados da pesquisa
     int size_med = MED_BYTES_UTENTE,apagados = 0;
@@ -251,22 +251,22 @@ void apagaRegisto(Inoculacoes **lista_inoculacoes, Vacinas **lista_vacinas,
     }
     while(1){
         // Verifica se o utente tem registos de inoculação
-        if(!utenteTemRegisto(lista_inoculacoes, nome_utente, lingua)) break;
+        if(!utenteTemRegisto(registo, nome_utente, lingua)) break;
         // Lê a linha de entrada para processar parâmetros adicionais
         // (data e/ou lote)
         fgets(input, sizeof(input), stdin);
         // Tenta interpretar a entrada como "data lote"
         if(sscanf(input,"%d-%d-%d %s",&data.dia,&data.mes, &data.ano, lote)==4){    
             if(validaDataLote(&data, lote, data_sistema, lista_vacinas, lingua))
-                apagados=apagaInoculacoesUtenteLote(lista_inoculacoes,nome_utente,&data,lote);
+                apagados=apagaInoculacoesUtenteLote(registo,nome_utente,&data,lote);
             else break;
         }else if(sscanf(input, "%d-%d-%d", &data.dia, &data.mes, &data.ano)==3){
             if (!dataValida(data) || dataMaisAntiga(*data_sistema, data)) {
                 printf(!strcmp(lingua,"pt")?"data inválida\n":"invalid date\n");
                 break;
             }
-            apagados=apagaInoculacoesUtenteData(lista_inoculacoes,nome_utente,&data);
-        } else apagados = apagaInoculacoesUtente(lista_inoculacoes,nome_utente);
+            apagados=apagaInoculacoesUtenteData(registo,nome_utente,&data);
+        } else apagados = apagaInoculacoesUtente(registo,nome_utente);
         printf("%d\n", apagados);
         break;
     }
@@ -285,11 +285,11 @@ void apagaRegisto(Inoculacoes **lista_inoculacoes, Vacinas **lista_vacinas,
  * @see listaTodosUtentes
  * @see leNomeUtente
  * @see listaUtenteNome
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] lingua linguagem das mensagens de erro
  * @return void (a função não retorna valores)
  */  
-void listaInoculacoes(Inoculacoes **lista_inoculacoes, char lingua[]){
+void listaInoculacoes(Registo *registo, char lingua[]){
     
     int size_med = MED_BYTES_UTENTE;
     
@@ -297,7 +297,7 @@ void listaInoculacoes(Inoculacoes **lista_inoculacoes, char lingua[]){
     char c = getchar();
     if (c == '\n' || c == EOF) {
         // Se não tiver argumentos, imprime a lista toda
-        listaTodosUtentes(lista_inoculacoes);
+        listaTodosUtentes(registo);
         return;
     }
     //lê o nome do utente
@@ -308,7 +308,7 @@ void listaInoculacoes(Inoculacoes **lista_inoculacoes, char lingua[]){
             exit(1);
         }
         //lista os registos de inoculação do utente
-        listaUtenteNome(lista_inoculacoes, nome, lingua);
+        listaUtenteNome(registo, nome, lingua);
         free(nome);
     }  
 }

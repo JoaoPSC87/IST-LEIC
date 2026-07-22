@@ -71,19 +71,19 @@ int existeStock(char nome_vacina[], Vacinas **lista_vacinas, char lote[],
  * @param[in] nome_utente nome do utente que se pretende verificar se foi 
  * vacinado nesse dia com uma determinada vacina
  * @param[in] data_sistema data atual da simulação
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] lingua linguagem das mensagens de erro
  * @return 1 se o utente foi vacinado nesse dia com a vacina, 0 caso contrário
  */
 int jaFoiVacinado(char nome_vacina[], char nome_utente[], Data *data_sistema,
-    Inoculacoes **lista_inoculacoes, char lingua[]);
+    Registo *registo, char lingua[]);
 
 /**
  * @brief Processa uma determinada aplicação de uma vacina num determinado
  * utente
  * 
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @param[in] nome_utente nome do utente que se pretende vacinar
@@ -92,18 +92,18 @@ int jaFoiVacinado(char nome_vacina[], char nome_utente[], Data *data_sistema,
  * @return 1 se o utente foi vacinado com sucesso, 0 caso contrário
  */    
 int processaAplicacaoVacina(Vacinas **lista_vacinas,
-    Inoculacoes **lista_inoculacoes, Data *data_sistema, char lingua[],
+    Registo *registo, Data *data_sistema, char lingua[],
     char *nome_utente, Inoculacoes *aplicacao);
 
 /**
  * @brief Verifica se um utente tem registo
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende verificar
  * @param[in] lingua linguagem das mensagens de erro
  * @return 1 se o utente já tem registo, 0 caso contrário
  */   
-int utenteTemRegisto(Inoculacoes **lista_utentes, char nome_utente[],
+int utenteTemRegisto(Registo *registo, char nome_utente[],
     char lingua[]);
 
 /**

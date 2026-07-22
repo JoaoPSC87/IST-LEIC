@@ -30,11 +30,22 @@ void inserirOrdenado(Vacinas **lista_vacinas, Vacinas *nova_vacina);
 /**
  * @brief Insere um registo de aplicação ordenadamente na lista de inoculações
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] aplicacao Apontador para o novo registo de aplicação a ser inserido
  * @return void (a função não retorna valores)
  */
-void insereAplicacaoOrdenado(Inoculacoes **lista_inoculacoes,
-     Inoculacoes *aplicacao);
+void insereAplicacaoOrdenado(Registo *registo, Inoculacoes *aplicacao);
+
+/**
+ * @brief Inicializa o registo de inoculações
+ * 
+ * Esta função coloca o registo de inoculações no estado inicial: lista 
+ * cronológica vazia (início e cauda a NULL) e tabela de dispersão sem 
+ * qualquer utente.
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
+ * @return void (a função não retorna valores)
+ */
+void iniciaRegisto(Registo *registo);
 
 #endif

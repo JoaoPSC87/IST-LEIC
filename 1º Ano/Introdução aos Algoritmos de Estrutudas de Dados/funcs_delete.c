@@ -5,6 +5,7 @@
  */
 
 #include "funcs_delete.h"
+#include "hash.h"
 
 /**
  * @brief Apaga uma vacina na lista de vacinas
@@ -86,12 +87,15 @@ void destroyVacinas(Vacinas **lista_vacinas){
  * Esta função permite apagar a lista inteira de registos de inoculações. A 
  * função vai percorrendo a lista de inoculações e vai libertando a memória
  * alocada aos items da lista de inoculações.
+ * Liberta igualmente a tabela de dispersão dos utentes.
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @see destroyHash
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @return void (a função não retorna valores)
  */
-void destroyInoculacoes(Inoculacoes **lista_inoculacoes){
-    Inoculacoes *atual = *lista_inoculacoes;
+void destroyInoculacoes(Registo *registo){
+    Inoculacoes *atual = registo->inicio;
     //Percorre a lista toda e vai libertando a memória alocada aos items da 
     //lista de registo de inoculações
     while(atual !=NULL){
@@ -102,8 +106,8 @@ void destroyInoculacoes(Inoculacoes **lista_inoculacoes){
         atual = atual->next;
         free(temp);
     }
-    *lista_inoculacoes = NULL;
-    free(*lista_inoculacoes);
+    destroyHash(registo);
+    registo->inicio = NULL;
 }
 
 /**
@@ -117,17 +121,22 @@ void destroyInoculacoes(Inoculacoes **lista_inoculacoes){
  * dia. Ao apagar um registo, a função vai incrementando o número de registos
  * apagados e vai libertando a memória alocada aos items da lista que foram
  * apagados. A função devolve o número total de registos apagados.
+ * Cada registo removido é também retirado da lista do respetivo utente na 
+ * tabela de dispersão. No fim, o apontador para a cauda da lista é recalculado,
+ * uma vez que o último registo pode ter sido apagado.
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @see removeDaHash
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @param[in] data data a qual se pretende apagar registos
  * @param[in] lote lote ao qual se pretende apagar registos
  * @return Número de registos apagados
  */
-int apagaInoculacoesUtenteLote(Inoculacoes **lista_inoculacoes,
+int apagaInoculacoesUtenteLote(Registo *registo,
      char nome_utente[], Data *data, char lote[]) {
 
-    Inoculacoes *atual = *lista_inoculacoes;
+    Inoculacoes *atual = registo->inicio;
     Inoculacoes *anterior = NULL;
     int registos_apagados = 0;
     
@@ -147,12 +156,13 @@ int apagaInoculacoesUtenteLote(Inoculacoes **lista_inoculacoes,
 
             //Se for o primeiro nó da lista, atualiza a cabeça da lista
             if (anterior == NULL) {
-                *lista_inoculacoes = temp;
+                registo->inicio = temp;
             } else {
                 anterior->next = temp;
             }
 
             //Libertar memória do nó atual
+            removeDaHash(registo, atual);
             free(atual->nome_utente);
             free(atual->lote);
             free(atual->nome_vacina);
@@ -166,7 +176,10 @@ int apagaInoculacoesUtenteLote(Inoculacoes **lista_inoculacoes,
             atual = atual->next;
         }
     }
-    
+    // as remoções podem ter apagado o último registo: recalcula a cauda
+    registo->fim = NULL;
+    for (Inoculacoes *p = registo->inicio; p != NULL; p = p->next)
+        registo->fim = p;
     return registos_apagados;
 }
 
@@ -180,16 +193,21 @@ int apagaInoculacoesUtenteLote(Inoculacoes **lista_inoculacoes,
  * incrementando o número de registos apagados e vai libertando a memória 
  * alocada aos items da lista que foram apagados. A função devolve o número 
  * total de registos apagados.
+ * Cada registo removido é também retirado da lista do respetivo utente na 
+ * tabela de dispersão. No fim, o apontador para a cauda da lista é recalculado,
+ * uma vez que o último registo pode ter sido apagado.
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @see removeDaHash 
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @param[in] data data a qual se pretende apagar registos
  * @return Número de registos apagados
  */
-int apagaInoculacoesUtenteData(Inoculacoes **lista_inoculacoes,
+int apagaInoculacoesUtenteData(Registo *registo,
     char nome_utente[], Data *data){
 
-    Inoculacoes *atual = *lista_inoculacoes;
+    Inoculacoes *atual = registo->inicio;
     Inoculacoes *anterior = NULL;
     int registos_apagados = 0;
 
@@ -208,12 +226,13 @@ int apagaInoculacoesUtenteData(Inoculacoes **lista_inoculacoes,
 
             //Se for o primeiro nó da lista, atualiza a cabeça da lista
             if (anterior == NULL) {
-                *lista_inoculacoes = temp;
+                registo->inicio = temp;
             } else {
                 anterior->next = temp;
             }
 
             //Libertar memória do nó atual
+            removeDaHash(registo, atual);
             free(atual->nome_utente);
             free(atual->lote);
             free(atual->nome_vacina);
@@ -227,7 +246,10 @@ int apagaInoculacoesUtenteData(Inoculacoes **lista_inoculacoes,
             atual = atual->next;
         }
     }
-    
+    // as remoções podem ter apagado o último registo: recalcula a cauda
+    registo->fim = NULL;
+    for (Inoculacoes *p = registo->inicio; p != NULL; p = p->next)
+        registo->fim = p;
     return registos_apagados;
 }
 
@@ -240,13 +262,18 @@ int apagaInoculacoesUtenteData(Inoculacoes **lista_inoculacoes,
  * função vai incrementando o número de registos apagados e vai libertando a 
  * memória alocada aos items da lista que foram apagados. A função devolve o 
  * número total de registos apagados.
+ * Cada registo removido é também retirado da lista do respetivo utente na 
+ * tabela de dispersão. No fim, o apontador para a cauda da lista é recalculado,
+ * uma vez que o último registo pode ter sido apagado.
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @see removeDaHash
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende apagar registos
  * @return Número de registos apagados
  */
-int apagaInoculacoesUtente(Inoculacoes **lista_inoculacoes, char nome_utente[]){
-    Inoculacoes *atual = *lista_inoculacoes;
+int apagaInoculacoesUtente(Registo *registo, char nome_utente[]){
+    Inoculacoes *atual = registo->inicio;
     Inoculacoes *anterior = NULL;
     int registos_apagados = 0;
     
@@ -261,12 +288,13 @@ int apagaInoculacoesUtente(Inoculacoes **lista_inoculacoes, char nome_utente[]){
 
             //Se for o primeiro nó da lista, atualiza a cabeça da lista
             if (anterior == NULL) {
-                *lista_inoculacoes = temp;
+                registo->inicio = temp;
             } else {
                 anterior->next = temp;
             }
 
             // Libertar memória do nó atual
+            removeDaHash(registo, atual);
             free(atual->nome_utente);
             free(atual->lote);
             free(atual->nome_vacina);
@@ -280,6 +308,9 @@ int apagaInoculacoesUtente(Inoculacoes **lista_inoculacoes, char nome_utente[]){
             atual = atual->next;
         }
     }
-    
+    // as remoções podem ter apagado o último registo: recalcula a cauda
+    registo->fim = NULL;
+    for (Inoculacoes *p = registo->inicio; p != NULL; p = p->next)
+        registo->fim = p;
     return registos_apagados;
 }

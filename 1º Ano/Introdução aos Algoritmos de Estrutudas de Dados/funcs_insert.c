@@ -5,6 +5,7 @@
  */
 
  #include "funcs_insert.h"
+ #include "hash.h"
 
  /**
   * @brief Insere uma vacina ordenadamente na lista de vacinas
@@ -52,53 +53,46 @@
 /**
  * @brief Insere um registo de aplicação ordenadamente na lista de inoculações
  *
- * Esta função insere um novo registo de aplicação de vacina numa lista ligada
- * de inoculações, mantendo a ordenação cronológica por data de aplicação.
+ * Esta função insere um novo registo de aplicação de vacina no registo de
+ * inoculações. Como as inoculações são sempre aplicadas na data atual do 
+ * sistema, e essa data nunca recua, o novo registo pertence sempre ao fim da
+ * lista cronológica: usando o apontador para a cauda, a inserção é feita em
+ * tempo constante. O registo é também associado ao respetivo utente na tabela
+ * de dispersão, permitindo consultas rápidas por utente.
+ * 
+ * @see insereNaHash
  *
  * @see dataMaisAntiga
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] aplicacao Apontador para o novo registo de aplicação a ser inserido
  * @return void (a função não retorna valores)
  */
-void insereAplicacaoOrdenado(Inoculacoes **lista_inoculacoes, 
-    Inoculacoes *aplicacao) {
-        Inoculacoes *atual = *lista_inoculacoes;
-        Inoculacoes *anterior = NULL;
+void insereAplicacaoOrdenado(Registo *registo, Inoculacoes *aplicacao) {
+    // As inoculações são sempre aplicadas na data atual do sistema, e essa
+    // data só avança -> o ponto de inserção é SEMPRE o fim da lista.
+    // Guardando a cauda, a inserção passa de O(N) para O(1).
+    aplicacao->next = NULL;
+    if (registo->inicio == NULL)
+        registo->inicio = aplicacao;
+    else
+        registo->fim->next = aplicacao;
+    registo->fim = aplicacao;
+    insereNaHash(registo, aplicacao);
+}
 
-        // Variável para verificar datas iguais
-        int datasIguais;
-
-        // Caso a lista esteja vazia insere no início e retorna
-        if (*lista_inoculacoes == NULL) {
-            *lista_inoculacoes = aplicacao;
-            aplicacao->next = NULL;
-            return;
-        }
-
-        // Percorre a lista até encontrar o ponto de inserção
-        while (atual != NULL) {
-            // Verifica se a aplicação nova tem data anterior
-            if(dataMaisAntiga(aplicacao->data_aplicacao, atual->data_aplicacao))
-                break;
-                
-            // Verifica se as datas são iguais
-            datasIguais = !dataMaisAntiga(atual->data_aplicacao, aplicacao->data_aplicacao) &&
-                        !dataMaisAntiga(aplicacao->data_aplicacao, atual->data_aplicacao);
-            
-            // Se a data for a mesma, avança até o último elemento desse dia
-            if (datasIguais) {
-                while (atual->next != NULL && 
-                        !dataMaisAntiga(atual->next->data_aplicacao, aplicacao->data_aplicacao) &&
-                        !dataMaisAntiga(aplicacao->data_aplicacao, atual->next->data_aplicacao)) {
-                    anterior = atual;
-                    atual = atual->next;
-                }
-            }
-            anterior = atual;
-            atual = atual->next;
-        }
-
-        // Faz a inserção do novo nó
-        aplicacao->next = atual;
-        anterior ? (anterior->next = aplicacao) : (*lista_inoculacoes = aplicacao);
+/**
+ * @brief Inicializa o registo de inoculações
+ * 
+ * Esta função coloca o registo de inoculações no estado inicial: lista 
+ * cronológica vazia (início e cauda a NULL) e tabela de dispersão sem 
+ * qualquer utente.
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
+ * @return void (a função não retorna valores)
+ */
+void iniciaRegisto(Registo *registo) {
+    registo->inicio = NULL;
+    registo->fim = NULL;
+    for (int i = 0; i < HASH_SIZE; i++)
+    registo->tabela[i] = NULL;
 }

@@ -8,6 +8,7 @@
 #include "funcs_verificacao.h"
 #include "func_aux.h"
 #include "funcs_insert.h"
+#include "hash.h"
 //número máximo de lotes que podem ser registados no sistema
 #define MAX_VACINAS 1000 
 //número máximo de bytes que o nome da vacina pode ter
@@ -196,43 +197,41 @@ int existeStock(char nome_vacina[], Vacinas **lista_vacinas, char lote[],
  * determinada vacina. 
  * 
  * Esta função permite verificar se um utente já foi vacinado no dia atual do 
- * sistema com uma determinada vacina.A função vai percorrendo a lista de 
- * inoculações até encontrar o utente com o nome igual ao que foi passado em 
- * argumento. Caso encontre um utente com o mesmo nome ao que foi passado em 
- * argumento, verifica se ele foi vacinado nesse dia com a vacina que foi 
- * passado em argumento. Em caso afirmativo a função imprime uma mensagem de 
- * erro e retorna 1. Caso chegue ao fim da lista sem essas condições se 
- * verificarem retorna 0.
+ * sistema com uma determinada vacina. Recorrendo à tabela de dispersão, obtém
+ * diretamente o utente pelo seu nome e percorre apenas os registos desse 
+ * utente (e não a lista global), comparando a vacina e a data de aplicação com
+ * as que foram passadas em argumento. Em caso afirmativo imprime uma mensagem 
+ * de erro e retorna 1, caso contrário retorna 0.
+ * 
+ * @see procuraUtente
  *  
  * @param[in] nome_vacina nome da vacina
  * @param[in] nome_utente nome do utente que se pretende verificar se foi 
  * vacinado nesse dia com uma determinada vacina
  * @param[in] data_sistema data atual da simulação
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] lingua linguagem das mensagens de erro
  * @return 1 se o utente foi vacinado nesse dia com a vacina, 0 caso contrário
  */
 int jaFoiVacinado(char nome_vacina[], char nome_utente[], Data *data_sistema,
-    Inoculacoes **lista_inoculacoes, char lingua[]) {
+    Registo *registo, char lingua[]) {
 
-    Inoculacoes *atual = *lista_inoculacoes;
+    // consulta direta ao utente: só percorre os registos DELE, não a lista toda
+    Utente *u = procuraUtente(registo, nome_utente);
+    Inoculacoes * atual = (u == NULL) ? NULL : u->primeiro;
 
     while (atual != NULL) {
-        // Verifica se é o mesmo utente, a mesma vacina e se foi aplicada 
-        // no mesmo dia
-        if (strcmp(nome_utente, atual->nome_utente) == 0 &&
-            strcmp(nome_vacina, atual->nome_vacina) == 0 &&
+        if (strcmp(nome_vacina, atual->nome_vacina) == 0 &&
             (atual->data_aplicacao.dia == data_sistema->dia &&
             atual->data_aplicacao.mes == data_sistema->mes &&
-            atual->data_aplicacao.ano == data_sistema->ano)) {
-            printf(!strcmp(lingua, "pt") ? "já vacinado\n" : 
-            "already vaccinated\n");
-            return 1; //O utente já foi vacinado com esta vacina hoje
+        atual->data_aplicacao.ano == data_sistema->ano)) {
+            printf(!strcmp(lingua, "pt") ? "já vacinado\n" :
+             "already vaccinated\n");
+             return 1;
         }
-        atual = atual->next;
+        atual = atual->next_utente;
     }
-    
-    return 0; //O utente ainda não foi vacinado hoje com esta vacina
+    return 0;
 }
 
 /**
@@ -253,7 +252,7 @@ int jaFoiVacinado(char nome_vacina[], char nome_utente[], Data *data_sistema,
  * @see vacina
  * @see insereAplicacaoOrdenado
  * @param[in,out] lista_vacinas Ponteiro para a lista de vacinas
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] data_sistema data atual da simulação
  * @param[in] lingua linguagem das mensagens de erro
  * @param[in] nome_utente nome do utente que se pretende vacinar
@@ -262,7 +261,7 @@ int jaFoiVacinado(char nome_vacina[], char nome_utente[], Data *data_sistema,
  * @return 1 se o utente foi vacinado com sucesso, 0 caso contrário
  */ 
 int processaAplicacaoVacina(Vacinas **lista_vacinas,
-    Inoculacoes **lista_inoculacoes, Data *data_sistema, char lingua[],
+    Registo *registo, Data *data_sistema, char lingua[],
     char *nome_utente, Inoculacoes *aplicacao) {
 
     char nome_vacina[MAX_BYTES_VACINAS], lote[MAX_CHAR_LOTE+1] = {0};
@@ -272,7 +271,7 @@ int processaAplicacaoVacina(Vacinas **lista_vacinas,
     if(!existeStock(nome_vacina, lista_vacinas, lote, lingua, data_sistema))
         return 0;
     // Verifica se o utente já foi vacinado com esta vacina
-    if(jaFoiVacinado(nome_vacina, nome_utente, data_sistema, lista_inoculacoes,
+    if(jaFoiVacinado(nome_vacina, nome_utente, data_sistema, registo,
         lingua))
         return 0;
     // Atualiza o stock da vacina
@@ -283,7 +282,7 @@ int processaAplicacaoVacina(Vacinas **lista_vacinas,
     strcpy(aplicacao->nome_vacina, nome_vacina);
     aplicacao->data_aplicacao = *data_sistema;
     // Insere a nova inoculação na lista ordenada
-    insereAplicacaoOrdenado(lista_inoculacoes, aplicacao);
+    insereAplicacaoOrdenado(registo, aplicacao);
     // Imprime o lote da vacina aplicada
     printf("%s\n", lote);
     return 1;
@@ -292,33 +291,25 @@ int processaAplicacaoVacina(Vacinas **lista_vacinas,
 /**
  * @brief Verifica se um utente tem registo
  * 
- * Esta função permite verificar se um utente está na lista de inoculações.
- * A função vai percorrendo a lista de inoculações até encontrar um utente com
- * o mesmo nome que foi passado em argumento. Caso não encontre nenhum registo
- * imprime uma mensagem de erro e retorna 0. No caso de existir um utente com
- * esse nome na lista de inoculações retorna 1.
+ * Esta função permite verificar se um utente tem registos de inoculação.
+ * A consulta é feita diretamente na tabela de dispersão pelo nome do utente,
+ * em tempo constante. Considera-se que o utente não tem registo se não existir
+ * na tabela ou se a sua lista de registos estiver vazia (por exemplo, após 
+ * terem sido apagados). Nesse caso imprime uma mensagem de erro e retorna 0.
  * 
- * @param[in,out] lista_inoculacoes Ponteiro para a lista de inoculações
+ * @see procuraUtente
+ * 
+ * @param[in,out] registo Ponteiro para o registo de inoculações
  * @param[in] nome_utente nome do utente que se pretende verificar
  * @param[in] lingua linguagem das mensagens de erro
  * @return 1 se o utente já tem registo, 0 caso contrário
  */  
-int utenteTemRegisto(Inoculacoes **lista_utentes, char nome_utente[],
-    char lingua[]){
-    
-    Inoculacoes *atual = *lista_utentes;
-    //Percorre a lista à procura do primeiro registo com o nome do utente igual
-    //ao que foi passado em argumento
-    while(atual != NULL){
-        if(strcmp(atual->nome_utente, nome_utente) == 0){
-           return 1;
-        }
-        atual = atual->next;
-    }
-    printf(!strcmp(lingua, "pt") ? "%s: utente inexistente\n" : 
-    "%s: no such user\n", nome_utente);
-    //devolve 0 caso não encontre nenhum registo com o nome de utente passado
-    return 0; 
+int utenteTemRegisto(Registo *registo, char nome_utente[],char lingua[]){
+   Utente *u = procuraUtente(registo, nome_utente);
+   if(u != NULL && u->primeiro != NULL) return 1;
+   printf(!strcmp(lingua, "pt") ? "%s: utente inexistente\n" :
+   "%s: no such user\n", nome_utente);
+   return 0;
     
 }
 
