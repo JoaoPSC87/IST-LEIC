@@ -6,6 +6,7 @@ Distributed Systems Project 2026
 
 **Difficulty level: I am Death incarnate!**
 
+**Grade:** 17.3 / 20 — A.1 4.22/5 · A.2 1.33/2 · B.1 3.87/4 · B.2 2.65/3 · C.1 2.70/3 · C.2 2.5/3
 
 <!-- ### Code Identification
 
