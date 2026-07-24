@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Knysna,-34.0329,23.0333,South Africa,ZA,63106.0
+2,Nacala,-14.5186,40.715,Mozambique,MZ,224795.0
+3,Bellmawr,39.8665,-75.0942,United States,US,11478.0
+4,Muskegon,43.228,-86.256,United States,US,161058.0
+5,Marrupa,-13.1984,37.4995,Mozambique,MZ,8762.0
+6,Mwanza,-2.52,32.93,Tanzania,TZ,493944.0
+7,Ourense,42.33,-7.87,Spain,ES,118107.0
+8,Alto Rio Sanguer,-45.0333,-70.8333,Argentina,AR,1548.0
+9,Kyoto,35.03,135.75,Japan,JP,1805000.0
+10,Gramsh,40.8667,20.2,Albania,AL,11556.0
+11,Mezen,65.8522,44.24,Russia,RU,3672.0
+12,Tepic,21.5054,-104.88,Mexico,MX,318781.0
+13,Paso de los Toros,-32.81,-56.51,Uruguay,UY,13221.0
+14,Davao,7.11,125.63,Philippines,PH,1402000.0
+15,Kasangulu,-4.5796,15.18,Congo (Kinshasa),CD,27961.0
+16,Worthington,40.0949,-83.0209,United States,US,14528.0
+17,Chokurdakh,70.6183,147.8946,Russia,RU,2506.0
+18,Tiznit,29.7104,-9.74,Morocco,MA,57705.0
+19,Sapulpa,36.009,-96.0983,United States,US,20928.0
+20,Guaranda,-1.61,-79.01,Ecuador,EC,27866.0
+21,Andover,45.2571,-93.3264,United States,US,32461.0
+22,Punakha,27.6333,89.8333,Bhutan,BT,5000.0
+23,Naxcivan,39.2092,45.4122,Azerbaijan,AZ,94788.0
+24,Luhansk,48.5698,39.3344,Ukraine,UA,452000.0
+25,Pointe-à-Pitre,16.2415,-61.533,Guadeloupe,GP,145511.0
+26,Magnitogorsk,53.4227,58.98,Russia,RU,413351.0
+27,Mercedes,-34.66,-59.44,Argentina,AR,52949.0
+28,Iligan,8.1712,124.2154,Philippines,PH,464599.0
+29,Kungur,57.4348,56.9543,Russia,RU,66389.0
+30,Mustang,35.3917,-97.7245,United States,US,20792.0
+31,Churchill,58.766,-94.166,Canada,CA,1000.0
+32,Limeira,-22.5495,-47.4,Brazil,BR,289665.0
+33,Bhuj,23.2504,69.81,India,IN,289429.0
+34,De Funiak Springs,30.7121,-86.1207,United States,US,7055.0
+35,Koidu,8.4405,-10.85,Sierra Leone,SL,87539.0
+36,Balashov,51.5535,43.1631,Russia,RU,98107.0
+37,Babylon,40.6949,-73.3271,United States,US,12079.0
+38,Apsheronsk,44.4687,39.7287,Russia,RU,45876.0
+39,Magangué,9.23,-74.74,Colombia,CO,100313.0
+40,Erfurt,50.9701,11.03,Germany,DE,203254.0
+41,Sunyani,7.336,-2.336,Ghana,GH,70299.0
+42,Ruyigi,-3.481,30.244,Burundi,BI,38458.0
+43,Put Lenina,68.5166,107.8,Russia,RU,298.0
+44,Moyale,3.52,39.05,Kenya,KE,24837.0
+45,Wyndham,-15.374,128.3601,Australia,AU,800.0
+46,Jasper,30.9221,-93.9947,United States,US,7860.0
+47,Jian,27.1304,115.0,China,CN,520248.0
+48,Trondheim,63.4167,10.4167,Norway,NO,147139.0
+49,Luohe,33.57,114.03,China,CN,417356.0
+50,Ngorongoro,-3.2496,35.52,Tanzania,TZ,10836.0
+51,Rockaway,40.8969,-74.5155,United States,US,6478.0
+52,Bend,44.0562,-121.3087,United States,US,99634.0
+53,Mangai,-4.0396,19.53,Congo (Kinshasa),CD,37188.0
+54,Brest,48.3904,-4.495,France,FR,144899.0
+55,Mito,36.3704,140.48,Japan,JP,353892.0
+56,Kannapolis,35.4766,-80.6391,United States,US,47839.0
+57,Belebey,54.1291,54.1187,Russia,RU,62582.0
+58,Zahedan,29.5,60.83,Iran,IR,598887.0
+59,Ashtarak,40.3017,44.3592,Armenia,AM,18779.0
+60,Athabasca,54.717,-113.2666,Canada,CA,2539.0
+61,Bathurst,-33.4196,149.57,Australia,AU,6111.0
+62,Herrin,37.7984,-89.0304,United States,US,12950.0
+63,Waynesboro,33.0909,-82.0146,United States,US,5763.0
+64,Zvishavane,-20.3296,30.05,Zimbabwe,ZW,35896.0
+65,Mubi,10.2703,13.27,Nigeria,NG,225705.0
+66,Akureyi,65.6666,-18.1,Iceland,IS,16563.0
+67,Beckley,37.7878,-81.1841,United States,US,61693.0
+68,Faisalabad,31.41,73.11,Pakistan,PK,2617000.0
+69,Az Aubayr,30.3892,47.708,Iraq,IQ,262219.0
+70,Arapiraca,-9.75,-36.67,Brazil,BR,187668.0
+71,Khatanga,72.0411,102.465,Russia,RU,3205.0
+72,Darregueira,-37.6996,-63.1666,Argentina,AR,3412.0
+73,Vicuña,-30.0295,-70.74,Chile,CL,13496.0
+74,Breese,38.6138,-89.5231,United States,US,5889.0
+75,Circleville,39.6062,-82.9335,United States,US,15626.0
+76,Shaoguan,24.8,113.58,China,CN,720266.0
+77,Svay Rieng,11.08,105.801,Cambodia,KH,23956.0
+78,Araguari,-18.64,-48.2,Brazil,BR,96565.0
+79,Siliana,36.0833,9.3833,Tunisia,TN,26960.0
+80,Canindé,-4.35,-39.31,Brazil,BR,42720.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Itabuna,-14.7896,-39.28,Brazil,BR,221938.0
+2,Watertown,43.9734,-75.9094,United States,US,55436.0
+3,Ipswich,52.0703,1.17,United Kingdom,GB,143767.0
+4,Yokohama,35.32,139.58,Japan,JP,3697894.0
+5,Sharya,58.3798,45.5094,Russia,RU,35532.0
+6,Hetauda,27.4167,85.0334,Nepal,NP,232334.0
+7,Khorgo,73.4833,113.63,Russia,RU,10.0
+8,Dila,6.4104,38.31,Ethiopia,ET,47021.0
+9,Gore,-46.0947,168.9604,New Zealand,NZ,9750.0
+10,Newman,-23.3666,119.7333,Australia,AU,5138.0
+11,Cazombo,-11.8896,22.9,Angola,AO,298.0
+12,Aydın,37.85,27.85,Turkey,TR,198857.0
+13,Jérémie,18.6339,-74.1184,Haiti,HT,30917.0
+14,Brooklyn,40.6501,-73.9496,United States,US,2629150.0
+15,Kragujevac,44.02,20.92,Serbia,RS,171197.0
+16,Ramla,31.9167,34.8667,Israel,IL,63860.0
+17,Bellevue,47.5953,-122.155,United States,US,141400.0
+18,Ionia,42.9772,-85.0725,United States,US,14289.0
+19,Ayr,55.4504,-4.6167,United Kingdom,GB,69042.0
+20,Hughenden,-20.85,144.2,Australia,AU,421.0
+21,Lithgow,-33.4961,150.1528,Australia,AU,11128.0
+22,Graaff Reinet,-32.3,24.54,South Africa,ZA,62896.0
+23,Bolama,11.583,-15.4828,Guinea-Bissau,GW,10769.0
+24,Hindupur,13.7804,77.49,India,IN,168312.0
+25,Hof,50.317,11.9167,Germany,DE,56153.0
+26,Fujin,47.2704,132.02,China,CN,89442.0
+27,Shenandoah,40.7583,-95.372,United States,US,5022.0
+28,Nusaybin,37.075,41.2184,Turkey,TR,152668.0
+29,Barnesville,33.0511,-84.1526,United States,US,7103.0
+30,Puerto Williams,-54.9333,-67.6167,Chile,CL,2500.0
+31,Ménaka,15.9167,2.4,Mali,ML,9110.0
+32,Salaverry,-8.22,-78.99,Peru,PE,10066.0
+33,Woodcreek,30.0265,-98.1113,United States,US,5463.0
+34,Capitol Hill,15.2137,145.7546,Northern Mariana Islands,MP,2500.0
+35,Shebekino,50.4144,36.8944,Russia,RU,45194.0
+36,Grafton,39.3409,-80.0162,United States,US,5881.0
+37,Kwekwe,-18.9296,29.8,Zimbabwe,ZW,99149.0
+38,Garden City,43.6527,-116.2746,United States,US,11602.0
+39,Daru,-9.1092,143.2337,Papua New Guinea,PG,15214.0
+40,Las Lajas,-38.5163,-70.3666,Argentina,AR,1218.0
+41,Monterrey,25.67,-100.33,Mexico,MX,3712000.0
+42,Valparaíso,-33.0478,-71.621,Chile,CL,854000.0
+43,Ouésso,1.61,16.05,Congo (Brazzaville),CG,28320.0
+44,Moyobamba,-6.0496,-76.9667,Peru,PE,47734.0
+45,Olinda,-8.0,-34.85,Brazil,BR,921840.0
+46,Zinder,13.8,8.9833,Niger,NE,230358.0
+47,Bahía Blanca,-38.74,-62.265,Argentina,AR,281536.0
+48,Pskov,57.83,28.3299,Russia,RU,201990.0
+49,Forbes,-33.3896,148.02,Australia,AU,4838.0
+50,Healdsburg,38.6229,-122.8651,United States,US,11827.0
+51,Drohobych,49.3444,23.4994,Ukraine,UA,124269.0
+52,Januária,-15.48,-44.37,Brazil,BR,34811.0
+53,Sandnes,58.8454,5.69,Norway,NO,46911.0
+54,Provideniya,64.4235,-173.2258,Russia,RU,2536.0
+55,Farmington Hills,42.486,-83.3771,United States,US,81129.0
+56,Moyeni,-30.411,27.716,Lesotho,LS,24130.0
+57,Lukulu,-14.3896,23.24,Zambia,ZM,3349.0
+58,Chur,46.85,9.5,Switzerland,CH,38293.0
+59,Yeghegnadzor,39.7611,45.3333,Armenia,AM,8200.0
+60,Cagayan de Oro,8.4508,124.6853,Philippines,PH,1121561.0
+61,Chos Malal,-37.383,-70.2666,Argentina,AR,8556.0
+62,Cotonou,6.4,2.52,Benin,BJ,762000.0
+63,Songea,-10.68,35.65,Tanzania,TZ,126449.0
+64,Heber Springs,35.5003,-92.0339,United States,US,6292.0
+65,Carlinville,39.2782,-89.8766,United States,US,5666.0
+66,Labutta,16.1619,94.7014,Burma,MM,1667.0
+67,Pamplona,7.3904,-72.66,Colombia,CO,53587.0
+68,Chillán,-36.6,-72.106,Chile,CL,150396.0
+69,Obo,5.4,26.5,Central African Republic,CF,12887.0
+70,Dimbokro,6.6505,-4.71,Ivory Coast,CI,67349.0
+71,Dunedin,28.0328,-82.7865,United States,US,36381.0
+72,Guayaquil,-2.22,-79.92,Ecuador,EC,2514000.0
+73,Nevşehir,38.624,34.724,Turkey,TR,75527.0
+74,Grandview,38.8802,-94.5227,United States,US,25190.0
+75,Mtsensk,53.2647,36.5472,Russia,RU,47609.0
+76,Richmond,-33.5995,150.74,Australia,AU,13880.0
+77,Itapetinga,-15.25,-40.25,Brazil,BR,59721.0
+78,San Luis,-33.3,-66.35,Argentina,AR,432310.0
+79,Zacatecoluca,13.508,-88.868,El Salvador,SV,39613.0
+80,Kutztown,40.5213,-75.7773,United States,US,10011.0

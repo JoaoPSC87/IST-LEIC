@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Kouvola,60.876,26.709,Finland,FI,31133.0
+2,Ali Sabih,11.1562,42.7125,Djibouti,DJ,40074.0
+3,Fort Simpson,61.85,-121.3333,Canada,CA,283.0
+4,Logashkino,70.8504,153.9,Russia,RU,0.0
+5,Whitefish,48.4333,-114.3594,United States,US,7214.0
+6,Shoreline,47.7563,-122.3425,United States,US,55333.0
+7,Sesheke,-17.4695,24.3,Zambia,ZM,20149.0
+8,Roboré,-18.3295,-59.76,Bolivia,BO,10036.0
+9,Surat Thani,9.1501,99.3401,Thailand,TH,157627.0
+10,São José dos Pinhais,-25.57,-49.18,Brazil,BR,665063.0
+11,Delano,45.0377,-93.7918,United States,US,5734.0
+12,Puerto Baquerizo Moreno,-0.9,-89.6,Ecuador,EC,6030.0
+13,Reșița,45.297,21.8865,Romania,RO,83324.0
+14,La Grange,41.8072,-87.8741,United States,US,15610.0
+15,Ambridge,40.5922,-80.2264,United States,US,6787.0
+16,Tocache,-8.1796,-76.52,Peru,PE,29029.0
+17,Maribor,46.5405,15.65,Slovenia,SI,114228.0
+18,Piripiri,-4.2696,-41.79,Brazil,BR,44864.0
+19,Liuzhou,24.28,109.25,China,CN,1497000.0
+20,Noyabrsk,63.1665,75.6165,Russia,RU,110572.0
+21,Dover,40.8859,-74.5597,United States,US,18252.0
+22,Hailey,43.5132,-114.301,United States,US,10791.0
+23,San Fernando,10.2805,-61.4594,Trinidad And Tobago,TT,166039.0
+24,Fort Smith,60.0,-111.8833,Canada,CA,518.0
+25,Phan Rang,11.567,108.9833,Vietnam,VN,179773.0
+26,Dar es Salaam,-6.8,39.2683,Tanzania,TZ,2930000.0
+27,Esil,51.957,66.3775,Kazakhstan,KZ,13504.0
+28,Ghardaia,32.49,3.67,Algeria,DZ,125480.0
+29,Bucharest,44.4334,26.0999,Romania,RO,1942000.0
+30,Cathedral City,33.8363,-116.4662,United States,US,54056.0
+31,Beringovskiy,63.0655,179.3067,Russia,RU,1861.0
+32,Aarau,47.39,8.034,Switzerland,CH,15501.0
+33,Cape Canaveral,28.3934,-80.605,United States,US,10352.0
+34,Mildura,-34.185,142.1514,Australia,AU,47867.0
+35,Souk Ahras,36.2904,7.95,Algeria,DZ,134947.0
+36,Hawaiian Gardens,33.8303,-118.0728,United States,US,14473.0
+37,Central Coast,-33.42,151.3,Australia,AU,3026.0
+38,Rurrenabaque,-14.46,-67.56,Bolivia,BO,11749.0
+39,Quime,-16.98,-67.22,Bolivia,BO,4045.0
+40,Florencia,1.6104,-75.62,Colombia,CO,130337.0
+41,Al Jahra,29.3375,47.6581,Kuwait,KW,194193.0
+42,Chilecito,-29.1655,-67.5,Argentina,AR,20343.0
+43,Rasht,37.3,49.63,Iran,IR,594590.0
+44,Chiramba,-16.8921,34.6559,Mozambique,MZ,556.0
+45,Chimoio,-19.12,33.47,Mozambique,MZ,256936.0
+46,Lahti,60.9939,25.6649,Finland,FI,98826.0
+47,Polatsk,55.4894,28.786,Belarus,BY,82258.0
+48,Morganton,35.7407,-81.7002,United States,US,16665.0
+49,Bridgewater,38.3863,-78.9674,United States,US,6048.0
+50,Volgograd,48.71,44.5,Russia,RU,984000.0
+51,Breckenridge,39.4997,-106.0433,United States,US,7741.0
+52,Guanhães,-18.78,-42.95,Brazil,BR,23727.0
+53,Bellary,15.15,76.915,India,IN,445388.0
+54,Canal Fulton,40.8903,-81.5891,United States,US,5433.0
+55,Eindhoven,51.43,5.5,Netherlands,NL,398053.0
+56,Pawtucket,41.8743,-71.3744,United States,US,71427.0
+57,Goma,-1.6788,29.2218,Congo (Kinshasa),CD,144124.0
+58,Megion,61.0608,76.0953,Russia,RU,48691.0
+59,Passos,-20.71,-46.61,Brazil,BR,98752.0
+60,Ngara,-2.4695,30.65,Tanzania,TZ,16890.0
+61,Norseman,-32.2,121.7666,Australia,AU,1004.0
+62,El Porvenir,9.5417,-78.972,Panama,PA,10.0
+63,'Ataq,14.55,46.8,Yemen,YE,37315.0
+64,Clinton,40.1469,-88.9635,United States,US,8395.0
+65,Portoviejo,-1.06,-80.46,Ecuador,EC,213601.0
+66,Rumson,40.3626,-74.0046,United States,US,6824.0
+67,Suzhou,33.6361,116.9789,China,CN,1964000.0
+68,Foster City,37.5553,-122.2659,United States,US,34175.0
+69,Tshela,-4.9696,12.93,Congo (Kinshasa),CD,38845.0
+70,Tucuruí,-3.68,-49.72,Brazil,BR,76337.0
+71,La Rioja,-29.41,-66.85,Argentina,AR,162620.0
+72,Wangdue Prodrang,27.4333,89.9167,Bhutan,BT,5000.0
+73,New Port Richey,28.2468,-82.7169,United States,US,16167.0
+74,Padilla,-19.2996,-64.31,Bolivia,BO,2920.0
+75,Atar,20.5166,-13.05,Mauritania,MR,44265.0
+76,Lawrenceville,33.9524,-83.993,United States,US,30782.0
+77,Goulimine,28.98,-10.07,Morocco,MA,115267.0
+78,Al Bayda,13.979,45.574,Yemen,YE,37821.0
+79,Swarthmore,39.9022,-75.3488,United States,US,6239.0
+80,Covington,47.3665,-122.105,United States,US,20478.0

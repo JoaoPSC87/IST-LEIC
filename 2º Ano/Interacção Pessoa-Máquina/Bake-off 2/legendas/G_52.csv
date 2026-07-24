@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Bogota,4.5964,-74.0833,Colombia,CO,7772000.0
+2,Jiaozuo,35.25,113.22,China,CN,857000.0
+3,Papeete,-17.5334,-149.5667,French Polynesia,PF,131695.0
+4,Talca,-35.455,-71.67,Chile,CL,197479.0
+5,Mocoa,1.15,-76.63,Colombia,CO,22035.0
+6,Palma,39.5743,2.6542,Spain,ES,375773.0
+7,Pelham Manor,40.893,-73.8057,United States,US,5565.0
+8,Madingou,-4.164,13.554,Congo (Brazzaville),CG,22760.0
+9,Ust Olensk,72.9978,119.7729,Russia,RU,10.0
+10,Namsos,64.4833,11.5,Norway,NO,9035.0
+11,Shashemene,7.2004,38.59,Ethiopia,ET,114350.0
+12,Boerne,29.7856,-98.7297,United States,US,14719.0
+13,Fort Portal,0.671,30.275,Uganda,UG,42670.0
+14,Vichuga,57.2191,41.9287,Russia,RU,39071.0
+15,Trinidad,-33.544,-56.901,Uruguay,UY,21093.0
+16,Goodyear,33.2613,-112.3622,United States,US,77258.0
+17,Arica,-18.5,-70.29,Chile,CL,185999.0
+18,Nagaoka,37.4504,138.86,Japan,JP,195318.0
+19,Lincoln Park,42.2433,-83.181,United States,US,36720.0
+20,Hiawatha,42.0518,-91.6899,United States,US,7212.0
+21,Nantong,32.0304,120.825,China,CN,947000.0
+22,Fairborn,39.8031,-84.0141,United States,US,33780.0
+23,Kramatorsk,48.7194,37.5344,Ukraine,UA,184105.0
+24,West View,40.5182,-80.0333,United States,US,6622.0
+25,Cacolo,-10.1496,19.26,Angola,AO,984.0
+26,Gdańsk,54.36,18.64,Poland,PL,740000.0
+27,Santa Rosa,-36.62,-64.3,Argentina,AR,111424.0
+28,Kholmsk,47.0473,142.0624,Russia,RU,32911.0
+29,Yamoussoukro,6.8184,-5.2755,Ivory Coast,CI,206499.0
+30,Toulon,43.1342,5.9188,France,FR,357693.0
+31,Krasnogorsk,48.4615,142.09,Russia,RU,3304.0
+32,Coimbra,40.2004,-8.4167,Portugal,PT,106582.0
+33,Kagoshima,31.586,130.5611,Japan,JP,555352.0
+34,Cachoeiro de Itapemirim,-20.85,-41.13,Brazil,BR,187019.0
+35,Kamyanets-Podilskyy,48.6843,26.5809,Ukraine,UA,114658.0
+36,Konibodom,40.2922,70.4272,Tajikistan,TJ,259876.0
+37,Inverell,-29.7668,151.1126,Australia,AU,8561.0
+38,Lae,-6.733,146.99,Papua New Guinea,PG,131052.0
+39,Osijek,45.5504,18.68,Croatia,HR,95077.0
+40,Ilam,26.908,87.926,Nepal,NP,17491.0
+41,Kure,34.251,132.5656,Japan,JP,196991.0
+42,Sarnen,46.899,8.243,Switzerland,CH,9410.0
+43,Winterville,35.5288,-77.3993,United States,US,9447.0
+44,Shoyna,67.8666,44.1334,Russia,RU,300.0
+45,Chusovoy,58.2934,57.813,Russia,RU,72113.0
+46,Boulia,-22.8996,139.9,Australia,AU,600.0
+47,Hatay,36.2304,36.12,Turkey,TR,305564.0
+48,Kolar,13.1337,78.1334,India,IN,144625.0
+49,Kasane,-17.8096,25.15,Botswana,BW,9250.0
+50,Nairobi,-1.2833,36.8167,Kenya,KE,3010000.0
+51,Tra Vinh,9.934,106.334,Vietnam,VN,131360.0
+52,Uhrichsville,40.4005,-81.3515,United States,US,5377.0
+53,Victoria,-32.61,-60.18,Argentina,AR,25139.0
+54,Örnsköldsvik,63.318,18.7167,Sweden,SE,27749.0
+55,Pascagoula,30.3665,-88.5507,United States,US,49504.0
+56,Pasadena,34.1598,-118.1389,United States,US,142059.0
+57,Prokopyevsk,53.9,86.71,Russia,RU,275615.0
+58,Stratford,39.8289,-75.0154,United States,US,7001.0
+59,Selfoss,63.9334,-20.9969,Iceland,IS,6275.0
+60,Gweru,-19.45,29.82,Zimbabwe,ZW,183358.0
+61,Macaé,-22.38,-41.79,Brazil,BR,143029.0
+62,Corinth,34.9474,-88.5143,United States,US,12678.0
+63,San Juan Bautista,-26.68,-57.15,Paraguay,PY,7882.0
+64,Navasota,30.3869,-96.0895,United States,US,8845.0
+65,Atlantic,41.3957,-95.0139,United States,US,6058.0
+66,Cà Mau,9.1774,105.15,Vietnam,VN,356636.0
+67,Sunbury,-37.5696,144.71,Australia,AU,29925.0
+68,Mahmud-E Eraqi,35.0167,69.3333,Afghanistan,AF,7407.0
+69,Exmouth,-21.9311,114.1233,Australia,AU,1085.0
+70,Manicoré,-5.8122,-61.2975,Brazil,BR,21549.0
+71,Kayes,14.45,-11.44,Mali,ML,77207.0
+72,Aqadyr,48.2749,72.8599,Kazakhstan,KZ,9710.0
+73,Barranquilla,10.96,-74.8,Colombia,CO,1798000.0
+74,Pakokku,21.332,95.0866,Burma,MM,126938.0
+75,Xinqing,48.2363,129.5059,China,CN,55415.0
+76,Bongaree,-27.0787,153.1509,Australia,AU,13649.0
+77,Lamu,-2.262,40.9197,Kenya,KE,24525.0
+78,Chinsali,-10.5496,32.06,Zambia,ZM,14015.0
+79,Pontes e Lacerda,-15.2196,-59.35,Brazil,BR,29381.0
+80,Vilnius,54.6834,25.3166,Lithuania,LT,542366.0

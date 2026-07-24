@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Melissa,33.2896,-96.5554,United States,US,8423.0
+2,Lindenhurst,42.4179,-88.0257,United States,US,14372.0
+3,Kasaji,-10.3662,23.45,Congo (Kinshasa),CD,11969.0
+4,Dhanbad,23.8004,86.42,India,IN,1246000.0
+5,Oruro,-17.98,-67.13,Bolivia,BO,246501.0
+6,Gubakha,58.8691,57.5887,Russia,RU,31424.0
+7,Camrose,53.0167,-112.8166,Canada,CA,15808.0
+8,As Salt,32.0392,35.7272,Jordan,JO,140689.0
+9,Bassar,9.261,0.789,Togo,TG,61845.0
+10,Potosí,-19.5696,-65.75,Bolivia,BO,179901.0
+11,New Castle,39.5785,-107.5262,United States,US,5732.0
+12,Karachi,24.87,66.99,Pakistan,PK,12130000.0
+13,Abra Pampa,-22.7167,-65.7,Argentina,AR,4480.0
+14,Sambalpur,21.4704,83.9701,India,IN,310852.0
+15,Echuca,-36.1296,144.75,Australia,AU,19457.0
+16,Kafr el Sheikh,31.109,30.936,Egypt,EG,143970.0
+17,Bragança Paulista,-22.95,-46.55,Brazil,BR,127676.0
+18,Colorado Springs,38.8673,-104.7605,United States,US,624789.0
+19,Ferreñafe,-6.63,-79.8,Peru,PE,50184.0
+20,Glasgow,55.8744,-4.2507,United Kingdom,GB,1160000.0
+21,Budaun,28.03,79.09,India,IN,161555.0
+22,Temirtau,50.065,72.965,Kazakhstan,KZ,170600.0
+23,Ituiutaba,-18.97,-49.46,Brazil,BR,85345.0
+24,Puerto Deseado,-47.75,-65.9,Argentina,AR,3305.0
+25,Omchak,61.6333,147.9167,Russia,RU,10.0
+26,Divo,5.839,-5.36,Ivory Coast,CI,127867.0
+27,Tukchi,57.367,139.5,Russia,RU,10.0
+28,Valladolid,41.65,-4.75,Spain,ES,322304.0
+29,Putrajaya,2.914,101.7019,Malaysia,MY,67964.0
+30,Samaipata,-18.18,-63.77,Bolivia,BO,2926.0
+31,Dire Dawa,9.59,41.86,Ethiopia,ET,252279.0
+32,Goiânia,-16.72,-49.3,Brazil,BR,2022000.0
+33,Valencia,10.23,-67.98,Venezuela,VE,1770000.0
+34,Islamabad,33.7,73.1666,Pakistan,PK,780000.0
+35,Karamay,45.5899,84.8599,China,CN,108769.0
+36,Pago Pago,-14.274,-170.7046,American Samoa,AS,12576.0
+37,Meru,0.06,37.64,Kenya,KE,47226.0
+38,Kaga Bandoro,6.9804,19.18,Central African Republic,CF,56520.0
+39,Agartala,23.8354,91.28,India,IN,203264.0
+40,Valdez,1.2671,-78.9855,Ecuador,EC,11441.0
+41,Pingxiang,27.62,113.85,China,CN,961000.0
+42,Jumla,29.25,82.2167,Nepal,NP,9073.0
+43,Butare,-2.5896,29.73,Rwanda,RW,77000.0
+44,Van,38.4954,43.4,Turkey,TR,371713.0
+45,Blida,36.4203,2.83,Algeria,DZ,511348.0
+46,Neiva,2.931,-75.3302,Colombia,CO,352855.0
+47,Rampur,28.8154,79.025,India,IN,296418.0
+48,Nong Khai,17.8733,102.7479,Thailand,TH,104505.0
+49,Solnechnogorsk,56.1807,36.9809,Russia,RU,58891.0
+50,North Caldwell,40.8629,-74.2576,United States,US,6669.0
+51,Verkhniy Ufaley,56.0663,60.2313,Russia,RU,33879.0
+52,Busselton,-33.6564,115.3487,Australia,AU,10214.0
+53,San Carlos del Zulia,9.0104,-71.92,Venezuela,VE,97288.0
+54,Port-Menier,49.8226,-64.348,Canada,CA,263.0
+55,Weipa,-12.6666,141.8666,Australia,AU,2830.0
+56,Farmingdale,40.7328,-73.4465,United States,US,8857.0
+57,Mbale,1.0904,34.17,Uganda,UG,402368.0
+58,Logan,39.5386,-82.4063,United States,US,8003.0
+59,Arcoverde,-8.42,-37.07,Brazil,BR,57163.0
+60,Villalonga,-39.8829,-62.5833,Argentina,AR,2838.0
+61,Zürich,47.38,8.55,Switzerland,CH,1108000.0
+62,Fall River,41.7136,-71.1014,United States,US,88930.0
+63,Fortaleza,-3.75,-38.58,Brazil,BR,3602319.0
+64,Söke,37.7512,27.4103,Turkey,TR,77341.0
+65,Ennadai,61.1333,-100.8833,Canada,CA,0.0
+66,Cagliari,39.2224,9.104,Italy,IT,291511.0
+67,Yishan,24.5004,108.6667,China,CN,47062.0
+68,Caçador,-26.77,-51.02,Brazil,BR,63726.0
+69,Timbaúba,-7.4996,-35.32,Brazil,BR,57534.0
+70,Pirassununga,-21.99,-47.43,Brazil,BR,60413.0
+71,Vidor,30.1291,-93.9967,United States,US,10958.0
+72,Portland,27.8858,-97.3201,United States,US,16618.0
+73,Maintirano,-18.0666,44.0167,Madagascar,MG,5925.0
+74,Belton,31.0564,-97.4789,United States,US,20873.0
+75,Hoover,33.3761,-86.8065,United States,US,84978.0
+76,Monmouth,40.9142,-90.642,United States,US,9415.0
+77,Caracas,10.501,-66.917,Venezuela,VE,2985000.0
+78,Erdenet,49.0533,104.1183,Mongolia,MN,79647.0
+79,Laï,9.395,16.305,Chad,TD,19382.0
+80,Suez,30.005,32.5499,Egypt,EG,508335.0

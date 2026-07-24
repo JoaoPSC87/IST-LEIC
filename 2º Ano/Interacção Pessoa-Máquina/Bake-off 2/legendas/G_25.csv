@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Solothurn,47.212,7.537,Switzerland,CH,14853.0
+2,Lower Hutt,-41.2037,174.9123,New Zealand,NZ,102400.0
+3,Yomou,7.5704,-9.27,Guinea,GN,3614.0
+4,Pocahontas,36.2636,-90.9698,United States,US,5731.0
+5,Tacloban,11.2504,125.0,Philippines,PH,280006.0
+6,Three Springs,-29.5333,115.75,Australia,AU,190.0
+7,Charters Towers,-20.0809,146.2587,Australia,AU,9573.0
+8,Trablous,34.42,35.87,Lebanon,LB,530000.0
+9,Bishop,37.3665,-118.3958,United States,US,9687.0
+10,Monmouth,44.8506,-123.2283,United States,US,19387.0
+11,Majuro,7.103,171.38,Marshall Islands,MH,25400.0
+12,Augsburg,48.35,10.9,Germany,DE,358989.0
+13,Xapeco,-27.1,-52.64,Brazil,BR,160157.0
+14,Cornelius,35.4733,-80.8833,United States,US,28515.0
+15,Bishkek,42.8731,74.5852,Kyrgyzstan,KG,837000.0
+16,Mission,39.0269,-94.6568,United States,US,9443.0
+17,Madang,-5.2248,145.7853,Papua New Guinea,PG,62023.0
+18,Superior,46.694,-92.0823,United States,US,26475.0
+19,Crato,-7.2296,-39.42,Brazil,BR,273883.0
+20,Belogorsk,50.9191,128.4637,Russia,RU,70203.0
+21,Muynoq,43.7683,59.0214,Uzbekistan,UZ,13000.0
+22,Liberec,50.8,15.08,Czechia,CZ,102175.0
+23,Shahrud,36.4229,54.9629,Iran,IR,131889.0
+24,Taizhou,32.4904,119.9,China,CN,612356.0
+25,Apodi,-5.65,-37.8,Brazil,BR,16757.0
+26,Castelo Branco,39.811,-7.488,Portugal,PT,33479.0
+27,Elwood,40.2743,-85.8372,United States,US,9204.0
+28,Garbahaarey,3.327,42.227,Somalia,SO,12652.0
+29,Puyallup,47.1794,-122.2901,United States,US,40640.0
+30,Santa Ana,13.9946,-89.5598,El Salvador,SV,234478.0
+31,El Bayadh,33.6904,1.01,Algeria,DZ,67413.0
+32,Niles,41.8347,-86.2472,United States,US,11257.0
+33,Palmerston North,-40.3527,175.6072,New Zealand,NZ,82400.0
+34,Kok Yangak,41.0307,73.2058,Kyrgyzstan,KG,15000.0
+35,Comandante Fontana,-25.3333,-59.6833,Argentina,AR,4277.0
+36,Port Hedland,-20.3104,118.606,Australia,AU,14288.0
+37,Linton,39.0357,-87.1587,United States,US,5644.0
+38,Potchefstroom,-26.6996,27.1,South Africa,ZA,123669.0
+39,Etawah,26.7855,79.015,India,IN,257448.0
+40,General Pico,-35.6596,-63.77,Argentina,AR,57029.0
+41,Kars,40.6085,43.0975,Turkey,TR,77486.0
+42,Moab,38.57,-109.5476,United States,US,7149.0
+43,Pontianak,-0.03,109.32,Indonesia,ID,607311.0
+44,Frederick,40.1096,-104.9677,United States,US,12154.0
+45,Mitchell,43.7295,-98.0336,United States,US,15421.0
+46,Cork,51.8986,-8.4958,Ireland,IE,188907.0
+47,Samut Sakhon,13.536,100.274,Thailand,TH,63498.0
+48,Tweed Heads,-28.1826,153.5466,Australia,AU,33065.0
+49,Bukama,-9.2096,25.84,Congo (Kinshasa),CD,38770.0
+50,Elburn,41.8838,-88.4615,United States,US,5757.0
+51,Tauranga,-37.6964,176.1536,New Zealand,NZ,121500.0
+52,Warner Robins,32.5981,-83.6528,United States,US,148686.0
+53,Senhor do Bonfim,-10.4496,-40.19,Brazil,BR,48471.0
+54,Tarapoto,-6.51,-76.48,Peru,PE,936.0
+55,Zhanyi,25.6005,103.8166,China,CN,652604.0
+56,Elsa,26.2979,-97.9937,United States,US,6624.0
+57,Rivercess,5.465,-9.578,Liberia,LR,2578.0
+58,Penola,-37.383,140.8167,Australia,AU,1514.0
+59,Qoqon,40.5404,70.94,Uzbekistan,UZ,350000.0
+60,Buffalo,45.1786,-93.8663,United States,US,16643.0
+61,Chonchi,-42.61,-73.8099,Chile,CL,381.0
+62,Clinton,41.8434,-90.2408,United States,US,30930.0
+63,Springfield,39.9304,-83.7961,United States,US,83115.0
+64,Aleg,17.058,-13.909,Mauritania,MR,8388.0
+65,Embi,48.8268,58.1442,Kazakhstan,KZ,18760.0
+66,Marka,1.7766,44.8533,Somalia,SO,1958.0
+67,Saarbrücken,49.2504,6.97,Germany,DE,770001.0
+68,Paris,33.6685,-95.5445,United States,US,26175.0
+69,Safonovo,55.1465,33.2161,Russia,RU,46637.0
+70,East London,-32.97,27.87,South Africa,ZA,338627.0
+71,Shalqar,47.8363,59.6141,Kazakhstan,KZ,27256.0
+72,Koundara,12.48,-13.296,Guinea,GN,13990.0
+73,Redmond,44.2632,-121.1798,United States,US,30967.0
+74,Viseu,40.657,-7.91,Portugal,PT,26364.0
+75,Chernivtsi,48.3053,25.9216,Ukraine,UA,298251.0
+76,Sikar,27.6104,75.14,India,IN,400000.0
+77,Washougal,45.5812,-122.3433,United States,US,15466.0
+78,La Paz,-33.4661,-67.55,Argentina,AR,4400.0
+79,Termiz,37.2329,67.2729,Uzbekistan,UZ,177687.0
+80,Mandali,33.7436,45.5464,Iraq,IQ,29785.0

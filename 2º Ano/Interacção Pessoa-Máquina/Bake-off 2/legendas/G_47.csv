@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Omaha,41.2634,-96.0453,United States,US,792463.0
+2,Bistrița,47.138,24.513,Romania,RO,81318.0
+3,Soyo,-6.1296,12.37,Angola,AO,67491.0
+4,Klagenfurt,46.6203,14.31,Austria,AT,90610.0
+5,Belle Glade,26.6865,-80.6674,United States,US,27236.0
+6,Wuhu,31.3504,118.37,China,CN,810000.0
+7,Cedar City,37.6834,-113.0957,United States,US,35921.0
+8,Monte Plata,18.807,-69.784,Dominican Republic,DO,15532.0
+9,Ouagadougou,12.3703,-1.5247,Burkina Faso,BF,1149000.0
+10,Ocean Springs,30.4082,-88.7861,United States,US,17652.0
+11,Batu Pahat,1.8504,102.9333,Malaysia,MY,199619.0
+12,Sakakah,30.0,40.1333,Saudi Arabia,SA,128332.0
+13,Agordat,15.549,37.8867,Eritrea,ER,28600.0
+14,Wallington,40.8535,-74.1067,United States,US,11689.0
+15,Quincy,42.2516,-71.0183,United States,US,93688.0
+16,Skovorodino,53.9833,123.9167,Russia,RU,10007.0
+17,Cabimas,10.43,-71.45,Venezuela,VE,441094.0
+18,Myitkyina,25.3596,97.3928,Burma,MM,139100.0
+19,Pointe-Noire,-4.77,11.88,Congo (Brazzaville),CG,659084.0
+20,Fukuoka,33.595,130.41,Japan,JP,2792000.0
+21,Waldwick,41.0132,-74.1262,United States,US,10026.0
+22,Córdoba,37.88,-4.77,Spain,ES,321376.0
+23,Jiaohe,43.7163,127.346,China,CN,123018.0
+24,Hannibal,39.7097,-91.3936,United States,US,18361.0
+25,Brookfield,41.8245,-87.847,United States,US,18753.0
+26,Sari,36.5504,53.1,Iran,IR,271467.0
+27,Mishan,45.5504,131.88,China,CN,87257.0
+28,Uthai Thani,15.3819,100.0264,Thailand,TH,22219.0
+29,Icó,-6.4,-38.85,Brazil,BR,28323.0
+30,Sterlitamak,53.63,55.96,Russia,RU,267231.0
+31,Brownwood,31.7124,-98.9765,United States,US,22551.0
+32,Uvinza,-5.1196,30.39,Tanzania,TZ,80350.0
+33,Ouyen,-35.0662,142.3167,Australia,AU,1400.0
+34,Buenos Aires,-34.6025,-58.3975,Argentina,AR,12795000.0
+35,Norwich,41.5495,-72.0882,United States,US,204360.0
+36,Morawa,-29.2163,116.0,Australia,AU,259.0
+37,Rio Verde,-17.8196,-50.93,Brazil,BR,48318.0
+38,Highland,38.7606,-89.681,United States,US,11421.0
+39,Tonantins,-2.8727,-67.8019,Brazil,BR,4561.0
+40,São Luís,-2.516,-44.266,Brazil,BR,1038000.0
+41,Roswell,33.3729,-104.5294,United States,US,49540.0
+42,Kingsport,36.522,-82.5452,United States,US,116745.0
+43,Norristown,40.1224,-75.3399,United States,US,34370.0
+44,Rafaela,-31.25,-61.5,Argentina,AR,88713.0
+45,Malindi,-3.21,40.1,Kenya,KE,94016.0
+46,Gladstone,39.2134,-94.5593,United States,US,27114.0
+47,Ewo,-0.8796,14.82,Congo (Brazzaville),CG,10650.0
+48,Shangqiu,34.4504,115.65,China,CN,1753000.0
+49,Newark,40.7242,-74.1724,United States,US,281764.0
+50,Al Amarah,31.8416,47.1512,Iraq,IQ,345007.0
+51,Huizhou,23.08,114.4,China,CN,289201.0
+52,Lascano,-33.6696,-54.2,Uruguay,UY,6976.0
+53,São Gabriel,-30.32,-54.32,Brazil,BR,55434.0
+54,Gubkin,51.2743,37.3843,Russia,RU,272.0
+55,Legazpi,13.17,123.75,Philippines,PH,320081.0
+56,Grants,35.1538,-107.8347,United States,US,12305.0
+57,Linz,48.3192,14.2888,Austria,AT,349161.0
+58,Muzaffarnagar,29.485,77.695,India,IN,349706.0
+59,Mendi,-6.1444,143.6452,Papua New Guinea,PG,26252.0
+60,Huanghua,38.3704,117.33,China,CN,120000.0
+61,Reading,51.47,-0.98,United Kingdom,GB,369804.0
+62,Campobasso,41.563,14.656,Italy,IT,50762.0
+63,Tukuyu,-9.2496,33.64,Tanzania,TZ,127570.0
+64,Port Blair,11.667,92.736,India,IN,127562.0
+65,Nioro du Sahel,15.2304,-9.59,Mali,ML,14421.0
+66,Ob,54.998,82.7077,Russia,RU,39949.0
+67,Wuppertal,51.25,7.17,Germany,DE,776525.0
+68,Rouen,49.4304,1.08,France,FR,532559.0
+69,Leninsk Kuznetsky,54.66,86.17,Russia,RU,109023.0
+70,Clearlake,38.959,-122.6331,United States,US,15737.0
+71,Fatick,14.344,-16.416,Senegal,SN,24243.0
+72,Lautoka,-17.6161,177.4666,Fiji,FJ,55894.0
+73,Da Nang,16.06,108.25,Vietnam,VN,1000000.0
+74,Crystal Springs,31.9903,-90.354,United States,US,5107.0
+75,Senanga,-16.1196,23.27,Zambia,ZM,10005.0
+76,Cabot,34.9765,-92.0268,United States,US,25797.0
+77,Beni Suef,29.0804,31.09,Egypt,EG,489450.0
+78,Chiclayo,-6.7629,-79.8366,Peru,PE,596792.0
+79,Pescara,42.4554,14.2187,Italy,IT,314789.0
+80,Itacoatiara,-3.14,-58.44,Brazil,BR,51509.0

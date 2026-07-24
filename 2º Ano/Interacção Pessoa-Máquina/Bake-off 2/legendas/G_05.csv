@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Chiquinquirá,5.6204,-73.8199,Colombia,CO,53975.0
+2,Nevers,46.9837,3.1667,France,FR,45929.0
+3,Liverpool,53.416,-2.918,United Kingdom,GB,811000.0
+4,Zhytomyr,50.2456,28.6622,Ukraine,UA,282192.0
+5,Kabale,-1.2496,29.98,Uganda,UG,44600.0
+6,Río Bueno,-40.34,-72.96,Chile,CL,15456.0
+7,Bajram Curri,42.3333,20.0833,Albania,AL,7967.0
+8,Rock Hill,34.9413,-81.026,United States,US,115755.0
+9,Burleson,32.52,-97.3341,United States,US,45016.0
+10,Tsetserleg,47.4769,101.4502,Mongolia,MN,19812.0
+11,Temuco,-38.73,-72.58,Chile,CL,265901.0
+12,Phnom Penh,11.55,104.9166,Cambodia,KH,1466000.0
+13,Vilyuysk,63.7553,121.6248,Russia,RU,9948.0
+14,Grovetown,33.4495,-82.2066,United States,US,13463.0
+15,Mweka,-4.8396,21.57,Congo (Kinshasa),CD,50675.0
+16,Muineachan,54.25,-6.9667,Ireland,IE,5937.0
+17,Vila Velha,-20.3676,-40.318,Brazil,BR,1209091.0
+18,Gjøvik,60.8,10.7,Norway,NO,22719.0
+19,Santa Rosa,-27.8695,-54.46,Brazil,BR,59281.0
+20,Palmetto Bay,25.622,-80.3222,United States,US,24570.0
+21,Wellington,-41.3,174.7833,New Zealand,NZ,393400.0
+22,Xiangfan,32.02,112.13,China,CN,1069000.0
+23,Innsbruck,47.2804,11.41,Austria,AT,155214.0
+24,Runnemede,39.8521,-75.074,United States,US,8382.0
+25,Warrenton,38.7177,-77.7973,United States,US,9861.0
+26,Collipulli,-37.96,-72.43,Chile,CL,16392.0
+27,Punta del Este,-34.97,-54.95,Uruguay,UY,159000.0
+28,Tmassah,26.3666,15.8,Libya,LY,500.0
+29,Satipo,-11.26,-74.69,Peru,PE,15532.0
+30,Diekirch,49.8833,6.1667,Luxembourg,LU,6242.0
+31,Asosa,10.067,34.5333,Ethiopia,ET,30512.0
+32,Iquique,-20.25,-70.13,Chile,CL,227499.0
+33,Nantou,23.9167,120.6833,Taiwan,TW,165000.0
+34,Port-Gentil,-0.72,8.78,Gabon,GA,116836.0
+35,Puyang,35.7004,114.98,China,CN,666322.0
+36,Rio Branco,-9.9666,-67.8,Brazil,BR,257642.0
+37,Clarion,41.2106,-79.3803,United States,US,9489.0
+38,Kapiri Mposhi,-13.9696,28.66,Zambia,ZM,37942.0
+39,Westchester,41.8492,-87.8906,United States,US,16563.0
+40,Curepipe,-20.3162,57.5166,Mauritius,MU,299975.0
+41,Quissico,-24.7257,34.766,Mozambique,MZ,1210.0
+42,Inverness,57.4671,-4.2333,United Kingdom,GB,45158.0
+43,Timișoara,45.7588,21.2234,Romania,RO,315053.0
+44,Bodø,67.2468,14.399,Norway,NO,34073.0
+45,Patra,38.23,21.73,Greece,GR,163360.0
+46,Përmet,40.234,20.352,Albania,AL,10686.0
+47,Dobbs Ferry,41.0127,-73.8698,United States,US,11093.0
+48,Tuymazy,54.6048,53.6943,Russia,RU,68829.0
+49,Great Neck Plaza,40.7869,-73.726,United States,US,7003.0
+50,Kampene,-3.5995,26.67,Congo (Kinshasa),CD,37034.0
+51,Ust Maya,60.4566,134.5433,Russia,RU,3062.0
+52,Lehighton,40.8306,-75.7165,United States,US,5276.0
+53,Tikhvin,59.6448,33.5144,Russia,RU,62075.0
+54,Menongue,-14.6666,17.7,Angola,AO,13030.0
+55,Entre Ríos,-21.53,-64.19,Bolivia,BO,2685.0
+56,Rivne,50.6166,26.2528,Ukraine,UA,255106.0
+57,Nanjing,32.05,118.78,China,CN,3679000.0
+58,Purnia,25.7854,87.48,India,IN,198453.0
+59,Farmington,36.7559,-108.1827,United States,US,48137.0
+60,Coihaique,-45.57,-72.07,Chile,CL,45787.0
+61,Kimbe,-5.55,150.143,Papua New Guinea,PG,18847.0
+62,Bintulu,3.1664,113.036,Malaysia,MY,151617.0
+63,Antwerpen,51.2204,4.415,Belgium,BE,920000.0
+64,Spirit Lake,43.4177,-95.1109,United States,US,11375.0
+65,Karamken,60.2004,151.1666,Russia,RU,10.0
+66,Tunduma,-9.2846,32.7749,Tanzania,TZ,36556.0
+67,Brahmapur,19.32,84.8,India,IN,324726.0
+68,Sabaya,-19.0163,-68.3833,Bolivia,BO,573.0
+69,Mount Gambier,-37.8313,140.765,Australia,AU,23209.0
+70,Saint-Étienne,45.4304,4.38,France,FR,265684.0
+71,Zhijiang,27.4409,109.678,China,CN,113907.0
+72,Taylor Mill,39.0092,-84.4987,United States,US,6756.0
+73,Naryan Mar,67.6474,53.0574,Russia,RU,21658.0
+74,Tulcea,45.1993,28.7967,Romania,RO,92475.0
+75,Sfintu-Gheorghe,45.868,25.793,Romania,RO,60677.0
+76,Dajabón,19.548,-71.705,Dominican Republic,DO,16398.0
+77,Moradabad,28.8418,78.7568,India,IN,787000.0
+78,Kavaratti,10.5626,72.6369,India,IN,10688.0
+79,Três Lagoas,-20.79,-51.72,Brazil,BR,78712.0
+80,Bursa,40.2,29.07,Turkey,TR,1492000.0

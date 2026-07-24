@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Salem,39.568,-75.4723,United States,US,5366.0
+2,Alma,43.38,-84.6556,United States,US,16502.0
+3,Batemans Bay,-35.6896,150.2073,Australia,AU,10557.0
+4,Penza,53.18,45.0,Russia,RU,512602.0
+5,Holly Springs,34.1678,-84.4856,United States,US,11281.0
+6,Huntington Woods,42.4817,-83.1686,United States,US,6328.0
+7,Olyokminsk,60.5032,120.3926,Russia,RU,10000.0
+8,Bethalto,38.9016,-90.0472,United States,US,9328.0
+9,Hachinohe,40.51,141.54,Japan,JP,239046.0
+10,Friendswood,29.5109,-95.198,United States,US,39396.0
+11,Oakley,37.9929,-121.6951,United States,US,40622.0
+12,Meningie,-35.6995,139.3333,Australia,AU,1501.0
+13,Chake Chake,-5.2395,39.77,Tanzania,TZ,49959.0
+14,Marysville,48.0812,-122.1559,United States,US,163547.0
+15,Santa Cruz Cabrália,-16.28,-39.03,Brazil,BR,19545.0
+16,Zhubei,24.8333,121.0119,Taiwan,TW,200000.0
+17,Ussuriysk,43.8,132.02,Russia,RU,157068.0
+18,Forest Park,39.286,-84.5259,United States,US,18671.0
+19,Slidell,30.2881,-89.7828,United States,US,94320.0
+20,Yeysk,46.6988,38.2634,Russia,RU,87814.0
+21,Pilar,-26.8695,-58.3,Paraguay,PY,28435.0
+22,Shira,54.4914,89.9531,Russia,RU,9358.0
+23,Tbilisi,41.725,44.7908,Georgia,GE,1100000.0
+24,Pleasant Grove,40.3714,-111.7411,United States,US,38756.0
+25,Georgetown,-18.3,143.5333,Australia,AU,818.0
+26,San Ramon,37.7625,-121.9366,United States,US,75639.0
+27,Limoges,45.83,1.25,France,FR,152199.0
+28,Eau Claire,44.8202,-91.4948,United States,US,106681.0
+29,Mokena,41.5324,-87.8779,United States,US,20097.0
+30,Placerville,38.7309,-120.7979,United States,US,30531.0
+31,Farim,12.493,-15.227,Guinea-Bissau,GW,6792.0
+32,Sibu,2.303,111.843,Malaysia,MY,203832.0
+33,San Martín,-33.07,-68.49,Argentina,AR,117399.0
+34,Kavala,40.9412,24.4018,Greece,GR,59240.0
+35,Vaduz,47.1337,9.5167,Liechtenstein,LI,36281.0
+36,Puerto Varas,-41.33,-72.99,Chile,CL,24958.0
+37,Chesapeake,36.6778,-76.3024,United States,US,237940.0
+38,Bundaberg,-24.8791,152.3509,Australia,AU,52472.0
+39,Junín,-11.1496,-76.01,Peru,PE,15320.0
+40,Santa Clara,37.1312,-113.6561,United States,US,7065.0
+41,Norman Wells,65.2837,-126.85,Canada,CA,1027.0
+42,Live Oak,30.2956,-82.9846,United States,US,7110.0
+43,Darwin,-12.4254,130.85,Australia,AU,93080.0
+44,Viña del Mar,-33.03,-71.54,Chile,CL,503534.0
+45,Rogers,36.3172,-94.1515,United States,US,65021.0
+46,El Dorado,6.7333,-61.6333,Venezuela,VE,2383.0
+47,Dourados,-22.23,-54.81,Brazil,BR,162202.0
+48,Tagum,7.3821,125.8017,Philippines,PH,6726.0
+49,Ancud,-41.87,-73.83,Chile,CL,28020.0
+50,Porto Seguro,-16.4296,-39.08,Brazil,BR,123173.0
+51,Dikson,73.507,80.5451,Russia,RU,1113.0
+52,Martinsburg,39.458,-77.9779,United States,US,17687.0
+53,Otradnyy,53.3778,51.3474,Russia,RU,50127.0
+54,Borisoglebsk,51.3687,42.0887,Russia,RU,68597.0
+55,Tanga,-5.07,39.09,Tanzania,TZ,224876.0
+56,Konza,-1.7496,37.12,Kenya,KE,2004.0
+57,Pevek,69.7008,170.3133,Russia,RU,4837.0
+58,Birdsville,-25.8996,139.3666,Australia,AU,283.0
+59,Imphal,24.8,93.95,India,IN,264986.0
+60,Zamora,19.9804,-102.28,Mexico,MX,214947.0
+61,Scottsdale,-41.1495,147.5167,Australia,AU,2468.0
+62,La Marque,29.369,-94.9957,United States,US,16457.0
+63,Balıkesir,39.6504,27.89,Turkey,TR,261516.0
+64,Prince George,53.9167,-122.7667,Canada,CA,65558.0
+65,Jaboatao,-8.11,-35.02,Brazil,BR,702621.0
+66,Chester,53.2,-2.92,United Kingdom,GB,89531.0
+67,Nieuw Nickerie,5.9504,-56.99,Suriname,SR,15992.0
+68,Joliette,46.0333,-73.4333,Canada,CA,45361.0
+69,Deerfield Beach,26.305,-80.1278,United States,US,79764.0
+70,Bragança,-1.05,-46.77,Brazil,BR,57163.0
+71,Maracaju,-21.61,-55.18,Brazil,BR,22690.0
+72,Serowe,-22.39,26.71,Botswana,BW,48573.0
+73,Saïda,34.8404,0.14,Algeria,DZ,142213.0
+74,Bethany,35.5072,-97.6417,United States,US,19543.0
+75,Jaú,-22.2896,-48.57,Brazil,BR,119206.0
+76,Crown Point,41.414,-87.3455,United States,US,29176.0
+77,Newcastle,-32.8453,151.815,Australia,AU,1134616.0
+78,Nagano,36.65,138.17,Japan,JP,594311.0
+79,Berekum,7.4504,-2.59,Ghana,GH,46287.0
+80,Pacific,47.261,-122.2507,United States,US,7122.0

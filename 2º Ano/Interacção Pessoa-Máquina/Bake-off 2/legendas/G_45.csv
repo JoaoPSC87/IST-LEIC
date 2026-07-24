@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Hartford City,40.4536,-85.3735,United States,US,5862.0
+2,Morioka,39.72,141.13,Japan,JP,295172.0
+3,Ust Kut,56.765,105.76,Russia,RU,25388.0
+4,Nyingchi,29.5333,94.4167,China,CN,100.0
+5,Machiques,10.0704,-72.5499,Venezuela,VE,62968.0
+6,Mocambique,-15.0399,40.6822,Mozambique,MZ,54315.0
+7,Uberlândia,-18.9,-48.28,Brazil,BR,563536.0
+8,Godfrey,38.9582,-90.2158,United States,US,17733.0
+9,Salinópolis,-0.6095,-47.34,Brazil,BR,40998.0
+10,Sweetwater,32.4693,-100.4092,United States,US,10105.0
+11,Bilecik,40.15,29.983,Turkey,TR,40285.0
+12,Grambling,32.5276,-92.7124,United States,US,5217.0
+13,Rio de Janeiro,-22.925,-43.225,Brazil,BR,11748000.0
+14,Sicuani,-14.2896,-71.23,Peru,PE,33575.0
+15,Sandakan,5.843,118.108,Malaysia,MY,392288.0
+16,Pleasant Hill,38.8061,-94.2654,United States,US,8376.0
+17,Durban,-29.865,30.98,South Africa,ZA,2729000.0
+18,Innisfail,-17.5313,146.0387,Australia,AU,10143.0
+19,Kerikeri,-35.2285,173.9507,New Zealand,NZ,5856.0
+20,Juanjuí,-7.1696,-76.74,Peru,PE,37715.0
+21,Tawau,4.271,117.896,Malaysia,MY,306462.0
+22,Tournavista,-8.9322,-74.7052,Peru,PE,511.0
+23,Sequim,48.0747,-123.0948,United States,US,20330.0
+24,Frankfort,40.2799,-86.5181,United States,US,16205.0
+25,Thimphu,27.473,89.639,Bhutan,BT,98676.0
+26,Ushuaia,-54.79,-68.31,Argentina,AR,58028.0
+27,Santa Marta,11.2472,-74.2017,Colombia,CO,431781.0
+28,West Des Moines,41.5527,-93.7803,United States,US,64560.0
+29,Perabumulih,-3.4432,104.2315,Indonesia,ID,103470.0
+30,Maseru,-29.3167,27.4833,Lesotho,LS,361324.0
+31,Whitehall,43.4004,-86.3406,United States,US,10635.0
+32,Bella Unión,-30.2596,-57.6,Uruguay,UY,22723.0
+33,Andoany,-13.4,48.2666,Madagascar,MG,22680.0
+34,Sidi bel Abbes,35.1903,-0.64,Algeria,DZ,208604.0
+35,Millbrae,37.5994,-122.4024,United States,US,22661.0
+36,Thanh Hóa,19.82,105.8,Vietnam,VN,197551.0
+37,Turlock,37.5053,-120.8588,United States,US,106100.0
+38,Harstad,68.7879,16.5156,Norway,NO,19433.0
+39,Tuluá,4.0904,-76.21,Colombia,CO,165501.0
+40,Comodoro Rivadavia,-45.87,-67.5,Argentina,AR,140850.0
+41,Huangshi,30.22,115.1,China,CN,688090.0
+42,White Plains,41.022,-73.7548,United States,US,58241.0
+43,Chiradzulu,-15.7,35.1833,Malawi,MW,1580.0
+44,Yefremov,53.1491,38.1215,Russia,RU,45497.0
+45,Haora,22.5804,88.3299,India,IN,4841638.0
+46,Pursat,12.5337,103.9167,Cambodia,KH,52476.0
+47,Greenville,5.0111,-9.0388,Liberia,LR,10374.0
+48,Sohano,-5.4297,154.6711,Papua New Guinea,PG,2338.0
+49,Putina,-15.47,-69.43,Peru,PE,8118.0
+50,Polyarnyy,69.2052,33.4502,Russia,RU,19200.0
+51,Gympie,-26.1886,152.6709,Australia,AU,11649.0
+52,Dolores,-36.33,-57.69,Argentina,AR,25190.0
+53,Kasama,-10.1996,31.1799,Zambia,ZM,200000.0
+54,Santa Fe Springs,33.933,-118.0625,United States,US,18027.0
+55,Kikwit,-5.03,18.85,Congo (Kinshasa),CD,637736.0
+56,Anxi,40.5004,95.8,China,CN,17886.0
+57,Hamilton,46.2524,-114.1598,United States,US,6646.0
+58,Mmabatho,-25.83,25.61,South Africa,ZA,104428.0
+59,Villa Ángela,-27.5833,-60.7167,Argentina,AR,30051.0
+60,Florianópolis,-27.58,-48.52,Brazil,BR,1023000.0
+61,Ciudad Juárez,31.6904,-106.49,Mexico,MX,1343000.0
+62,Antalaha,-14.8833,50.2833,Madagascar,MG,47224.0
+63,Neiafu,-18.6496,-173.9833,Tonga,TO,7391.0
+64,De Kastri,51.4666,140.7833,Russia,RU,3615.0
+65,Devonport,-41.1927,146.3311,Australia,AU,19317.0
+66,Tulcán,0.822,-77.732,Ecuador,EC,83000.0
+67,El Manteco,7.3504,-62.5333,Venezuela,VE,2215.0
+68,Natitingou,10.3204,1.39,Benin,BJ,80892.0
+69,Resistencia,-27.46,-58.99,Argentina,AR,387158.0
+70,Cairo,30.8789,-84.2051,United States,US,9378.0
+71,Lanett,32.8572,-85.2082,United States,US,6393.0
+72,Jember,-8.1727,113.6873,Indonesia,ID,298585.0
+73,Astoria,46.1856,-123.8047,United States,US,14599.0
+74,Nain,56.5474,-61.686,Canada,CA,1151.0
+75,Big Lake,45.3418,-93.7435,United States,US,10638.0
+76,Narrabri,-30.3319,149.7874,Australia,AU,7082.0
+77,Ciudad Constitución,25.04,-111.66,Mexico,MX,39915.0
+78,Langfang,39.5204,116.68,China,CN,810000.0
+79,Lillehammer,61.1333,10.5,Norway,NO,19542.0
+80,Sandy Springs,33.9366,-84.3703,United States,US,105703.0

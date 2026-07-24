@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Rosario,-32.9511,-60.6663,Argentina,AR,1203000.0
+2,Nzérékoré,7.76,-8.83,Guinea,GN,168121.0
+3,Bumba,2.19,22.46,Congo (Kinshasa),CD,160539.0
+4,Ust Kamchatsk,56.2135,162.435,Russia,RU,4939.0
+5,Tarabuco,-19.18,-64.9199,Bolivia,BO,2428.0
+6,Kandy,7.28,80.67,Sri Lanka,LK,111701.0
+7,Woodstock,38.8753,-78.5158,United States,US,7225.0
+8,Sale,-38.1096,147.06,Australia,AU,22486.0
+9,Paradise Valley,33.5435,-111.9595,United States,US,14355.0
+10,Columbus,43.3354,-89.0299,United States,US,6674.0
+11,Soledad,10.92,-74.77,Colombia,CO,698852.0
+12,Basse-terre,16.2304,-61.44,Guadeloupe,GP,307.0
+13,Bristol,40.1034,-74.8523,United States,US,9534.0
+14,Araouane,18.9,-3.53,Mali,ML,4026.0
+15,Eumseong,36.9353,127.6897,"Korea, South",KR,10077.0
+16,Selkirk,50.15,-96.8833,Canada,CA,9986.0
+17,St.-Brieuc,48.5167,-2.7833,France,FR,53223.0
+18,Tumbes,-3.57,-80.46,Peru,PE,109223.0
+19,Pativilca,-10.6996,-77.8,Peru,PE,31905.0
+20,Corozal,18.398,-88.388,Belize,BZ,8724.0
+21,Göttingen,51.5204,9.92,Germany,DE,139419.0
+22,Hannover,52.367,9.7167,Germany,DE,722490.0
+23,Leesville,31.1394,-93.2743,United States,US,9131.0
+24,São Borja,-28.6596,-56.01,Brazil,BR,59613.0
+25,Ruse,43.8537,25.9733,Bulgaria,BG,184270.0
+26,Kontagora,10.4004,5.4699,Nigeria,NG,98754.0
+27,San Vicente del Caguán,2.0704,-74.64,Colombia,CO,1500.0
+28,Willow Park,32.755,-97.6501,United States,US,5146.0
+29,Paris,39.6148,-87.6905,United States,US,8528.0
+30,Campo Murao,-24.0496,-52.42,Brazil,BR,75401.0
+31,Sagar,23.8504,78.75,India,IN,328240.0
+32,Gitarama,-2.0696,29.76,Rwanda,RW,87613.0
+33,Palmdale,34.5945,-118.1058,United States,US,157356.0
+34,New Kensington,40.5711,-79.7521,United States,US,12592.0
+35,Krasnoarmeysk,51.0174,45.6974,Russia,RU,25841.0
+36,Ararat,-37.2795,142.91,Australia,AU,6110.0
+37,Al Wajh,26.2324,36.4636,Saudi Arabia,SA,43237.0
+38,Shiyan,32.57,110.78,China,CN,770000.0
+39,Derzhavinsk,51.1021,66.3075,Kazakhstan,KZ,15848.0
+40,Shepherdstown,39.4318,-77.8048,United States,US,5575.0
+41,Ersekë,40.3333,20.6833,Albania,AL,7890.0
+42,Calulo,-9.9996,14.9,Angola,AO,795.0
+43,Dezhou,37.4504,116.3,China,CN,379555.0
+44,Sóc Trăng,9.6037,105.98,Vietnam,VN,300000.0
+45,Lausanne,46.5304,6.65,Switzerland,CH,265702.0
+46,Tillamook,45.4561,-123.8346,United States,US,8061.0
+47,Kapuskasing,49.4167,-82.4333,Canada,CA,9240.0
+48,Les Cayes,18.2004,-73.75,Haiti,HT,175457.0
+49,Podgorica,42.466,19.2663,Montenegro,ME,145850.0
+50,San Pablo,14.0696,121.3226,Philippines,PH,240830.0
+51,Covina,34.0903,-117.8817,United States,US,48549.0
+52,Hämeenlinna,60.997,24.472,Finland,FI,47261.0
+53,La Paz,-16.498,-68.15,Bolivia,BO,1590000.0
+54,Palembang,-2.98,104.75,Indonesia,ID,1749000.0
+55,Orléans,47.9004,1.9,France,FR,217301.0
+56,Gwalior,26.23,78.1801,India,IN,978000.0
+57,Tuapse,44.1148,39.0644,Russia,RU,99145.0
+58,Ridder,50.3554,83.5149,Kazakhstan,KZ,56756.0
+59,Bom Jesus da Lapa,-13.2495,-43.44,Brazil,BR,40691.0
+60,Geraldton,-28.7666,114.6,Australia,AU,27258.0
+61,Arvayheer,46.25,102.7666,Mongolia,MN,28053.0
+62,Trujillo,9.3804,-70.44,Venezuela,VE,50353.0
+63,Paracuru,-3.3995,-39.04,Brazil,BR,21196.0
+64,Arawa,-6.228,155.566,Papua New Guinea,PG,40266.0
+65,North Vernon,39.0151,-85.6287,United States,US,11575.0
+66,Mascoutah,38.5191,-89.8045,United States,US,7840.0
+67,San Luis,16.2,-89.44,Guatemala,GT,132470.0
+68,Ermoupoli,37.4504,24.9333,Greece,GR,12260.0
+69,Huancayo,-12.08,-75.2,Peru,PE,412733.0
+70,Esik,43.3691,77.4438,Kazakhstan,KZ,35319.0
+71,Santo André,-23.6528,-46.5278,Brazil,BR,662373.0
+72,Magway,20.1445,94.9196,Burma,MM,125973.0
+73,Searcy,35.2419,-91.7351,United States,US,27637.0
+74,Alice,27.7556,-98.0653,United States,US,21172.0
+75,Kédougou,12.5604,-12.18,Senegal,SN,18226.0
+76,Skokie,42.036,-87.74,United States,US,64270.0
+77,Nanuque,-17.84,-40.35,Brazil,BR,37824.0
+78,Frankenmuth,43.332,-83.7395,United States,US,5160.0
+79,Aleksandrovsk Sakhalinskiy,50.8975,142.1561,Russia,RU,12024.0
+80,Wafangdian,39.6259,121.996,China,CN,355844.0

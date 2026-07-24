@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Gloversville,43.0491,-74.3466,United States,US,27872.0
+2,Sheffield,53.3667,-1.5,United Kingdom,GB,1292900.0
+3,Abaetetuba,-1.7245,-48.8849,Brazil,BR,79420.0
+4,Gafsa,34.4204,8.78,Tunisia,TN,126803.0
+5,Oregon City,45.3418,-122.5938,United States,US,36286.0
+6,Ceuta,35.889,-5.307,Spain,ES,78674.0
+7,São Lourenço do Sul,-31.37,-51.98,Brazil,BR,25340.0
+8,Kingoonya,-30.8996,135.3,Australia,AU,50.0
+9,Portalegre,39.29,-7.423,Portugal,PT,15581.0
+10,Kasongo-Lunda,-6.4796,16.83,Congo (Kinshasa),CD,20060.0
+11,Toltén,-39.2166,-73.2123,Chile,CL,2293.0
+12,Tupiza,-21.4396,-65.72,Bolivia,BO,28766.0
+13,Nyunzu,-5.9496,28.0167,Congo (Kinshasa),CD,15397.0
+14,Uglich,57.5244,38.33,Russia,RU,37732.0
+15,Colesberg,-30.7195,25.1,South Africa,ZA,12423.0
+16,Wentzville,38.8165,-90.8671,United States,US,37395.0
+17,Toledo,39.867,-4.0167,Spain,ES,74632.0
+18,Somerville,42.3908,-71.1013,United States,US,81322.0
+19,Loubomo,-4.1796,12.67,Congo (Brazzaville),CG,103894.0
+20,Sparta,43.9403,-90.8084,United States,US,10086.0
+21,Hakodate,41.795,140.74,Japan,JP,302984.0
+22,Bahraich,27.6204,81.6699,India,IN,182218.0
+23,Aqtau,43.6232,51.2365,Kazakhstan,KZ,4479.0
+24,Brookhaven,33.8746,-84.3315,United States,US,52444.0
+25,Kayes,-4.18,13.28,Congo (Brazzaville),CG,62521.0
+26,Mollendo,-17.02,-72.02,Peru,PE,49033.0
+27,Venice,45.4387,12.335,Italy,IT,270816.0
+28,Komsa,61.868,89.2577,Russia,RU,10.0
+29,Palermo,38.125,13.35,Italy,IT,863000.0
+30,Mikhalkino,69.4244,161.4811,Russia,RU,570.0
+31,Compostela,21.2304,-104.9,Mexico,MX,16162.0
+32,Shadrinsk,56.0837,63.6333,Russia,RU,79479.0
+33,Larissa,39.6304,22.42,Greece,GR,128758.0
+34,Bexley,39.965,-82.9342,United States,US,13669.0
+35,Dandeldhura,29.3,80.6,Nepal,NP,19014.0
+36,Villarrica,-25.75,-56.4333,Paraguay,PY,41157.0
+37,Acarigua,9.5804,-69.2,Venezuela,VE,260921.0
+38,Laramie,41.3095,-105.6097,United States,US,33587.0
+39,Beachwood,41.4759,-81.503,United States,US,11707.0
+40,Rizhao,35.4304,119.45,China,CN,865000.0
+41,Louisville,40.8366,-81.2646,United States,US,9356.0
+42,Tongling,30.9504,117.78,China,CN,562832.0
+43,Grevenmacher,49.7,6.3333,Luxembourg,LU,3958.0
+44,Al Marj,32.5005,20.83,Libya,LY,169540.0
+45,Zaozernyy,55.962,94.7028,Russia,RU,33865.0
+46,Slobodskoy,58.7185,50.188,Russia,RU,48962.0
+47,La Serena,-29.9,-71.25,Chile,CL,154521.0
+48,Maiduguri,11.85,13.16,Nigeria,NG,896000.0
+49,Asunción,-25.2964,-57.6415,Paraguay,PY,1870000.0
+50,Hillsdale,41.9274,-84.6365,United States,US,11452.0
+51,Puerto Villamil,-0.9333,-91.0167,Ecuador,EC,2200.0
+52,Erzincan,39.7526,39.4928,Turkey,TR,129407.0
+53,Keizer,45.0028,-123.0242,United States,US,38980.0
+54,Lincoln Park,40.9239,-74.3035,United States,US,10442.0
+55,Gjoa Haven,68.6333,-95.9167,Canada,CA,1109.0
+56,Carson City,39.1512,-119.7474,United States,US,57522.0
+57,Lafia,8.4904,8.52,Nigeria,NG,127236.0
+58,California,40.0692,-79.9152,United States,US,6466.0
+59,Mandalay,21.97,96.085,Burma,MM,1300000.0
+60,Potsdam,52.4004,13.07,Germany,DE,218095.0
+61,Allouez,44.472,-88.0261,United States,US,13896.0
+62,Stoke,53.0004,-2.18,United Kingdom,GB,390801.0
+63,Hitchcock,29.2945,-95.025,United States,US,7805.0
+64,Tovuz,40.9922,45.6289,Azerbaijan,AZ,12626.0
+65,Vilanculos,-21.9995,35.3166,Mozambique,MZ,177.0
+66,As Sulayyil,20.4623,45.5722,Saudi Arabia,SA,24097.0
+67,Lianxian,24.7815,112.3825,China,CN,203639.0
+68,Obninsk,55.0804,36.62,Russia,RU,107392.0
+69,Punta Alta,-38.88,-62.08,Argentina,AR,57209.0
+70,Hassi Messaoud,31.7023,6.0545,Algeria,DZ,18124.0
+71,Chuncheon,37.8747,127.7342,"Korea, South",KR,226509.0
+72,Isparta,37.77,30.53,Turkey,TR,172334.0
+73,Haverstraw,41.1934,-73.952,United States,US,12129.0
+74,Lahat,-3.8,103.5333,Indonesia,ID,65906.0
+75,Ivanhoe,-32.8996,144.3,Australia,AU,265.0
+76,São Mateus,-18.7296,-39.86,Brazil,BR,77117.0
+77,Concord,43.2307,-71.5595,United States,US,42821.0
+78,Montevideo,-34.858,-56.1711,Uruguay,UY,1513000.0
+79,Daqing,46.58,125.0,China,CN,1693000.0
+80,Mendoza,-32.8833,-68.8166,Argentina,AR,893000.0

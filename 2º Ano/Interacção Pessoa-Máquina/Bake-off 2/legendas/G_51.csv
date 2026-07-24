@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Halls Creek,-18.2667,127.7667,Australia,AU,1209.0
+2,Queenstown,-42.0829,145.55,Australia,AU,2352.0
+3,Kakonko,-3.2796,30.96,Tanzania,TZ,24688.0
+4,Niš,43.3304,21.9,Serbia,RS,250000.0
+5,Stoeng Treng,13.523,105.974,Cambodia,KH,29665.0
+6,Lorica,9.2419,-75.816,Colombia,CO,52771.0
+7,Crotone,39.0833,17.1233,Italy,IT,60010.0
+8,Beipiao,41.81,120.76,China,CN,228515.0
+9,Imperial,32.8375,-115.5719,United States,US,17203.0
+10,Arjona,10.26,-75.35,Colombia,CO,50405.0
+11,Ed Dueim,13.9904,32.3,Sudan,SD,87068.0
+12,Des Moines,47.3914,-122.3154,United States,US,31172.0
+13,Mont Belvieu,29.8522,-94.8789,United States,US,5584.0
+14,Jendouba,36.5,8.75,Tunisia,TN,51408.0
+15,Lomé,6.1319,1.2228,Togo,TG,1452000.0
+16,Foumban,5.7304,10.9,Cameroon,CM,92673.0
+17,Diego de Almagro,-26.3696,-70.05,Chile,CL,18137.0
+18,Birsk,55.4244,55.5444,Russia,RU,41014.0
+19,Kristianstad,56.0337,14.1333,Sweden,SE,32188.0
+20,Sydney,-33.92,151.1852,Australia,AU,4630000.0
+21,Santana do Livramento,-30.88,-55.53,Brazil,BR,89694.0
+22,Turkistan,43.3016,68.2549,Kazakhstan,KZ,97360.0
+23,Wyoming,42.8909,-85.7067,United States,US,75567.0
+24,Kewanee,41.2399,-89.9258,United States,US,12401.0
+25,Bouaflé,6.978,-5.748,Ivory Coast,CI,60962.0
+26,Bam,29.1077,58.362,Iran,IR,99268.0
+27,Pakwach,2.4704,31.48,Uganda,UG,17541.0
+28,Piracicaba,-22.71,-47.64,Brazil,BR,342209.0
+29,Boston,42.3189,-71.0838,United States,US,4556916.0
+30,Finnsnes,69.2406,18.0086,Norway,NO,3907.0
+31,Riverdale Park,38.9645,-76.9265,United States,US,7304.0
+32,Peterborough,52.5804,-0.25,United Kingdom,GB,140141.0
+33,Caserta,41.06,14.3374,Italy,IT,250000.0
+34,León,21.15,-101.7,Mexico,MX,1488000.0
+35,Baltasar Brum,-30.73,-57.32,Uruguay,UY,2517.0
+36,Machinga,-14.9667,35.5167,Malawi,MW,1418.0
+37,Nottingham,52.9703,-1.17,United Kingdom,GB,825600.0
+38,Syracuse,43.0409,-76.1438,United States,US,407208.0
+39,Ipú,-4.3196,-40.7201,Brazil,BR,26678.0
+40,Masterton,-40.9439,175.6456,New Zealand,NZ,20200.0
+41,Ondorhaan,47.3167,110.65,Mongolia,MN,14723.0
+42,Bologna,44.5004,11.34,Italy,IT,488172.0
+43,Türkmenabat,39.11,63.58,Turkmenistan,TM,234817.0
+44,Chernihiv,51.5049,31.3015,Ukraine,UA,307684.0
+45,Rabaul,-4.2055,152.1434,Papua New Guinea,PG,8074.0
+46,Brokopondo,5.0404,-55.02,Suriname,SR,8340.0
+47,Zhosaly,45.4877,64.078,Kazakhstan,KZ,20065.0
+48,Bellflower,33.888,-118.1271,United States,US,77790.0
+49,Florida,-34.099,-56.215,Uruguay,UY,32234.0
+50,New Brunswick,40.487,-74.445,United States,US,56910.0
+51,Ngaoundéré,7.3204,13.58,Cameroon,CM,231357.0
+52,Peterborough,-32.9662,138.8333,Australia,AU,1689.0
+53,Yopal,5.347,-72.406,Colombia,CO,61029.0
+54,Abunã,-9.6954,-65.3597,Brazil,BR,1929.0
+55,Iskitim,54.6509,83.2865,Russia,RU,61827.0
+56,Pa-an,16.85,97.6167,Burma,MM,50000.0
+57,Tessalit,20.2014,1.0888,Mali,ML,6000.0
+58,Ulkan,55.9004,107.7833,Russia,RU,10.0
+59,Nola,3.5337,16.0666,Central African Republic,CF,26809.0
+60,Angra do Heroísmo,38.6504,-27.2167,Portugal,PT,12045.0
+61,Alapayevsk,57.8465,61.6915,Russia,RU,44000.0
+62,Stettler,52.333,-112.6833,Canada,CA,5494.0
+63,Nsukka,6.867,7.3834,Nigeria,NG,111017.0
+64,Iwo,7.63,4.18,Nigeria,NG,250443.0
+65,Luiana,-17.3695,23.0,Angola,AO,150.0
+66,West Chester,39.9601,-75.6058,United States,US,19928.0
+67,Katanning,-33.6996,117.5501,Australia,AU,3934.0
+68,Cotati,38.3278,-122.7092,United States,US,7455.0
+69,Timbuktu,16.7666,-3.0166,Mali,ML,68872.0
+70,Ankang,32.68,109.02,China,CN,1100000.0
+71,Nakhon Phanom,17.3945,104.7695,Thailand,TH,55377.0
+72,San Francisco,-31.43,-62.09,Argentina,AR,59062.0
+73,Hampton,33.3834,-84.2853,United States,US,7532.0
+74,Pingliang,35.5304,106.6801,China,CN,207256.0
+75,Arsenyev,44.1623,133.2823,Russia,RU,58700.0
+76,San Ramon,-11.1296,-75.34,Peru,PE,14708.0
+77,Wabag,-5.49,143.718,Papua New Guinea,PG,3958.0
+78,Miskolc,48.1004,20.78,Hungary,HU,247757.0
+79,Kastamonu,41.389,33.783,Turkey,TR,70402.0
+80,Monument,39.0736,-104.8468,United States,US,6556.0

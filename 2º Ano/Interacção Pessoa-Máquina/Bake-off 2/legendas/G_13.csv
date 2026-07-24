@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Long Beach,33.8059,-118.161,United States,US,470130.0
+2,Tazovsky,67.4667,78.7,Russia,RU,5981.0
+3,San Justo,-30.7829,-60.5833,Argentina,AR,9607.0
+4,Ar Raqqah,35.9304,39.02,Syria,SY,177636.0
+5,Grytviken,-54.2806,-36.508,South Georgia And South Sandwich Islands,GS,99.0
+6,Albemarle,35.36,-80.1921,United States,US,16929.0
+7,Huambo,-12.75,15.76,Angola,AO,1100000.0
+8,Rockhampton,-23.3639,150.52,Australia,AU,65850.0
+9,Takamatsu,34.3447,134.0448,Japan,JP,334223.0
+10,Al Hufuf,25.3487,49.5856,Saudi Arabia,SA,637389.0
+11,Wamba,2.1404,27.99,Congo (Kinshasa),CD,146871.0
+12,Antsiranana,-12.2765,49.3115,Madagascar,MG,82937.0
+13,Covington,39.0334,-84.5166,United States,US,40797.0
+14,Anápolis,-16.3196,-48.96,Brazil,BR,319587.0
+15,Washington,38.6592,-87.1721,United States,US,13090.0
+16,Huehuetenango,15.3204,-91.47,Guatemala,GT,85992.0
+17,Boone,36.2109,-81.6673,United States,US,25039.0
+18,Wasilla,61.5769,-149.4668,United States,US,9748.0
+19,Sing Buri,14.887,100.401,Thailand,TH,20046.0
+20,Yasuj,30.659,51.594,Iran,IR,96786.0
+21,Sukhothai,17.0119,99.7515,Thailand,TH,10276.0
+22,Berthoud,40.3059,-105.0412,United States,US,6368.0
+23,Belleville,44.1667,-77.3833,Canada,CA,43990.0
+24,Kasongo,-4.45,26.66,Congo (Kinshasa),CD,63000.0
+25,João Pessoa,-7.1011,-34.8761,Brazil,BR,956000.0
+26,Sucre,-19.041,-65.2595,Bolivia,BO,224838.0
+27,Sorata,-15.79,-68.6601,Bolivia,BO,2190.0
+28,Elon,36.1009,-79.5083,United States,US,10147.0
+29,Hillsboro,32.0092,-97.1151,United States,US,8234.0
+30,Lindi,-10.0,39.7,Tanzania,TZ,41912.0
+31,Namibe,-15.19,12.16,Angola,AO,132900.0
+32,Okeechobee,27.2412,-80.8298,United States,US,25692.0
+33,Kismaayo,-0.3566,42.5183,Somalia,SO,234852.0
+34,Túquerres,1.09,-77.6199,Colombia,CO,33979.0
+35,Kakinada,16.9675,82.2375,India,IN,292923.0
+36,Belen,-27.6496,-67.0333,Argentina,AR,11359.0
+37,Zeeland,42.8139,-86.0129,United States,US,5581.0
+38,Orekhovo-Zuevo,55.82,38.98,Russia,RU,140247.0
+39,Udachnyy,66.4232,112.3965,Russia,RU,15266.0
+40,Tanta,30.7904,31.0,Egypt,EG,404901.0
+41,Mongomo,1.6337,11.3166,Equatorial Guinea,GQ,6560.0
+42,Kitami,43.8504,143.9,Japan,JP,113137.0
+43,Wuzhou,23.48,111.32,China,CN,442315.0
+44,Honesdale,41.5774,-75.2524,United States,US,5457.0
+45,Union,39.9102,-84.2962,United States,US,6606.0
+46,Fianarantsoa,-21.4333,47.0833,Madagascar,MG,184184.0
+47,Anyang,36.08,114.35,China,CN,887000.0
+48,Omak,48.4214,-119.5178,United States,US,8208.0
+49,Norton Shores,43.1621,-86.2519,United States,US,24340.0
+50,Cradock,-32.1995,25.61,South Africa,ZA,32898.0
+51,Semarang,-6.9666,110.42,Indonesia,ID,1396000.0
+52,Ripon,37.7415,-121.1305,United States,US,15463.0
+53,Topeka,39.0347,-95.6955,United States,US,149220.0
+54,Muyinga,-2.8523,30.3173,Burundi,BI,71076.0
+55,Miandrivazo,-19.5162,45.4666,Madagascar,MG,20631.0
+56,Dresden,51.05,13.75,Germany,DE,617515.0
+57,Aguascalientes,21.8795,-102.2904,Mexico,MX,869000.0
+58,Sochi,43.59,39.73,Russia,RU,327608.0
+59,Burketown,-17.7161,139.5666,Australia,AU,200.0
+60,Jewett City,41.607,-71.9807,United States,US,9883.0
+61,Sammamish,47.6045,-122.0446,United States,US,63773.0
+62,Novorossiysk,44.73,37.7699,Russia,RU,241856.0
+63,Cherkasy,49.4347,32.0709,Ukraine,UA,297568.0
+64,Aracati,-4.56,-37.77,Brazil,BR,44293.0
+65,Gainesville,29.6814,-82.3454,United States,US,198702.0
+66,Bellmead,31.6025,-97.0896,United States,US,10306.0
+67,Urbandale,41.639,-93.7814,United States,US,43018.0
+68,Johnson City,36.3404,-82.3803,United States,US,127134.0
+69,Wellston,39.1172,-82.5375,United States,US,5554.0
+70,Kolpashevo,58.3004,82.9954,Russia,RU,27876.0
+71,Fulin,29.35,102.7167,China,CN,1049.0
+72,Buenaventura,3.8724,-77.0505,Colombia,CO,252805.0
+73,Itaberaba,-12.5196,-40.3,Brazil,BR,47301.0
+74,Huancavelica,-12.79,-74.99,Peru,PE,44388.0
+75,Qal at Bishah,20.0087,42.5987,Saudi Arabia,SA,88291.0
+76,New Martinsville,39.6636,-80.8569,United States,US,5925.0
+77,Buur Gaabo,-1.2009,41.852,Somalia,SO,3096.0
+78,Estelí,13.09,-86.36,Nicaragua,NI,107839.0
+79,Murray,40.6498,-111.8875,United States,US,49230.0
+80,Neyshabur,36.22,58.82,Iran,IR,221700.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Angleton,29.1689,-95.4288,United States,US,19491.0
+2,Surt,31.21,16.59,Libya,LY,128123.0
+3,Mutare,-18.97,32.65,Zimbabwe,ZW,249365.0
+4,Farr West,41.3015,-112.0318,United States,US,6755.0
+5,Nappanee,41.4452,-85.9962,United States,US,7074.0
+6,Leeton,-34.5449,146.3973,Australia,AU,7299.0
+7,Calama,-22.45,-68.92,Chile,CL,143084.0
+8,Hervey Bay,-25.2887,152.8409,Australia,AU,25114.0
+9,Cayenne,4.933,-52.33,French Guiana,GF,61550.0
+10,Atlantic City,39.3795,-74.4524,United States,US,243285.0
+11,Laredo,27.5536,-99.489,United States,US,256752.0
+12,Byumba,-1.5796,30.06,Rwanda,RW,70593.0
+13,Kasimov,54.9435,41.3931,Russia,RU,36663.0
+14,Dwight,41.0985,-88.4238,United States,US,5066.0
+15,Quetta,30.22,67.025,Pakistan,PK,768000.0
+16,Lappeenranta,61.0671,28.1833,Finland,FI,59276.0
+17,Quirihue,-36.28,-72.53,Chile,CL,6529.0
+18,Natal,-6.9838,-60.2699,Brazil,BR,980588.0
+19,Beira,-19.82,34.87,Mozambique,MZ,530604.0
+20,Bilibino,68.0504,166.3333,Russia,RU,5757.0
+21,Karumba,-17.4833,140.8334,Australia,AU,173.0
+22,Gabès,33.9004,10.1,Tunisia,TN,219517.0
+23,Naberezhnyye Chelny,55.7,52.3199,Russia,RU,461086.0
+24,Buizhou,37.3704,118.02,China,CN,115893.0
+25,Markala,13.6704,-6.07,Mali,ML,53738.0
+26,Limbe,4.0304,9.19,Cameroon,CM,212474.0
+27,Forest City,35.3339,-81.8702,United States,US,25817.0
+28,Schaffhausen,47.706,8.633,Switzerland,CH,33863.0
+29,Grafton,-29.712,152.9377,Australia,AU,9955.0
+30,Cabo de Santo Agostinho,-8.29,-35.03,Brazil,BR,146219.0
+31,Billings,45.7892,-108.5498,United States,US,121550.0
+32,Perpignan,42.7,2.9,France,FR,146620.0
+33,Enurmino,66.95,-171.8166,Russia,RU,297.0
+34,Ploiești,44.9469,26.0365,Romania,RO,232542.0
+35,Rodos,36.4412,28.2225,Greece,GR,56969.0
+36,Volkhov,59.9291,32.3387,Russia,RU,45673.0
+37,Mount Dora,28.8143,-81.6344,United States,US,13818.0
+38,Lugano,46.0004,8.9667,Switzerland,CH,105388.0
+39,Novocherkassk,47.42,40.08,Russia,RU,166974.0
+40,Salinas,-2.2,-80.98,Ecuador,EC,43862.0
+41,Wau,7.7,27.99,South Sudan,SS,127384.0
+42,Bartow,27.8862,-81.8212,United States,US,19499.0
+43,Trieste,45.6504,13.8,Italy,IT,216035.0
+44,Kurgan,55.46,65.345,Russia,RU,343129.0
+45,Salum,31.567,25.15,Egypt,EG,7330.0
+46,Bordertown,-36.3162,140.7666,Australia,AU,2583.0
+47,Juradó,7.1217,-77.7564,Colombia,CO,2351.0
+48,Austin,30.3038,-97.7545,United States,US,1633847.0
+49,Tandil,-37.32,-59.15,Argentina,AR,104325.0
+50,Tom Price,-22.6935,117.7931,Australia,AU,2723.0
+51,Fderik,22.679,-12.707,Mauritania,MR,5760.0
+52,Grahamstown,-33.2996,26.52,South Africa,ZA,91548.0
+53,Hapur,28.7437,77.7628,India,IN,242920.0
+54,Tamanrasset,22.785,5.5228,Algeria,DZ,76000.0
+55,Polokwane,-23.89,29.45,South Africa,ZA,220045.0
+56,Oshogbo,7.7704,4.56,Nigeria,NG,408245.0
+57,Andradina,-20.9096,-51.3799,Brazil,BR,52406.0
+58,Ahar,38.4829,47.0629,Iran,IR,103639.0
+59,Quillacollo,-17.4,-66.28,Bolivia,BO,227052.0
+60,Botucatu,-22.8796,-48.45,Brazil,BR,113862.0
+61,Tolú,9.5358,-75.572,Colombia,CO,27390.0
+62,Tarawa,1.3382,173.0176,Kiribati,KI,28802.0
+63,Denizli,37.7704,29.08,Turkey,TR,372344.0
+64,Urmia,37.53,45.0,Iran,IR,577307.0
+65,Bordj Bou Arréridj,36.059,4.63,Algeria,DZ,140000.0
+66,Westlake,41.4524,-81.9295,United States,US,32293.0
+67,Kelowna,49.9,-119.4833,Canada,CA,125109.0
+68,Milltown,40.4503,-74.435,United States,US,7132.0
+69,Mathura,27.5,77.67,India,IN,330511.0
+70,Nouméa,-22.2625,166.4443,New Caledonia,NC,93060.0
+71,Zhaotang,27.3204,103.72,China,CN,809000.0
+72,Halmstad,56.6718,12.8556,Sweden,SE,55657.0
+73,Ladysmith,-28.5495,29.78,South Africa,ZA,47375.0
+74,Vyazemskiy,47.5328,134.7475,Russia,RU,15247.0
+75,San Carlos,9.658,-68.59,Venezuela,VE,77192.0
+76,Sharon,41.2339,-80.4997,United States,US,13405.0
+77,Armenia,4.5343,-75.6811,Colombia,CO,315328.0
+78,Lewistown,47.0517,-109.454,United States,US,6058.0
+79,Shannon,52.7038,-8.8641,Ireland,IE,8781.0
+80,Birak,27.5333,14.2834,Libya,LY,45421.0

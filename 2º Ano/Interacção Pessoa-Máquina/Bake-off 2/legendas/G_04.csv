@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Tres Arroyos,-38.37,-60.2699,Argentina,AR,47136.0
+2,Saidpur,25.8004,89.0,Bangladesh,BD,232209.0
+3,Clarksville,35.4567,-93.4808,United States,US,7589.0
+4,Alta Floresta,-9.9,-55.91,Brazil,BR,40466.0
+5,Toliara,-23.3568,43.69,Madagascar,MG,115319.0
+6,Xanthi,41.1418,24.8836,Greece,GR,50570.0
+7,Le Mars,42.7809,-96.1743,United States,US,9339.0
+8,George Town,19.2804,-81.33,Cayman Islands,KY,4268.0
+9,Mityana,0.4004,32.05,Uganda,UG,41131.0
+10,Crato,-7.4639,-63.04,Brazil,BR,273883.0
+11,Alice Springs,-23.701,133.88,Australia,AU,27710.0
+12,Mbulu,-3.8496,35.53,Tanzania,TZ,13430.0
+13,Noginsk,55.8704,38.48,Russia,RU,229731.0
+14,Assis,-22.6596,-50.42,Brazil,BR,87471.0
+15,Fargona,40.39,71.78,Uzbekistan,UZ,750000.0
+16,Guayaramerín,-10.83,-65.41,Bolivia,BO,36008.0
+17,Port Sudan,19.6158,37.2164,Sudan,SD,489725.0
+18,Padangpanjang,-0.4496,100.4167,Indonesia,ID,44096.0
+19,Floriano,-6.7696,-43.03,Brazil,BR,48587.0
+20,Shinyanga,-3.6596,33.42,Tanzania,TZ,107362.0
+21,Coro,11.42,-69.68,Venezuela,VE,195227.0
+22,Napier,-39.49,176.9265,New Zealand,NZ,57800.0
+23,Riverdale,33.5645,-84.4098,United States,US,16258.0
+24,Al Jaghbub,29.7504,24.5166,Libya,LY,1744.0
+25,Kununurra,-15.7666,128.7333,Australia,AU,5679.0
+26,Karaj,35.8004,50.97,Iran,IR,1423000.0
+27,Dixon,41.8436,-89.4786,United States,US,16216.0
+28,Durrës,41.3178,19.4482,Albania,AL,142432.0
+29,Bendigo,-36.76,144.28,Australia,AU,81657.0
+30,Bitola,41.0391,21.3395,Macedonia,MK,86528.0
+31,Gizo,-8.0996,156.835,Solomon Islands,SB,6154.0
+32,Kampong Spoe,11.452,104.519,Cambodia,KH,33231.0
+33,Haiphong,20.83,106.6801,Vietnam,VN,1969000.0
+34,Perris,33.7897,-117.2233,United States,US,76331.0
+35,Hamilton,-37.7312,142.0234,Australia,AU,8869.0
+36,Cherepanovo,54.2336,83.3688,Russia,RU,20125.0
+37,Nongan,44.4304,125.1701,China,CN,141482.0
+38,Brazzaville,-4.2592,15.2847,Congo (Brazzaville),CG,1355000.0
+39,Ouargla,31.97,5.34,Algeria,DZ,176271.0
+40,Shawnee,35.3524,-96.9647,United States,US,36100.0
+41,Toguchin,55.2377,84.3777,Russia,RU,21886.0
+42,Győr,47.7004,17.63,Hungary,HU,136081.0
+43,Santo António,1.645,7.412,Sao Tome And Principe,ST,1156.0
+44,Comondante Luis Piedrabuena,-49.9745,-68.9035,Argentina,AR,410.0
+45,Tiffin,41.1167,-83.18,United States,US,19090.0
+46,Xinguara,-7.1006,-49.948,Brazil,BR,4047.0
+47,Naryn,41.4263,75.9911,Kyrgyzstan,KG,52300.0
+48,Tekax,20.2,-89.28,Mexico,MX,22806.0
+49,Gaya,11.8882,3.4467,Niger,NE,33051.0
+50,Nonthaburi,13.8337,100.4833,Thailand,TH,258550.0
+51,Joaçaba,-27.17,-51.5,Brazil,BR,38876.0
+52,Vilhena,-12.7166,-60.1166,Brazil,BR,63231.0
+53,Abadan,30.3307,48.2797,Iran,IR,370180.0
+54,Nangong,37.3704,115.37,China,CN,82386.0
+55,Parkes,-33.1296,148.17,Australia,AU,11137.0
+56,Chancay,-11.5596,-77.27,Peru,PE,26958.0
+57,Kaikoura,-42.4012,173.6897,New Zealand,NZ,2172.0
+58,Sassandra,4.9504,-6.0833,Ivory Coast,CI,38411.0
+59,Araguaína,-7.19,-48.21,Brazil,BR,50444.0
+60,Valle de la Pascua,9.21,-66.02,Venezuela,VE,89080.0
+61,Portales,34.1765,-103.3543,United States,US,12310.0
+62,Harker Heights,31.0578,-97.6443,United States,US,29757.0
+63,Sikasso,11.3204,-5.68,Mali,ML,225753.0
+64,Patterson,37.4734,-121.144,United States,US,22169.0
+65,Veneta,44.0471,-123.3514,United States,US,6447.0
+66,Luanda,-8.8383,13.2344,Angola,AO,5172900.0
+67,Kulunda,52.5827,78.9473,Russia,RU,15345.0
+68,Mokhotlong,-29.291,29.078,Lesotho,LS,8809.0
+69,Sungaipenuh,-2.0631,101.3964,Indonesia,ID,95913.0
+70,Charleville,-26.4,146.25,Australia,AU,1900.0
+71,Belomorsk,64.5252,34.7658,Russia,RU,12165.0
+72,Pangkalpinang,-2.08,106.15,Indonesia,ID,125933.0
+73,Wonthaggi,-38.6095,145.59,Australia,AU,5985.0
+74,Nefteyugansk,61.0777,72.7027,Russia,RU,112632.0
+75,Alenquer,-1.9396,-54.79,Brazil,BR,26290.0
+76,Clermont-Ferrand,45.78,3.08,France,FR,233050.0
+77,Manacapuru,-3.2896,-60.62,Brazil,BR,59102.0
+78,Dedza,-14.3667,34.3333,Malawi,MW,15608.0
+79,Tukwila,47.4749,-122.2727,United States,US,20033.0
+80,George Town,5.4136,100.3294,Malaysia,MY,2500000.0

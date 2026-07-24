@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Mount Vernon,37.9364,-87.8955,United States,US,6821.0
+2,Kirov,54.0852,34.3048,Russia,RU,39319.0
+3,Velsk,61.0674,42.0974,Russia,RU,26300.0
+4,Logansport,40.7502,-86.3559,United States,US,20838.0
+5,Goianésia,-15.3096,-49.13,Brazil,BR,47883.0
+6,Formosa,-26.1728,-58.1828,Argentina,AR,221383.0
+7,Omsukchan,62.5333,155.8,Russia,RU,4201.0
+8,Norrköping,58.5954,16.1787,Sweden,SE,88639.0
+9,Formiga,-20.46,-45.43,Brazil,BR,56404.0
+10,Biltine,14.5333,20.9167,Chad,TD,11000.0
+11,Changchun,43.865,125.34,China,CN,3183000.0
+12,Mastic Beach,40.7667,-72.842,United States,US,14760.0
+13,Sodo,6.9,37.75,Ethiopia,ET,65737.0
+14,Kampong Cham,12.0004,105.45,Cambodia,KH,83233.0
+15,Hobart,-42.85,147.295,Australia,AU,80870.0
+16,Benguela,-12.5783,13.4072,Angola,AO,151226.0
+17,Westville,41.5381,-86.9054,United States,US,5650.0
+18,Doraville,33.9072,-84.2711,United States,US,10501.0
+19,Blantyre,-15.79,34.9899,Malawi,MW,584877.0
+20,Fort Wright,39.0462,-84.5362,United States,US,5766.0
+21,Juba,4.83,31.58,South Sudan,SS,111975.0
+22,Bratislava,48.15,17.117,Slovakia,SK,423737.0
+23,Al Jubayl,27.0046,49.646,Saudi Arabia,SA,237274.0
+24,Mandeville,30.375,-90.0906,United States,US,95576.0
+25,Edgewater,28.9619,-80.9414,United States,US,22077.0
+26,Winslow,35.0253,-110.7098,United States,US,9864.0
+27,Jacksonville,34.8805,-92.1303,United States,US,28518.0
+28,Bago,17.32,96.515,Burma,MM,284318.0
+29,Waukesha,43.0088,-88.2462,United States,US,72363.0
+30,Rio Grande,-53.7914,-67.699,Argentina,AR,31095.0
+31,Barcelona,41.3833,2.1834,Spain,ES,4920000.0
+32,Bur Safaga,26.7337,33.9333,Egypt,EG,32944.0
+33,Niğde,37.976,34.694,Turkey,TR,91039.0
+34,Poplar Grove,42.3508,-88.8344,United States,US,5054.0
+35,25 de Mayo,-37.8,-67.6833,Argentina,AR,17430.0
+36,Bryan,41.4711,-84.5489,United States,US,9634.0
+37,Huanta,-12.9496,-74.25,Peru,PE,18627.0
+38,Barreiros,-8.8296,-35.2,Brazil,BR,35565.0
+39,Tessenei,15.1104,36.6575,Eritrea,ER,15255.0
+40,Taian,36.2,117.1201,China,CN,1629000.0
+41,Karbala,32.6149,44.0245,Iraq,IQ,510692.0
+42,Timon,-5.115,-42.845,Brazil,BR,203157.0
+43,Sanming,26.23,117.58,China,CN,209444.0
+44,Palana,59.084,159.95,Russia,RU,3671.0
+45,Puerto Acosta,-15.4996,-69.1667,Bolivia,BO,1123.0
+46,Coventry,52.4204,-1.5,United Kingdom,GB,388271.0
+47,Capenda-Camulemba,-9.4196,18.43,Angola,AO,80000.0
+48,Bouïra,36.3805,3.9,Algeria,DZ,110144.0
+49,Gaylord,45.0211,-84.6799,United States,US,8399.0
+50,Kaberamaido,1.7389,33.1594,Uganda,UG,3400.0
+51,Koforidua,6.0904,-0.26,Ghana,GH,156653.0
+52,Highwood,42.206,-87.8129,United States,US,5324.0
+53,Kraków,50.06,19.96,Poland,PL,756000.0
+54,Makiyivka,48.0297,37.9746,Ukraine,UA,376610.0
+55,Villa Carlos Paz,-31.42,-64.5,Argentina,AR,69451.0
+56,Gimbi,9.167,35.8333,Ethiopia,ET,31809.0
+57,Apia,-13.8415,-171.7386,Samoa,WS,61916.0
+58,Nalut,31.8804,10.97,Libya,LY,66609.0
+59,Onverwacht,5.6,-55.2,Suriname,SR,2105.0
+60,Santa Lucía,-34.47,-56.4,Uruguay,UY,16438.0
+61,Sharbaqty,52.4999,78.1499,Kazakhstan,KZ,107.0
+62,Princeton,38.3552,-87.5785,United States,US,8632.0
+63,Montpellier,43.6104,3.87,France,FR,327254.0
+64,Schwerin,53.6333,11.4167,Germany,DE,96641.0
+65,Nicosia,35.1667,33.3666,Cyprus,CY,224300.0
+66,Buyant-Uhaa,44.8666,110.15,Mongolia,MN,8776.0
+67,Wharton,29.3138,-96.1044,United States,US,8915.0
+68,Beaumont,30.0849,-94.1451,United States,US,147935.0
+69,Narathiwat,6.4318,101.8214,Thailand,TH,68112.0
+70,Pike Road,32.2909,-86.0917,United States,US,8777.0
+71,Ephrata,47.3119,-119.5342,United States,US,7289.0
+72,Logroño,42.4704,-2.43,Spain,ES,143698.0
+73,Metz,49.1203,6.18,France,FR,409186.0
+74,Coronel Bogado,-27.17,-56.25,Paraguay,PY,14297.0
+75,Princess Anne,38.2053,-75.6969,United States,US,11353.0
+76,Réo,12.3335,-2.4669,Burkina Faso,BF,37535.0
+77,Klamath Falls,42.2193,-121.7755,United States,US,42791.0
+78,Uryupinsk,50.7734,42.0031,Russia,RU,41644.0
+79,Bandjarmasin,-3.33,114.5801,Indonesia,ID,603576.0
+80,Pergamino,-33.8996,-60.57,Argentina,AR,87652.0

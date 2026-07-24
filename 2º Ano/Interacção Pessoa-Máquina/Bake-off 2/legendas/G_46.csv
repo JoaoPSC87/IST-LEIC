@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Dauphin,51.15,-100.05,Canada,CA,9077.0
+2,Yên Bái,21.705,104.875,Vietnam,VN,96540.0
+3,State College,40.791,-77.8568,United States,US,87374.0
+4,Queenstown,-31.8996,26.88,South Africa,ZA,105309.0
+5,Mossendjo,-2.9396,12.72,Congo (Brazzaville),CG,30936.0
+6,Jeonju,35.8314,127.1404,"Korea, South",KR,711424.0
+7,Las Lomitas,-24.6996,-60.6,Argentina,AR,7683.0
+8,Jequié,-13.85,-40.08,Brazil,BR,135574.0
+9,Bamenda,5.96,10.15,Cameroon,CM,445299.0
+10,Uliastay,47.75,96.8167,Mongolia,MN,8056.0
+11,Kalmar,56.667,16.3666,Sweden,SE,35024.0
+12,Eaton,40.5251,-104.7133,United States,US,5117.0
+13,Banja Luka,44.7804,17.18,Bosnia And Herzegovina,BA,221738.0
+14,Yibin,28.77,104.57,China,CN,902000.0
+15,Floral Park,40.7226,-73.7029,United States,US,15951.0
+16,Broome,-17.9618,122.2308,Australia,AU,13218.0
+17,Jambi,-1.59,103.61,Indonesia,ID,457090.0
+18,Bacabal,-4.23,-44.8,Brazil,BR,72372.0
+19,River Oaks,32.7767,-97.3984,United States,US,7740.0
+20,Haugesund,59.4119,5.2775,Norway,NO,40321.0
+21,Tianjin,39.13,117.2,China,CN,7180000.0
+22,Dodoma,-6.1833,35.75,Tanzania,TZ,218269.0
+23,Brăila,45.292,27.969,Romania,RO,213569.0
+24,Blytheville,35.9326,-89.9053,United States,US,16766.0
+25,Manitowoc,44.099,-87.6812,United States,US,45261.0
+26,Shepparton,-36.3746,145.3914,Australia,AU,33550.0
+27,Lindsay,36.2079,-119.0902,United States,US,16443.0
+28,Araxá,-19.5796,-46.95,Brazil,BR,82595.0
+29,San Salvador de Jujuy,-24.1833,-65.3,Argentina,AR,305891.0
+30,Da Lat,11.9304,108.42,Vietnam,VN,256019.0
+31,Veszprém,47.091,17.911,Hungary,HU,62023.0
+32,Ekibastuz,51.73,75.3199,Kazakhstan,KZ,127868.0
+33,Lonquimay,-38.4333,-71.2333,Chile,CL,10237.0
+34,Paraparaumu,-40.9034,174.9989,New Zealand,NZ,25263.0
+35,Gunnedah,-30.987,150.2623,Australia,AU,7148.0
+36,Solvang,34.5936,-120.1401,United States,US,16438.0
+37,Chimboy,42.9311,59.7708,Uzbekistan,UZ,36917.0
+38,Scarborough,54.2804,-0.43,United Kingdom,GB,70571.0
+39,Parsons,37.3405,-95.2959,United States,US,9714.0
+40,Conakry,9.5315,-13.6802,Guinea,GN,1494000.0
+41,Sambava,-14.2662,50.1666,Madagascar,MG,43465.0
+42,Sarh,9.15,18.39,Chad,TD,169196.0
+43,Hlatikulu,-27.0,31.4167,Swaziland,SZ,2748.0
+44,Dublin,53.3331,-6.2489,Ireland,IE,1059000.0
+45,Karratha,-20.7304,116.87,Australia,AU,16796.0
+46,Velikiy Ustyug,60.7687,46.2987,Russia,RU,33237.0
+47,Chitré,7.97,-80.42,Panama,PA,44082.0
+48,San Francisco Gotera,13.7,-88.1,El Salvador,SV,16152.0
+49,Santa Cruz do Sul,-29.71,-52.44,Brazil,BR,113625.0
+50,Umm Ruwaba,12.9104,31.2,Sudan,SD,55742.0
+51,Villa O'Higgins,-48.4679,-72.56,Chile,CL,250.0
+52,Frias,-28.6496,-65.15,Argentina,AR,13594.0
+53,Bethlehem,-28.2196,28.3,South Africa,ZA,83654.0
+54,Tiarat,35.3804,1.32,Algeria,DZ,184195.0
+55,Garoua,9.3,13.39,Cameroon,CM,436899.0
+56,Kirkwall,58.967,-2.95,United Kingdom,GB,8500.0
+57,Arnhem,51.988,5.923,Netherlands,NL,141674.0
+58,Lismore,-28.8167,153.2931,Australia,AU,31430.0
+59,Jinxi,40.7503,120.83,China,CN,2426000.0
+60,Santa Vitória do Palmar,-33.52,-53.37,Brazil,BR,27775.0
+61,Phuket,7.8765,98.3815,Thailand,TH,141618.0
+62,Jundiaí,-23.2,-46.88,Brazil,BR,505548.0
+63,Pierre,44.3748,-100.3205,United States,US,14808.0
+64,Konotop,51.2424,33.209,Ukraine,UA,103547.0
+65,Tianshui,34.6,105.92,China,CN,1225000.0
+66,Balkanabat,39.5124,54.3649,Turkmenistan,TM,110827.0
+67,Bugrino,68.8079,49.3042,Russia,RU,300.0
+68,Carmelo,-33.9896,-58.3,Uruguay,UY,16921.0
+69,Koko,11.4232,4.517,Nigeria,NG,25792.0
+70,Sohag,26.5504,31.7,Egypt,EG,600000.0
+71,Concepción del Uruguay,-32.48,-58.24,Argentina,AR,67895.0
+72,Sincelejo,9.2904,-75.38,Colombia,CO,261187.0
+73,Katoomba,-33.7069,150.32,Australia,AU,22076.0
+74,Nsanje,-16.9167,35.2667,Malawi,MW,21774.0
+75,Los Fresnos,26.0741,-97.4801,United States,US,6651.0
+76,Zalău,47.175,23.063,Romania,RO,63232.0
+77,Évora,38.56,-7.906,Portugal,PT,55620.0
+78,Makoua,-0.0096,15.64,Congo (Brazzaville),CG,11355.0
+79,Uberaba,-19.78,-47.95,Brazil,BR,260843.0
+80,Port Denison,-29.2828,114.9166,Australia,AU,1213.0

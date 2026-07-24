@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Samarqand,39.67,66.945,Uzbekistan,UZ,708000.0
+2,Portland,-38.34,141.59,Australia,AU,11808.0
+3,Kirsanov,52.6574,42.7174,Russia,RU,17975.0
+4,Singleton,-32.5695,151.16,Australia,AU,13813.0
+5,The Hague,52.08,4.27,Netherlands,NL,1406000.0
+6,Alpena,45.0745,-83.4383,United States,US,13767.0
+7,Altagracia de Orituco,9.8504,-66.38,Venezuela,VE,40052.0
+8,North Logan,41.7759,-111.8066,United States,US,10590.0
+9,Grudziądz,53.4804,18.75,Poland,PL,102443.0
+10,Melton,-37.6895,144.57,Australia,AU,32368.0
+11,Nazyvayevsk,55.567,71.35,Russia,RU,12284.0
+12,Puerto Aisén,-45.3999,-72.7,Chile,CL,8067.0
+13,Hinton,53.4,-117.5834,Canada,CA,10265.0
+14,Cartagena,37.6004,-0.98,Spain,ES,201274.0
+15,Sassari,40.73,8.57,Italy,IT,120729.0
+16,Rosemount,44.7466,-93.0662,United States,US,23911.0
+17,Campeche,19.83,-90.5,Mexico,MX,205212.0
+18,Kamuli,0.9472,33.1197,Uganda,UG,12764.0
+19,Dabola,10.748,-11.109,Guinea,GN,13057.0
+20,Key Biscayne,25.6908,-80.1653,United States,US,13019.0
+21,Mbanza-Congo,-6.2696,14.24,Angola,AO,60182.0
+22,Leeds,53.83,-1.58,United Kingdom,GB,1529000.0
+23,Gbadolite,4.2904,21.0199,Congo (Kinshasa),CD,50493.0
+24,Chiredzi,-21.0496,31.66,Zimbabwe,ZW,28205.0
+25,Biarritz,43.4733,-1.5616,France,FR,145348.0
+26,Mocimboa,-11.3196,40.35,Mozambique,MZ,27909.0
+27,Leninogorsk,54.5987,52.4487,Russia,RU,66263.0
+28,Marbella,36.5166,-4.8833,Spain,ES,186131.0
+29,Pindamonhangaba,-22.92,-45.47,Brazil,BR,132218.0
+30,Ibadan,7.38,3.93,Nigeria,NG,2628000.0
+31,Ballina,-28.8614,153.568,Australia,AU,14242.0
+32,Klyuchi,56.3,160.85,Russia,RU,1089.0
+33,Puch'on,37.4989,126.7831,"Korea, South",KR,866000.0
+34,Hail,27.5236,41.7001,Saudi Arabia,SA,385257.0
+35,Manaus,-3.1,-60.0,Brazil,BR,1753000.0
+36,Santa Maria da Vitória,-13.39,-44.21,Brazil,BR,23488.0
+37,Carlstadt,40.825,-74.0614,United States,US,6249.0
+38,Hospet,15.2804,76.375,India,IN,286007.0
+39,Belgaum,15.865,74.505,India,IN,608756.0
+40,Chapadinha,-3.7395,-43.36,Brazil,BR,40804.0
+41,Ganzhou,25.92,114.95,China,CN,1500000.0
+42,Lapa,-25.76,-49.73,Brazil,BR,25621.0
+43,Kigoma,-4.8796,29.61,Tanzania,TZ,164268.0
+44,Melitopol,46.8378,35.3775,Ukraine,UA,158000.0
+45,Yanbu al Bahr,24.0943,38.0493,Saudi Arabia,SA,267590.0
+46,Clewiston,26.7532,-80.9399,United States,US,13716.0
+47,Rocky River,41.4703,-81.8526,United States,US,20264.0
+48,São José do Rio Preto,-20.7996,-49.39,Brazil,BR,374699.0
+49,Kingston,17.9771,-76.7674,Jamaica,JM,937700.0
+50,Pires do Rio,-17.2995,-48.28,Brazil,BR,24822.0
+51,Camargo,-20.6396,-65.21,Bolivia,BO,4715.0
+52,Shu,43.5953,73.7448,Kazakhstan,KZ,42439.0
+53,Ozamis,8.1462,123.8444,Philippines,PH,97806.0
+54,Attapu,14.808,106.839,Laos,LA,4297.0
+55,Townsville,-19.25,146.77,Australia,AU,138954.0
+56,Madiun,-7.6346,111.515,Indonesia,ID,186099.0
+57,Waitakere,-36.8524,174.5543,New Zealand,NZ,208100.0
+58,Callao,-12.07,-77.135,Peru,PE,876877.0
+59,Entebbe,0.0604,32.46,Uganda,UG,175128.0
+60,Tauá,-5.9995,-40.31,Brazil,BR,29188.0
+61,Endicott,42.098,-76.0639,United States,US,12992.0
+62,Saint Gallen,47.423,9.362,Switzerland,CH,70572.0
+63,Achinsk,56.27,90.5,Russia,RU,117634.0
+64,Kapan,39.2015,46.415,Azerbaijan,AZ,42288.0
+65,Alta,69.9666,23.2417,Norway,NO,12077.0
+66,Sion,46.239,7.354,Switzerland,CH,28045.0
+67,Idah,7.1104,6.7399,Nigeria,NG,75087.0
+68,Kondoz,36.728,68.8725,Afghanistan,AF,259809.0
+69,Klerksdorp,-26.88,26.62,South Africa,ZA,178921.0
+70,Mushie,-3.0196,16.92,Congo (Kinshasa),CD,33062.0
+71,Kavieng,-2.5813,150.813,Papua New Guinea,PG,19728.0
+72,Zouar,20.4587,16.5278,Chad,TD,204.0
+73,Irbil,36.179,44.0086,Iraq,IQ,926000.0
+74,Dumfries,55.0671,-3.55,United Kingdom,GB,31044.0
+75,Bougouni,11.4204,-7.49,Mali,ML,35450.0
+76,Palikir,6.9166,158.15,"Micronesia, Federated States Of",FM,4645.0
+77,Myeik,12.4541,98.6115,Burma,MM,266720.0
+78,Norway House,53.9666,-97.8333,Canada,CA,6000.0
+79,Kingston upon Hull,53.7504,-0.33,United Kingdom,GB,302296.0
+80,Bella Vista,36.4667,-94.2708,United States,US,28406.0

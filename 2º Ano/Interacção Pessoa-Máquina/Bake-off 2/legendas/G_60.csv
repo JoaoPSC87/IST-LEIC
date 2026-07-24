@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Abaí,-26.0296,-55.94,Paraguay,PY,3024.0
+2,Bielefeld,52.03,8.53,Germany,DE,331906.0
+3,At Taif,21.2622,40.3823,Saudi Arabia,SA,657282.0
+4,Lake Elsinore,33.6847,-117.3346,United States,US,64205.0
+5,Kodinskiy,58.6981,99.1777,Russia,RU,15670.0
+6,Zahlé,33.8501,35.9042,Lebanon,LB,78145.0
+7,Kampong Thum,12.712,104.889,Cambodia,KH,19951.0
+8,Wallaroo,-33.9329,137.6333,Australia,AU,2779.0
+9,Meekatharra,-26.6,118.4833,Australia,AU,654.0
+10,Anshun,26.2504,105.93,China,CN,849000.0
+11,Sena Madureira,-9.07,-68.67,Brazil,BR,26192.0
+12,Firozabad,27.15,78.3949,India,IN,306409.0
+13,Ittoqqortoormiit,70.4834,-21.9667,Greenland,GL,469.0
+14,Pingdu,36.7904,119.94,China,CN,91077.0
+15,San Javier,-16.2896,-62.5,Bolivia,BO,4210.0
+16,Anna Regina,7.2704,-58.5001,Guyana,GY,3113.0
+17,Mbanza-Ngungu,-5.2496,14.86,Congo (Kinshasa),CD,197545.0
+18,Xianyang,34.3456,108.7147,China,CN,1126000.0
+19,Raba,-8.45,118.7666,Indonesia,ID,106101.0
+20,Yegoryevsk,55.3848,39.0294,Russia,RU,89795.0
+21,Nzega,-4.2096,33.18,Tanzania,TZ,26584.0
+22,Shamattawa,55.8504,-92.0833,Canada,CA,870.0
+23,Laoag,18.1988,120.5936,Philippines,PH,207048.0
+24,Haiya,18.3362,36.3842,Sudan,SD,20000.0
+25,Albuquerque,35.1055,-106.6476,United States,US,759517.0
+26,Kawasaki,35.53,139.705,Japan,JP,1437266.0
+27,South Saint Paul,44.8874,-93.0408,United States,US,20217.0
+28,Carnot,4.9337,15.8666,Central African Republic,CF,38071.0
+29,Maringá,-23.4095,-51.93,Brazil,BR,328335.0
+30,Atkarsk,51.8765,44.9961,Russia,RU,27554.0
+31,Nandi,-17.7996,177.4166,Fiji,FJ,42284.0
+32,Portel,-1.95,-50.82,Brazil,BR,21315.0
+33,Aurangabad,24.7704,84.38,India,IN,95929.0
+34,Florence,43.78,11.25,Italy,IT,1500000.0
+35,Georgetown,13.551,-14.767,"Gambia, The",GM,3584.0
+36,Arzamas,55.4,43.8,Russia,RU,142597.0
+37,Tega Cay,35.0374,-81.0124,United States,US,9946.0
+38,El Fuerte,26.4204,-108.62,Mexico,MX,11171.0
+39,Bharatpur,27.2504,77.5,India,IN,229384.0
+40,Chelyabinsk,55.155,61.4387,Russia,RU,1091000.0
+41,Kirovsk,67.6091,33.6687,Russia,RU,29605.0
+42,Byron Bay,-28.6565,153.6129,Australia,AU,6764.0
+43,Ha Giang,22.8337,104.9833,Vietnam,VN,38362.0
+44,Chongjin,41.7846,129.79,"Korea, North",KP,672614.0
+45,Jodhpur,26.2918,73.0168,India,IN,995000.0
+46,Kaliningrad,54.7,20.4973,Russia,RU,434954.0
+47,Luganville,-15.5126,167.1766,Vanuatu,VU,13397.0
+48,Venice,27.1165,-82.4135,United States,US,22465.0
+49,Ndele,8.4091,20.653,Central African Republic,CF,11764.0
+50,Rybinsk,58.0503,38.82,Russia,RU,216724.0
+51,Kohtla-Järve,59.4,27.2833,Estonia,EE,46060.0
+52,Poznań,52.4058,16.8999,Poland,PL,623997.0
+53,Wilmington,39.4387,-83.8184,United States,US,12280.0
+54,Khaskovo,41.9438,25.5633,Bulgaria,BG,79699.0
+55,Fernley,39.5612,-119.1925,United States,US,19195.0
+56,Vyshnniy Volochek,57.583,34.5631,Russia,RU,53800.0
+57,Campina Grande,-7.23,-35.88,Brazil,BR,417261.0
+58,Fonte Boa,-2.5138,-66.0916,Brazil,BR,16060.0
+59,Pasay City,14.5504,121.0,Philippines,PH,403064.0
+60,Papillion,41.1531,-96.045,United States,US,19597.0
+61,Saint Anthony,45.0275,-93.2174,United States,US,9007.0
+62,Labé,11.32,-12.3,Guinea,GN,140575.0
+63,Nampo,38.7669,125.4524,"Korea, North",KP,1127000.0
+64,Altata,24.636,-107.9162,Mexico,MX,1000.0
+65,Paris,36.2936,-88.3066,United States,US,10679.0
+66,Castle Pines,39.4625,-104.8706,United States,US,10284.0
+67,Carúpano,10.67,-63.23,Venezuela,VE,126293.0
+68,Ripley,35.7446,-89.5359,United States,US,8422.0
+69,Chalkida,38.464,23.6124,Greece,GR,71842.0
+70,Dombarovskiy,50.7546,59.54,Russia,RU,9556.0
+71,Chișinău,47.005,28.8577,Moldova,MD,688134.0
+72,Manjimup,-34.2333,116.15,Australia,AU,4240.0
+73,Tongliao,43.62,122.27,China,CN,884000.0
+74,El Maitén,-42.05,-71.1666,Argentina,AR,4269.0
+75,Encinitas,33.0492,-117.2613,United States,US,63131.0
+76,Sokol,59.4648,40.1144,Russia,RU,42174.0
+77,28 de Noviembre,-51.65,-72.3,Argentina,AR,5300.0
+78,Ceduna,-32.0991,133.6623,Australia,AU,1586.0
+79,Mandalgovi,45.75,106.266,Mongolia,MN,2984.0
+80,Paysandú,-32.33,-58.08,Uruguay,UY,79016.0

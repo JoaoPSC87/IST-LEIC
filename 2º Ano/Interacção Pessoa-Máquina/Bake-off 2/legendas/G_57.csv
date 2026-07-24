@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Pokrovsk,61.4934,129.1272,Russia,RU,9763.0
+2,Burdur,37.7167,30.2833,Turkey,TR,66158.0
+3,Illizi,26.4834,8.4666,Algeria,DZ,7957.0
+4,Tarragona,41.1204,1.25,Spain,ES,126291.0
+5,Tolyatti,53.4804,49.53,Russia,RU,702879.0
+6,Sun Prairie,43.1829,-89.2353,United States,US,32820.0
+7,Kimberley,-28.7468,24.77,South Africa,ZA,165264.0
+8,Tieling,42.3004,123.82,China,CN,340000.0
+9,Omolon,65.25,160.5,Russia,RU,1050.0
+10,Oakland,37.7903,-122.2165,United States,US,420005.0
+11,Tadmur,34.5504,38.2833,Syria,SY,55111.0
+12,Smithton,-40.8329,145.1167,Australia,AU,4202.0
+13,Chulucanas,-5.0896,-80.17,Peru,PE,68835.0
+14,Kristiansand,58.1666,8.0,Norway,NO,63814.0
+15,Visby,57.6337,18.3,Sweden,SE,22593.0
+16,White Oak,32.5313,-94.8564,United States,US,6364.0
+17,Ribeirão Preto,-21.17,-47.83,Brazil,BR,551267.0
+18,Ivdel,60.6936,60.4133,Russia,RU,19379.0
+19,Korogwe,-5.0896,38.54,Tanzania,TZ,50000.0
+20,Chico,39.7568,-121.816,United States,US,104302.0
+21,Biryusinsk,55.9607,97.8144,Russia,RU,9583.0
+22,Mazabuka,-15.86,27.76,Zambia,ZM,64006.0
+23,Beardstown,39.9996,-90.4181,United States,US,6031.0
+24,Farafangana,-22.8166,47.8332,Madagascar,MG,24764.0
+25,Maputo,-25.9553,32.5892,Mozambique,MZ,1446000.0
+26,Canela,-29.36,-50.81,Brazil,BR,60806.0
+27,Békéscsaba,46.672,21.101,Hungary,HU,65206.0
+28,Edirne,41.6704,26.57,Turkey,TR,126470.0
+29,General Guemes,-24.6666,-65.05,Argentina,AR,19828.0
+30,Mbabane,-26.3167,31.1333,Swaziland,SZ,90138.0
+31,Zemlya Bunge,74.8983,142.105,Russia,RU,10.0
+32,Gorakhpur,26.7504,83.38,India,IN,674246.0
+33,Venado Tuerto,-33.7496,-61.97,Argentina,AR,72340.0
+34,Ulyanovsk,54.33,48.41,Russia,RU,640680.0
+35,Tuy Hòa,13.082,109.316,Vietnam,VN,69596.0
+36,Zheleznogorsk Ilimskiy,56.5762,104.1227,Russia,RU,28456.0
+37,Parintins,-2.61,-56.74,Brazil,BR,64428.0
+38,Ikela,-1.1829,23.2666,Congo (Kinshasa),CD,291.0
+39,Torzhok,57.0291,34.9787,Russia,RU,48546.0
+40,Rancho Cucamonga,34.1246,-117.5662,United States,US,176534.0
+41,Jennings,30.2233,-92.6582,United States,US,9617.0
+42,Gig Harbor,47.335,-122.5966,United States,US,9110.0
+43,Lilburn,33.8887,-84.1379,United States,US,12675.0
+44,Sovetsk,57.5785,48.9581,Russia,RU,17869.0
+45,Hammerfest,70.6613,23.688,Norway,NO,10000.0
+46,Seaside,45.9894,-123.9213,United States,US,8788.0
+47,Campo Grande,-20.45,-54.6166,Brazil,BR,778000.0
+48,Bo,7.97,-11.74,Sierra Leone,SL,174354.0
+49,Baghdad,33.3386,44.3939,Iraq,IQ,5054000.0
+50,Orel,52.97,36.07,Russia,RU,334552.0
+51,Swansea,51.63,-3.95,United Kingdom,GB,294339.0
+52,Antsirabe,-19.85,47.0333,Madagascar,MG,307921.0
+53,Wylie,33.0353,-96.517,United States,US,47701.0
+54,Siracusa,37.0704,15.29,Italy,IT,123657.0
+55,Miass,54.9954,60.0949,Russia,RU,167500.0
+56,Hastings,40.5962,-98.3926,United States,US,24393.0
+57,Cedarburg,43.2991,-87.9887,United States,US,11518.0
+58,Shilka,51.8706,116.0306,Russia,RU,14132.0
+59,Dahuk,36.8667,43.0,Iraq,IQ,986000.0
+60,Linchuan,27.9703,116.36,China,CN,241104.0
+61,Bari,41.1142,16.8728,Italy,IT,500577.0
+62,Gold Coast,-28.0815,153.4482,Australia,AU,527660.0
+63,Khujand,40.29,69.6199,Tajikistan,TJ,437684.0
+64,Bol,13.459,14.7147,Chad,TD,3303.0
+65,Alexandroupoli,40.8486,25.8744,Greece,GR,52979.0
+66,Fond du Lac,43.7719,-88.4396,United States,US,54811.0
+67,Picton,-41.2805,174.0166,New Zealand,NZ,2928.0
+68,Bellwood,41.8829,-87.8762,United States,US,19107.0
+69,Goondiwindi,-28.5548,150.3253,Australia,AU,4251.0
+70,Oakwood,39.7202,-84.1734,United States,US,8999.0
+71,Montemorelos,25.19,-99.84,Mexico,MX,42640.0
+72,Costa Mesa,33.6667,-117.9135,United States,US,112822.0
+73,Cap-Chat,49.1,-66.6833,Canada,CA,1484.0
+74,Sandusky,41.4472,-82.7009,United States,US,47494.0
+75,Bicheno,-41.8784,148.2886,Australia,AU,177.0
+76,Porto-Novo,6.4833,2.6166,Benin,BJ,300000.0
+77,Firestone,40.1505,-104.9479,United States,US,27332.0
+78,Stavropol,45.05,41.98,Russia,RU,363064.0
+79,Quelimane,-17.88,36.89,Mozambique,MZ,188964.0
+80,Basel,47.5804,7.59,Switzerland,CH,830000.0

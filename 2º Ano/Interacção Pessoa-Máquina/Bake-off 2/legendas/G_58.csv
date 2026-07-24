@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,North Miami,25.9008,-80.1686,United States,US,62139.0
+2,Uíge,-7.62,15.05,Angola,AO,60008.0
+3,Tefé,-3.36,-64.7,Brazil,BR,51437.0
+4,Tempe,33.3881,-111.9318,United States,US,182498.0
+5,La Feria,26.1544,-97.8255,United States,US,7271.0
+6,Ypacaraí,-25.41,-57.28,Paraguay,PY,30150.0
+7,Novo Airão,-2.6208,-60.9438,Brazil,BR,9049.0
+8,Elkin,36.2619,-80.8442,United States,US,6691.0
+9,Puquio,-14.7,-74.13,Peru,PE,10491.0
+10,Nekemte,9.0905,36.53,Ethiopia,ET,73018.0
+11,Asansol,23.6833,86.9833,India,IN,1328000.0
+12,Dabou,5.3204,-4.3899,Ivory Coast,CI,72913.0
+13,Bulaevo,54.9053,70.44,Kazakhstan,KZ,9886.0
+14,Waseca,44.0826,-93.5026,United States,US,9196.0
+15,Bridge City,30.0298,-93.8406,United States,US,8165.0
+16,Zyryanovsk,49.7453,84.2548,Kazakhstan,KZ,49658.0
+17,Sylvania,41.71,-83.7082,United States,US,18909.0
+18,Tadjoura,11.7833,42.9,Djibouti,DJ,22193.0
+19,Sidney,47.7149,-104.1665,United States,US,6877.0
+20,Bareilly,28.3454,79.42,India,IN,817000.0
+21,Columbus,41.436,-97.3559,United States,US,22846.0
+22,Concordia,-31.3896,-58.03,Argentina,AR,145210.0
+23,Colíder,-10.8173,-55.4506,Brazil,BR,27139.0
+24,Horta,38.5347,-28.6448,Portugal,PT,6611.0
+25,New Hempstead,41.1488,-74.0485,United States,US,5440.0
+26,Sargodha,32.0854,72.675,Pakistan,PK,542603.0
+27,Kaduna,10.52,7.44,Nigeria,NG,1442000.0
+28,Ujjain,23.1904,75.79,India,IN,513350.0
+29,Loei,17.4919,101.7315,Thailand,TH,35273.0
+30,Incheon,37.4761,126.6422,"Korea, South",KR,2550000.0
+31,Conceição do Araguaia,-8.25,-49.29,Brazil,BR,27115.0
+32,Filadelfia,-22.34,-60.03,Paraguay,PY,10470.0
+33,Gonbad-e Kavus,37.2518,55.1715,Iran,IR,159982.0
+34,Mavinga,-15.7895,20.36,Angola,AO,30000.0
+35,Mineiros,-17.5695,-52.56,Brazil,BR,38951.0
+36,Cambridge,-37.8894,175.4703,New Zealand,NZ,15192.0
+37,Fort Morgan,40.2561,-103.7907,United States,US,13215.0
+38,Nizhenvartovsk,60.935,76.58,Russia,RU,244937.0
+39,Cuito Caunavale,-15.1596,19.17,Angola,AO,149.0
+40,St.-Benoit,-21.0335,55.7128,Reunion,RE,35310.0
+41,Paranaíba,-19.6796,-51.2,Brazil,BR,32217.0
+42,São Paulo,-23.5587,-46.625,Brazil,BR,18845000.0
+43,Mackay,-21.1439,149.15,Australia,AU,75922.0
+44,Qingan,46.8719,127.5118,China,CN,53206.0
+45,Açu,-5.5796,-36.9101,Brazil,BR,36125.0
+46,El Giza,30.01,31.19,Egypt,EG,2681863.0
+47,Maiquetía,10.6004,-66.97,Venezuela,VE,315442.0
+48,Altay,47.8666,88.1166,China,CN,142000.0
+49,Hamamatsu,34.7181,137.7327,Japan,JP,977023.0
+50,Manchester,53.5004,-2.248,United Kingdom,GB,2230000.0
+51,Sabanalarga,10.64,-74.92,Colombia,CO,68535.0
+52,Pirapora,-17.33,-44.93,Brazil,BR,60164.0
+53,Muisne,0.61,-80.02,Ecuador,EC,13393.0
+54,Medani,14.4,33.52,Sudan,SD,332714.0
+55,Tórshavn,62.03,-6.82,Faroe Islands,FO,14398.0
+56,Bozoum,6.317,16.3833,Central African Republic,CF,40201.0
+57,Hania,35.5122,24.0156,Greece,GR,78728.0
+58,Molalla,45.1502,-122.5844,United States,US,9865.0
+59,Kuala Lipis,4.184,102.042,Malaysia,MY,15448.0
+60,Hohenau,-27.0795,-55.75,Paraguay,PY,5306.0
+61,Russellville,34.5056,-87.7282,United States,US,9850.0
+62,Jamshedpur,22.7875,86.1975,India,IN,1300000.0
+63,Bairnsdale,-37.8296,147.61,Australia,AU,11005.0
+64,Springs,-26.2696,28.43,South Africa,ZA,236083.0
+65,Murcia,37.98,-1.13,Spain,ES,406807.0
+66,Parepare,-4.0167,119.6333,Indonesia,ID,87776.0
+67,Kafue,-15.78,28.18,Zambia,ZM,47554.0
+68,Ottawa,41.3528,-88.8319,United States,US,20087.0
+69,Catamarca,-28.47,-65.78,Argentina,AR,188812.0
+70,Jiayuguan,39.82,98.3,China,CN,148279.0
+71,Gwadar,25.139,62.3286,Pakistan,PK,51901.0
+72,Shar,49.6003,81.0549,Kazakhstan,KZ,9087.0
+73,Liestal,47.483,7.737,Switzerland,CH,12832.0
+74,Tarin Kowt,32.6333,65.8667,Afghanistan,AF,10000.0
+75,Luan,31.7503,116.48,China,CN,1690000.0
+76,Onega,63.9271,38.0771,Russia,RU,22693.0
+77,Baramula,34.2004,74.35,India,IN,167986.0
+78,Kara Balta,42.8306,73.8857,Kyrgyzstan,KG,74133.0
+79,Jingmen,31.0304,112.1,China,CN,400000.0
+80,Elbasan,41.1215,20.0838,Albania,AL,165010.0

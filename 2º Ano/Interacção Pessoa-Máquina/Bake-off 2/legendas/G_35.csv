@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Hagåtña,13.4745,144.7504,Guam,GU,1051.0
+2,Sparta,35.9348,-85.4724,United States,US,5613.0
+3,Vikhorevka,56.0931,101.2427,Russia,RU,166.0
+4,Karlstad,59.3671,13.4999,Sweden,SE,74141.0
+5,Yucca Valley,34.1231,-116.4215,United States,US,24899.0
+6,Pilibhit,28.64,79.81,India,IN,131008.0
+7,Morehead City,34.7307,-76.7383,United States,US,48637.0
+8,Le Havre,49.505,0.105,France,FR,242124.0
+9,Brussels,50.8333,4.3333,Belgium,BE,1743000.0
+10,Bélabo,4.9337,13.3,Cameroon,CM,22553.0
+11,Wawa,48.0004,-84.7833,Canada,CA,2174.0
+12,Tyumen,57.14,65.53,Russia,RU,519119.0
+13,Nogliki,51.8333,143.1667,Russia,RU,10098.0
+14,Niquelândia,-14.4696,-48.47,Brazil,BR,27541.0
+15,Elizabeth City,36.2946,-76.2357,United States,US,22934.0
+16,Fier,40.73,19.573,Albania,AL,82297.0
+17,Ninde,26.6804,119.5301,China,CN,314077.0
+18,Partizansk,43.1349,133.1349,Russia,RU,42489.0
+19,Lalitpur,27.6666,85.3333,Nepal,NP,337785.0
+20,Napa,38.2982,-122.3011,United States,US,87733.0
+21,Sunbury,40.8615,-76.7875,United States,US,28544.0
+22,Salem,11.67,78.1801,India,IN,873000.0
+23,Mercedes,-33.2595,-58.03,Uruguay,UY,42359.0
+24,Ashburton,-43.8983,171.7486,New Zealand,NZ,17700.0
+25,Tampico,22.3,-97.87,Mexico,MX,859419.0
+26,Glen Carbon,38.758,-89.9839,United States,US,12978.0
+27,Stara Zagora,42.4231,25.6227,Bulgaria,BG,143431.0
+28,Fez,34.0546,-5.0004,Morocco,MA,1002000.0
+29,Bahawalpur,29.39,71.675,Pakistan,PK,552607.0
+30,Tuguegarao,17.6131,121.7269,Philippines,PH,115105.0
+31,Tongchuan,35.08,109.03,China,CN,282258.0
+32,Kupyansk,49.7218,37.5981,Ukraine,UA,78870.0
+33,Nenjiang,49.18,125.23,China,CN,87236.0
+34,Kanpur,26.46,80.32,India,IN,3162000.0
+35,Santa Ana,-13.76,-65.58,Bolivia,BO,234478.0
+36,Krishnanagar,23.3803,88.53,India,IN,145926.0
+37,Itamaraju,-17.0396,-39.5299,Brazil,BR,47628.0
+38,Würzburg,49.8004,9.95,Germany,DE,168561.0
+39,Oslo,59.9167,10.75,Norway,NO,835000.0
+40,Shanxian,34.7904,116.08,China,CN,74459.0
+41,Goroka,-6.0833,145.3855,Papua New Guinea,PG,39699.0
+42,Carlsbad,32.4064,-104.2385,United States,US,33008.0
+43,Gastonia,35.2495,-81.1856,United States,US,178477.0
+44,Mangochi,-14.4596,35.27,Malawi,MW,97711.0
+45,Ingolstadt,48.7704,11.45,Germany,DE,163325.0
+46,Belgrade,44.8186,20.468,Serbia,RS,1099000.0
+47,Clovis,34.4375,-103.1924,United States,US,43327.0
+48,Durango,37.2744,-107.8702,United States,US,19703.0
+49,Lethem,3.39,-59.8,Guyana,GY,352.0
+50,Haeju,38.0394,125.7144,"Korea, North",KP,224231.0
+51,Paramount,33.8976,-118.1651,United States,US,54909.0
+52,Prospect Park,39.8859,-75.3074,United States,US,6472.0
+53,Asbest,57.023,61.458,Russia,RU,81248.0
+54,Maumere,-8.6189,122.2123,Indonesia,ID,104285.0
+55,Sharjah,25.3714,55.4065,United Arab Emirates,AE,1103027.0
+56,Vryburg,-26.96,24.73,South Africa,ZA,49588.0
+57,Mérida,20.9666,-89.6166,Mexico,MX,965000.0
+58,Fuan,27.0704,119.62,China,CN,92470.0
+59,West Haven,41.2738,-72.9669,United States,US,54516.0
+60,Satadougou,12.617,-11.4066,Mali,ML,706.0
+61,Quixadá,-4.97,-39.02,Brazil,BR,49328.0
+62,Gode,5.95,43.45,Ethiopia,ET,75000.0
+63,Rome,43.2259,-75.491,United States,US,32128.0
+64,Berri,-34.2829,140.6,Australia,AU,4716.0
+65,Baldwin,40.3691,-79.9668,United States,US,19734.0
+66,Hechi,23.0965,109.6091,China,CN,3830000.0
+67,Aranyaprathet,13.6824,102.4969,Thailand,TH,22472.0
+68,Spassk Dalniy,44.6002,132.8198,Russia,RU,45900.0
+69,Dezful,32.3804,48.47,Iran,IR,315482.0
+70,Seremban,2.7105,101.94,Malaysia,MY,372917.0
+71,Khilok,51.35,110.45,Russia,RU,10627.0
+72,Miles City,46.406,-105.8387,United States,US,9874.0
+73,Shuangyashan,46.6704,131.35,China,CN,500000.0
+74,Kalyan,19.2502,73.1602,India,IN,1576614.0
+75,Martapura,-3.4135,114.8365,Indonesia,ID,198239.0
+76,Jinshi,29.6321,111.8517,China,CN,274000.0
+77,Perth,56.4003,-3.47,United Kingdom,GB,39654.0
+78,El Oued,33.3704,6.86,Algeria,DZ,177497.0
+79,Kasempa,-13.4596,25.82,Zambia,ZM,5622.0
+80,Inírida,3.854,-67.9061,Colombia,CO,9065.0

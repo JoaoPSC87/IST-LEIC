@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Achacachi,-16.0833,-68.6666,Bolivia,BO,8447.0
+2,Punta Arenas,-53.165,-70.94,Chile,CL,117430.0
+3,Bangalore,12.97,77.56,India,IN,6787000.0
+4,Tegucigalpa,14.102,-87.2175,Honduras,HN,946000.0
+5,Lakeville,44.6777,-93.2522,United States,US,61938.0
+6,Praya,-8.7223,116.2923,Indonesia,ID,35183.0
+7,Saransk,54.1704,45.18,Russia,RU,303394.0
+8,Jihlava,49.4004,15.5833,Czechia,CZ,53921.0
+9,Khartoum,15.5881,32.5342,Sudan,SD,4754000.0
+10,Constantine,36.36,6.5999,Algeria,DZ,605179.0
+11,Narva,59.3776,28.1603,Estonia,EE,66980.0
+12,Puno,-15.8329,-70.0333,Peru,PE,116552.0
+13,Massangena,-21.5373,32.9564,Mozambique,MZ,650.0
+14,Kalasin,16.428,103.509,Thailand,TH,55102.0
+15,Buta,2.82,24.74,Congo (Kinshasa),CD,45677.0
+16,Artemovsk,54.3487,93.4355,Russia,RU,4948.0
+17,Mount Arlington,40.9188,-74.6391,United States,US,5455.0
+18,Albacete,39.0003,-1.87,Spain,ES,158094.0
+19,Queanbeyan,-35.3546,149.2113,Australia,AU,32602.0
+20,Ecorse,42.249,-83.1398,United States,US,9181.0
+21,Paramaribo,5.835,-55.167,Suriname,SR,254169.0
+22,Fuxin,42.0105,121.66,China,CN,770000.0
+23,Parma,41.3842,-81.7286,United States,US,79425.0
+24,Usinsk,65.923,57.403,Russia,RU,45000.0
+25,Sumenep,-7.0049,113.8496,Indonesia,ID,84656.0
+26,Babahoyo,-1.7996,-79.54,Ecuador,EC,76279.0
+27,Warwick,-28.2292,152.0203,Australia,AU,12347.0
+28,Windsor,44.9806,-64.1291,Canada,CA,3864.0
+29,Kumi,1.4608,33.9361,Uganda,UG,13000.0
+30,Wukari,7.8704,9.78,Nigeria,NG,92933.0
+31,Manono,-7.3,27.45,Congo (Kinshasa),CD,46111.0
+32,Kota Baharu,6.12,102.23,Malaysia,MY,505583.0
+33,Burlington,44.4877,-73.2314,United States,US,108331.0
+34,Ciudad Bolívar,8.1,-63.6,Venezuela,VE,338000.0
+35,Sheberghan,36.658,65.7383,Afghanistan,AF,93241.0
+36,Choybalsan,48.0666,114.506,Mongolia,MN,33376.0
+37,Jiaojing,28.6804,121.45,China,CN,471500.0
+38,Kempsey,-31.0874,152.822,Australia,AU,11840.0
+39,Jiamusi,46.83,130.35,China,CN,1020000.0
+40,Brownsweg,5.02,-55.17,Suriname,SR,4582.0
+41,Shasta Lake,40.679,-122.3775,United States,US,10162.0
+42,Tremonton,41.7188,-112.189,United States,US,10896.0
+43,Kotlas,61.2631,46.6631,Russia,RU,59879.0
+44,Santa Inês,-3.66,-45.39,Brazil,BR,67424.0
+45,Sodankylä,67.4171,26.6,Finland,FI,8942.0
+46,Malargüe,-35.4661,-69.5833,Argentina,AR,11847.0
+47,Nagoya,35.155,136.915,Japan,JP,3230000.0
+48,Anuradhapura,8.35,80.3833,Sri Lanka,LK,118302.0
+49,Hastings,42.6498,-85.2886,United States,US,7640.0
+50,Kibiti,-7.7296,38.95,Tanzania,TZ,30163.0
+51,Liuhe,42.2789,125.7173,China,CN,68938.0
+52,Bossembélé,5.267,17.65,Central African Republic,CF,7287.0
+53,Santander,43.3805,-3.8,Spain,ES,208763.0
+54,Ardabil,38.25,48.3,Iran,IR,414603.0
+55,Gyzlarbat,38.9755,56.2778,Turkmenistan,TM,48458.0
+56,Villavicencio,4.1533,-73.635,Colombia,CO,374763.0
+57,Besançon,47.23,6.03,France,FR,128426.0
+58,Palangkaraya,-2.2096,113.91,Indonesia,ID,148289.0
+59,Andkhvoy,36.9317,65.1015,Afghanistan,AF,71730.0
+60,Tema,5.6404,0.01,Ghana,GH,209000.0
+61,Marvin,34.989,-80.8034,United States,US,6377.0
+62,Sorocaba,-23.49,-47.47,Brazil,BR,563281.0
+63,La Unión,13.332,-87.839,El Salvador,SV,26807.0
+64,Laryak,61.1012,80.2514,Russia,RU,10.0
+65,Leopoldina,-21.53,-42.64,Brazil,BR,46742.0
+66,Komatini,41.1333,25.4167,Greece,GR,45631.0
+67,Mzimba,-11.9,33.6,Malawi,MW,19308.0
+68,Mocuba,-16.8496,38.26,Mozambique,MZ,68984.0
+69,Koudougou,12.2505,-2.37,Burkina Faso,BF,87347.0
+70,Linares,-35.84,-71.59,Chile,CL,81015.0
+71,Lubumbashi,-11.68,27.48,Congo (Kinshasa),CD,1352000.0
+72,Ellwood City,40.8619,-80.283,United States,US,12371.0
+73,Roi Et,16.051,103.655,Thailand,TH,39328.0
+74,Villamontes,-21.2496,-63.5,Bolivia,BO,18761.0
+75,Butterworth,5.4171,100.4,Malaysia,MY,821652.0
+76,Monte Quemado,-25.7996,-62.8666,Argentina,AR,11387.0
+77,Djado,21.015,12.3075,Niger,NE,10.0
+78,Fairlawn,41.127,-81.6212,United States,US,7466.0
+79,Chosica,-11.93,-76.71,Peru,PE,88606.0
+80,Nabire,-3.3515,135.5134,Indonesia,ID,43898.0

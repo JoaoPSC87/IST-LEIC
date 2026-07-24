@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Ravensthorpe,-33.5829,120.0333,Australia,AU,1101.0
+2,Chandigarh,30.72,76.78,India,IN,979000.0
+3,Salavat,53.3703,55.93,Russia,RU,159893.0
+4,Gawler,-34.6074,138.7264,Australia,AU,16362.0
+5,Quipungo,-14.8295,14.55,Angola,AO,186.0
+6,Paracatu,-17.1996,-46.87,Brazil,BR,70753.0
+7,Naperville,41.7483,-88.1656,United States,US,147122.0
+8,Mills River,35.3855,-82.5854,United States,US,7168.0
+9,Pirgos,37.6837,21.45,Greece,GR,22399.0
+10,Naltchik,43.4981,43.6179,Russia,RU,307866.0
+11,Zaporizhzhya,47.8573,35.1768,Ukraine,UA,788000.0
+12,Collierville,35.0474,-89.6989,United States,US,49177.0
+13,Imperatriz,-5.52,-47.49,Brazil,BR,218106.0
+14,Chamical,-30.3496,-66.3167,Argentina,AR,8989.0
+15,Harper,4.3754,-7.717,Liberia,LR,32661.0
+16,Wanaque,41.044,-74.2901,United States,US,11759.0
+17,Bamian,34.8211,67.521,Afghanistan,AF,61863.0
+18,Tumwater,46.9925,-122.9227,United States,US,22538.0
+19,Rinconada,-22.4329,-66.1666,Argentina,AR,6692.0
+20,Erymentau,51.6303,73.1049,Kazakhstan,KZ,25141.0
+21,Gaalkacyo,6.77,47.43,Somalia,SO,61200.0
+22,Jimaní,18.493,-71.851,Dominican Republic,DO,6567.0
+23,Cusco,-13.525,-71.9722,Peru,PE,361182.0
+24,Oxford,51.7704,-1.25,United Kingdom,GB,192796.0
+25,Enoch,37.7665,-113.0431,United States,US,6568.0
+26,Macheng,31.18,115.03,China,CN,126366.0
+27,Tirgu Mures,46.5582,24.5578,Romania,RO,149433.0
+28,Jinhua,29.12,119.65,China,CN,1092852.0
+29,Stockton,37.9766,-121.3111,United States,US,390117.0
+30,Somerville,40.5696,-74.6092,United States,US,12165.0
+31,Coburg,50.2666,10.9666,Germany,DE,61054.0
+32,Deniliquin,-35.5296,144.95,Australia,AU,8024.0
+33,Haarlem,52.3804,4.63,Netherlands,NL,349957.0
+34,Guaxupé,-21.29,-46.71,Brazil,BR,47889.0
+35,Udaipur,24.6,73.73,India,IN,469737.0
+36,Lomita,33.7934,-118.3175,United States,US,20693.0
+37,Jinan,36.675,116.995,China,CN,2798000.0
+38,Rome,41.896,12.4833,Italy,IT,3339000.0
+39,Kipili,-7.4329,30.6,Tanzania,TZ,1533.0
+40,Nassau,25.0834,-77.35,"Bahamas, The",BS,227940.0
+41,Srinagar,34.1,74.815,India,IN,1140000.0
+42,Mitú,1.1983,-70.1736,Colombia,CO,5917.0
+43,Nkawkaw,6.5505,-0.78,Ghana,GH,62667.0
+44,Jhang,31.2804,72.325,Pakistan,PK,341210.0
+45,Sabzewar,36.22,57.63,Iran,IR,226183.0
+46,Mitzik,0.7837,11.5666,Gabon,GA,4111.0
+47,Türkmenbaşy,40.023,52.9697,Turkmenistan,TM,68292.0
+48,Juiz de Fora,-21.77,-43.375,Brazil,BR,470193.0
+49,Eger,47.895,20.383,Hungary,HU,56647.0
+50,Aginskoye,51.1031,114.5228,Russia,RU,11491.0
+51,Jipijapa,-1.3496,-80.58,Ecuador,EC,35901.0
+52,Pamplona,42.82,-1.65,Spain,ES,274545.0
+53,Belén,-23.4695,-57.24,Paraguay,PY,11359.0
+54,Catania,37.5,15.08,Italy,IT,674542.0
+55,Boffa,10.185,-14.043,Guinea,GN,2332.0
+56,Kendu Bay,-0.3596,34.64,Kenya,KE,91248.0
+57,Soubré,5.7904,-6.61,Ivory Coast,CI,108933.0
+58,Gallup,35.5178,-108.7473,United States,US,24172.0
+59,Mabaruma,8.2,-59.78,Guyana,GY,2972.0
+60,Norcross,33.9379,-84.2065,United States,US,16787.0
+61,St. Anthony,51.3837,-55.6,Canada,CA,224.0
+62,Catió,11.2167,-15.1667,Guinea-Bissau,GW,9898.0
+63,Yeniseysk,58.4515,92.1565,Russia,RU,19920.0
+64,Zelenokumsk,44.4091,43.8787,Russia,RU,41306.0
+65,Malanje,-9.54,16.34,Angola,AO,125856.0
+66,Leonardtown,38.303,-76.641,United States,US,6093.0
+67,New Plymouth,-39.0556,174.0748,New Zealand,NZ,52500.0
+68,Sergiyev Posad,56.33,38.17,Russia,RU,109252.0
+69,Bafoussam,5.4904,10.4099,Cameroon,CM,290768.0
+70,Ringwood,41.1063,-74.2754,United States,US,12399.0
+71,Morehead,38.1906,-83.4466,United States,US,8252.0
+72,Panevežys,55.74,24.37,Lithuania,LT,127405.0
+73,North Syracuse,43.1339,-76.1306,United States,US,6800.0
+74,Ygatimí,-24.0796,-55.5,Paraguay,PY,2809.0
+75,Örebro,59.2803,15.22,Sweden,SE,98573.0
+76,Zhoukou,33.6304,114.63,China,CN,377061.0
+77,Inverness,42.1152,-88.1019,United States,US,7541.0
+78,Mekele,13.5,39.47,Ethiopia,ET,95856.0
+79,Plumtree,-20.4795,27.82,Zimbabwe,ZW,2148.0
+80,Mendefera,14.886,38.8163,Eritrea,ER,257390.0

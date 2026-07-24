@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Manokwari,-0.8711,134.0693,Indonesia,ID,74504.0
+2,Lamia,38.899,22.434,Greece,GR,47246.0
+3,Fairview,33.1401,-96.6123,United States,US,8354.0
+4,Rashid,31.4604,30.39,Egypt,EG,199509.0
+5,Viseu,-1.1965,-46.14,Brazil,BR,18958.0
+6,Uyo,5.008,7.85,Nigeria,NG,554906.0
+7,Wagga Wagga,-35.1222,147.34,Australia,AU,55381.0
+8,Koblenz,50.3505,7.6,Germany,DE,312633.0
+9,Starsy Oskol,51.3004,37.84,Russia,RU,226977.0
+10,Gingin,-31.3496,115.9,Australia,AU,1446.0
+11,Katherine,-14.4666,132.2666,Australia,AU,10141.0
+12,Qulsary,46.9833,54.0165,Kazakhstan,KZ,37103.0
+13,Chaghcharan,34.5167,65.25,Afghanistan,AF,15000.0
+14,Cojutepeque,13.7167,-88.9333,El Salvador,SV,48411.0
+15,Glarus,47.05,9.0667,Switzerland,CH,5681.0
+16,Jackson,38.3485,-120.7724,United States,US,7297.0
+17,Seville,37.405,-5.98,Spain,ES,1212045.0
+18,Burien,47.4761,-122.3393,United States,US,50997.0
+19,Kattaqorgon,39.9007,66.2608,Uzbekistan,UZ,247113.0
+20,Aveiro,40.641,-8.651,Portugal,PT,54162.0
+21,Azogues,-2.74,-78.84,Ecuador,EC,69087.0
+22,Waku Kungo,-11.3595,15.12,Angola,AO,12069.0
+23,Kōriyama,37.41,140.38,Japan,JP,340560.0
+24,Hope Mills,34.9696,-78.9581,United States,US,16227.0
+25,Gualeguay,-33.15,-59.34,Argentina,AR,33120.0
+26,Maldonado,-34.91,-54.96,Uruguay,UY,55478.0
+27,Maitland,-32.721,151.555,Australia,AU,18625.0
+28,Pittsfield,42.4517,-73.2605,United States,US,56628.0
+29,Hokitika,-42.7072,171.01,New Zealand,NZ,3078.0
+30,Quellón,-43.0996,-73.6,Chile,CL,7029.0
+31,Happy Valley,45.4383,-122.5142,United States,US,19704.0
+32,Tidjikdja,18.55,-11.4166,Mauritania,MR,19981.0
+33,Aubrey,33.3029,-96.9843,United States,US,5395.0
+34,Christchurch,-43.535,172.63,New Zealand,NZ,363200.0
+35,Trang,7.5634,99.608,Thailand,TH,147820.0
+36,Ad Damman,26.4282,50.0997,Saudi Arabia,SA,2054710.0
+37,Cafayate,-26.0829,-65.9666,Argentina,AR,11785.0
+38,Alxa Zuoqi,38.839,105.6686,China,CN,56387.0
+39,Krasnoufimsk,56.5991,57.7586,Russia,RU,43121.0
+40,New Paltz,41.7495,-74.0808,United States,US,7046.0
+41,Béni Ounif,32.0493,-1.2514,Algeria,DZ,5628.0
+42,Bạc Liêu,9.2804,105.72,Vietnam,VN,225000.0
+43,Gueppi,-0.1166,-75.23,Peru,PE,10.0
+44,Mongu,-15.2796,23.12,Zambia,ZM,52534.0
+45,San Quintín,30.4837,-115.95,Mexico,MX,5433.0
+46,Ketchikan,55.3567,-131.6712,United States,US,10554.0
+47,Freeport,42.2895,-89.6354,United States,US,24717.0
+48,Al Aqabah,29.527,35.0777,Jordan,JO,95048.0
+49,Machala,-3.26,-79.96,Ecuador,EC,213034.0
+50,Erzurum,39.9204,41.29,Turkey,TR,420691.0
+51,Bergamo,45.7004,9.67,Italy,IT,200000.0
+52,Honeoye Falls,42.9557,-77.5903,United States,US,5558.0
+53,Jeju,33.5101,126.5219,"Korea, South",KR,408364.0
+54,Madaoua,14.0762,5.9586,Niger,NE,24804.0
+55,Raichur,16.2104,77.355,India,IN,255240.0
+56,Khujayli,42.4047,59.4517,Uzbekistan,UZ,60401.0
+57,Misratah,32.38,15.1,Libya,LY,386120.0
+58,Linkou,45.2819,130.2519,China,CN,77754.0
+59,Abadla,31.0171,-2.7333,Algeria,DZ,14364.0
+60,Waitangi,-44.0263,-176.3696,New Zealand,NZ,300.0
+61,Lakeport,39.0392,-122.9218,United States,US,16649.0
+62,Gannan,47.9204,123.51,China,CN,59239.0
+63,Armavir,45.0004,41.13,Russia,RU,199548.0
+64,Yorkton,51.2171,-102.4665,Canada,CA,15172.0
+65,Nova Friburgo,-22.26,-42.54,Brazil,BR,171991.0
+66,Palu,-0.907,119.833,Indonesia,ID,612445.0
+67,Borzya,50.3886,116.5186,Russia,RU,30421.0
+68,Oak Lawn,41.7139,-87.7528,United States,US,56257.0
+69,Donegal,54.65,-8.1167,Ireland,IE,2513.0
+70,Pukekohe,-37.2015,174.9033,New Zealand,NZ,26300.0
+71,Kandi,11.1304,2.94,Benin,BJ,109701.0
+72,Verkhoyansk,67.5447,133.385,Russia,RU,1388.0
+73,Saint Marys,41.4574,-78.5343,United States,US,9165.0
+74,Potenza,40.642,15.799,Italy,IT,69060.0
+75,Tura,64.2833,100.25,Russia,RU,5444.0
+76,Presidente Dutra,-5.25,-44.52,Brazil,BR,30330.0
+77,Mascara,35.4004,0.14,Algeria,DZ,108230.0
+78,Novi Sad,45.2504,19.8499,Serbia,RS,225457.0
+79,Ciudad Guayana,8.37,-62.62,Venezuela,VE,746535.0
+80,Bacău,46.5784,26.9196,Romania,RO,199668.0

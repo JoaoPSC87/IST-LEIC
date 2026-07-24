@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Buford,34.1183,-83.9918,United States,US,14356.0
+2,Santiago,-14.1896,-75.74,Peru,PE,10449.0
+3,Inhumas,-16.36,-49.5,Brazil,BR,44058.0
+4,Kırıkkale,39.8504,33.53,Turkey,TR,211138.0
+5,Kpalimé,6.9004,0.63,Togo,TG,100479.0
+6,Ayakoz,47.9647,80.4297,Kazakhstan,KZ,45861.0
+7,Antsohihy,-14.8661,47.9834,Madagascar,MG,21290.0
+8,Los Angeles,-37.46,-72.36,Chile,CL,145239.0
+9,Vienna,38.8996,-77.2597,United States,US,16468.0
+10,San Pablo,37.9629,-122.3425,United States,US,30536.0
+11,Pinson,33.7064,-86.6654,United States,US,7426.0
+12,Victoria Falls,-17.9296,25.84,Zimbabwe,ZW,35761.0
+13,Guaratinguetá,-22.82,-45.19,Brazil,BR,203580.0
+14,Boulsa,12.657,-0.569,Burkina Faso,BF,17489.0
+15,Bayan Obo,41.7676,109.9711,China,CN,27476.0
+16,Suhar,24.362,56.7344,Oman,OM,151349.0
+17,Jacksonville,34.7323,-77.3962,United States,US,101865.0
+18,Lensk,60.7253,114.947,Russia,RU,25589.0
+19,Brno,49.2004,16.61,Czechia,CZ,388277.0
+20,Lansing,39.2435,-94.8981,United States,US,11849.0
+21,Loja,-3.99,-79.21,Ecuador,EC,126368.0
+22,Camabatela,-8.1896,15.37,Angola,AO,12837.0
+23,Ayorou,14.7318,0.9195,Niger,NE,26290.0
+24,Warsaw,52.25,21.0,Poland,PL,1707000.0
+25,Tiksi,71.6269,128.835,Russia,RU,5700.0
+26,Kundian,32.4522,71.4718,Pakistan,PK,35406.0
+27,Perkasie,40.3719,-75.292,United States,US,8479.0
+28,Mogocha,53.7333,119.7666,Russia,RU,12647.0
+29,Jorhat,26.75,94.2167,India,IN,69033.0
+30,Puerto Princesa,9.7543,118.7444,Philippines,PH,157144.0
+31,Caboolture,-27.083,152.95,Australia,AU,31513.0
+32,Kediri,-7.7896,112.0,Indonesia,ID,235143.0
+33,Assen,53.0,6.55,Netherlands,NL,62237.0
+34,Yola,9.21,12.48,Nigeria,NG,96006.0
+35,Madras,44.6384,-121.1268,United States,US,8914.0
+36,Roscoe,42.4252,-89.0084,United States,US,10521.0
+37,Wiener Neustadt,47.816,16.25,Austria,AT,82762.0
+38,Mongbwalu,1.9504,30.0333,Congo (Kinshasa),CD,2819.0
+39,Longyan,25.1804,117.03,China,CN,367896.0
+40,Thomasville,35.8813,-80.0807,United States,US,27030.0
+41,Mansa,-11.2,28.89,Zambia,ZM,42277.0
+42,El Manaqil,14.2504,32.98,Sudan,SD,151827.0
+43,Jining,35.4004,116.55,China,CN,1186000.0
+44,Thái Bình,20.4503,106.333,Vietnam,VN,210000.0
+45,Mudgee,-32.5896,149.5801,Australia,AU,5391.0
+46,Oxford,34.3613,-89.5289,United States,US,31728.0
+47,Maebashi,36.3927,139.0727,Japan,JP,344871.0
+48,Batna,35.57,6.17,Algeria,DZ,280798.0
+49,Kōchi,33.5624,133.5375,Japan,JP,335570.0
+50,Barras,-4.25,-42.3,Brazil,BR,21597.0
+51,Rawson,-43.3,-65.1,Argentina,AR,26335.0
+52,Chersky,68.7501,161.33,Russia,RU,3707.0
+53,West Monroe,32.5121,-92.1513,United States,US,12922.0
+54,Yoshkar Ola,56.6354,47.8749,Russia,RU,324406.0
+55,Ferkessédougou,9.6004,-5.2,Ivory Coast,CI,62008.0
+56,Port Morant,17.891,-76.329,Jamaica,JM,11536.0
+57,Kaitaia,-35.1099,173.2727,New Zealand,NZ,5202.0
+58,Reggio di Calabria,38.115,15.6414,Italy,IT,180353.0
+59,Kabul,34.5167,69.1833,Afghanistan,AF,3277000.0
+60,Coari,-4.08,-63.13,Brazil,BR,53305.0
+61,Ad Damazīn,11.7704,34.35,Sudan,SD,186051.0
+62,Damascus,33.5,36.3,Syria,SY,2466000.0
+63,Coquimbo,-29.9529,-71.3436,Chile,CL,161317.0
+64,Cayambe,0.0504,-78.16,Ecuador,EC,27881.0
+65,Macclenny,30.2818,-82.1246,United States,US,11307.0
+66,Buchans,48.817,-56.8666,Canada,CA,685.0
+67,Champasak,14.8833,105.8667,Laos,LA,12994.0
+68,Palmas,-10.2377,-48.2878,Brazil,BR,235315.0
+69,Kampala,0.3167,32.5833,Uganda,UG,1420000.0
+70,Manizales,5.06,-75.52,Colombia,CO,375848.0
+71,Downingtown,40.0076,-75.7019,United States,US,7905.0
+72,New Haven,41.0669,-85.0282,United States,US,15384.0
+73,Port Douglas,-16.4846,145.4587,Australia,AU,3000.0
+74,Crockett,31.3177,-95.4564,United States,US,5924.0
+75,Amursk,50.2228,136.8974,Russia,RU,46993.0
+76,Nouakchott,18.0864,-15.9753,Mauritania,MR,742144.0
+77,Bayghanin,48.6917,55.874,Kazakhstan,KZ,7657.0
+78,Mayda Shahr,34.45,68.8,Afghanistan,AF,35008.0
+79,Conyers,33.6645,-83.9967,United States,US,15919.0
+80,Soldado Bartra,-2.5161,-75.7666,Peru,PE,10.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Chachoengsao,13.679,101.076,Thailand,TH,49741.0
+2,San Martín,3.6904,-73.69,Colombia,CO,16273.0
+3,Guaira,-24.09,-54.27,Brazil,BR,36426.0
+4,Gifu,35.4231,136.7628,Japan,JP,412895.0
+5,Jayapura,-2.533,140.7,Indonesia,ID,169341.0
+6,Tabora,-5.02,32.8,Tanzania,TZ,146495.0
+7,Boma,-5.83,13.05,Congo (Kinshasa),CD,178638.0
+8,Mandurah,-32.5235,115.7471,Australia,AU,73356.0
+9,Northlake,41.9143,-87.9053,United States,US,12391.0
+10,Vanimo,-2.69,141.304,Papua New Guinea,PG,11204.0
+11,Sahuarita,31.9328,-110.9654,United States,US,46385.0
+12,Dumas,35.8613,-101.9642,United States,US,15063.0
+13,Dongola,19.1666,30.4833,Sudan,SD,26404.0
+14,Mountlake Terrace,47.7921,-122.3077,United States,US,21182.0
+15,Windorah,-25.4332,142.6502,Australia,AU,158.0
+16,Mymensingh,24.7504,90.38,Bangladesh,BD,330126.0
+17,Mednogorsk,51.4191,57.5787,Russia,RU,30676.0
+18,Barre,44.1997,-72.5083,United States,US,20857.0
+19,Assab,13.01,42.73,Eritrea,ER,105496.0
+20,Bagamoyo,-6.4396,38.89,Tanzania,TZ,82426.0
+21,Limerick,52.6647,-8.6231,Ireland,IE,90054.0
+22,Zwedru,6.0704,-8.13,Liberia,LR,25678.0
+23,Alamogordo,32.8834,-105.9627,United States,US,32782.0
+24,Chemnitz,50.83,12.92,Germany,DE,302643.0
+25,Taldyqorghan,45.0,78.4,Kazakhstan,KZ,88380.0
+26,Craiova,44.3263,23.8259,Romania,RO,304142.0
+27,Mansehra,34.3418,73.1968,Pakistan,PK,66486.0
+28,Pleasant Hill,41.5857,-93.4998,United States,US,9750.0
+29,Clarksville,38.3225,-85.7674,United States,US,21920.0
+30,Lovec,43.138,24.719,Bulgaria,BG,42211.0
+31,Tahoua,14.9,5.2599,Niger,NE,115956.0
+32,Bluffton,40.7426,-85.173,United States,US,10052.0
+33,Sendai,38.2871,141.0217,Japan,JP,2250000.0
+34,Rohtak,28.9,76.58,India,IN,317245.0
+35,Maryborough,-37.0496,143.73,Australia,AU,7046.0
+36,Acatlan,18.2,-98.05,Mexico,MX,18879.0
+37,Alexandria,31.2,29.95,Egypt,EG,4165000.0
+38,Santiago,-33.45,-70.667,Chile,CL,5720000.0
+39,Ibarra,0.3604,-78.13,Ecuador,EC,146741.0
+40,Oak Brook,41.8373,-87.9512,United States,US,8070.0
+41,Shymkent,42.32,69.595,Kazakhstan,KZ,465392.0
+42,Chita,52.055,113.465,Russia,RU,308500.0
+43,Nantes,47.2104,-1.59,France,FR,438537.0
+44,Kuznetsk,53.1204,46.6,Russia,RU,95574.0
+45,Çanakkale,40.1459,26.4064,Turkey,TR,87791.0
+46,Connell,46.6627,-118.8403,United States,US,5243.0
+47,San Juan De Los Morros,9.901,-67.354,Venezuela,VE,87739.0
+48,Tiruchirappalli,10.81,78.69,India,IN,951000.0
+49,Catanduva,-21.14,-48.98,Brazil,BR,109612.0
+50,Nyköping,58.764,17.015,Sweden,SE,27582.0
+51,Ełk,53.8337,22.35,Poland,PL,55769.0
+52,East Alton,38.8837,-90.1077,United States,US,6141.0
+53,Hidalgo del Parral,26.9334,-105.6666,Mexico,MX,103378.0
+54,Seymour,-37.0342,145.1273,Australia,AU,3693.0
+55,Goulburn,-34.7496,149.7102,Australia,AU,20940.0
+56,Te Anau,-45.4074,167.7585,New Zealand,NZ,1857.0
+57,Dunbar,38.3688,-81.7345,United States,US,7543.0
+58,Ar Ramadi,33.42,43.3,Iraq,IQ,295121.0
+59,Gyeongju,35.8428,129.2117,"Korea, South",KR,155237.0
+60,Haikou,20.05,110.32,China,CN,2046189.0
+61,Puerto López,4.09,-72.96,Colombia,CO,16678.0
+62,Tingo María,-9.2896,-75.99,Peru,PE,53177.0
+63,Lawrence,38.9603,-95.2643,United States,US,95800.0
+64,Monroe,41.3198,-74.1848,United States,US,8600.0
+65,Çorovodë,40.5167,20.2333,Albania,AL,14046.0
+66,Trois-Rivières,46.35,-72.5499,Canada,CA,119693.0
+67,Tayshet,55.9277,97.9877,Russia,RU,52184.0
+68,Port Augusta,-32.49,137.77,Australia,AU,13897.0
+69,Gandajika,-6.7396,23.96,Congo (Kinshasa),CD,154425.0
+70,Banyuwangi,-8.195,114.3696,Indonesia,ID,172424.0
+71,North Fond du Lac,43.8107,-88.4861,United States,US,5034.0
+72,Ambarchik,69.651,162.3336,Russia,RU,0.0
+73,Tindouf,27.6742,-8.1478,Algeria,DZ,18270.0
+74,Batesville,35.7687,-91.6226,United States,US,12065.0
+75,Franklin,39.5537,-84.295,United States,US,11780.0
+76,Magong,23.5667,119.5833,Taiwan,TW,56435.0
+77,Long Grove,42.197,-88.0059,United States,US,8147.0
+78,Garoowe,8.4,48.5,Somalia,SO,2568.0
+79,Fort Valley,32.5522,-83.8816,United States,US,9339.0
+80,Namangan,41.0,71.67,Uzbekistan,UZ,750000.0

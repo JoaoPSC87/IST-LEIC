@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Puerto Cabello,10.4704,-68.17,Venezuela,VE,174000.0
+2,Grayson,38.3318,-82.9371,United States,US,5479.0
+3,Cangamba,-13.6996,19.86,Angola,AO,1307.0
+4,Derby,41.3265,-73.0833,United States,US,12631.0
+5,Shenzhen,22.5524,114.1221,China,CN,7581000.0
+6,Melrose,42.4556,-71.059,United States,US,27928.0
+7,Astana,51.1811,71.4278,Kazakhstan,KZ,345604.0
+8,Dover,40.0033,-76.8484,United States,US,1986.0
+9,Drammen,59.7572,10.1907,Norway,NO,90722.0
+10,Cadiz,10.9587,123.3086,Philippines,PH,283157.0
+11,Sokolo,14.7337,-6.1333,Mali,ML,4374.0
+12,Borgarnes,64.5695,-21.8623,Iceland,IS,1783.0
+13,Inhambane,-23.858,35.3398,Mozambique,MZ,115776.0
+14,Tigard,45.4243,-122.7827,United States,US,51902.0
+15,Aberdeen,46.9768,-123.8083,United States,US,28863.0
+16,Erenhot,43.6616,111.9655,China,CN,22287.0
+17,Parkersburg,39.2624,-81.5419,United States,US,65331.0
+18,Kirundo,-2.5847,30.0972,Burundi,BI,6083.0
+19,Las Heras,-32.825,-68.8017,Argentina,AR,66663.0
+20,Nevinnomyssk,44.6201,41.95,Russia,RU,134380.0
+21,Springfield,44.0538,-122.981,United States,US,61893.0
+22,Danjiangkou,32.52,111.5,China,CN,92008.0
+23,Lahij,13.0582,44.8838,Yemen,YE,66288.0
+24,Maoming,21.9204,110.87,China,CN,1217715.0
+25,Curicó,-34.98,-71.24,Chile,CL,113711.0
+26,Makokou,0.5671,12.8666,Gabon,GA,17070.0
+27,Yuzhno Sakhalinsk,46.965,142.74,Russia,RU,176484.0
+28,Jeffersonville,38.3377,-85.7026,United States,US,47124.0
+29,Port Pirie,-33.1911,137.99,Australia,AU,12506.0
+30,Magnolia,33.2777,-93.2261,United States,US,10460.0
+31,Uray,60.1401,64.7548,Russia,RU,39878.0
+32,Phichit,16.439,100.349,Thailand,TH,35760.0
+33,Roanne,46.0333,4.0667,France,FR,73315.0
+34,Gaoual,11.754,-13.213,Guinea,GN,7461.0
+35,Macas,-2.3096,-78.12,Ecuador,EC,23687.0
+36,Manorhaven,40.8399,-73.7127,United States,US,6651.0
+37,Kentau,43.5165,68.5199,Kazakhstan,KZ,57408.0
+38,Natal,-5.78,-35.24,Brazil,BR,1088000.0
+39,Leticia,-4.22,-69.94,Colombia,CO,59575.0
+40,Civitavecchia,42.1004,11.8,Italy,IT,61316.0
+41,Fountain Valley,33.7105,-117.9514,United States,US,56529.0
+42,Emerald,-23.5122,148.1673,Australia,AU,9398.0
+43,Eldorado,-26.2,-54.6,Argentina,AR,17365.0
+44,Krabi,8.052,98.912,Thailand,TH,31219.0
+45,Azusa,34.1386,-117.9124,United States,US,49628.0
+46,Campo Belo,-20.8896,-45.28,Brazil,BR,47491.0
+47,Old Forge,41.3705,-75.7409,United States,US,8000.0
+48,Reconquista,-29.1395,-59.65,Argentina,AR,90184.0
+49,Serrinha,-11.6496,-39.01,Brazil,BR,56829.0
+50,Verona,45.4404,10.99,Italy,IT,347459.0
+51,Tatvan,38.5066,42.2816,Turkey,TR,73222.0
+52,Salsk,46.4775,41.542,Russia,RU,61000.0
+53,Manteno,41.2505,-87.8442,United States,US,8969.0
+54,New Lenox,41.5089,-87.9697,United States,US,26217.0
+55,Oakmont,40.52,-79.8365,United States,US,6428.0
+56,Luau,-10.7095,22.23,Angola,AO,18465.0
+57,Obock,11.9734,43.2856,Djibouti,DJ,17776.0
+58,Spearfish,44.4912,-103.8166,United States,US,12590.0
+59,Olomouc,49.63,17.25,Czechia,CZ,101268.0
+60,Boosaaso,11.28,49.18,Somalia,SO,46969.0
+61,Fengjie,31.0504,109.5167,China,CN,49168.0
+62,Safi,32.32,-9.24,Morocco,MA,353476.0
+63,Cooma,-36.2396,149.12,Australia,AU,6520.0
+64,Homyel,52.43,31.0,Belarus,BY,480951.0
+65,Bonn,50.7205,7.08,Germany,DE,680543.0
+66,Ratlam,23.3504,75.03,India,IN,307229.0
+67,Odense,55.4004,10.3833,Denmark,DK,158222.0
+68,El Jadida,33.2604,-8.51,Morocco,MA,180470.0
+69,Felipe Carrillo Puerto,19.5804,-88.05,Mexico,MX,24807.0
+70,Lumphat,13.507,106.981,Cambodia,KH,19205.0
+71,Moroni,-11.7042,43.2402,Comoros,KM,128698.0
+72,Princeton,33.184,-96.5079,United States,US,9405.0
+73,Shiraz,29.63,52.57,Iran,IR,1240000.0
+74,Mapleton,40.1191,-111.573,United States,US,9512.0
+75,Aba,5.1004,7.35,Nigeria,NG,897560.0
+76,Ijuí,-28.3895,-53.9199,Brazil,BR,71202.0
+77,Kupina,54.3592,77.2742,Russia,RU,16333.0
+78,Buzău,45.1565,26.8065,Romania,RO,130954.0
+79,Río Colorado,-38.9666,-64.0833,Argentina,AR,11499.0
+80,Bria,6.5333,21.9833,Central African Republic,CF,29027.0

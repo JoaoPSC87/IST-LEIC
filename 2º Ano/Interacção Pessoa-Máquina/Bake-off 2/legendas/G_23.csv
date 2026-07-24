@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Dirj,30.1679,10.4567,Libya,LY,931.0
+2,Puerto Quijarro,-17.7796,-57.77,Bolivia,BO,10392.0
+3,Pardubice,50.0404,15.76,Czechia,CZ,107064.0
+4,Bulandshahr,28.4104,77.8484,India,IN,198612.0
+5,Melilla,35.3,-2.95,Spain,ES,141308.0
+6,Rustenburg,-25.65,27.24,South Africa,ZA,165976.0
+7,Jena,50.9304,11.58,Germany,DE,104712.0
+8,Horsham,-36.7096,142.19,Australia,AU,12830.0
+9,Saravan,15.716,106.427,Laos,LA,5521.0
+10,Timmiarmiut,62.5333,-42.2167,Greenland,GL,10.0
+11,Springboro,39.5612,-84.2348,United States,US,18452.0
+12,San Lorenzo,-28.12,-58.77,Argentina,AR,47626.0
+13,Yessey,68.4837,102.1666,Russia,RU,10.0
+14,Auckland,-36.8481,174.763,New Zealand,NZ,1377200.0
+15,Isikul,54.9287,71.2682,Russia,RU,21136.0
+16,Mysore,12.31,76.66,India,IN,887000.0
+17,Bhubaneshwar,20.2704,85.8274,India,IN,844000.0
+18,East Grand Forks,47.9283,-97.0137,United States,US,8699.0
+19,Wajir,1.7504,40.05,Kenya,KE,45771.0
+20,Charagua,-19.7996,-63.22,Bolivia,BO,3025.0
+21,Tena,-0.9796,-77.81,Ecuador,EC,31126.0
+22,Kingstown,13.1483,-61.2121,Saint Vincent And The Grenadines,VC,49485.0
+23,Cuenca,-2.9,-79.0,Ecuador,EC,286878.0
+24,Dali,34.7953,109.9378,China,CN,109696.0
+25,Diourbel,14.6604,-16.24,Senegal,SN,148024.0
+26,Aketi,2.7405,23.78,Congo (Kinshasa),CD,58601.0
+27,Alta Gracia,-31.66,-64.43,Argentina,AR,40384.0
+28,Bungoma,0.5704,34.56,Kenya,KE,55962.0
+29,Bonner Springs,39.0817,-94.8778,United States,US,7665.0
+30,Reyes,-14.3096,-67.37,Bolivia,BO,7376.0
+31,Fort Chipewyan,58.7171,-111.15,Canada,CA,3222.0
+32,New Glasgow,45.5833,-62.6333,Canada,CA,20322.0
+33,Livingston,37.3875,-120.7249,United States,US,13961.0
+34,Sembe,1.6404,14.58,Congo (Brazzaville),CG,9679.0
+35,Serov,59.615,60.585,Russia,RU,98438.0
+36,Saint Helena,38.5044,-122.4681,United States,US,7119.0
+37,Kambove,-10.8696,26.6,Congo (Kinshasa),CD,36702.0
+38,Kiffa,16.62,-11.4,Mauritania,MR,73930.0
+39,Santarém,-2.4333,-54.7,Brazil,BR,230428.0
+40,Mpigi,0.225,32.3136,Uganda,UG,11082.0
+41,Itanhaem,-24.18,-46.8,Brazil,BR,90385.0
+42,Sironko,1.25,34.3,Uganda,UG,14100.0
+43,Charlotte,42.5662,-84.8304,United States,US,12654.0
+44,Dayr az Zawr,35.3304,40.13,Syria,SY,309141.0
+45,Kullorsuaq,74.5781,-57.225,Greenland,GL,450.0
+46,Fortuna,40.5855,-124.1417,United States,US,13299.0
+47,Syktyvkar,61.66,50.82,Russia,RU,230910.0
+48,Nukualofa,-21.1385,-175.2206,Tonga,TO,42620.0
+49,Phayao,19.1707,99.9083,Thailand,TH,21058.0
+50,Geneva,41.8831,-88.3236,United States,US,21880.0
+51,Sturgis,44.4093,-103.5184,United States,US,6787.0
+52,En Nuhud,12.6904,28.42,Sudan,SD,108008.0
+53,Bansang,13.4336,-14.65,"Gambia, The",GM,7615.0
+54,Teresina,-5.095,-42.78,Brazil,BR,907000.0
+55,Mashhad,36.27,59.57,Iran,IR,2469000.0
+56,Maracaibo,10.73,-71.66,Venezuela,VE,2072000.0
+57,Zixing,25.97,113.4,China,CN,6618.0
+58,Commerce,34.2129,-83.473,United States,US,6871.0
+59,Plain City,41.3069,-112.0878,United States,US,6493.0
+60,Deer Lake,52.617,-94.0666,Canada,CA,3743.0
+61,Hamar,60.82,11.069,Norway,NO,29479.0
+62,Meymaneh,35.9302,64.7701,Afghanistan,AF,199795.0
+63,Glencoe,44.7702,-94.1494,United States,US,5408.0
+64,Gadsden,34.009,-86.0156,United States,US,62402.0
+65,Balsas,-7.52,-46.05,Brazil,BR,68056.0
+66,El Faiyum,29.31,30.84,Egypt,EG,316772.0
+67,Humboldt,42.7232,-94.2245,United States,US,5095.0
+68,Hualien,23.9837,121.6,Taiwan,TW,350468.0
+69,Fort Collins,40.5487,-105.0656,United States,US,301581.0
+70,Qunghirot,43.0704,58.9,Uzbekistan,UZ,57758.0
+71,Kelo,9.3171,15.8,Chad,TD,96224.0
+72,Requena,-5.0696,-73.91,Peru,PE,18000.0
+73,Southern Cross,-31.2161,119.3167,Australia,AU,187.0
+74,Kuruman,-27.4496,23.42,South Africa,ZA,10006.0
+75,Irati,-25.47,-50.66,Brazil,BR,45830.0
+76,Frederikshavn,57.4337,10.5333,Denmark,DK,24103.0
+77,General Santos,6.1108,125.1747,Philippines,PH,950530.0
+78,Lanxi,46.2664,126.276,China,CN,72528.0
+79,São José dos Campos,-23.2,-45.8799,Brazil,BR,753769.0
+80,Bellinzona,46.197,9.02,Switzerland,CH,16572.0

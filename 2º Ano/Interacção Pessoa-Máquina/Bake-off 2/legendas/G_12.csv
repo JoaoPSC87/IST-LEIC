@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Clayton,35.6591,-78.4477,United States,US,20260.0
+2,Luzhou,28.88,105.38,China,CN,1537000.0
+3,Sioux Falls,43.5382,-96.7315,United States,US,177629.0
+4,Ghazni,33.5633,68.4178,Afghanistan,AF,141000.0
+5,Kumbo,6.2204,10.68,Cameroon,CM,125486.0
+6,Northern Cambria,40.6561,-78.7784,United States,US,6170.0
+7,Jima,7.68,36.83,Ethiopia,ET,128306.0
+8,Belleville,38.515,-89.9865,United States,US,41906.0
+9,Moranbah,-22.0016,148.038,Australia,AU,10000.0
+10,Kiama,-34.7096,150.84,Australia,AU,10379.0
+11,Itaberaí,-16.02,-49.81,Brazil,BR,22129.0
+12,Brașov,45.6475,25.6072,Romania,RO,311044.0
+13,Gisenyi,-1.6847,29.2629,Rwanda,RW,83623.0
+14,Merrill,45.1818,-89.7005,United States,US,9818.0
+15,Lusanga,-5.5829,16.5167,Congo (Kinshasa),CD,177.0
+16,Mykolayiv,46.9677,31.9843,Ukraine,UA,510840.0
+17,Karnal,29.6804,76.97,India,IN,225049.0
+18,Price,39.604,-110.8004,United States,US,13627.0
+19,Campbell,41.0777,-80.5904,United States,US,7923.0
+20,Xinzhou,38.4104,112.72,China,CN,279607.0
+21,Naivasha,-0.7096,36.43,Kenya,KE,43983.0
+22,North Ridgeville,41.3851,-82.0194,United States,US,32983.0
+23,Jawhar,2.767,45.5166,Somalia,SO,111308.0
+24,Dunedin,-45.8854,170.491,New Zealand,NZ,117700.0
+25,Mount Pleasant,32.8532,-79.8269,United States,US,84170.0
+26,Franklin,41.3936,-79.8425,United States,US,9121.0
+27,Winterset,41.3456,-94.0136,United States,US,5122.0
+28,Charlottesville,38.0374,-78.4856,United States,US,99664.0
+29,Malacca,2.2064,102.2465,Malaysia,MY,788706.0
+30,Tirupati,13.6504,79.42,India,IN,287035.0
+31,Matsue,35.467,133.0666,Japan,JP,156811.0
+32,Kalemie,-5.9333,29.2,Congo (Kinshasa),CD,206257.0
+33,Alayat Samail,23.3032,57.9782,Oman,OM,47718.0
+34,Biskra,34.86,5.73,Algeria,DZ,202103.0
+35,Newcastle,47.5304,-122.1633,United States,US,11567.0
+36,Moca,19.397,-70.523,Dominican Republic,DO,61834.0
+37,Mossel Bay,-34.17,22.13,South Africa,ZA,16743.0
+38,Boynton Beach,26.5282,-80.0812,United States,US,75569.0
+39,Perito Moreno,-46.6,-70.9334,Argentina,AR,3766.0
+40,Platteville,42.7334,-90.4716,United States,US,12550.0
+41,Florence,33.0631,-111.4272,United States,US,16744.0
+42,Codó,-4.4796,-43.88,Brazil,BR,83288.0
+43,Bagdarin,54.4333,113.6,Russia,RU,4676.0
+44,Zielona Góra,51.9504,15.5,Poland,PL,118433.0
+45,Ambatondrazaka,-17.8329,48.4167,Madagascar,MG,43134.0
+46,Murfreesboro,35.851,-86.4093,United States,US,161634.0
+47,Ansan,37.3481,126.8595,"Korea, South",KR,739493.0
+48,Bredasdorp,-34.5295,20.03,South Africa,ZA,14936.0
+49,Victorica,-36.2163,-65.45,Argentina,AR,4458.0
+50,Lipetsk,52.62,39.64,Russia,RU,515655.0
+51,Chivilcoy,-34.9,-60.04,Argentina,AR,54514.0
+52,Blagoveshchensk,50.2666,127.5333,Russia,RU,221296.0
+53,Mount Vernon,40.9136,-73.8291,United States,US,68344.0
+54,Grand Bassam,5.2004,-3.75,Ivory Coast,CI,73772.0
+55,Patna,25.625,85.13,India,IN,2158000.0
+56,Amityville,40.6696,-73.4156,United States,US,9494.0
+57,Camocim,-2.9,-40.85,Brazil,BR,44481.0
+58,Novo Horizonte,-21.4596,-49.22,Brazil,BR,30158.0
+59,Zhuanghe,39.6823,122.9619,China,CN,261510.0
+60,Hamilton,-37.7783,175.2896,New Zealand,NZ,148200.0
+61,Artvin,41.183,41.818,Turkey,TR,32272.0
+62,Ubon Ratchathani,15.25,104.83,Thailand,TH,273893.0
+63,Morro Bay,35.3681,-120.8481,United States,US,10648.0
+64,Carazinho,-28.29,-52.8,Brazil,BR,59417.0
+65,Geita,-2.8662,32.1666,Tanzania,TZ,1536.0
+66,Makamba,-4.1333,29.8,Burundi,BI,19642.0
+67,Lingyuan,41.24,119.4011,China,CN,806000.0
+68,Santiago de Compostela,42.8829,-8.5411,Spain,ES,92430.0
+69,Vallenar,-28.57,-70.76,Chile,CL,44895.0
+70,Daugavpils,55.88,26.51,Latvia,LV,111564.0
+71,Demba,-5.5096,22.26,Congo (Kinshasa),CD,22263.0
+72,Quibdó,5.6904,-76.66,Colombia,CO,92780.0
+73,Dibrugarh,27.4833,94.9,India,IN,166366.0
+74,Rosário,-2.94,-44.26,Brazil,BR,6798.0
+75,Griffith,41.5279,-87.424,United States,US,16252.0
+76,Scone,-32.0796,150.8501,Australia,AU,4624.0
+77,Sete Lagoas,-19.4496,-44.25,Brazil,BR,201334.0
+78,Aiguá,-34.2,-54.75,Uruguay,UY,2692.0
+79,Tetovo,42.0092,20.9701,Macedonia,MK,119132.0
+80,Klin,56.3431,36.6987,Russia,RU,80778.0

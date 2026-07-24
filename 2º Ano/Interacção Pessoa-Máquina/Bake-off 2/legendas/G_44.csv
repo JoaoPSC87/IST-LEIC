@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Russas,-4.94,-37.98,Brazil,BR,39465.0
+2,Västerås,59.63,16.54,Sweden,SE,107194.0
+3,Rutana,-3.931,29.993,Burundi,BI,20893.0
+4,Moberly,39.4185,-92.4364,United States,US,13821.0
+5,Hillsdale,41.0074,-74.0441,United States,US,10510.0
+6,Charleroi,50.4204,4.45,Belgium,BE,345367.0
+7,Shahrisabz,39.0618,66.8315,Uzbekistan,UZ,498545.0
+8,Chiromo,-16.55,35.1332,Malawi,MW,25235.0
+9,Viedma,-40.8,-63.0,Argentina,AR,59122.0
+10,Vacaria,-28.4996,-50.94,Brazil,BR,56765.0
+11,Wenshan,23.3724,104.2497,China,CN,152388.0
+12,Peshawar,34.005,71.535,Pakistan,PK,1303000.0
+13,Dunellen,40.5902,-74.4656,United States,US,7374.0
+14,Palos Hills,41.6986,-87.8266,United States,US,17410.0
+15,Basankusu,1.2337,19.8,Congo (Kinshasa),CD,52216.0
+16,Southend-on-Sea,51.55,0.72,United Kingdom,GB,618386.0
+17,Vanhynsdorp,-31.6166,18.7333,South Africa,ZA,3331.0
+18,Panama City Beach,30.237,-85.8776,United States,US,12776.0
+19,Cat Lake,51.717,-91.8,Canada,CA,277.0
+20,Blue Springs,39.0124,-94.2722,United States,US,54431.0
+21,Zagazig,30.5833,31.5167,Egypt,EG,285097.0
+22,Molde,62.7483,7.1833,Norway,NO,18594.0
+23,Roma,-26.5594,148.7907,Australia,AU,5496.0
+24,Huaibei,33.9504,116.75,China,CN,913000.0
+25,Ormac,11.0643,124.6075,Philippines,PH,167584.0
+26,Kaifeng,34.85,114.35,China,CN,872000.0
+27,Kurtamysh,54.9087,64.4333,Russia,RU,17936.0
+28,Santo Ângelo,-28.3,-54.28,Brazil,BR,65420.0
+29,Utrecht,52.1003,5.12,Netherlands,NL,640000.0
+30,Zakho,37.1445,42.6872,Iraq,IQ,134863.0
+31,Du Bois,41.1225,-78.7564,United States,US,11514.0
+32,Socorro,31.6385,-106.26,United States,US,33277.0
+33,Yandoon,17.0433,95.6429,Burma,MM,36172.0
+34,Usolye Sibirskoye,52.765,103.645,Russia,RU,85900.0
+35,Parnaíba,-2.91,-41.77,Brazil,BR,138008.0
+36,Twin Lakes,42.5192,-88.249,United States,US,6081.0
+37,Crestwood,38.5569,-90.3783,United States,US,11905.0
+38,Pathein,16.7704,94.75,Burma,MM,237089.0
+39,Numto,63.6667,71.3333,Russia,RU,10.0
+40,Medinipur,22.3304,87.15,India,IN,169127.0
+41,Chainat,15.179,100.126,Thailand,TH,15469.0
+42,Khammam,17.2804,80.1601,India,IN,290839.0
+43,Rockwall,32.9169,-96.4379,United States,US,43586.0
+44,Goyang,37.6527,126.8372,"Korea, South",KR,903000.0
+45,Ayan,56.4542,138.1673,Russia,RU,1286.0
+46,Khvoy,38.5304,44.97,Iran,IR,202728.0
+47,Alameda,37.767,-122.2673,United States,US,78906.0
+48,Nogales,31.305,-110.945,Mexico,MX,178097.0
+49,Bell Ville,-32.6,-62.68,Argentina,AR,35105.0
+50,Montgomery,41.1709,-76.874,United States,US,6306.0
+51,Tupã,-21.93,-50.52,Brazil,BR,62035.0
+52,Umuahia,5.532,7.486,Nigeria,NG,264662.0
+53,Sensuntepeque,13.88,-88.63,El Salvador,SV,26989.0
+54,Diffa,13.3171,12.6089,Niger,NE,30988.0
+55,Hurricane,37.1497,-113.3526,United States,US,19202.0
+56,Pekin,40.5677,-89.6264,United States,US,33038.0
+57,Tuscaloosa,33.2349,-87.5268,United States,US,153060.0
+58,Asela,7.9504,39.1399,Ethiopia,ET,82240.0
+59,Pinellas Park,27.8586,-82.7075,United States,US,52137.0
+60,Dehibat,32.017,10.7,Tunisia,TN,3525.0
+61,Catalão,-18.18,-47.95,Brazil,BR,63544.0
+62,Siliguri,26.7204,88.455,India,IN,515574.0
+63,Sterling Heights,42.581,-83.0304,United States,US,132427.0
+64,Berdyansk,46.7568,36.7868,Ukraine,UA,118284.0
+65,Gay,51.4747,58.4543,Russia,RU,41619.0
+66,Gusau,12.1704,6.66,Nigeria,NG,226857.0
+67,Kanash,55.5091,47.4687,Russia,RU,49886.0
+68,Aksu,41.15,80.25,China,CN,340020.0
+69,Cochrane,-47.2663,-72.5499,Chile,CL,4441.0
+70,Al Ladhiqiyah,35.54,35.78,Syria,SY,539147.0
+71,Ado Ekiti,7.6304,5.22,Nigeria,NG,446749.0
+72,Wynne,35.2324,-90.7897,United States,US,7455.0
+73,Chaiyaphum,15.804,102.0386,Thailand,TH,58350.0
+74,Valledupar,10.48,-73.25,Colombia,CO,308237.0
+75,Svetogorsk,61.1013,28.9177,Russia,RU,30115.0
+76,Lobos,-35.1849,-59.0947,Argentina,AR,18278.0
+77,Nzeto,-7.2296,12.86,Angola,AO,21059.0
+78,Kebili,33.69,8.971,Tunisia,TN,19875.0
+79,An Nasiriyah,31.0429,46.2676,Iraq,IQ,451547.0
+80,Muswellbrook,-32.2696,150.89,Australia,AU,11630.0

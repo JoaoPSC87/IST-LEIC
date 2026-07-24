@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Chachapoyas,-6.2296,-77.87,Peru,PE,25978.0
+2,Passau,48.567,13.4666,Germany,DE,50560.0
+3,Combarbalá,-31.18,-71.0,Chile,CL,5134.0
+4,Babanusa,11.3334,27.8,Sudan,SD,19700.0
+5,Wanganui,-39.9326,175.0393,New Zealand,NZ,43200.0
+6,Mpika,-11.83,31.46,Zambia,ZM,28445.0
+7,Gardner,38.8163,-94.9297,United States,US,21110.0
+8,Dédougou,12.455,-3.464,Burkina Faso,BF,45341.0
+9,Businga,3.3404,20.87,Congo (Kinshasa),CD,34247.0
+10,Hendersonville,36.3063,-86.5997,United States,US,57050.0
+11,Namur,50.4704,4.87,Belgium,BE,106284.0
+12,Ang Thong,14.5833,100.45,Thailand,TH,13738.0
+13,Salvador,-12.97,-38.48,Brazil,BR,3484000.0
+14,Plant City,28.0145,-82.1202,United States,US,38200.0
+15,Lake Forest,33.6606,-117.6712,United States,US,83240.0
+16,Qaraghandy,49.885,73.115,Kazakhstan,KZ,451800.0
+17,Bayankhongor,46.3,100.9833,Mongolia,MN,26252.0
+18,Fatehpur,25.8804,80.8,India,IN,166480.0
+19,Kosti,13.17,32.66,Sudan,SD,345068.0
+20,Narvik,68.3832,17.29,Norway,NO,20000.0
+21,Tocantinópolis,-6.3196,-47.42,Brazil,BR,8750.0
+22,Grand Blanc,42.9258,-83.6182,United States,US,7954.0
+23,Yichun,47.6999,128.9,China,CN,777000.0
+24,Jijel,36.822,5.766,Algeria,DZ,148000.0
+25,Garissa,-0.4396,39.67,Kenya,KE,67861.0
+26,Uyuni,-20.46,-66.83,Bolivia,BO,12939.0
+27,Escuinapa,22.8504,-105.8,Mexico,MX,28248.0
+28,Saginaw,43.4199,-83.95,United States,US,120088.0
+29,Massawa,15.6101,39.45,Eritrea,ER,142564.0
+30,Bobo Dioulasso,11.18,-4.29,Burkina Faso,BF,360106.0
+31,Taree,-31.8976,152.4618,Australia,AU,44182.0
+32,Willowick,41.6343,-81.468,United States,US,14087.0
+33,Mwinilunga,-11.7396,24.44,Zambia,ZM,13798.0
+34,Fribourg,46.8,7.15,Switzerland,CH,32827.0
+35,Tomsk,56.495,84.975,Russia,RU,535479.0
+36,Siena,43.317,11.35,Italy,IT,52625.0
+37,Kitchener,43.45,-80.5,Canada,CA,417001.0
+38,Cádiz,36.535,-6.225,Spain,ES,283157.0
+39,Presidente Prudente,-22.12,-51.39,Brazil,BR,209502.0
+40,Contamana,-7.34,-75.02,Peru,PE,18921.0
+41,Ascension,-15.6996,-63.08,Bolivia,BO,14429.0
+42,Mazowe,-17.5196,30.97,Zimbabwe,ZW,9966.0
+43,Calbuco,-41.7522,-73.1416,Chile,CL,12490.0
+44,Francistown,-21.17,27.5,Botswana,BW,89979.0
+45,Streaky Bay,-32.8119,134.2149,Australia,AU,1060.0
+46,Gilgit,35.9171,74.3,Pakistan,PK,216760.0
+47,Polygyros,40.381,23.453,Greece,GR,5258.0
+48,Al Jawf,24.2,23.29,Libya,LY,24132.0
+49,Khon Kaen,16.42,102.83,Thailand,TH,251056.0
+50,Allen Park,42.2597,-83.2107,United States,US,27214.0
+51,Suining,30.5333,105.5333,China,CN,1425000.0
+52,Trindade,-16.65,-49.5,Brazil,BR,97521.0
+53,Oak Creek,42.8803,-87.9008,United States,US,35881.0
+54,Lake Louise,51.4337,-116.1833,Canada,CA,1248.0
+55,Villa Rumipal,-32.1833,-64.4833,Argentina,AR,1269.0
+56,Samalut,28.3004,30.71,Egypt,EG,152097.0
+57,Jim Thorpe,40.8712,-75.7433,United States,US,5390.0
+58,Bunia,1.5604,30.24,Congo (Kinshasa),CD,96764.0
+59,Palmas,-26.48,-52.0,Brazil,BR,39150.0
+60,Concepción,-23.4064,-57.4344,Paraguay,PY,59118.0
+61,Santa Cruz,-6.22,-36.03,Brazil,BR,27775.0
+62,Noginsk,64.4833,91.2333,Russia,RU,229731.0
+63,Tonk,26.1505,75.79,India,IN,181734.0
+64,Nkhotakota,-12.9163,34.3,Malawi,MW,59854.0
+65,Rathdrum,47.7992,-116.8911,United States,US,7587.0
+66,Neryungri,56.674,124.7104,Russia,RU,66320.0
+67,Natchitoches,31.7317,-93.0978,United States,US,19759.0
+68,Buzuluk,52.7821,52.2618,Russia,RU,87714.0
+69,Kuantan,3.83,103.32,Malaysia,MY,366229.0
+70,Labinsk,44.6348,40.7443,Russia,RU,61945.0
+71,Severodvinsk,64.57,39.83,Russia,RU,194292.0
+72,Allahabad,25.455,81.84,India,IN,1201000.0
+73,Alert,82.4833,-62.25,Canada,CA,125.0
+74,Aqsu,52.4502,71.9597,Kazakhstan,KZ,8543.0
+75,Goiana,-7.5596,-35.0,Brazil,BR,71549.0
+76,Paranaguá,-25.5279,-48.5345,Brazil,BR,141013.0
+77,Hawera,-39.5795,174.278,New Zealand,NZ,11100.0
+78,Mozdok,43.7543,44.6544,Russia,RU,45702.0
+79,Bila Tserkva,49.7743,30.1309,Ukraine,UA,199163.0
+80,Kentwood,42.8852,-85.5925,United States,US,51689.0

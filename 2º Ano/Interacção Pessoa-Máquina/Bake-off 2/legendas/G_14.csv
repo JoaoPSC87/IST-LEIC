@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Gulfport,30.4271,-89.0703,United States,US,222131.0
+2,Cape Town,-33.92,18.435,South Africa,ZA,3215000.0
+3,Franklin,36.6831,-76.9386,United States,US,8913.0
+4,Mainz,49.9825,8.2732,Germany,DE,184997.0
+5,Zambezi,-13.54,23.1099,Zambia,ZM,7074.0
+6,Rensselaer,42.6464,-73.733,United States,US,9340.0
+7,Coro Coro,-17.1696,-68.45,Bolivia,BO,1884.0
+8,Maradah,29.2337,19.2166,Libya,LY,2500.0
+9,Morondava,-20.2833,44.2833,Madagascar,MG,36803.0
+10,Jaguarão,-32.56,-53.37,Brazil,BR,29613.0
+11,Komsomolets,53.7506,62.0502,Kazakhstan,KZ,9838.0
+12,Pretoria,-25.7069,28.2294,South Africa,ZA,1338000.0
+13,Villa María,-32.41,-63.26,Argentina,AR,92453.0
+14,Guilin,25.28,110.28,China,CN,987000.0
+15,Welkom,-27.97,26.73,South Africa,ZA,431944.0
+16,Bangassou,4.7338,22.8166,Central African Republic,CF,32841.0
+17,Raymore,38.8029,-94.4583,United States,US,20839.0
+18,Garrett,41.3532,-85.1236,United States,US,6360.0
+19,Clifton,33.0249,-109.2883,United States,US,5084.0
+20,Chicago,41.8373,-87.6861,United States,US,8639278.0
+21,Aalborg,57.0337,9.9166,Denmark,DK,122219.0
+22,Vĩnh Long,10.256,105.964,Vietnam,VN,103314.0
+23,Boyarka,70.767,97.5,Russia,RU,35968.0
+24,Molepolole,-24.4,25.51,Botswana,BW,63248.0
+25,Cobija,-11.0333,-68.7333,Bolivia,BO,44437.0
+26,Caacupé,-25.387,-57.14,Paraguay,PY,21696.0
+27,Manchester,37.1464,-83.7635,United States,US,5162.0
+28,Petrozavodsk,61.85,34.28,Russia,RU,265025.0
+29,Geneina,13.45,22.44,Sudan,SD,162981.0
+30,Eureka,38.5013,-90.6492,United States,US,11641.0
+31,Conselheiro Lafaiete,-20.67,-43.79,Brazil,BR,111596.0
+32,Yukon,35.5203,-97.7636,United States,US,26340.0
+33,Ingeniero Jacobacci,-41.3,-69.5833,Argentina,AR,5719.0
+34,Reading,39.2241,-84.4332,United States,US,10317.0
+35,Cowell,-33.6829,136.9166,Australia,AU,537.0
+36,Dzaoudzi,-12.7871,45.275,Mayotte,YT,32057.0
+37,Graham,36.0601,-79.3906,United States,US,14707.0
+38,Novomoskovsk,54.09,38.22,Russia,RU,130982.0
+39,General Roca,-39.02,-67.61,Argentina,AR,73212.0
+40,Vibo Valentia,38.6666,16.1,Italy,IT,33957.0
+41,Vratsa,43.21,23.5625,Bulgaria,BG,71633.0
+42,South Salt Lake,40.7056,-111.8987,United States,US,24630.0
+43,Pärnu,58.3747,24.5136,Estonia,EE,44192.0
+44,Siping,43.17,124.33,China,CN,555609.0
+45,Putian,25.4303,119.02,China,CN,376558.0
+46,Moree,-29.4699,149.8301,Australia,AU,8203.0
+47,Loves Park,42.3365,-88.9976,United States,US,23413.0
+48,Matawan,40.4126,-74.2365,United States,US,8848.0
+49,Marion,34.1787,-79.3965,United States,US,7218.0
+50,Suchboatar,50.25,106.2,Mongolia,MN,24235.0
+51,Kemi,65.7333,24.5817,Finland,FI,22641.0
+52,Thargomindah,-28.0,143.8167,Australia,AU,203.0
+53,Santa Cruz,-17.7539,-63.226,Bolivia,BO,2102998.0
+54,Antofagasta,-23.65,-70.4,Chile,CL,309832.0
+55,Gunsan,35.9818,126.716,"Korea, South",KR,244080.0
+56,Khandyga,62.666,135.6,Russia,RU,6796.0
+57,Nueva Imperial,-38.74,-72.96,Chile,CL,18777.0
+58,Shenyeng,41.805,123.45,China,CN,4787000.0
+59,Barbacena,-21.22,-43.77,Brazil,BR,122211.0
+60,Kenitra,34.2704,-6.58,Morocco,MA,551786.0
+61,Campoalegre,2.69,-75.33,Colombia,CO,22568.0
+62,Nizhny Novgorod,56.333,44.0001,Russia,RU,1278000.0
+63,Longreach,-23.4496,144.25,Australia,AU,2894.0
+64,Reykjavík,64.15,-21.95,Iceland,IS,166212.0
+65,Fruita,39.154,-108.7285,United States,US,12924.0
+66,Deva,45.8833,22.9167,Romania,RO,67802.0
+67,Beja,38.014,-7.863,Portugal,PT,35854.0
+68,Keller,32.9337,-97.2256,United States,US,46646.0
+69,Gedaref,14.04,35.38,Sudan,SD,201282.0
+70,Tarutung,2.0171,98.9667,Indonesia,ID,1305.0
+71,Ocumare del Tuy,10.12,-66.78,Venezuela,VE,166072.0
+72,Victor Harbor,-35.5596,138.6173,Australia,AU,7760.0
+73,Ozark,31.4508,-85.6473,United States,US,11826.0
+74,Nevyansk,57.4902,60.2148,Russia,RU,28170.0
+75,Timaru,-44.3972,171.2425,New Zealand,NZ,27200.0
+76,Kanazawa,36.56,136.64,Japan,JP,551249.0
+77,Bermejo,-22.7296,-64.35,Bolivia,BO,36544.0
+78,Petrópolis,-22.5095,-43.2,Brazil,BR,286071.0
+79,Tuzla,44.5505,18.68,Bosnia And Herzegovina,BA,144334.0
+80,Española,36.004,-106.0677,United States,US,26195.0

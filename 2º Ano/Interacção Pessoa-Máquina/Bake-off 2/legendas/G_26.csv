@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Iqaluit,63.7505,-68.5002,Canada,CA,6124.0
+2,Salina,38.8143,-97.6151,United States,US,47123.0
+3,Nelson,-41.2926,173.2474,New Zealand,NZ,60800.0
+4,Garzón,2.2104,-75.65,Colombia,CO,56603.0
+5,Meadow Lake,54.1301,-108.4347,Canada,CA,5882.0
+6,Walkertown,36.1574,-80.1646,United States,US,5021.0
+7,Nyukzha,56.5312,121.6131,Russia,RU,10.0
+8,Van Buren,35.4479,-94.3525,United States,US,23367.0
+9,Theodore,-24.9495,150.0833,Australia,AU,246.0
+10,San Fernando de Apure,7.9,-67.4699,Venezuela,VE,122701.0
+11,Clayton,39.8689,-84.3292,United States,US,13160.0
+12,Nowra,-34.8828,150.6,Australia,AU,94781.0
+13,Quảng Trị,16.7504,107.2,Vietnam,VN,72722.0
+14,Ahmednagar,19.1104,74.75,India,IN,391760.0
+15,Taltal,-25.4,-70.47,Chile,CL,10018.0
+16,Kislovodsk,43.91,42.72,Russia,RU,132771.0
+17,Ali Bayramli,39.9323,48.9203,Azerbaijan,AZ,70684.0
+18,Ninh Bình,20.2543,105.975,Vietnam,VN,130517.0
+19,Moscow,55.7522,37.6155,Russia,RU,10452000.0
+20,Savannah,35.2211,-88.2356,United States,US,8391.0
+21,Scotts Valley,37.0555,-122.0118,United States,US,11928.0
+22,Winton,-22.3996,143.0333,Australia,AU,1157.0
+23,Marion,35.6776,-82.0016,United States,US,13383.0
+24,Čačak,43.8897,20.3301,Serbia,RS,170000.0
+25,Phan Thiet,10.9337,108.1001,Vietnam,VN,336846.0
+26,Luanza,-8.6996,28.7,Congo (Kinshasa),CD,861.0
+27,Boutilimit,17.5504,-14.7,Mauritania,MR,14142.0
+28,Ye,15.2533,97.8679,Burma,MM,50798.0
+29,Araçatuba,-21.21,-50.45,Brazil,BR,170024.0
+30,Macapá,0.033,-51.05,Brazil,BR,499166.0
+31,Malden,42.4305,-71.0576,United States,US,60840.0
+32,Monastir,35.7307,10.7673,Tunisia,TN,71546.0
+33,Trabzon,40.98,39.72,Turkey,TR,764714.0
+34,Moore,35.3294,-97.4758,United States,US,61415.0
+35,Bani Walid,31.7704,13.99,Libya,LY,65392.0
+36,Plum,40.5024,-79.7496,United States,US,27399.0
+37,Bonao,18.942,-70.409,Dominican Republic,DO,73269.0
+38,Pannawonica,-21.6366,116.325,Australia,AU,686.0
+39,Aracaju,-10.9,-37.12,Brazil,BR,685356.0
+40,Merida,8.4,-71.13,Venezuela,VE,345489.0
+41,Manpo,41.1454,126.2958,"Korea, North",KP,186827.0
+42,Gelendzhik,44.5748,38.0644,Russia,RU,55508.0
+43,Adigrat,14.2804,39.47,Ethiopia,ET,104021.0
+44,Chapaev,50.1915,51.1449,Kazakhstan,KZ,6000.0
+45,Dalian,38.9228,121.6298,China,CN,3167000.0
+46,Los Lagos,-39.8495,-72.83,Chile,CL,12813.0
+47,Novokuybishevsk,53.12,49.9199,Russia,RU,152334.0
+48,Appenzell,47.3333,9.4167,Switzerland,CH,5649.0
+49,Matruh,31.3504,27.23,Egypt,EG,103470.0
+50,El Kef,36.1826,8.7148,Tunisia,TN,47979.0
+51,Angoche,-16.23,39.91,Mozambique,MZ,57835.0
+52,Tangshan,39.6243,118.1944,China,CN,1879000.0
+53,Mataró,41.54,2.45,Spain,ES,183293.0
+54,Porto Alegre,-30.05,-51.2,Brazil,BR,3917000.0
+55,Kemerovo,55.34,86.09,Russia,RU,477090.0
+56,Fray Bentos,-33.139,-58.304,Uruguay,UY,23279.0
+57,Ifakara,-8.1296,36.68,Tanzania,TZ,49528.0
+58,Caruaru,-8.28,-35.98,Brazil,BR,242094.0
+59,Baubau,-5.4699,122.6163,Indonesia,ID,24412.0
+60,Qapshaghay,43.8844,77.0687,Kazakhstan,KZ,42167.0
+61,Herisau,47.3833,9.2833,Switzerland,CH,15438.0
+62,Tengchong,25.0333,98.4666,China,CN,126058.0
+63,Heze,35.23,115.45,China,CN,1338000.0
+64,Birnin Kebbi,12.4504,4.1999,Nigeria,NG,108164.0
+65,Greenock,55.9333,-4.75,United Kingdom,GB,74635.0
+66,Valletta,35.8997,14.5147,Malta,MT,368250.0
+67,Magadan,59.575,150.81,Russia,RU,95282.0
+68,Carol Stream,41.9183,-88.1309,United States,US,40069.0
+69,Maina,13.4692,144.7332,Guam,GU,122411.0
+70,Berlin,39.7914,-74.9373,United States,US,7594.0
+71,Buea,4.155,9.231,Cameroon,CM,90088.0
+72,Skellefteå,64.7721,20.95,Sweden,SE,31311.0
+73,Lucapa,-8.4196,20.74,Angola,AO,31041.0
+74,Zaragoza,41.65,-0.89,Spain,ES,649404.0
+75,Turku,60.4539,22.255,Finland,FI,175945.0
+76,Joensuu,62.6,29.7666,Finland,FI,53388.0
+77,Mopti,14.49,-4.18,Mali,ML,108456.0
+78,Yining,43.9,81.35,China,CN,403489.0
+79,Talas,42.5184,72.2429,Kyrgyzstan,KG,35172.0
+80,Adjumani,3.3614,31.8097,Uganda,UG,34700.0

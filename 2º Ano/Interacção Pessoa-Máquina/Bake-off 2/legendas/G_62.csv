@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Mardan,34.2,72.04,Pakistan,PK,300424.0
+2,Sonsón,5.7166,-75.3166,Colombia,CO,18817.0
+3,Mar de Ajó,-36.7162,-56.6766,Argentina,AR,13610.0
+4,Batatais,-20.89,-47.59,Brazil,BR,51976.0
+5,Trujillo,-8.12,-79.02,Peru,PE,765171.0
+6,Shangrao,28.4704,117.97,China,CN,1144577.0
+7,Tuttle,35.3068,-97.7556,United States,US,6968.0
+8,De Aar,-30.65,24.0,South Africa,ZA,32318.0
+9,Oconomowoc,43.0993,-88.4952,United States,US,16526.0
+10,Umm al Abid,27.517,15.0333,Libya,LY,300.0
+11,Cuevo,-20.45,-63.53,Bolivia,BO,953.0
+12,Gliwice,50.3304,18.67,Poland,PL,507670.0
+13,Turukhansk,65.8382,87.955,Russia,RU,4774.0
+14,Santa Bárbara,-37.67,-72.02,Chile,CL,3494.0
+15,Zhilinda,70.1337,114.0,Russia,RU,10.0
+16,Litchfield,45.1222,-94.5254,United States,US,6547.0
+17,Dawson City,64.0666,-139.4167,Canada,CA,1319.0
+18,Newark,43.0418,-77.093,United States,US,13487.0
+19,Amsterdam,52.35,4.9166,Netherlands,NL,1031000.0
+20,Uruguaiana,-29.7696,-57.09,Brazil,BR,123480.0
+21,Passo Fundo,-28.25,-52.42,Brazil,BR,179529.0
+22,Río Tercero,-32.1796,-64.12,Argentina,AR,53389.0
+23,São Gabriel da Cachoeira,-0.1332,-67.0833,Brazil,BR,15231.0
+24,Douglas,54.1504,-4.48,Isle Of Man,IM,35854.0
+25,Saco,43.539,-70.4624,United States,US,19213.0
+26,Tyler,32.3184,-95.3065,United States,US,140857.0
+27,Porto,41.15,-8.62,Portugal,PT,1337000.0
+28,Lemon Grove,32.7331,-117.0344,United States,US,26860.0
+29,Fada Ngourma,12.055,0.361,Burkina Faso,BF,33910.0
+30,José Batlle y Ordóñez,-33.47,-55.12,Uruguay,UY,2438.0
+31,Mangalore,12.9,74.85,India,IN,776632.0
+32,Bossangoa,6.4837,17.45,Central African Republic,CF,63064.0
+33,Salamanca,20.5704,-101.2,Mexico,MX,197524.0
+34,Macia,-25.0195,33.09,Mozambique,MZ,23156.0
+35,Abidjan,5.32,-4.04,Ivory Coast,CI,3802000.0
+36,Bellaire,29.7039,-95.4622,United States,US,18593.0
+37,Maple Grove,45.1088,-93.4626,United States,US,69576.0
+38,Kolhapur,16.7,74.22,India,IN,750000.0
+39,Nova Cruz,-6.4696,-35.44,Brazil,BR,23166.0
+40,Santa Cruz Del Quiche,15.0333,-91.1333,Guatemala,GT,23618.0
+41,Popayán,2.42,-76.61,Colombia,CO,258750.0
+42,Riobamba,-1.67,-78.65,Ecuador,EC,172464.0
+43,Pasadena,29.6583,-95.1498,United States,US,153351.0
+44,Georgetown,38.2253,-84.5481,United States,US,35353.0
+45,Tubarão,-28.48,-49.02,Brazil,BR,92275.0
+46,Cienfuegos,22.1444,-80.4403,Cuba,CU,186644.0
+47,Humahuaca,-23.2,-65.3499,Argentina,AR,11369.0
+48,Ayoun el Atrous,16.6666,-9.6167,Mauritania,MR,1423.0
+49,Abha,18.2301,42.5001,Saudi Arabia,SA,210886.0
+50,Masaka,-0.3296,31.73,Uganda,UG,65373.0
+51,São Francisco do Sul,-26.2396,-48.6,Brazil,BR,36224.0
+52,Sevierville,35.8868,-83.5674,United States,US,24882.0
+53,Moanda,-1.5655,13.2,Gabon,GA,30151.0
+54,Bridgeport,33.2094,-97.7717,United States,US,6148.0
+55,Jacksonville,31.9642,-95.2617,United States,US,14418.0
+56,Piñas,-3.67,-79.65,Ecuador,EC,16981.0
+57,Cachoeira do Sul,-30.03,-52.91,Brazil,BR,74694.0
+58,Anlu,31.27,113.67,China,CN,71198.0
+59,Americana,-22.7499,-47.33,Brazil,BR,479472.0
+60,Oum el Bouaghi,35.85,7.15,Algeria,DZ,100821.0
+61,Narrogin,-32.9329,117.1666,Australia,AU,4238.0
+62,Poços de Caldas,-21.78,-46.57,Brazil,BR,146588.0
+63,Graham,33.1017,-98.5778,United States,US,8927.0
+64,Bitam,2.0837,11.4834,Gabon,GA,17637.0
+65,Andijon,40.79,72.34,Uzbekistan,UZ,650000.0
+66,Puerto Madryn,-42.77,-65.04,Argentina,AR,64555.0
+67,Benton,32.6906,-93.74,United States,US,5680.0
+68,Lavras,-21.2496,-45.01,Brazil,BR,81472.0
+69,Marsala,37.8054,12.4387,Italy,IT,77784.0
+70,Ad Diwaniyah,31.9889,44.924,Iraq,IQ,358408.0
+71,Upington,-28.46,21.23,South Africa,ZA,71373.0
+72,Lincolnwood,42.0054,-87.7329,United States,US,12527.0
+73,Smolensk,54.7827,32.0473,Russia,RU,320991.0
+74,Kayanza,-2.9,29.5667,Burundi,BI,19443.0
+75,Brownsville,35.5881,-89.2574,United States,US,9389.0
+76,Mufulira,-12.55,28.26,Zambia,ZM,153624.0
+77,Fort Thomas,39.0802,-84.4518,United States,US,16445.0
+78,Saskylakh,71.9166,114.0833,Russia,RU,1920.0
+79,Lincoln,-34.88,-61.5399,Argentina,AR,24798.0
+80,Frankfort,41.4913,-87.8395,United States,US,18857.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Reims,49.2504,4.03,France,FR,196565.0
+2,Vologda,59.21,39.92,Russia,RU,294889.0
+3,Staunton,38.1593,-79.0608,United States,US,58077.0
+4,Bandarbeyla,9.4833,50.8167,Somalia,SO,13753.0
+5,Iskandar,41.5507,69.6807,Uzbekistan,UZ,195633.0
+6,Pangnirtung,66.1333,-65.75,Canada,CA,1320.0
+7,Danville,40.1422,-87.6113,United States,US,48785.0
+8,Bangui,4.3666,18.5583,Central African Republic,CF,831925.0
+9,Koupéla,12.177,-0.356,Burkina Faso,BF,32052.0
+10,Kariba,-16.5296,28.8,Zimbabwe,ZW,25531.0
+11,Montezuma,32.2997,-84.0246,United States,US,6266.0
+12,Bir Mogrein,25.2333,-11.5833,Mauritania,MR,10.0
+13,Mikumi,-7.3996,36.98,Tanzania,TZ,16780.0
+14,Hungnam,39.8231,127.6232,"Korea, North",KP,751322.0
+15,Aliwal North,-30.6896,26.71,South Africa,ZA,44436.0
+16,Elk River,45.3313,-93.567,United States,US,24364.0
+17,Baoji,34.38,107.15,China,CN,800000.0
+18,Kukës,42.083,20.434,Albania,AL,17832.0
+19,Sorong,-0.8554,131.285,Indonesia,ID,125535.0
+20,Mangyshlak,43.6905,51.1417,Kazakhstan,KZ,147443.0
+21,Muglad,11.0337,27.7333,Sudan,SD,19997.0
+22,Trofimovsk,72.5997,127.0337,Russia,RU,10.0
+23,Pleasanton,37.666,-121.8805,United States,US,82270.0
+24,Altdorf,46.879,8.638,Switzerland,CH,8678.0
+25,Kibale,0.8,31.0667,Uganda,UG,5200.0
+26,Chibemba,-15.7496,14.08,Angola,AO,1502.0
+27,Linden,5.99,-58.27,Guyana,GY,44690.0
+28,Belém,-1.45,-48.48,Brazil,BR,2167000.0
+29,Kotovsk,52.5947,41.5044,Russia,RU,33077.0
+30,Mount Isa,-20.7239,139.49,Australia,AU,33200.0
+31,Moratuwa,6.7804,79.88,Sri Lanka,LK,200000.0
+32,Lokossa,6.615,1.715,Benin,BJ,86971.0
+33,Cleveland,35.1816,-84.8709,United States,US,71601.0
+34,Si Racha,13.159,100.9287,Thailand,TH,178916.0
+35,Lady Lake,28.924,-81.93,United States,US,14974.0
+36,Weifang,36.7204,119.1001,China,CN,1553000.0
+37,Fort William,56.8165,-5.1121,United Kingdom,GB,9652.0
+38,Moroto,2.5403,34.64,Uganda,UG,371.0
+39,Bonita Springs,26.3557,-81.7859,United States,US,382869.0
+40,Angers,47.48,-0.53,France,FR,188380.0
+41,Faizabad,26.7504,82.17,India,IN,153047.0
+42,Dese,11.13,39.63,Ethiopia,ET,183802.0
+43,Lampasas,31.0659,-98.1831,United States,US,7026.0
+44,Leonara,-28.8815,121.328,Australia,AU,227.0
+45,Boa Vista,2.8161,-60.666,Brazil,BR,235150.0
+46,Ilhéus,-14.78,-39.05,Brazil,BR,230622.0
+47,Maxixe,-23.866,35.3886,Mozambique,MZ,119868.0
+48,Olbia,40.9143,9.5151,Italy,IT,45366.0
+49,Burnie,-41.0666,145.9167,Australia,AU,19972.0
+50,Quillota,-32.88,-71.26,Chile,CL,79686.0
+51,Gloucester,42.626,-70.6896,United States,US,29798.0
+52,Kiev,50.4334,30.5166,Ukraine,UA,2709000.0
+53,Blumenau,-26.92,-49.09,Brazil,BR,293949.0
+54,Bolingbrook,41.6911,-88.1012,United States,US,74518.0
+55,Nueve de Julio,-35.446,-60.89,Argentina,AR,34718.0
+56,Wum,6.4004,10.07,Cameroon,CM,68836.0
+57,Barretos,-20.55,-48.58,Brazil,BR,101220.0
+58,Taylorsville,40.657,-111.9493,United States,US,60436.0
+59,Sinop,42.023,35.153,Turkey,TR,34834.0
+60,Zvezdnyy,70.9566,-179.59,Russia,RU,10.0
+61,Northglenn,39.9107,-104.9783,United States,US,38982.0
+62,Paraguarí,-25.62,-57.16,Paraguay,PY,18881.0
+63,New Liskeard,47.5,-79.6666,Canada,CA,5203.0
+64,Orange,-33.28,149.1,Australia,AU,39329.0
+65,Barddhaman,23.2504,87.865,India,IN,301725.0
+66,Latur,18.4004,76.57,India,IN,374394.0
+67,Rivera,-30.8996,-55.56,Uruguay,UY,200000.0
+68,Miahuatlán,16.33,-96.6,Mexico,MX,17632.0
+69,Kinnelon,40.9847,-74.3863,United States,US,10219.0
+70,Dandridge,36.0283,-83.4308,United States,US,5213.0
+71,Pabna,24.0004,89.25,Bangladesh,BD,137888.0
+72,Same,-4.0696,37.72,Tanzania,TZ,17455.0
+73,Ziniaré,12.577,-1.293,Burkina Faso,BF,12703.0
+74,Morombe,-21.7391,43.3657,Madagascar,MG,16727.0
+75,Pimenta Bueno,-11.64,-61.21,Brazil,BR,25762.0
+76,Azare,11.6804,10.19,Nigeria,NG,105687.0
+77,Ridgefield,45.8112,-122.7053,United States,US,6318.0
+78,Sangolquí,-0.31,-78.46,Ecuador,EC,178582.0
+79,Sierra Madre,34.1687,-118.0504,United States,US,11057.0
+80,Lashkar Gah,31.583,64.36,Afghanistan,AF,201546.0

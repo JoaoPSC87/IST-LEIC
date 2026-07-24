@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,George,-33.95,22.45,South Africa,ZA,174582.0
+2,Rhinelander,45.6361,-89.4255,United States,US,8769.0
+3,Upper Hutt,-41.1355,175.029,New Zealand,NZ,39200.0
+4,Balcarce,-37.8333,-58.25,Argentina,AR,18967.0
+5,Ruzayevka,54.0643,44.9244,Russia,RU,49311.0
+6,New Square,41.1411,-74.0294,United States,US,8357.0
+7,El Tigre,8.8903,-64.26,Venezuela,VE,197440.0
+8,Birao,10.2837,22.7833,Central African Republic,CF,10178.0
+9,Middletown,40.201,-76.7289,United States,US,9229.0
+10,Waunakee,43.183,-89.4426,United States,US,13607.0
+11,Massillon,40.784,-81.5256,United States,US,32258.0
+12,Barra do Bugres,-15.0696,-57.19,Brazil,BR,31311.0
+13,Nabeul,36.4603,10.73,Tunisia,TN,115149.0
+14,Shumen,43.27,26.9294,Bulgaria,BG,87283.0
+15,Tskhinvali,42.2325,43.975,Georgia,GE,38502.0
+16,Fort Myers Beach,26.4325,-81.9169,United States,US,7085.0
+17,Bentiu,9.2333,29.8333,South Sudan,SS,7653.0
+18,Leeuwarden,53.2504,5.7834,Netherlands,NL,125778.0
+19,Canby,45.2653,-122.687,United States,US,19092.0
+20,Sarandë,39.877,20.0,Albania,AL,15147.0
+21,Nikolayevsk na Amure,53.1496,140.73,Russia,RU,27152.0
+22,La Oroya,-11.52,-75.94,Peru,PE,33345.0
+23,Zlatoust,55.175,59.65,Russia,RU,191366.0
+24,Nadym,65.5298,72.5148,Russia,RU,46339.0
+25,Tuxpan,21.9304,-105.27,Mexico,MX,26115.0
+26,Westport,-41.7638,171.6028,New Zealand,NZ,3900.0
+27,Staraya Russa,57.9948,31.3544,Russia,RU,34303.0
+28,Cozumel,20.51,-86.95,Mexico,MX,73934.0
+29,Las Palmas,28.1,-15.43,Spain,ES,378495.0
+30,Fate,32.9401,-96.3864,United States,US,10703.0
+31,Puzi,23.4611,120.2419,Taiwan,TW,50000.0
+32,Saharanpur,29.97,77.55,India,IN,484873.0
+33,Glencoe,33.9447,-85.9319,United States,US,5135.0
+34,Marshfield,44.6633,-90.1731,United States,US,18760.0
+35,Otaru,43.1887,140.9783,Japan,JP,143792.0
+36,Kaysville,41.029,-111.9455,United States,US,31243.0
+37,Bregenz,47.5167,9.7667,Austria,AT,26928.0
+38,Kingston,-42.9911,147.3084,Australia,AU,14371.0
+39,Perryton,36.3931,-100.7974,United States,US,8868.0
+40,Brest,52.1,23.7,Belarus,BY,300715.0
+41,Amahai,-3.3281,128.9405,Indonesia,ID,47653.0
+42,Moses Lake,47.1276,-119.2762,United States,US,36662.0
+43,Cliza,-17.59,-65.93,Bolivia,BO,15816.0
+44,Burrel,41.626,20.016,Albania,AL,15405.0
+45,Taupo,-38.693,176.0771,New Zealand,NZ,22600.0
+46,Mango,10.3596,0.4708,Togo,TG,42626.0
+47,Bata,1.87,9.77,Equatorial Guinea,GQ,173046.0
+48,Oktyabrskiy,54.46,53.46,Russia,RU,108200.0
+49,Nawabshah,26.2454,68.4,Pakistan,PK,229504.0
+50,Segezha,63.7548,34.3243,Russia,RU,33354.0
+51,Brighton,50.8303,-0.17,United Kingdom,GB,503008.0
+52,Milagro,-2.1796,-79.6,Ecuador,EC,109970.0
+53,Hong Gai,20.9604,107.1,Vietnam,VN,172915.0
+54,Jamesburg,40.3494,-74.4403,United States,US,6040.0
+55,Porirua,-41.1219,174.8524,New Zealand,NZ,52500.0
+56,Vorontsovo,71.6983,83.5642,Russia,RU,100.0
+57,Denpasar,-8.65,115.22,Indonesia,ID,732344.0
+58,Tel Aviv-Yafo,32.08,34.77,Israel,IL,3112000.0
+59,Kissimmee,28.3042,-81.4164,United States,US,365099.0
+60,Shahhat,32.8281,21.8622,Libya,LY,45000.0
+61,Arroyos y Esteros,-25.05,-57.09,Paraguay,PY,3055.0
+62,Télimélé,10.905,-13.043,Guinea,GN,30311.0
+63,Singida,-4.8196,34.74,Tanzania,TZ,62432.0
+64,Bloemfontein,-29.12,26.2299,South Africa,ZA,463064.0
+65,Iturama,-19.73,-50.2,Brazil,BR,29805.0
+66,Macau,22.203,113.545,Macau,MO,568700.0
+67,Caazapá,-26.2,-56.38,Paraguay,PY,5504.0
+68,Aybak,36.261,68.04,Afghanistan,AF,24000.0
+69,Green Cove Springs,29.9903,-81.6808,United States,US,7666.0
+70,Arlon,49.6833,5.8167,Belgium,BE,26179.0
+71,Mwene-Ditu,-7.0,23.44,Congo (Kinshasa),CD,189177.0
+72,Port Macquarie,-31.445,152.9187,Australia,AU,48547.0
+73,Kroonstad,-27.66,27.21,South Africa,ZA,103992.0
+74,Nouadhibou,20.9,-17.056,Mauritania,MR,86738.0
+75,Westwood,40.9878,-74.0307,United States,US,11235.0
+76,Toconao,-23.1829,-68.0166,Chile,CL,378.0
+77,Şanlıurfa,37.17,38.795,Turkey,TR,449549.0
+78,Chesapeake Beach,38.6881,-76.5447,United States,US,24355.0
+79,Kasur,31.1254,74.455,Pakistan,PK,290643.0
+80,Adana,36.995,35.32,Turkey,TR,1293000.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Glendora,34.1449,-117.8466,United States,US,51851.0
+2,Sosnogorsk,63.5948,53.8943,Russia,RU,29343.0
+3,El Carmen de Bolívar,9.7204,-75.13,Colombia,CO,60980.0
+4,Bradley,41.1634,-87.8466,United States,US,15471.0
+5,Djenné,13.9,-4.55,Mali,ML,32944.0
+6,Cutral Có,-38.94,-69.24,Argentina,AR,47814.0
+7,Greenbelt,38.9953,-76.8885,United States,US,23909.0
+8,Braselton,34.1086,-83.8124,United States,US,10234.0
+9,Horn Lake,34.9512,-90.0501,United States,US,27042.0
+10,Paris,48.8667,2.3333,France,FR,9904000.0
+11,Iraklio,35.325,25.1305,Greece,GR,137154.0
+12,Camooweal,-19.9167,138.1167,Australia,AU,187.0
+13,Alausí,-2.19,-78.85,Ecuador,EC,14294.0
+14,Bandar-e Bushehr,28.92,50.83,Iran,IR,169060.0
+15,Utkholok,57.5504,157.2333,Russia,RU,10.0
+16,Liberty,39.2393,-94.4191,United States,US,30614.0
+17,Tartus,34.8846,35.8866,Syria,SY,162980.0
+18,Onslow,-21.6576,115.0963,Australia,AU,573.0
+19,Del Rio,29.3706,-100.8798,United States,US,44414.0
+20,Daejeon,36.3355,127.425,"Korea, South",KR,1468000.0
+21,Labasa,-16.4166,179.3833,Fiji,FJ,24187.0
+22,Santa Paula,34.3521,-119.0698,United States,US,30770.0
+23,Hangu,39.232,117.777,China,CN,332793.0
+24,Juliaca,-15.5,-70.14,Peru,PE,245675.0
+25,Tamworth,-31.1026,150.9171,Australia,AU,38551.0
+26,Mahabad,36.7704,45.72,Iran,IR,162434.0
+27,Impfondo,1.6404,18.04,Congo (Brazzaville),CG,20859.0
+28,Newburgh,41.5037,-74.0205,United States,US,28200.0
+29,Sullana,-4.8896,-80.68,Peru,PE,160789.0
+30,North College Hill,39.2174,-84.5517,United States,US,9322.0
+31,Hengyang,26.88,112.59,China,CN,1016000.0
+32,Huize,26.3504,103.4167,China,CN,5170.0
+33,Young,-34.3096,148.29,Australia,AU,7501.0
+34,Brusque,-27.13,-48.93,Brazil,BR,88284.0
+35,Itapipoca,-3.4995,-39.58,Brazil,BR,55784.0
+36,Presidencia Roque Saenz Pena,-26.79,-60.45,Argentina,AR,81879.0
+37,San Cristóbal,7.77,-72.25,Venezuela,VE,438798.0
+38,Santa Maria,-29.6833,-53.8,Brazil,BR,249219.0
+39,Bellefonte,40.9141,-77.7683,United States,US,13126.0
+40,Los Altos,37.3685,-122.0965,United States,US,30561.0
+41,Alva,36.8011,-98.6679,United States,US,5818.0
+42,Guryevsk,54.2981,85.9377,Russia,RU,38757.0
+43,Alwar,27.5454,76.6049,India,IN,283228.0
+44,Tebingtinggi,3.3304,99.13,Indonesia,ID,268043.0
+45,Tsau,-20.1596,22.46,Botswana,BW,1409.0
+46,Orocue,4.7946,-71.34,Colombia,CO,2835.0
+47,New Castle,39.919,-85.3697,United States,US,21949.0
+48,Ellenville,41.7009,-74.3609,United States,US,6436.0
+49,Mumbwa,-14.9796,27.07,Zambia,ZM,19086.0
+50,Moscow,46.7306,-116.9989,United States,US,25758.0
+51,San Antonio,-33.5995,-71.61,Chile,CL,104292.0
+52,Iringa,-7.7696,35.69,Tanzania,TZ,111820.0
+53,Hemet,33.7352,-116.9946,United States,US,175066.0
+54,Rongzhag,30.9504,101.9167,China,CN,70000.0
+55,Alton,38.9033,-90.1523,United States,US,80871.0
+56,Ayr,-19.5702,147.3995,Australia,AU,9078.0
+57,Chumphon,10.5127,99.1872,Thailand,TH,85686.0
+58,Biharamulo,-2.6296,31.31,Tanzania,TZ,34038.0
+59,Bhisho,-32.87,27.39,South Africa,ZA,160997.0
+60,Burlington,36.0761,-79.4692,United States,US,126491.0
+61,Kracheh,12.469,106.024,Cambodia,KH,19975.0
+62,Groves,29.9457,-93.9164,United States,US,15758.0
+63,Yaan,29.9804,103.08,China,CN,340000.0
+64,Battambang,13.1,103.2,Cambodia,KH,154773.0
+65,Basra,30.5135,47.8136,Iraq,IQ,870000.0
+66,Shaoxing,30.0004,120.57,China,CN,777000.0
+67,San Lorenzo,1.2704,-78.8601,Ecuador,EC,20209.0
+68,Castro,-24.79,-50.01,Brazil,BR,42091.0
+69,Cartagena,10.3997,-75.5144,Colombia,CO,887000.0
+70,Woodland Park,38.9988,-105.0595,United States,US,10806.0
+71,Galle,6.03,80.24,Sri Lanka,LK,99478.0
+72,Greenville,41.4052,-80.3838,United States,US,10194.0
+73,Alexandria,40.2583,-85.676,United States,US,5024.0
+74,Ban Houayxay,20.2775,100.4128,Laos,LA,6347.0
+75,Araranguá,-28.94,-49.5,Brazil,BR,43444.0
+76,Liaoyuan,42.9,125.13,China,CN,506548.0
+77,Tayynsha,53.8481,69.7638,Kazakhstan,KZ,13148.0
+78,Macará,-4.3796,-79.95,Ecuador,EC,13035.0
+79,Bauchi,10.3104,9.84,Nigeria,NG,316149.0
+80,Silchar,24.7904,92.79,India,IN,152393.0

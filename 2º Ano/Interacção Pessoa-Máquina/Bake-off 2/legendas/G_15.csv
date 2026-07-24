@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Lille,50.65,3.08,France,FR,1044000.0
+2,El Arish,31.1249,33.8006,Egypt,EG,178651.0
+3,Birjand,32.88,59.2199,Iran,IR,324703.0
+4,Parbhani,19.2704,76.76,India,IN,378326.0
+5,Magdalena,30.6166,-111.05,Mexico,MX,23359.0
+6,Glenolden,39.8996,-75.292,United States,US,7153.0
+7,Panipat,29.4004,76.97,India,IN,292808.0
+8,Pyongsan,38.3367,126.3866,"Korea, North",KP,66260.0
+9,Morris,41.3744,-88.43,United States,US,16656.0
+10,Chanaral,-29.03,-71.43,Chile,CL,13543.0
+11,Almería,36.8303,-2.43,Spain,ES,179405.0
+12,Bryansk,53.26,34.43,Russia,RU,427236.0
+13,Osorno,-40.57,-73.16,Chile,CL,154131.0
+14,Cranbourne,-38.0996,145.2834,Australia,AU,460491.0
+15,Xian,34.275,108.895,China,CN,4009000.0
+16,Nehe,48.49,124.88,China,CN,108253.0
+17,Pemba,-12.983,40.5323,Mozambique,MZ,110643.0
+18,Stamford,41.1035,-73.5583,United States,US,129113.0
+19,Hegang,47.4,130.37,China,CN,743307.0
+20,Alor Setar,6.1133,100.3729,Malaysia,MY,336475.0
+21,Copiapó,-27.36,-70.34,Chile,CL,129280.0
+22,Er Rachidia,31.9404,-4.45,Morocco,MA,228489.0
+23,Ayaviri,-14.8796,-70.6,Peru,PE,19310.0
+24,Pozo Colorado,-23.43,-58.86,Paraguay,PY,2135.0
+25,Stuttgart,48.78,9.2,Germany,DE,2944700.0
+26,San Pedro de las Colonias,25.7592,-102.9827,Mexico,MX,53688.0
+27,Bongor,10.2859,15.3872,Chad,TD,193941.0
+28,Marion,40.5933,-83.1237,United States,US,45718.0
+29,Goba,7.01,39.97,Ethiopia,ET,34369.0
+30,Tahlequah,35.9116,-94.9773,United States,US,19682.0
+31,Broadview,41.8584,-87.8562,United States,US,7823.0
+32,Qitaihe,45.8,130.85,China,CN,450617.0
+33,Fullerton,33.8841,-117.9279,United States,US,140721.0
+34,Shamva,-17.3196,31.57,Zimbabwe,ZW,10317.0
+35,Łódź,51.775,19.4514,Poland,PL,758000.0
+36,Malegaon,20.5604,74.525,India,IN,690844.0
+37,Porto Velho,-8.75,-63.9,Brazil,BR,306180.0
+38,Calais,50.9504,1.8333,France,FR,92201.0
+39,Kabwe,-14.44,28.45,Zambia,ZM,188979.0
+40,Pichilemu,-34.38,-72.0,Chile,CL,11603.0
+41,Tatarsk,55.2219,75.9665,Russia,RU,25150.0
+42,Haldia,22.0257,88.0583,India,IN,200762.0
+43,Tây Ninh,11.323,106.147,Vietnam,VN,126370.0
+44,Los Blancos,-23.5996,-62.6,Argentina,AR,1145.0
+45,Carnarvon,-24.8998,113.6501,Australia,AU,7392.0
+46,Guntersville,34.3674,-86.2634,United States,US,8437.0
+47,Xichang,27.88,102.3,China,CN,379993.0
+48,Tver,56.86,35.89,Russia,RU,400212.0
+49,Marlborough,42.3494,-71.5468,United States,US,39697.0
+50,Changhua,24.0734,120.5134,Taiwan,TW,750000.0
+51,Plainfield,39.7005,-86.3726,United States,US,31409.0
+52,Yaupi,-2.8543,-77.9363,Ecuador,EC,293.0
+53,Evergreen Park,41.7213,-87.7013,United States,US,19637.0
+54,Orodara,10.974,-4.908,Burkina Faso,BF,18632.0
+55,Yasothon,15.788,104.151,Thailand,TH,21643.0
+56,Napoleon,41.3978,-84.1244,United States,US,8432.0
+57,Sibay,52.7091,58.6387,Russia,RU,61590.0
+58,Óbidos,-1.91,-55.52,Brazil,BR,27587.0
+59,Gaborone,-24.6463,25.9119,Botswana,BW,208411.0
+60,San Antonio Oeste,-40.7329,-64.9333,Argentina,AR,8492.0
+61,Zapala,-38.9,-70.0667,Argentina,AR,19152.0
+62,Eisenstadt,47.8333,16.5333,Austria,AT,13165.0
+63,Biggar,52.0504,-107.9833,Canada,CA,2192.0
+64,Great Falls,47.5016,-111.2993,United States,US,65960.0
+65,Ras al Khaymah,25.7915,55.9428,United Arab Emirates,AE,160849.0
+66,Caldwell,39.7467,-81.5127,United States,US,5352.0
+67,North Little Rock,34.7813,-92.2378,United States,US,66278.0
+68,Tifton,31.4624,-83.5205,United States,US,24463.0
+69,Cheboksary,56.13,47.25,Russia,RU,446781.0
+70,San Ramón,-13.2896,-64.71,Bolivia,BO,6490.0
+71,Krasnoyarsk,56.014,92.866,Russia,RU,925000.0
+72,Akjoujt,19.747,-14.391,Mauritania,MR,370.0
+73,Columbiana,40.8871,-80.675,United States,US,7940.0
+74,Birni Nkonni,13.7904,5.2599,Niger,NE,65252.0
+75,Casablanca,33.6,-7.6164,Morocco,MA,3181000.0
+76,Sunderland,54.92,-1.38,United Kingdom,GB,452934.0
+77,Loikaw,19.665,97.206,Burma,MM,17293.0
+78,Jijiga,9.3504,42.79,Ethiopia,ET,56821.0
+79,Pleasant Hill,37.954,-122.0759,United States,US,34853.0
+80,Winnsboro,32.1651,-91.721,United States,US,5166.0

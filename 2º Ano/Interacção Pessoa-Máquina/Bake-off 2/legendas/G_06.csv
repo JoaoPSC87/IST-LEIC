@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Mundybash,53.2333,87.3167,Russia,RU,5870.0
+2,Taza,34.2204,-4.02,Morocco,MA,199633.0
+3,Roebourne,-20.7829,117.1333,Australia,AU,19260.0
+4,Genoa,44.41,8.93,Italy,IT,647497.0
+5,Tekirdağ,40.9909,27.51,Turkey,TR,122287.0
+6,Culver City,34.0058,-118.3968,United States,US,39364.0
+7,Am Timan,11.0333,20.2833,Chad,TD,30443.0
+8,La Mesa,32.7703,-117.0203,United States,US,59948.0
+9,Volta Redonda,-22.5196,-44.095,Brazil,BR,456362.0
+10,Szombathely,47.2253,16.6287,Hungary,HU,109518.0
+11,Likasi,-10.97,26.78,Congo (Kinshasa),CD,434408.0
+12,Baures,-13.58,-63.5801,Bolivia,BO,2422.0
+13,Ubaitaba,-14.3,-39.33,Brazil,BR,28375.0
+14,Rzhev,56.2574,34.3275,Russia,RU,63414.0
+15,Bondoukou,8.0304,-2.8,Ivory Coast,CI,58297.0
+16,Vishakhapatnam,17.73,83.305,India,IN,1529000.0
+17,Daan,45.5,124.3,China,CN,93297.0
+18,Karlskrona,56.203,15.296,Sweden,SE,35212.0
+19,Rio Negro,-26.1,-49.79,Brazil,BR,65597.0
+20,Alexandria,38.9622,-84.3861,United States,US,9340.0
+21,Montero,-17.3496,-63.26,Bolivia,BO,88616.0
+22,Barquisimeto,10.05,-69.3,Venezuela,VE,1116000.0
+23,Pahokee,26.8205,-80.6613,United States,US,7745.0
+24,Cambridge,45.5615,-93.228,United States,US,15265.0
+25,Puerto Natales,-51.7183,-72.5117,Chile,CL,20000.0
+26,Stans,46.95,8.3833,Switzerland,CH,7475.0
+27,Chumikan,54.7114,135.3145,Russia,RU,1305.0
+28,Mount Magnet,-28.0662,117.8167,Australia,AU,424.0
+29,Vitória,-20.324,-40.366,Brazil,BR,1704000.0
+30,Ergun Zuoqi,50.7833,121.5167,China,CN,42849.0
+31,Urgentch,41.56,60.64,Uzbekistan,UZ,150110.0
+32,Gulf Shores,30.2718,-87.708,United States,US,11689.0
+33,At Tafilah,30.8333,35.6,Jordan,JO,25429.0
+34,Nebbi,2.4758,31.1025,Uganda,UG,30354.0
+35,Regensburg,49.0204,12.12,Germany,DE,164359.0
+36,Sotouboua,8.557,0.985,Togo,TG,21054.0
+37,Burgas,42.5146,27.4746,Bulgaria,BG,195966.0
+38,Mékambo,1.0171,13.9333,Gabon,GA,3170.0
+39,Norwich,52.6304,1.3,United Kingdom,GB,190756.0
+40,Louga,15.6104,-16.25,Senegal,SN,85075.0
+41,Mo i Rana,66.3166,14.1667,Norway,NO,20409.0
+42,Langsa,4.6736,97.9664,Indonesia,ID,117256.0
+43,Itambé,-15.2396,-40.63,Brazil,BR,23558.0
+44,Bukavu,-2.51,28.84,Congo (Kinshasa),CD,436779.0
+45,El Daba,31.0338,28.4333,Egypt,EG,14212.0
+46,Orsk,51.21,58.6273,Russia,RU,246836.0
+47,Oum Hadjer,13.3004,19.6833,Chad,TD,19271.0
+48,West Hollywood,34.0883,-118.3718,United States,US,36698.0
+49,Szeged,46.2504,20.15,Hungary,HU,187765.0
+50,Carora,10.19,-70.08,Venezuela,VE,149711.0
+51,Tinogasta,-28.0666,-67.5666,Argentina,AR,587.0
+52,Huanren,41.2563,125.346,China,CN,116621.0
+53,Kimba,-33.1496,136.4334,Australia,AU,636.0
+54,Vladivostok,43.13,131.91,Russia,RU,587022.0
+55,San José de Mayo,-34.35,-56.71,Uruguay,UY,36529.0
+56,Cherbourg,49.6504,-1.65,France,FR,60991.0
+57,Keluang,2.0383,103.3179,Malaysia,MY,169828.0
+58,Concórdia,-27.23,-52.03,Brazil,BR,55367.0
+59,Ros Comain,53.6333,-8.1833,Ireland,IE,4860.0
+60,Carpinteria,34.3961,-119.5117,United States,US,13684.0
+61,Dubrovnik,42.6609,18.0914,Croatia,HR,36994.0
+62,Guntur,16.33,80.45,India,IN,530577.0
+63,Arapongas,-23.41,-51.43,Brazil,BR,97512.0
+64,Anzhero Sudzhensk,56.08,86.04,Russia,RU,83692.0
+65,Wagin,-33.2996,117.35,Australia,AU,1598.0
+66,Chinhoyi,-17.3596,30.18,Zimbabwe,ZW,61739.0
+67,Granada‎,37.165,-3.585,Spain,ES,388290.0
+68,Rio Largo,-9.48,-35.84,Brazil,BR,158545.0
+69,Nokaneng,-19.6696,22.27,Botswana,BW,1763.0
+70,Frankfurt,50.1,8.675,Germany,DE,2895000.0
+71,Kropotkin,45.4471,40.5821,Russia,RU,79599.0
+72,Bafia,4.7504,11.23,Cameroon,CM,69270.0
+73,Piraeus,37.95,23.7,Greece,GR,466065.0
+74,San Andrés,12.5621,-81.6903,Colombia,CO,58257.0
+75,Huamachuco,-7.81,-78.0499,Peru,PE,30835.0
+76,Banamba,13.5504,-7.45,Mali,ML,30591.0
+77,Vincennes,38.6759,-87.5102,United States,US,20726.0
+78,Djelfa,34.68,3.25,Algeria,DZ,170901.0
+79,Roselle,41.9807,-88.0862,United States,US,22814.0
+80,Port Moresby,-9.4647,147.1925,Papua New Guinea,PG,283733.0

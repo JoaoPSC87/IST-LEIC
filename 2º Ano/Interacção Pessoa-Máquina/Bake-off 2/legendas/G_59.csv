@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Sycamore,41.9955,-88.6816,United States,US,17867.0
+2,Carpina,-7.84,-35.26,Brazil,BR,165579.0
+3,Amderma,69.763,61.6677,Russia,RU,282.0
+4,Anaco,9.44,-64.46,Venezuela,VE,117596.0
+5,Karungu,-0.8496,34.15,Kenya,KE,2376.0
+6,Clarkston,46.4154,-117.0501,United States,US,7341.0
+7,Hightstown,40.2685,-74.525,United States,US,5503.0
+8,Balikpapan,-1.25,116.83,Indonesia,ID,445905.0
+9,Surat,21.2,72.84,India,IN,3842000.0
+10,Nord,81.7166,-17.8,Greenland,GL,10.0
+11,Makkah,21.43,39.82,Saudi Arabia,SA,1385000.0
+12,Rice Lake,45.4862,-91.7448,United States,US,9468.0
+13,Valença,-13.3596,-39.08,Brazil,BR,63231.0
+14,Az Zahran,26.2914,50.1583,Saudi Arabia,SA,97446.0
+15,Manukau,-37.0,174.885,New Zealand,NZ,375600.0
+16,Apatity,67.5731,33.393,Russia,RU,66907.0
+17,Richfield,43.2372,-88.2413,United States,US,11622.0
+18,Bloomingdale,41.9497,-88.0892,United States,US,22075.0
+19,Okhotsk,59.383,143.217,Russia,RU,5570.0
+20,Bhilai,21.2167,81.4333,India,IN,1097000.0
+21,Lishui,28.4504,119.9,China,CN,172777.0
+22,Decatur,40.8301,-84.9281,United States,US,10572.0
+23,Mizdah,31.4337,12.9833,Libya,LY,26107.0
+24,Valparaiso,30.4926,-86.5079,United States,US,5072.0
+25,Fostoria,41.1601,-83.4119,United States,US,14517.0
+26,Dixon,38.4466,-121.825,United States,US,19906.0
+27,Bauru,-22.33,-49.08,Brazil,BR,335024.0
+28,Ségou,13.44,-6.26,Mali,ML,122952.0
+29,Germantown,43.2343,-88.1217,United States,US,20027.0
+30,Chimbote,-9.07,-78.57,Peru,PE,349846.0
+31,Bella Vista,-22.1296,-56.52,Paraguay,PY,16852.0
+32,Groningen,53.2204,6.58,Netherlands,NL,216688.0
+33,Oakdale,44.9875,-92.9641,United States,US,28073.0
+34,Rolling Meadows,42.0747,-88.0252,United States,US,24021.0
+35,Merredin,-31.4828,118.2667,Australia,AU,2668.0
+36,Malé,4.1667,73.4999,Maldives,MV,112927.0
+37,Lehi,40.414,-111.8729,United States,US,61130.0
+38,Kitale,1.0305,34.9899,Kenya,KE,150495.0
+39,Ilo,-17.64,-71.34,Peru,PE,53476.0
+40,Cametá,-2.2396,-49.51,Brazil,BR,45200.0
+41,Greenville,40.1042,-84.6209,United States,US,12943.0
+42,Ivano-Frankivsk,48.9348,24.7094,Ukraine,UA,241239.0
+43,Djanet,24.5529,9.4823,Algeria,DZ,666.0
+44,Ruhengeri,-1.4996,29.63,Rwanda,RW,86685.0
+45,Tarbes,43.2333,0.0833,France,FR,54854.0
+46,São Carlos,-22.02,-47.89,Brazil,BR,205035.0
+47,Matola,-25.9696,32.46,Mozambique,MZ,543907.0
+48,Atakpamé,7.53,1.12,Togo,TG,80683.0
+49,Jessore,23.1704,89.2,Bangladesh,BD,243987.0
+50,Barra do Garças,-15.8796,-52.26,Brazil,BR,52398.0
+51,Linhares,-19.39,-40.05,Brazil,BR,105075.0
+52,Fife,47.2327,-122.3519,United States,US,10103.0
+53,Thanjavur,10.7704,79.15,India,IN,219571.0
+54,Iguatu,-6.36,-39.3,Brazil,BR,70380.0
+55,Iguape,-24.72,-47.5699,Brazil,BR,23784.0
+56,San Felipe,-32.75,-70.72,Chile,CL,59294.0
+57,Seneca,34.6815,-82.9609,United States,US,26857.0
+58,Holly,42.7987,-83.6233,United States,US,8309.0
+59,Adelaide,-34.935,138.6,Australia,AU,1145000.0
+60,Iquitos,-3.75,-73.25,Peru,PE,458729.0
+61,Bacolod,10.6317,122.9817,Philippines,PH,949354.0
+62,Tôlanaro,-25.0268,46.99,Madagascar,MG,16818.0
+63,Cowra,-33.8296,148.68,Australia,AU,6795.0
+64,Kerewan,13.494,-16.095,"Gambia, The",GM,2751.0
+65,Georgetown,6.802,-58.167,Guyana,GY,264350.0
+66,Murmansk,68.97,33.1,Russia,RU,319263.0
+67,El Obeid,13.1833,30.2167,Sudan,SD,393311.0
+68,Converse,29.513,-98.3079,United States,US,22702.0
+69,Central,30.5593,-91.0369,United States,US,28529.0
+70,Nyeri,-0.417,36.951,Kenya,KE,51084.0
+71,Laverton,-28.627,122.404,Australia,AU,316.0
+72,Valatie,42.4134,-73.6778,United States,US,5546.0
+73,Hawthorn Woods,42.2315,-88.0622,United States,US,8164.0
+74,National City,32.6654,-117.0983,United States,US,61147.0
+75,Ambanja,-13.6829,48.45,Madagascar,MG,30621.0
+76,Tarija,-21.5167,-64.75,Bolivia,BO,159269.0
+77,Bergenfield,40.9233,-73.9982,United States,US,27647.0
+78,Big Spring,32.2387,-101.4802,United States,US,29267.0
+79,Mato Grosso,-15.0,-59.95,Brazil,BR,1612.0
+80,Summerville,33.0038,-80.1794,United States,US,49323.0

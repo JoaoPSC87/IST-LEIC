@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Batticaloa,7.717,81.7,Sri Lanka,LK,129222.0
+2,Neuquén,-38.95,-68.06,Argentina,AR,242092.0
+3,Bafra,41.5682,35.9069,Turkey,TR,97452.0
+4,Melvindale,42.2803,-83.1782,United States,US,10322.0
+5,Frutal,-20.03,-48.94,Brazil,BR,40931.0
+6,Sukhumi,43.02,41.02,Georgia,GE,81546.0
+7,Xique-Xique,-10.82,-42.73,Brazil,BR,35433.0
+8,Bolgatanga,10.7904,-0.85,Ghana,GH,82177.0
+9,Altoona,40.5084,-78.401,United States,US,76943.0
+10,Walnut,34.0334,-117.8593,United States,US,30047.0
+11,Wheat Ridge,39.7728,-105.103,United States,US,31372.0
+12,Delhi,28.67,77.23,India,IN,15926000.0
+13,Tikhoretsk,45.8531,40.1377,Russia,RU,64387.0
+14,Altamonte Springs,28.6616,-81.395,United States,US,43492.0
+15,São João da Boa Vista,-21.98,-46.79,Brazil,BR,76540.0
+16,Nanchong,30.7804,106.13,China,CN,2174000.0
+17,Vergara,-32.93,-53.95,Uruguay,UY,3998.0
+18,Kenosha,42.5861,-87.8755,United States,US,124580.0
+19,Bouaké,7.69,-5.03,Ivory Coast,CI,567481.0
+20,Kisangani,0.52,25.22,Congo (Kinshasa),CD,578470.0
+21,Saint Charles,38.7957,-90.5155,United States,US,69293.0
+22,Cuya,-19.1167,-70.1333,Chile,CL,20.0
+23,Umeå,63.83,20.24,Sweden,SE,78197.0
+24,Paducah,37.0711,-88.6435,United States,US,49027.0
+25,Ijevan,40.8756,45.1492,Armenia,AM,14737.0
+26,Ibb,13.9759,44.1709,Yemen,YE,234837.0
+27,Niterói,-22.9,-43.1,Brazil,BR,1500513.0
+28,Damaturu,11.749,11.966,Nigeria,NG,255895.0
+29,Mbuji-Mayi,-6.15,23.6,Congo (Kinshasa),CD,1295000.0
+30,Larache,35.2004,-6.16,Morocco,MA,120082.0
+31,Kom Ombo,24.47,32.95,Egypt,EG,303962.0
+32,Malayer,34.32,48.85,Iran,IR,176573.0
+33,Golela,-27.2962,31.9,Swaziland,SZ,3695.0
+34,San,13.3004,-4.9,Mali,ML,41386.0
+35,Eastpointe,42.4657,-82.946,United States,US,32673.0
+36,Nikopol,47.5666,34.4062,Ukraine,UA,130500.0
+37,Barcaldine,-23.5662,145.2834,Australia,AU,1068.0
+38,Quanzhou,24.9,118.58,China,CN,1463000.0
+39,Bern,46.9167,7.467,Switzerland,CH,275329.0
+40,Selma,32.4166,-87.0336,United States,US,21786.0
+41,Maywood,40.9024,-74.0632,United States,US,9785.0
+42,Altus,34.6566,-99.3051,United States,US,19246.0
+43,Breckenridge,32.7566,-98.9122,United States,US,5620.0
+44,Rolim de Moura,-11.7302,-61.7806,Brazil,BR,24516.0
+45,New Freedom,39.7353,-76.6967,United States,US,14774.0
+46,Funafuti,-8.5167,179.2166,Tuvalu,TV,4749.0
+47,Armidale,-30.5123,151.6675,Australia,AU,22673.0
+48,Garanhuns,-8.89,-36.5,Brazil,BR,110085.0
+49,Pisco,-13.71,-76.22,Peru,PE,81207.0
+50,Vitsyebsk,55.1887,30.1853,Belarus,BY,342700.0
+51,Grajau,-5.81,-46.15,Brazil,BR,30217.0
+52,Magdalena,-13.2601,-64.0528,Bolivia,BO,3445.0
+53,Vyborg,60.7039,28.7549,Russia,RU,117201.0
+54,Eyl,7.9833,49.8333,Somalia,SO,18904.0
+55,Yuxi,24.38,102.57,China,CN,396325.0
+56,Salcedo,19.383,-70.4167,Dominican Republic,DO,45299.0
+57,Jammu,32.7118,74.8467,India,IN,791000.0
+58,Banfora,10.6304,-4.76,Burkina Faso,BF,60288.0
+59,Rapid City,44.0709,-103.22,United States,US,88533.0
+60,Kingston,35.8717,-84.4954,United States,US,5840.0
+61,Salgueiro,-8.0596,-39.13,Brazil,BR,42152.0
+62,Esquel,-42.9,-71.3166,Argentina,AR,20048.0
+63,San Mateo,37.5522,-122.3122,United States,US,103959.0
+64,Dibaya,-6.5095,22.87,Congo (Kinshasa),CD,603.0
+65,Ngozi,-2.912,29.825,Burundi,BI,21506.0
+66,Girga,26.3304,31.88,Egypt,EG,128250.0
+67,Talcahuano,-36.7167,-73.1167,Chile,CL,288074.0
+68,Cochabamba,-17.41,-66.17,Bolivia,BO,1000000.0
+69,Coraopolis,40.5148,-80.1627,United States,US,5536.0
+70,Batangas,13.7817,121.0217,Philippines,PH,424508.0
+71,Gondar,12.61,37.46,Ethiopia,ET,156230.0
+72,Gao,16.2666,-0.05,Mali,ML,116967.0
+73,Roura,4.73,-52.33,French Guiana,GF,2229.0
+74,Lake Forest,42.238,-87.8596,United States,US,19388.0
+75,Frolovo,49.7722,43.6518,Russia,RU,40882.0
+76,Bambari,5.762,20.6672,Central African Republic,CF,62098.0
+77,Orsha,54.5153,30.4215,Belarus,BY,135206.0
+78,Tamale,9.4004,-0.84,Ghana,GH,360579.0
+79,LaBelle,26.7212,-81.4526,United States,US,12337.0
+80,Clare,-33.8329,138.6,Australia,AU,3061.0

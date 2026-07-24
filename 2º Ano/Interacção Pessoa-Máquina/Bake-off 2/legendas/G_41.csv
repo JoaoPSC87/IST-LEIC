@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Maastricht,50.853,5.677,Netherlands,NL,122378.0
+2,Várzea Grande,-15.65,-56.14,Brazil,BR,249752.0
+3,Thibodaux,29.7942,-90.8164,United States,US,14610.0
+4,Kumo,10.0457,11.2131,Nigeria,NG,35712.0
+5,Baishan,41.9,126.43,China,CN,330000.0
+6,Saranpaul,64.2505,60.97,Russia,RU,2985.0
+7,Dinguiraye,11.299,-10.726,Guinea,GN,6062.0
+8,Hampshire,42.1112,-88.5119,United States,US,5187.0
+9,Barrancabermeja,7.09,-73.85,Colombia,CO,191403.0
+10,Heath,40.0241,-82.4412,United States,US,10625.0
+11,Sibut,5.7338,19.0833,Central African Republic,CF,34267.0
+12,Tynda,55.1743,124.7076,Russia,RU,37335.0
+13,Divinópolis,-20.1495,-44.9,Brazil,BR,193832.0
+14,Tacna,-18.0,-70.25,Peru,PE,280098.0
+15,San Antonio de los Cobres,-24.1829,-66.35,Argentina,AR,4000.0
+16,Perth,-31.955,115.84,Australia,AU,1532000.0
+17,Zebulon,35.8311,-78.3185,United States,US,5159.0
+18,Palm Beach,26.6928,-80.0405,United States,US,8690.0
+19,Port Vila,-17.7334,168.3166,Vanuatu,VU,44040.0
+20,Medenine,33.4,10.4167,Tunisia,TN,61705.0
+21,Manga,11.662,-1.065,Burkina Faso,BF,15173.0
+22,Gejiu,23.38,103.1501,China,CN,149105.0
+23,Cerrillos,-24.8996,-65.4833,Argentina,AR,11498.0
+24,Jaraguá do Sul,-26.48,-49.1,Brazil,BR,130130.0
+25,San Pedro,-24.09,-57.08,Paraguay,PY,9360.0
+26,Olovyannaya,50.95,115.5666,Russia,RU,8247.0
+27,Lubao,-5.3896,25.75,Congo (Kinshasa),CD,43068.0
+28,Bladensburg,38.9423,-76.9265,United States,US,9608.0
+29,Saint Louis,43.4082,-84.6116,United States,US,7060.0
+30,Moyo,3.6504,31.72,Uganda,UG,22434.0
+31,Harrison,40.7431,-74.1532,United States,US,16231.0
+32,Janaúba,-15.7996,-43.31,Brazil,BR,56572.0
+33,Mogadishu,2.0667,45.3667,Somalia,SO,1100000.0
+34,Ryazan,54.62,39.72,Russia,RU,520173.0
+35,Hillsborough,36.068,-79.0994,United States,US,6568.0
+36,Banjul,13.4539,-16.5917,"Gambia, The",GM,43094.0
+37,Lisbon,38.7227,-9.1449,Portugal,PT,2812000.0
+38,Zhaltyr,51.6324,69.8328,Kazakhstan,KZ,694.0
+39,Middlesbrough,54.5804,-1.23,United Kingdom,GB,416042.0
+40,Ayutthaya,14.3588,100.5684,Thailand,TH,145615.0
+41,Barra do Corda,-5.5096,-45.26,Brazil,BR,48901.0
+42,Romeoville,41.631,-88.1014,United States,US,39706.0
+43,København,55.6786,12.5635,Denmark,DK,1085000.0
+44,Kecskemét,46.9,19.7,Hungary,HU,113895.0
+45,Toulouse,43.62,1.4499,France,FR,847000.0
+46,Guangshui,31.6204,114.0,China,CN,154771.0
+47,Fulacunda,11.773,-15.195,Guinea-Bissau,GW,1311.0
+48,Luanshya,-13.1333,28.4,Zambia,ZM,151993.0
+49,Acapulco,16.85,-99.916,Mexico,MX,715584.0
+50,Buynaksk,42.8335,47.113,Russia,RU,75800.0
+51,Creswell,43.9212,-123.0159,United States,US,6648.0
+52,Highland Heights,39.0355,-84.4567,United States,US,7155.0
+53,Kelso,46.1249,-122.8907,United States,US,12047.0
+54,Murom,55.5704,42.04,Russia,RU,131287.0
+55,Agadez,16.9959,7.9828,Niger,NE,117770.0
+56,Chegga,25.3804,-5.78,Mauritania,MR,10.0
+57,Matadi,-5.8166,13.45,Congo (Kinshasa),CD,245862.0
+58,Tocopilla,-22.09,-70.19,Chile,CL,24460.0
+59,Balakhna,56.4943,43.5944,Russia,RU,63083.0
+60,Itapecuru Mirim,-3.4,-44.36,Brazil,BR,34943.0
+61,Zillah,28.5504,17.5834,Libya,LY,10.0
+62,Oral,51.2711,51.335,Kazakhstan,KZ,209788.0
+63,Hradec Králové,50.206,15.812,Czechia,CZ,95195.0
+64,Sekondi,4.9433,-1.704,Ghana,GH,286248.0
+65,Khulna,22.84,89.56,Bangladesh,BD,1553000.0
+66,Marília,-22.21,-49.95,Brazil,BR,212218.0
+67,Taibao,23.45,120.3333,Taiwan,TW,35000.0
+68,Arauca,7.0907,-70.7616,Colombia,CO,69264.0
+69,Boralday,43.3341,76.8288,Kazakhstan,KZ,20996.0
+70,Dublin,37.7161,-121.8962,United States,US,59583.0
+71,Berber,18.017,33.9833,Sudan,SD,49556.0
+72,Nizhnyaya Tura,58.6436,59.7983,Russia,RU,56084.0
+73,El Alamein,30.8171,28.95,Egypt,EG,7400.0
+74,Blitar,-8.0696,112.15,Indonesia,ID,132416.0
+75,Robertsport,6.7533,-11.3686,Liberia,LR,11969.0
+76,Las Tunas,20.9601,-76.9544,Cuba,CU,203684.0
+77,Scottsburg,38.6862,-85.7839,United States,US,11326.0
+78,Gouré,13.9874,10.27,Niger,NE,14639.0
+79,Daloa,6.89,-6.45,Ivory Coast,CI,255168.0
+80,Londrina,-23.3,-51.18,Brazil,BR,520238.0

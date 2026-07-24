@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Lavrentiya,65.5833,-171.025,Russia,RU,1242.0
+2,Ariquemes,-9.9396,-63.08,Brazil,BR,58096.0
+3,Nanping,26.6304,118.17,China,CN,213054.0
+4,Bradford,53.8,-1.75,United Kingdom,GB,501700.0
+5,Košice,48.7304,21.25,Slovakia,SK,236563.0
+6,Kandahar,31.61,65.6949,Afghanistan,AF,715542.0
+7,Ciudad Madero,22.3189,-97.8361,Mexico,MX,192736.0
+8,Constitución,-35.3296,-72.42,Chile,CL,37917.0
+9,Kimry,56.8691,37.3444,Russia,RU,52070.0
+10,Turgay,49.626,63.499,Kazakhstan,KZ,5277.0
+11,Ticul,20.4004,-89.53,Mexico,MX,30519.0
+12,Vallejo,38.1134,-122.2359,United States,US,172697.0
+13,Qom,34.65,50.95,Iran,IR,973000.0
+14,Tambov,52.73,41.43,Russia,RU,301482.0
+15,Lancaster,39.7249,-82.6049,United States,US,43726.0
+16,Wick,58.4333,-3.0834,United Kingdom,GB,7147.0
+17,Kinkala,-4.356,14.762,Congo (Brazzaville),CG,13882.0
+18,Poitier,46.5833,0.3333,France,FR,85960.0
+19,Obluchye,49.0,131.0833,Russia,RU,10000.0
+20,Székesfehérvár,47.1947,18.4081,Hungary,HU,144319.0
+21,Qasserine,35.1804,8.83,Tunisia,TN,81987.0
+22,Kovrov,56.3604,41.33,Russia,RU,154224.0
+23,Rijeka,45.33,14.45,Croatia,HR,170992.0
+24,Uzhgorod,48.63,22.25,Ukraine,UA,150832.0
+25,Kachiry,53.0804,76.09,Kazakhstan,KZ,8931.0
+26,Ulan Ude,51.825,107.625,Russia,RU,360278.0
+27,Tômbua,-15.8,11.86,Angola,AO,40000.0
+28,Morrinhos,-17.73,-49.11,Brazil,BR,34143.0
+29,Juticalpa,14.6704,-86.23,Honduras,HN,37442.0
+30,Uncia,-18.47,-66.57,Bolivia,BO,4723.0
+31,Kumamoto,32.8009,130.7006,Japan,JP,718232.0
+32,Mapai,-22.8427,31.9631,Mozambique,MZ,201.0
+33,Southampton,50.9,-1.4,United Kingdom,GB,384417.0
+34,Yulin,22.63,110.15,China,CN,1127000.0
+35,Iași,47.1683,27.5749,Romania,RO,325914.0
+36,Tsavo,-2.9828,38.4666,Kenya,KE,414.0
+37,Puri,19.8204,85.9,India,IN,201026.0
+38,Bloomington,40.4756,-88.9698,United States,US,135015.0
+39,Petropavlovsk,54.88,69.22,Kazakhstan,KZ,228238.0
+40,Lorengau,-2.032,147.28,Papua New Guinea,PG,5806.0
+41,Dortmund,51.53,7.45,Germany,DE,588462.0
+42,Caicó,-6.4596,-37.1,Brazil,BR,54934.0
+43,Kampot,10.6171,104.1833,Cambodia,KH,50105.0
+44,Djambala,-2.5396,14.75,Congo (Brazzaville),CG,9651.0
+45,Abéché,13.84,20.83,Chad,TD,158317.0
+46,Tours,47.3804,0.6999,France,FR,236096.0
+47,Fort Nelson,58.8167,-122.533,Canada,CA,6315.0
+48,Cúcuta,7.92,-72.52,Colombia,CO,722146.0
+49,Onitsha,6.1404,6.78,Nigeria,NG,73374.0
+50,Botoșani,47.7484,26.6597,Romania,RO,114783.0
+51,Gikongoro,-2.4833,29.5667,Rwanda,RW,15000.0
+52,Kaposvár,46.367,17.8,Hungary,HU,108528.0
+53,Tumby Bay,-34.3829,136.0833,Australia,AU,1791.0
+54,Tizi-Ouzou,36.8,4.0333,Algeria,DZ,144000.0
+55,Diamantina,-18.24,-43.61,Brazil,BR,37343.0
+56,Sasebo,33.1631,129.7177,Japan,JP,237444.0
+57,Kaédi,16.15,-13.5,Senegal,SN,21656.0
+58,Dosso,13.05,3.2,Niger,NE,49750.0
+59,Juazeiro,-9.42,-40.5,Brazil,BR,95132.0
+60,Merauke,-8.4932,140.4018,Indonesia,ID,34412.0
+61,Rennes,48.1,-1.67,France,FR,209375.0
+62,Dudinka,69.4182,86.225,Russia,RU,23619.0
+63,Cabo Frio,-22.89,-42.04,Brazil,BR,261721.0
+64,Vlorë,40.4774,19.4982,Albania,AL,89546.0
+65,General Conesa,-40.1,-64.4333,Argentina,AR,2958.0
+66,Camaná,-16.6196,-72.72,Peru,PE,20956.0
+67,Mendota Heights,44.8813,-93.1402,United States,US,11280.0
+68,Huaraz,-9.53,-77.53,Peru,PE,86934.0
+69,Lusambo,-4.9696,23.43,Congo (Kinshasa),CD,41416.0
+70,North Shore,-36.7913,174.7758,New Zealand,NZ,205605.0
+71,Cankuzo,-3.1667,30.5167,Burundi,BI,6585.0
+72,Zárate,-34.0896,-59.04,Argentina,AR,88781.0
+73,Gueckedou,8.554,-10.151,Guinea,GN,221715.0
+74,İzmit,40.776,29.9306,Turkey,TR,466504.0
+75,Changzhi,36.1839,113.1053,China,CN,706000.0
+76,Winchester,39.1734,-78.1745,United States,US,72928.0
+77,Ben Gardane,33.1404,11.22,Tunisia,TN,19843.0
+78,Omutninsk,58.6589,52.1592,Russia,RU,32800.0
+79,Riberalta,-10.983,-66.1,Bolivia,BO,74014.0
+80,Melekeok,7.4874,134.6265,Palau,PW,7026.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Chosan,40.8255,125.8008,"Korea, North",KP,7786.0
+2,Little Silver,40.3358,-74.0346,United States,US,5895.0
+3,Chota,-6.5496,-78.65,Peru,PE,14240.0
+4,Casma,-9.44,-78.21,Peru,PE,30000.0
+5,Karema,-6.8162,30.4333,Tanzania,TZ,16385.0
+6,Lebowakgomo,-24.1996,29.5,South Africa,ZA,33308.0
+7,Minxian,34.4362,104.0306,China,CN,67826.0
+8,Atoyac,17.2,-100.43,Mexico,MX,20515.0
+9,Fuyang,30.0533,119.9519,China,CN,771000.0
+10,Puerto Suárez,-18.9496,-57.85,Bolivia,BO,22000.0
+11,Commerce,33.9963,-118.1519,United States,US,12973.0
+12,Gashua,12.8705,11.04,Nigeria,NG,125817.0
+13,Mbeya,-8.89,33.43,Tanzania,TZ,291649.0
+14,Pohang,36.0209,129.3715,"Korea, South",KR,435266.0
+15,Kakata,6.526,-10.349,Liberia,LR,33945.0
+16,Bourbonnais,41.1831,-87.8781,United States,US,18499.0
+17,Khakhar,57.6666,135.43,Russia,RU,10.0
+18,Oulu,65.0,25.47,Finland,FI,136752.0
+19,Pereira,4.8104,-75.68,Colombia,CO,568750.0
+20,Mercedes,-33.6896,-65.47,Argentina,AR,49345.0
+21,Jacarezinho,-23.1599,-49.98,Brazil,BR,35090.0
+22,Komatipoort,-25.4096,31.94,South Africa,ZA,20508.0
+23,Sica Sica,-17.33,-67.73,Bolivia,BO,1006.0
+24,Gisborne,-38.6633,178.0181,New Zealand,NZ,34300.0
+25,Dalton,34.7688,-84.9711,United States,US,87688.0
+26,San Sebastián,43.3204,-1.98,Spain,ES,357468.0
+27,Laghouat,33.81,2.88,Algeria,DZ,113872.0
+28,Río Gallegos,-51.6333,-69.2166,Argentina,AR,85700.0
+29,Birganj,27.0004,84.8666,Nepal,NP,133238.0
+30,Ghadamis,30.1333,9.5,Libya,LY,6623.0
+31,Schwyz,47.02,8.648,Switzerland,CH,14177.0
+32,Ålesund,62.5454,6.388,Norway,NO,47772.0
+33,Dawmat al Jandal,29.8153,39.8664,Saudi Arabia,SA,22583.0
+34,Ciudad Obregon,27.4666,-109.925,Mexico,MX,288002.0
+35,Białystok,53.1504,23.17,Poland,PL,291855.0
+36,Cancún,21.17,-86.83,Mexico,MX,542043.0
+37,Ishim,56.1502,69.4498,Russia,RU,67762.0
+38,Suva,-18.133,178.4417,Fiji,FJ,175399.0
+39,Brumado,-14.21,-41.67,Brazil,BR,41989.0
+40,Cranbrook,49.5167,-115.7667,Canada,CA,18610.0
+41,Nawabganj,24.5804,88.35,Bangladesh,BD,142361.0
+42,Laguna Hills,33.592,-117.6992,United States,US,31509.0
+43,Bologoye,57.8722,34.0518,Russia,RU,25142.0
+44,Siirt,37.944,41.933,Turkey,TR,114034.0
+45,Tallinn,59.4339,24.728,Estonia,EE,394024.0
+46,Vladikavkaz,43.0504,44.67,Russia,RU,364630.0
+47,Mequon,43.2352,-87.9838,United States,US,24086.0
+48,Bethal,-26.4696,29.45,South Africa,ZA,101919.0
+49,Andamooka,-30.431,137.1656,Australia,AU,528.0
+50,Pinrang,-3.7857,119.6522,Indonesia,ID,182731.0
+51,La Habra Heights,33.9603,-117.9509,United States,US,5411.0
+52,Dunhua,43.3505,128.22,China,CN,191870.0
+53,Ingham,-18.6496,146.1666,Australia,AU,6127.0
+54,Verona,42.9879,-89.5371,United States,US,12969.0
+55,Golyshmanovo,56.3819,68.3715,Russia,RU,13424.0
+56,Gardiz,33.6001,69.2146,Afghanistan,AF,103601.0
+57,Makarov,48.6337,142.8,Russia,RU,6663.0
+58,Morgantown,39.6379,-79.9468,United States,US,73183.0
+59,As Sidr,30.6704,18.2666,Libya,LY,50.0
+60,Kaiapoi,-43.3813,172.651,New Zealand,NZ,10200.0
+61,Dover,51.1337,1.3,United Kingdom,GB,36384.0
+62,Wildwood,28.8004,-82.0051,United States,US,7464.0
+63,Lorient,47.7504,-3.3666,France,FR,84952.0
+64,Yilan,24.75,121.75,Taiwan,TW,150000.0
+65,Sefra,32.7604,-0.5799,Algeria,DZ,63420.0
+66,Koulikoro,12.8833,-7.55,Mali,ML,23919.0
+67,Roseau,15.301,-61.387,Dominica,DM,23336.0
+68,Taganrog,47.23,38.92,Russia,RU,279056.0
+69,Melun,48.5333,2.6666,France,FR,249432.0
+70,Lehututu,-23.9696,21.87,Botswana,BW,1942.0
+71,Broken Hill,-31.95,141.4331,Australia,AU,17395.0
+72,Santos,-23.9537,-46.3329,Brazil,BR,1709000.0
+73,Coroatá,-4.1296,-44.15,Brazil,BR,34129.0
+74,Bronxville,40.9394,-73.8263,United States,US,6407.0
+75,Socorro,6.4603,-73.27,Colombia,CO,24895.0
+76,Huelva,37.2504,-6.9299,Spain,ES,144174.0
+77,Mejillones,-23.1,-70.45,Chile,CL,2041.0
+78,Mongo,12.1837,18.7,Chad,TD,27763.0
+79,Merimbula,-36.8996,149.9,Australia,AU,6367.0
+80,Yangzhou,32.4,119.43,China,CN,539715.0

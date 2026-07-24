@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Sixaola,9.5204,-82.62,Costa Rica,CR,1823.0
+2,Nogales,31.3624,-110.9336,United States,US,30771.0
+3,Buluko,-0.757,28.528,Congo (Kinshasa),CD,1192.0
+4,Anda,46.4,125.32,China,CN,181533.0
+5,Enugu,6.45,7.5,Nigeria,NG,688862.0
+6,Sukkur,27.7136,68.8486,Pakistan,PK,417767.0
+7,Ondo,7.0904,4.84,Nigeria,NG,257005.0
+8,Shelton,41.306,-73.1383,United States,US,41334.0
+9,Miami Springs,25.8195,-80.2896,United States,US,14431.0
+10,Matsuyama,33.8455,132.7658,Japan,JP,533541.0
+11,Honolulu,21.3293,-157.846,United States,US,836995.0
+12,Trophy Club,33.0038,-97.1897,United States,US,12166.0
+13,Kennewick,46.1979,-119.1732,United States,US,229624.0
+14,Nyanza,-2.3496,29.74,Rwanda,RW,225209.0
+15,Warren,41.8433,-79.1445,United States,US,14680.0
+16,Oban,-46.8876,168.1666,New Zealand,NZ,310.0
+17,Walden,41.5603,-74.1879,United States,US,11138.0
+18,Pisa,43.7205,10.4,Italy,IT,203336.0
+19,Qardho,9.5004,49.166,Somalia,SO,1341.0
+20,Sahiwal,30.6717,73.1118,Pakistan,PK,235695.0
+21,Calatrava,1.1164,9.4186,Equatorial Guinea,GQ,628.0
+22,Plattsmouth,41.0053,-95.8943,United States,US,6573.0
+23,Rawalpindi,33.6,73.04,Pakistan,PK,1858000.0
+24,Vigo,42.22,-8.73,Spain,ES,378952.0
+25,Spring Valley,41.115,-74.0486,United States,US,32603.0
+26,Millsboro,38.5865,-75.3018,United States,US,10403.0
+27,Lindenwold,39.8171,-74.9894,United States,US,17470.0
+28,Huntsville,30.705,-95.5545,United States,US,39476.0
+29,Council Bluffs,41.2369,-95.8518,United States,US,62524.0
+30,Oudtshoorn,-33.58,22.19,South Africa,ZA,76708.0
+31,Harrisonville,38.653,-94.3467,United States,US,9378.0
+32,Canavieiras,-15.64,-38.96,Brazil,BR,26375.0
+33,Oktyabrsk,49.4731,57.4449,Kazakhstan,KZ,28196.0
+34,Oakdale,37.762,-120.8463,United States,US,22564.0
+35,Gogrial,8.5337,28.1167,South Sudan,SS,50065.0
+36,De Queen,34.0428,-94.3423,United States,US,6182.0
+37,Polevskoy,56.4434,60.188,Russia,RU,65770.0
+38,Cuttack,20.47,85.8899,India,IN,580000.0
+39,East Wenatchee,47.4172,-120.2809,United States,US,13968.0
+40,Uyar,55.8104,94.3153,Russia,RU,13167.0
+41,Dickson,36.0637,-87.3661,United States,US,17066.0
+42,Foshan,23.0301,113.12,China,CN,943000.0
+43,Karusi,-3.1,30.163,Burundi,BI,10705.0
+44,Lawndale,33.8884,-118.3531,United States,US,33145.0
+45,Bulungu,-4.5496,18.6,Congo (Kinshasa),CD,48344.0
+46,Mentor,41.6895,-81.3361,United States,US,46732.0
+47,Penápolis,-21.41,-50.08,Brazil,BR,54477.0
+48,Qingdao,36.09,120.33,China,CN,2866000.0
+49,Redwood City,37.5026,-122.2251,United States,US,84950.0
+50,Progress,49.7504,129.6167,Russia,RU,146.0
+51,Pauls Valley,34.7236,-97.2291,United States,US,5852.0
+52,Nimule,3.6,32.05,South Sudan,SS,242.0
+53,Norfolk,36.8945,-76.259,United States,US,245115.0
+54,Varamin,35.3166,51.6466,Iran,IR,179603.0
+55,Martinsville,36.6827,-79.8636,United States,US,34132.0
+56,Antananarivo,-18.9166,47.5166,Madagascar,MG,1697000.0
+57,Eldoret,0.52,35.27,Kenya,KE,353381.0
+58,Canoas,-29.92,-51.18,Brazil,BR,600000.0
+59,Sri Jawewardenepura Kotte,6.9,79.95,Sri Lanka,LK,115826.0
+60,Wanaka,-44.698,169.1449,New Zealand,NZ,5037.0
+61,Mkokotoni,-5.879,39.26,Tanzania,TZ,2572.0
+62,Touba,8.28,-7.684,Ivory Coast,CI,27504.0
+63,San Dimas,34.1082,-117.8089,United States,US,34338.0
+64,Atbara,17.71,33.98,Sudan,SD,168612.0
+65,Qazvin,36.27,50.0,Iran,IR,464551.0
+66,Akure,7.2504,5.2,Nigeria,NG,420594.0
+67,Al-Qatif,26.5196,50.0115,Saudi Arabia,SA,368892.0
+68,Pizen,49.7404,13.36,Czechia,CZ,164180.0
+69,Llallagua,-18.42,-66.64,Bolivia,BO,28069.0
+70,Sanandaj,35.3,47.02,Iran,IR,349176.0
+71,Port Antonio,18.159,-76.38,Jamaica,JM,14400.0
+72,San Bernardo,-33.6,-70.7,Chile,CL,246762.0
+73,Leikanger,61.1833,6.85,Norway,NO,1965.0
+74,Sikonge,-5.6295,32.77,Tanzania,TZ,27113.0
+75,Taxco,18.5704,-99.62,Mexico,MX,53217.0
+76,Tenkodogo,11.7804,-0.3697,Burkina Faso,BF,38108.0
+77,Bắc Kạn,22.1333,105.8333,Vietnam,VN,29227.0
+78,Tavda,58.0537,65.2583,Russia,RU,39480.0
+79,Bryant,34.6144,-92.4903,United States,US,20005.0
+80,Tucano,-10.9696,-38.79,Brazil,BR,31203.0

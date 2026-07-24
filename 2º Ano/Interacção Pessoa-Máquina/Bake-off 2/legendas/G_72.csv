@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Monticello,33.6254,-91.7935,United States,US,9791.0
+2,Clermont,28.5403,-81.7296,United States,US,33549.0
+3,Puerto Montt,-41.47,-72.93,Chile,CL,174629.0
+4,Cairo,30.05,31.25,Egypt,EG,11893000.0
+5,Kabinda,-6.1296,24.48,Congo (Kinshasa),CD,59004.0
+6,Pyu,18.4779,96.4379,Burma,MM,40386.0
+7,Pompton Lakes,41.0028,-74.2857,United States,US,11127.0
+8,Gbarnga,7.0104,-9.49,Liberia,LR,45835.0
+9,Secaucus,40.7809,-74.0662,United States,US,19822.0
+10,Joinville,-26.32,-48.8399,Brazil,BR,988000.0
+11,Cartago,4.75,-75.91,Colombia,CO,134827.0
+12,Kuito,-12.38,16.94,Angola,AO,114286.0
+13,Takéo,10.9838,104.7833,Cambodia,KH,15264.0
+14,Mahajanga,-15.67,46.345,Madagascar,MG,154657.0
+15,Milan,45.47,9.205,Italy,IT,2945000.0
+16,Melo,-32.3595,-54.18,Uruguay,UY,55494.0
+17,Port Wentworth,32.1941,-81.1983,United States,US,7933.0
+18,Murrysville,40.4456,-79.6555,United States,US,20042.0
+19,Mananjary,-21.2167,48.3333,Madagascar,MG,27686.0
+20,Corte Madera,37.9238,-122.5129,United States,US,9858.0
+21,Qala i Naw,34.983,63.1333,Afghanistan,AF,2997.0
+22,Sarmiento,-45.6,-69.0833,Argentina,AR,5185.0
+23,Berwyn,41.8433,-87.7909,United States,US,55748.0
+24,Chumbicha,-28.8666,-66.2333,Argentina,AR,2572.0
+25,Tébessa,35.4104,8.12,Algeria,DZ,171742.0
+26,Mwenga,-3.0382,28.4325,Congo (Kinshasa),CD,2216.0
+27,Helsinki,60.1756,24.9341,Finland,FI,1115000.0
+28,Proserpine,-20.4162,148.5835,Australia,AU,3976.0
+29,Yakeshi,49.2804,120.73,China,CN,116284.0
+30,San Marino,43.9172,12.4667,San Marino,SM,29579.0
+31,Vinita,36.6364,-95.177,United States,US,5813.0
+32,Manta,-0.98,-80.73,Ecuador,EC,183166.0
+33,Brockton,42.0821,-71.0242,United States,US,95630.0
+34,El Tur,28.2394,33.6148,Egypt,EG,27628.0
+35,Vaasa,63.1,21.6,Finland,FI,57014.0
+36,Hillsborough,37.5573,-122.3587,United States,US,11431.0
+37,Potiskum,11.7104,11.08,Nigeria,NG,86002.0
+38,Bukachacha,52.9833,116.9166,Russia,RU,3372.0
+39,Manica,-18.9696,32.88,Mozambique,MZ,4000.0
+40,Kirs,59.3138,52.2452,Russia,RU,11385.0
+41,Peru,40.7585,-86.0715,United States,US,12686.0
+42,Lebanon,37.6718,-92.6603,United States,US,14274.0
+43,Necochea,-38.56,-58.75,Argentina,AR,80478.0
+44,Chirchiq,41.455,69.56,Uzbekistan,UZ,167842.0
+45,Kamensk Uralskiy,56.4205,61.935,Russia,RU,182500.0
+46,Saint Cloud,28.2297,-81.2853,United States,US,47809.0
+47,Kielce,50.8904,20.66,Poland,PL,215733.0
+48,Kisumu,-0.09,34.75,Kenya,KE,395615.0
+49,Ravenna,44.4204,12.22,Italy,IT,134631.0
+50,Burhanpur,21.3004,76.13,India,IN,197233.0
+51,Faridabad,28.4333,77.3167,India,IN,1394000.0
+52,Cobram,-35.9196,145.65,Australia,AU,4659.0
+53,Mochudi,-24.377,26.152,Botswana,BW,39700.0
+54,Burns Lake,54.217,-125.7666,Canada,CA,2635.0
+55,Cape Coast,5.1104,-1.25,Ghana,GH,143015.0
+56,Hafar al Batin,28.4337,45.9601,Saudi Arabia,SA,249194.0
+57,Annaba,36.92,7.76,Algeria,DZ,503524.0
+58,Camacupa,-12.0196,17.47,Angola,AO,19828.0
+59,Cottica,3.85,-54.2333,Suriname,SR,29210.0
+60,La Esmeralda,3.1738,-65.5466,Venezuela,VE,150.0
+61,Kourou,5.16,-52.6499,French Guiana,GF,24029.0
+62,Salgótarján,48.105,19.826,Hungary,HU,39640.0
+63,Lake Dallas,33.1277,-97.0234,United States,US,7881.0
+64,Puca Urco,-2.3328,-71.9167,Peru,PE,10.0
+65,Betanzos,-19.56,-65.45,Bolivia,BO,4847.0
+66,Jixi,45.3,130.97,China,CN,965000.0
+67,Palm Springs,26.6372,-80.0961,United States,US,24051.0
+68,Decatur,33.2277,-97.5899,United States,US,6503.0
+69,Montes Claros,-16.72,-43.86,Brazil,BR,332379.0
+70,Karimnagar,18.4604,79.11,India,IN,288251.0
+71,Lodi,40.8784,-74.0815,United States,US,24778.0
+72,New Delhi,28.6,77.2,India,IN,317797.0
+73,Mason City,43.1487,-93.1998,United States,US,26487.0
+74,Roseville,45.0155,-93.1544,United States,US,35691.0
+75,Pembroke Park,25.9852,-80.1779,United States,US,6312.0
+76,Chacabuco,-34.65,-60.49,Argentina,AR,34587.0
+77,Tokat,40.306,36.563,Turkey,TR,129702.0
+78,Durango,24.0311,-104.67,Mexico,MX,457140.0
+79,Celeken,39.4362,53.1226,Turkmenistan,TM,1206.0
+80,Guajara-Miram,-10.8,-65.3499,Brazil,BR,69586.0

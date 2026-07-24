@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Nam Định,20.42,106.2,Vietnam,VN,243186.0
+2,Naujaat,66.5295,-86.2829,Canada,CA,1000.0
+3,Igrim,63.1933,64.4194,Russia,RU,9545.0
+4,Powell,40.1679,-83.08,United States,US,12810.0
+5,Cambridge Bay,69.117,-105.0333,Canada,CA,1477.0
+6,Guliston,40.4957,68.7907,Uzbekistan,UZ,95520.0
+7,Orange Walk,18.0904,-88.56,Belize,BZ,20835.0
+8,Qaminis,31.6606,20.0155,Libya,LY,5348.0
+9,Alajuela,10.02,-84.23,Costa Rica,CR,387743.0
+10,Viana Do Castelo,41.6962,-8.8441,Portugal,PT,15555.0
+11,Nevelsk,46.6803,141.8699,Russia,RU,17000.0
+12,Severnyy,67.6083,64.1233,Russia,RU,11562.0
+13,Torrington,42.0658,-104.1621,United States,US,7389.0
+14,San Fernando,-34.58,-70.99,Chile,CL,60746.0
+15,Hsinchu,24.8168,120.9767,Taiwan,TW,750000.0
+16,Brent,32.9421,-87.1753,United States,US,5494.0
+17,Nuquí,5.6852,-77.2745,Colombia,CO,2741.0
+18,Quibala,-10.7296,14.98,Angola,AO,8915.0
+19,Warrensville Heights,41.4363,-81.5222,United States,US,13236.0
+20,Puerto Pinasco,-22.64,-57.79,Paraguay,PY,500.0
+21,Truc Giang,10.235,106.375,Vietnam,VN,59442.0
+22,Bilaspur,22.0904,82.16,India,IN,543454.0
+23,Bataysk,47.1368,39.7449,Russia,RU,109962.0
+24,San Jose,37.302,-121.8488,United States,US,1804359.0
+25,Forsyth,33.0347,-83.938,United States,US,5264.0
+26,Nagchu,31.48,92.05,China,CN,2500.0
+27,Kompong Chhnang,12.2505,104.6666,Cambodia,KH,75244.0
+28,Bourke,-30.1,145.9333,Australia,AU,2475.0
+29,Hazel Crest,41.5732,-87.6899,United States,US,13892.0
+30,Ereğli,37.5063,34.0517,Turkey,TR,92117.0
+31,Puerto Carreño,6.185,-67.493,Colombia,CO,10216.0
+32,Mariscal Estigarribia,-22.03,-60.61,Paraguay,PY,2500.0
+33,Linhai,28.85,121.12,China,CN,251759.0
+34,Linqing,36.8504,115.68,China,CN,110046.0
+35,Savannakhet,16.5376,104.773,Laos,LA,84898.0
+36,Vienna,48.2,16.3666,Austria,AT,2400000.0
+37,Peoria Heights,40.7466,-89.5701,United States,US,5936.0
+38,Lhokseumawe,5.1914,97.1415,Indonesia,ID,140322.0
+39,Monywa,22.105,95.15,Burma,MM,226222.0
+40,Sogamoso,5.72,-72.94,Colombia,CO,126551.0
+41,Freiburg,48.0004,7.8699,Germany,DE,254889.0
+42,Sélibaby,15.167,-12.1833,Mauritania,MR,460.0
+43,Krasnoturinsk,59.7948,60.4848,Russia,RU,64878.0
+44,Registro,-24.49,-47.84,Brazil,BR,53273.0
+45,Alekseyevka,50.6535,38.6931,Russia,RU,39848.0
+46,Wrocław,51.1104,17.03,Poland,PL,634893.0
+47,Rancagua,-34.17,-70.74,Chile,CL,233268.0
+48,Iracoubo,5.4804,-53.22,French Guiana,GF,1536.0
+49,El Calafate,-50.3333,-72.3,Argentina,AR,8000.0
+50,Saint-Laurent-du-Maroni,5.4976,-54.0325,French Guiana,GF,24287.0
+51,Ongole,15.5604,80.05,India,IN,202860.0
+52,Ayapel,8.3304,-75.15,Colombia,CO,23639.0
+53,Farah,32.3917,62.0968,Afghanistan,AF,73647.0
+54,Imbituba,-28.2296,-48.66,Brazil,BR,43450.0
+55,Kalgoorlie,-30.7354,121.46,Australia,AU,36852.0
+56,Trenton,40.0819,-93.603,United States,US,5532.0
+57,Ankara,39.9272,32.8644,Turkey,TR,3716000.0
+58,Fria,10.3804,-13.55,Guinea,GN,23729.0
+59,Çankırı,40.607,33.621,Turkey,TR,71379.0
+60,Nguigmi,14.2532,13.1108,Niger,NE,17897.0
+61,Al Hillah,32.4721,44.4217,Iraq,IQ,594605.0
+62,Pingzhen,24.9439,121.2161,Taiwan,TW,201632.0
+63,EdDamer,17.59,33.96,Sudan,SD,103941.0
+64,Brownsville,25.9981,-97.4566,United States,US,228534.0
+65,Kyshtym,55.7,60.5595,Russia,RU,50911.0
+66,Bryan,30.6661,-96.367,United States,US,83260.0
+67,Kendari,-3.9553,122.5973,Indonesia,ID,165377.0
+68,Sanibel,26.4535,-82.1024,United States,US,7351.0
+69,Yogyakarta,-7.78,110.375,Indonesia,ID,636660.0
+70,Atherton,-17.2703,145.4694,Australia,AU,6959.0
+71,Abomey,7.1904,1.99,Benin,BJ,82154.0
+72,Asmara,15.3333,38.9333,Eritrea,ER,620802.0
+73,Jamestown,46.9065,-98.6927,United States,US,15297.0
+74,Cacheu,12.269,-16.165,Guinea-Bissau,GW,10490.0
+75,Star,43.7019,-116.4939,United States,US,8313.0
+76,Uzhur,55.3292,89.8207,Russia,RU,19212.0
+77,Luzern,47.0504,8.28,Switzerland,CH,250000.0
+78,Malabo,3.75,8.7833,Equatorial Guinea,GQ,155963.0
+79,Springdale,36.1897,-94.1574,United States,US,78557.0
+80,Blagodarnyy,45.1047,43.4344,Russia,RU,35995.0

@@ -1,0 +1,81 @@
+ID,city name,lat,lng,country,iso2,population
+1,Patos,-7.0196,-37.29,Brazil,BR,92575.0
+2,Nueva Gerona,21.8837,-82.8,Cuba,CU,25566.0
+3,Canoinhas,-26.18,-50.4,Brazil,BR,41498.0
+4,Castillos,-34.1696,-53.83,Uruguay,UY,7686.0
+5,Kunming,25.07,102.68,China,CN,2931000.0
+6,Pala,9.3504,14.9666,Chad,TD,35466.0
+7,Granja,-3.1195,-40.84,Brazil,BR,25879.0
+8,Lutsk,50.7472,25.3334,Ukraine,UA,213661.0
+9,Votkinsk,57.0304,53.99,Russia,RU,98633.0
+10,Mchinji,-13.8,32.9,Malawi,MW,18305.0
+11,Albany,37.8898,-122.3018,United States,US,19688.0
+12,Svobodnyy,51.4062,128.1312,Russia,RU,63620.0
+13,Paraná,-31.7333,-60.5333,Argentina,AR,262295.0
+14,Rodeo,-30.2156,-69.14,Argentina,AR,701.0
+15,Al Hillah,23.4895,46.7564,Saudi Arabia,SA,594605.0
+16,Chascomús,-35.5662,-58.0166,Argentina,AR,21054.0
+17,Mt. Hagen,-5.8632,144.2168,Papua New Guinea,PG,59064.0
+18,Kamenka,53.1947,44.0444,Russia,RU,16560.0
+19,Anderson,34.521,-82.6477,United States,US,78138.0
+20,Apopka,28.7006,-81.5303,United States,US,49458.0
+21,Santiago de Cuba,20.025,-75.8213,Cuba,CU,555865.0
+22,Kibuye,-2.05,29.35,Rwanda,RW,48024.0
+23,Akhtubinsk,48.2787,46.1687,Russia,RU,44551.0
+24,Punata,-17.55,-65.84,Bolivia,BO,26323.0
+25,Qingyuan,23.7004,113.0301,China,CN,706717.0
+26,Ouahigouya,13.5704,-2.42,Burkina Faso,BF,79504.0
+27,Steinkjer,64.0171,11.5,Norway,NO,11274.0
+28,Los Mochis,25.79,-109.0,Mexico,MX,249047.0
+29,Hailar,49.2,119.7,China,CN,231171.0
+30,Suceava,47.6377,26.2593,Romania,RO,105796.0
+31,Benin City,6.3405,5.62,Nigeria,NG,1190000.0
+32,Kütahya,39.42,29.93,Turkey,TR,185008.0
+33,Foggia,41.4605,15.56,Italy,IT,155203.0
+34,Kaser,41.1214,-74.0686,United States,US,5354.0
+35,Alexandria,31.2923,-92.47,United States,US,82995.0
+36,Mount Barker,-34.6328,117.6666,Australia,AU,1781.0
+37,Salamanca,-31.7796,-70.98,Chile,CL,20214.0
+38,Bulverde,29.7723,-98.4373,United States,US,5022.0
+39,Mbarara,-0.5996,30.65,Uganda,UG,83700.0
+40,Changzhou,31.78,119.97,China,CN,1327000.0
+41,Norridge,41.9637,-87.8231,United States,US,14498.0
+42,Huasco,-28.4696,-71.22,Chile,CL,2558.0
+43,Ancona,43.6004,13.4999,Italy,IT,100507.0
+44,Collingswood,39.916,-75.0759,United States,US,14010.0
+45,Igarka,67.4671,86.5833,Russia,RU,7470.0
+46,Kaoma,-14.7796,24.8,Zambia,ZM,14212.0
+47,Shantou,23.37,116.67,China,CN,1601000.0
+48,Abaza,52.669,90.0954,Russia,RU,18094.0
+49,Formosa,-15.5395,-47.34,Brazil,BR,81232.0
+50,Littlefield,33.9191,-102.3349,United States,US,5605.0
+51,Cuernavaca,18.9211,-99.24,Mexico,MX,834001.0
+52,Novotroitsk,51.2,58.33,Russia,RU,106186.0
+53,Itaúna,-20.06,-44.57,Brazil,BR,77400.0
+54,Hoskins,-5.4746,150.41,Papua New Guinea,PG,871.0
+55,La Palma,33.8504,-118.0407,United States,US,15774.0
+56,Campana,-34.16,-58.96,Argentina,AR,81612.0
+57,Zalaegerszeg,46.844,16.84,Hungary,HU,61898.0
+58,Bensonville,6.4333,-10.6,Liberia,LR,4089.0
+59,San Jose,-17.85,-60.78,Bolivia,BO,9211.0
+60,Güines,22.8361,-82.028,Cuba,CU,68935.0
+61,Vitória da Conquista,-14.85,-40.84,Brazil,BR,308204.0
+62,Surgut,61.2599,73.425,Russia,RU,400000.0
+63,Middelburg,51.502,3.61,Netherlands,NL,46485.0
+64,South Portland,43.631,-70.2895,United States,US,25577.0
+65,Chesterfield,38.6588,-90.5805,United States,US,47659.0
+66,Woods Cross,40.8731,-111.917,United States,US,11351.0
+67,Port Lincoln,-34.7332,135.8666,Australia,AU,13630.0
+68,Kent,47.3887,-122.2128,United States,US,127514.0
+69,Colac,-38.3395,143.58,Australia,AU,9089.0
+70,Butha-Buthe,-28.75,28.25,Lesotho,LS,16330.0
+71,Baiquan,47.6018,126.0819,China,CN,70472.0
+72,Villa Hayes,-25.09,-57.53,Paraguay,PY,15643.0
+73,Zaranj,31.112,61.887,Afghanistan,AF,49851.0
+74,Bikin,46.8203,134.2649,Russia,RU,19659.0
+75,Adelaide River,-13.2495,131.1,Australia,AU,237.0
+76,Yaroslavl,57.62,39.87,Russia,RU,606730.0
+77,Olsztyn,53.8,20.48,Poland,PL,186670.0
+78,Sunchales,-30.9329,-61.5666,Argentina,AR,12655.0
+79,Matsumoto,36.2404,137.97,Japan,JP,224926.0
+80,Galați,45.4559,28.0459,Romania,RO,311156.0
