@@ -1,0 +1,142 @@
+<sequence_node size='3'>
+<arg>
+  <function_node name='factorial' qualifier='public' type='balanced3'>
+    <parameters>
+      <sequence_node size='1'>
+      <arg>
+        <variable_declaration_node name='n' qualifier='private' type='balanced3'>
+        </variable_declaration_node>
+      </arg>
+      </sequence_node>
+    </parameters>
+    <body>
+      <block_node>
+        <declarations>
+          <sequence_node size='0'>
+          </sequence_node>
+        </declarations>
+        <statements>
+          <sequence_node size='1'>
+          <arg>
+            <if_else_node>
+              <condition>
+                <gt_node>
+                <left>
+                  <rvalue_node>
+                      <variable_node>n</variable_node>
+                  </rvalue_node>
+                </left>
+                <right>
+                  <balanced3_node>1</balanced3_node>
+                </right>
+                </gt_node>
+              </condition>
+              <then>
+                <return_node>
+                  <mul_node>
+                  <left>
+                    <rvalue_node>
+                        <variable_node>n</variable_node>
+                    </rvalue_node>
+                  </left>
+                  <right>
+                    <function_call_node name='factorial'>
+                      <arguments>
+                        <sequence_node size='1'>
+                        <arg>
+                          <sub_node>
+                          <left>
+                            <rvalue_node>
+                                <variable_node>n</variable_node>
+                            </rvalue_node>
+                          </left>
+                          <right>
+                            <balanced3_node>1</balanced3_node>
+                          </right>
+                          </sub_node>
+                        </arg>
+                        </sequence_node>
+                      </arguments>
+                    </function_call_node>
+                  </right>
+                  </mul_node>
+                </return_node>
+              </then>
+              <else>
+                <return_node>
+                  <balanced3_node>1</balanced3_node>
+                </return_node>
+              </else>
+            </if_else_node>
+          </arg>
+          </sequence_node>
+        </statements>
+      </block_node>
+    </body>
+  </function_node>
+</arg>
+<arg>
+  <function_node name='soma' qualifier='private' type='balanced3'>
+    <parameters>
+      <sequence_node size='2'>
+      <arg>
+        <variable_declaration_node name='a' qualifier='private' type='balanced3'>
+        </variable_declaration_node>
+      </arg>
+      <arg>
+        <variable_declaration_node name='b' qualifier='private' type='balanced3'>
+        </variable_declaration_node>
+      </arg>
+      </sequence_node>
+    </parameters>
+    <body>
+      <block_node>
+        <declarations>
+          <sequence_node size='0'>
+          </sequence_node>
+        </declarations>
+        <statements>
+          <sequence_node size='1'>
+          <arg>
+            <return_node>
+              <add_node>
+              <left>
+                <rvalue_node>
+                    <variable_node>a</variable_node>
+                </rvalue_node>
+              </left>
+              <right>
+                <rvalue_node>
+                    <variable_node>b</variable_node>
+                </rvalue_node>
+              </right>
+              </add_node>
+            </return_node>
+          </arg>
+          </sequence_node>
+        </statements>
+      </block_node>
+    </body>
+  </function_node>
+</arg>
+<arg>
+  <function_node name='reset' qualifier='private' type='void'>
+    <parameters>
+      <sequence_node size='0'>
+      </sequence_node>
+    </parameters>
+    <body>
+      <block_node>
+        <declarations>
+          <sequence_node size='0'>
+          </sequence_node>
+        </declarations>
+        <statements>
+          <sequence_node size='0'>
+          </sequence_node>
+        </statements>
+      </block_node>
+    </body>
+  </function_node>
+</arg>
+</sequence_node>

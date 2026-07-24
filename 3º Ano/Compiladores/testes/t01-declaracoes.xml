@@ -1,0 +1,59 @@
+<sequence_node size='8'>
+<arg>
+  <variable_declaration_node name='a' qualifier='private' type='balanced3'>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <variable_declaration_node name='b' qualifier='private' type='balanced3'>
+    <initializer>
+      <balanced3_node>5</balanced3_node>
+    </initializer>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <variable_declaration_node name='r' qualifier='public' type='takum3'>
+    <initializer>
+      <takum3_node>3.139999999999999999999999999999999999</takum3_node>
+    </initializer>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <variable_declaration_node name='x' qualifier='private' type='auto'>
+    <initializer>
+      <balanced3_node>10</balanced3_node>
+    </initializer>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <variable_declaration_node name='p' qualifier='private' type='@balanced3'>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <variable_declaration_node name='pp' qualifier='private' type='@@takum3'>
+  </variable_declaration_node>
+</arg>
+<arg>
+  <function_declaration_node name='factorial' qualifier='forward' type='balanced3'>
+    <parameters>
+      <sequence_node size='1'>
+      <arg>
+        <variable_declaration_node name='' qualifier='private' type='balanced3'>
+        </variable_declaration_node>
+      </arg>
+      </sequence_node>
+    </parameters>
+  </function_declaration_node>
+</arg>
+<arg>
+  <function_declaration_node name='malloc' qualifier='extern' type='@void'>
+    <parameters>
+      <sequence_node size='1'>
+      <arg>
+        <variable_declaration_node name='' qualifier='private' type='balanced3'>
+        </variable_declaration_node>
+      </arg>
+      </sequence_node>
+    </parameters>
+  </function_declaration_node>
+</arg>
+</sequence_node>
