@@ -5,7 +5,9 @@ Compiler for the **p6** language, developed for **Compiladores** (Compilers), IS
 **Project grade: 17.61 / 20** (17.17 / 20 from the three deliveries alone; the remainder is the practical exam). The automatic-test suite passes **185 / 185**.
 
 Built on the course's **CDK** (Compiler Development Kit) and **RTS** (run-time support) libraries. It translates p6 source into **Postfix** intermediate code / x86 assembly, which is then assembled with `yasm` and linked against the RTS.
-
+## Team
+- João Carvalho — ist 57175
+- Gabriel Amaral - ist 116424
 ## The p6 language
 
 p6 is a small imperative language with a few unusual numeric types:
