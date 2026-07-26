@@ -92,9 +92,9 @@ def flight_from_departure(partida):
       ).fetchall()
       log.debug(f'Found {cur.rowcount} rows.')
       
-  if flights is None:
-    return jsonify({"message": "No flights departing from airport {partida} were found.", "status": "error"}), 404
-  
+  if not flights:
+    return jsonify({"message": f"No flights departing from airport {partida} were found.", "status": "error"}), 404
+
   return jsonify(flights), 200
     
 @app.route("/voos/<partida>/<chegada>/", methods=("GET",))
@@ -135,91 +135,102 @@ def next_flights(partida, chegada):
 
 @app.route("/compra/<voo>/", methods=("POST",))
 def register_purchase(voo):
-  """Populates the DB with a purchase and its newly bought tickets."""
-  data = request.get_json()
+  """Regista uma compra e os respetivos bilhetes (venda + bilhetes = tudo ou nada)."""
+  data = request.get_json(silent=True) or {}
   nif_cliente = data.get("nif_cliente")
-  dados_bilhetes = data.get('dados_bilhetes')
-  
+  dados_bilhetes = data.get("dados_bilhetes")
+
   if not nif_cliente:
-    return jsonify({"message": "Missing required parameters: nif_cliente.", "status": "error"}), 400
-  
+    return jsonify({"message": "Missing required parameter: nif_cliente.", "status": "error"}), 400
   if not dados_bilhetes:
-    return jsonify({"message": "Missing required parameters: dados_bilhetes.", "status": "error"}), 400
-  
-  dados_bilhetes = [tuple(items) for items in dados_bilhetes]
-  
-  with pool.connection() as conn:
-    with conn.cursor() as cur:
-      # Insert purchase
-      cur.execute("""
-                  INSERT INTO venda (nif_cliente, balcao, hora)
-                  VALUES (%(nif_cliente)s, NULL, CURRENT_TIMESTAMP)
-                  RETURNING codigo_reserva
-                  """,
-                  {"nif_cliente": nif_cliente})
-      codigo_reserva_venda = cur.fetchone().codigo_reserva
-      
-      no_serie_aviao = cur.execute("""
-                                   SELECT no_serie FROM voo
-                                   WHERE id = %(voo)s
-                                   """, {"voo": voo}).fetchone().no_serie
-      for nome_passageiro, prim_classe in dados_bilhetes:
-        prim_classe = 'TRUE' if prim_classe else 'FALSE'
-        preco = 550.0 * 1 if prim_classe == 'FALSE' else 550.0 * 1.5
-        preco = str(preco)
-        cur.execute("""
-                    INSERT INTO bilhete (voo_id, codigo_reserva, nome_passegeiro, preco, prim_classe, lugar, no_serie)
-                    VALUES (%(voo)s, %(codigo_reserva)s, %(nome_passageiro)s, %(preco)s, %(prim_classe)s, NULL, %(no_serie)s)
-                    """,
-                    {"voo": voo,
-                     "codigo_reserva": codigo_reserva_venda,
-                     "nome_passageiro": nome_passageiro,
-                     "preco": preco,
-                     "prim_classe": prim_classe,
-                     "no_serie": no_serie_aviao})
-        
-      return jsonify({"message": "Purchase registered successfully.", "status": "success"}), 201
+    return jsonify({"message": "Missing required parameter: dados_bilhetes.", "status": "error"}), 400
+  try:
+    dados_bilhetes = [(nome, classe) for nome, classe in dados_bilhetes]
+  except (ValueError, TypeError):
+    return jsonify({"message": "dados_bilhetes must be a list of [nome, classe] pairs.", "status": "error"}), 400
+
+  try:
+    with pool.connection() as conn:
+      with conn.transaction():                       # <-- atómico: venda + bilhetes
+        with conn.cursor() as cur:
+          voo_row = cur.execute(
+            "SELECT no_serie FROM voo WHERE id = %(voo)s", {"voo": voo}
+          ).fetchone()
+          if voo_row is None:                        # <-- valida existência do voo
+            return jsonify({"message": f"Flight {voo} not found.", "status": "error"}), 404
+          no_serie_aviao = voo_row.no_serie
+
+          codigo_reserva = cur.execute(
+            """
+            INSERT INTO venda (nif_cliente, balcao, hora)
+            VALUES (%(nif)s, NULL, CURRENT_TIMESTAMP)
+            RETURNING codigo_reserva
+            """,
+            {"nif": nif_cliente},
+          ).fetchone().codigo_reserva
+
+          for nome_passageiro, prim_classe in dados_bilhetes:
+            prim = str(prim_classe).strip().lower() in ("true", "1", "t", "yes")
+            preco = 825.0 if prim else 550.0
+            cur.execute(
+              """
+              INSERT INTO bilhete
+                  (voo_id, codigo_reserva, nome_passegeiro, preco, prim_classe, lugar, no_serie)
+              VALUES (%(voo)s, %(cr)s, %(nome)s, %(preco)s, %(prim)s, NULL, %(no_serie)s)
+              """,
+              {"voo": voo, "cr": codigo_reserva, "nome": nome_passageiro,
+               "preco": preco, "prim": prim, "no_serie": no_serie_aviao},
+            )
+    return jsonify({"message": "Purchase registered successfully.", "status": "success"}), 201
+  except psycopg.errors.RaiseException as e:         # <-- exceção de trigger (RI-2/RI-3)
+    return jsonify({"message": str(e).strip(), "status": "error"}), 409
+  except psycopg.Error as e:
+    log.error(f"DB error in /compra: {e}")
+    return jsonify({"message": "Database error while registering purchase.", "status": "error"}), 500
 
 @app.route("/checkin/<bilhete>/", methods=("PUT", "POST"))
 def checkin(bilhete):
-    """Check in a passenger for a flight."""
+  """Check-in: atribui automaticamente um assento livre da classe correspondente."""
+  try:
     with pool.connection() as conn:
+      with conn.transaction():                       # <-- seleção do lugar + update juntos
         with conn.cursor() as cur:
           bilhete_info = cur.execute(
-                """
-                SELECT no_serie, prim_classe, lugar, voo_id FROM bilhete
-                WHERE id = %(bilhete)s;
-                """,
-                {"bilhete": bilhete}
-            ).fetchone()
-            
-          assento = cur.execute(
-                """
-                SELECT lugar FROM assento
-                WHERE no_serie = %(no_serie)s
-                  AND prim_classe = %(classe)s
-                  AND lugar NOT IN (
-                      SELECT lugar FROM bilhete
-                      WHERE lugar IS NOT NULL
-                        AND no_serie = %(no_serie)s
-                        AND voo_id = %(v_id)s
-                  )
-                LIMIT 1;
-                """, 
-                {
-                    "no_serie": bilhete_info.no_serie,
-                    "classe": bilhete_info.prim_classe,
-                    "bilhete": bilhete,
-                    "v_id": bilhete_info.voo_id
-                }
-            ).fetchone().lugar
-                    
+            "SELECT no_serie, prim_classe, lugar, voo_id FROM bilhete WHERE id = %(bilhete)s",
+            {"bilhete": bilhete},
+          ).fetchone()
+          if bilhete_info is None:                   # <-- bilhete inexistente
+            return jsonify({"message": f"Ticket {bilhete} not found.", "status": "error"}), 404
+          if bilhete_info.lugar is not None:         # <-- já tem check-in
+            return jsonify({"message": "Ticket already checked in.", "status": "error"}), 409
+
+          assento_row = cur.execute(
+            """
+            SELECT lugar FROM assento
+            WHERE no_serie = %(no_serie)s
+              AND prim_classe = %(classe)s
+              AND lugar NOT IN (
+                  SELECT lugar FROM bilhete
+                  WHERE lugar IS NOT NULL
+                    AND no_serie = %(no_serie)s
+                    AND voo_id = %(v_id)s
+              )
+            LIMIT 1
+            """,
+            {"no_serie": bilhete_info.no_serie,
+             "classe": bilhete_info.prim_classe,
+             "v_id": bilhete_info.voo_id},
+          ).fetchone()
+          if assento_row is None:                    # <-- sem lugar livre (antes: 500)
+            return jsonify({"message": "No seats available for this class.", "status": "error"}), 409
+
           cur.execute(
-              """
-              UPDATE bilhete
-              SET lugar = %(assento)s
-              WHERE id = %(bilhete)s;
-              """,
-              {"assento": assento, "bilhete": bilhete},
+            "UPDATE bilhete SET lugar = %(assento)s WHERE id = %(bilhete)s",
+            {"assento": assento_row.lugar, "bilhete": bilhete},
           )
     return jsonify({"message": "Check-in successful.", "status": "success"}), 200
+  except psycopg.errors.RaiseException as e:
+    return jsonify({"message": str(e).strip(), "status": "error"}), 409
+  except psycopg.Error as e:
+    log.error(f"DB error in /checkin: {e}")
+    return jsonify({"message": "Database error during check-in.", "status": "error"}), 500
