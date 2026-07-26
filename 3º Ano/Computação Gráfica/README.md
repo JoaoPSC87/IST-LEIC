@@ -4,6 +4,11 @@ Interactive 3D graphics projects for **Computação Gráfica** (Computer Graphic
 
 **Grades (lab component): Trabalho A 1.5/2 · Trabalho B 3.28/4 · Trabalho C 3.34/4.**
 
+## Team
+- João Carvalho — ist 57175
+- Gonçalo Nogueira - ist 109485
+- Gonçalo Melo - ist 110488
+
 ## The three deliveries
 
 ### Trabalho A — Design sketches
