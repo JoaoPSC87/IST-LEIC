@@ -2,7 +2,7 @@
 
 Systems-modeling project for **Análise e Modelação de Sistemas** (Systems Analysis and Modeling) at Instituto Superior Técnico — **2025**, group **62**. A conceptual specification of the **AgriRetail** domain — an alliance of farmers and retailers coordinating agricultural supply and demand — modeled across enterprise architecture, business processes, software, and physical systems. No code: the deliverables are models and analysis.
 
-**Grade: 15/20**
+**Grade: 18/20**
 
 ## Team
 - João Carvalho - ist 57175
