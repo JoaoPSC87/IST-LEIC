@@ -4,8 +4,6 @@ Distributed Systems Project 2026
 
 **Group A49**
 
-**Difficulty level: I am Death incarnate!**
-
 **Grade:** 17.3 / 20 — A.1 4.22/5 · A.2 1.33/2 · B.1 3.87/4 · B.2 2.65/3 · C.1 2.70/3 · C.2 2.5/3
 
 <!-- ### Code Identification
@@ -17,11 +15,11 @@ code dependency management, to ensure your code runs using the correct component
 ### Team Members
 
 
-| Number | Name              | User                             | Email                                               |
-|--------|-------------------|----------------------------------|-----------------------------------------------------| 
-| 57175  | João Carvalho     | <https://github.com/JoaoPSC1987> | <mailto:joao.p.santos.carvalho@tecnico.ulisboa.pt>  |
-| 109822 | Pedro Brito       | <https://github.com/p-b-b>       | <mailto:pedro.d.brito@tecnico.ulisboa.pt>           |
-| 116424 | Gabriel Amaral    | <https://github.com/amaral220x>  | <mailto:gabriel.amaral@tecnico.ulisboa.pt>          |
+| Number | Name              | 
+|--------|-------------------| 
+| 57175  | João Carvalho     |
+| 109822 | Pedro Brito       |
+| 116424 | Gabriel Amaral    | 
 
 ## Getting Started
 
