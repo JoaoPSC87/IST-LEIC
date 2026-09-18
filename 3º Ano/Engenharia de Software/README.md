@@ -40,7 +40,7 @@ HumanaEthica is a broker that connects charities and non-profit organizations wi
 
 ## Engineering process
 
-The work was split into 16 tasks (T2.1–T2.16), each tracked as a **GitLab issue** with its own **merge request** and a **peer review** by the other member. The full task → commit → MR → review mapping is in [`delivery-reports/P2.md`](delivery-reports/P2.md). Continuous integration built the project and ran the tests on every push (`.gitlab-ci.yml`).
+The work was split into two parts with some tasks associated (T1.1-T1.21;T2.1–T2.16), each tracked as a **GitLab issue** with its own **merge request** and a **peer review** by the other member. The full task → commit → MR → review mapping is in [`delivery-reports/P1.md`](delivery-reports/P1.md) and [`delivery-reports/P2.md`](delivery-reports/P2.md). Continuous integration built the project and ran the tests on every push (`.gitlab-ci.yml`).
 
 ## Running it
 
